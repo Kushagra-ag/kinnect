@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+  <g id="Group_130" data-name="Group 130" transform="translate(-340.6 -1285.5)">
+    <rect id="Rectangle_150" data-name="Rectangle 150" width="19" height="19" rx="9.5" transform="translate(340.6 1285.5)" fill="rgba(107,110,119,0.67)"/>
+    <path id="Icon_awesome-user-plus" data-name="Icon awesome-user-plus" d="M4.466,5.1A2.552,2.552,0,1,0,1.914,2.552,2.552,2.552,0,0,0,4.466,5.1Zm1.786.638H5.919a3.47,3.47,0,0,1-2.907,0H2.679A2.68,2.68,0,0,0,0,8.421V9.25a.957.957,0,0,0,.957.957H7.974a.957.957,0,0,0,.957-.957V8.421C8.428,7.078,7.731,5.741,6.252,5.741Z" transform="translate(345 1290)" fill="#fff"/>
+    <path id="Icon_awesome-lock" data-name="Icon awesome-lock" d="M4.424,2.478H4.159v-.8a1.681,1.681,0,1,0-3.362,0v.8H.531A.531.531,0,0,0,0,3.009V5.132a.531.531,0,0,0,.531.531H4.424a.531.531,0,0,0,.531-.531V3.009A.531.531,0,0,0,4.424,2.478Zm-1.15,0H1.681v-.8a.8.8,0,1,1,1.593,0Z" transform="translate(351.37 1294.737)" fill="#fff" stroke="#989ba2" stroke-width="0.5"/>
+  </g>
+</svg>

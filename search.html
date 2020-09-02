@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kinnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/jPages.css" />
+
+</head>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md bg-white navbar-light" style=" z-index: 300; width=100vw;">
+
+		<div class="container-fluid px-0">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="LOGO" height="40px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100 justify-content-between mr-n2" id="collapsibleNavbar">
+                <ul class="navbar-nav justify-content-end d-md-none mt-3">
+                    <li class="nav-item">
+                        <div class="d-flex justify-content-between align-items-center bg-blue px-2 py-1">
+                            <div class="">
+                                <div class="input-group">
+                                    <span class="input-group-prepend">
+                                        <div class="input-group-text bg-transparent border-0"><i class="feather icon-search custom-light-grey mr-2"></i></div>
+                                    </span>
+                                    <input class="border-0 bg-transparent" type="search" placeholder="Search" id="global-search-input">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- -------------------------- -->
+                <ul class="navbar-nav f14">
+                    <li class="nav-item mr-2 ml-md-5">
+                        <a class="nav-link theme-blue nw position-relative" href="#">
+                            <span class="feather icon-share-2 mr-2"></span> Network
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="fa fa-object-group mr-2"></span> Vault
+                        </a>
+                    </li>
+                </ul>
+                <!-- -------------------- -->
+                <ul class="navbar-nav justify-content-end d-none d-md-block" style="width: 40%;">
+				
+                    <li class="nav-item">
+						<!--dropdown starts here-->
+                        <div class="dropdown align-items-center justify-content-between bg-blue px-2 py-1">
+
+
+							<div class="dropdown-toggle " data-toggle="dropdown" aria-expanded="false">
+							<!--dropdown toggle starts here-->
+								<div class="input-group w-100">
+								<!--search bar 1-->
+										
+									<span class="input-group-prepend search-bar-1">
+										<div class="input-group-text bg-transparent border-0">
+											<img src="./assets/images/search.svg" class="custom-light-grey mr-2" height="14px">
+										</div>
+									</span>							
+									<span class="input-group-prepend search-bar-1 px-2 py-1">
+											<input id="global-search-input" type="text" class="border-0 bg-transparent search-ctm search-bar-1" placeholder="Search" onfocus="bl_active()">
+									</span>									
+
+									
+								</div>	
+								
+							</div>
+							<!--dropdown toggle ends here-->	
+							<!--dropdown menu starts here-->
+							<div class="search-menu dropdown-menu f12 p-0 bg-white border-0">
+								<!--ITEM 1-->
+								<div class=" addHover dropdown-item search-item">
+									<div class="row align-items-center justify-content-between">
+
+										<div class="search-item-1">
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
+											<span><strong style="color:black">Mike Kirby</strong></span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Father</span>
+											<span class="fa fa-circle theme-blue fa-2 px-1" style="font-size:0.3em;"></span>
+											<span class="theme-blue" id="request-received-notif"><i>Request Received</i></span>
+											<button>
+											<span>
+												<img src="./assets/images/accept.svg" id="accept-icon" class="ml-2 m-0" style="width:24px; display:none;">
+											</span>
+											</button>
+											<button>
+											<span>
+												<img src="./assets/images/reject.svg" id="reject-icon" class="p-0 m-0" style="width:24px;display:none;" onclick="make-icon-transparent();">
+											</span>
+											</button>
+										</div>
+										<div id="message-accepted" style="z-index=-100; display:none;">
+											<span class="text-success mr-5"><i>Request accepted</i></span>
+										</div>
+										<div id="message-rejected" style="z-index=-100; display:none;">
+											<span class="text-danger mr-5 "><i>Request rejected</i></span>
+										</div>
+
+
+									</div>
+								</div>
+								<!--END OF ITEM 1-->
+
+								<!--ITEM 2-->								
+								<div class="addHover dropdown-item search-item">
+									<div class="row align-items-center justify-content-between">
+										<div>
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
+											<span><strong style="color:black">Bill Kirby</strong></span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span class="custom-grey p1-3">Grandfather</span>
+											<span class="fa fa-circle theme-blue fa-2 px-1" style="font-size:0.3em;"></span>
+											<i class="theme-blue">Request sent</i>
+										</div>
+										<div>
+										</div>
+									</div>								
+								</div>
+								<!--END OF ITEM 2-->
+								
+								<div class="addHover dropdown-item search-item">
+									<div class="row align-items-center justify-content-between">
+										<div>
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
+											<span><strong style="color:black">Kiran Solanki</strong></span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Sister</span>
+										</div>
+										<div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="addHover dropdown-item search-item">
+									<div class="row align-items-center justify-content-between">
+										<div>
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
+											<span><strong style="color:black">Kirti Sen</strong></span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>India</span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Mutual Connections - 21</span>
+										</div>
+										<div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="addHover dropdown-item search-item">
+									<div class="row align-items-center justify-content-between">
+										<div>
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
+											<span><strong style="color:black">Mark Kirsten</strong></span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Florida</span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Mutual Connections - 10</span>
+										</div>
+										<div>
+										</div>
+									</div>
+								</div>
+								
+								
+								<div class="addHover dropdown-item search-item">
+									<div class="row align-items-center justify-content-between">
+										<div>
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
+											<span><strong style="color:black">Kiran Jain</strong></span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Canada</span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Mutual Connections - 8</span>
+										</div>
+									</div>
+									<div>
+									</div>
+								</div>
+								
+								<div class="addHover dropdown-item search-item">
+									<div class="row align-items-center justify-content-between">
+										<div>
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
+											<span><strong style="color:black">Sam Kirby</strong></span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Tallahassee, Florida</span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Mutual Connections - 5</span>
+										</div>
+										<div>
+										</div>
+									</div>
+								</div>
+																
+								<div class="addHover dropdown-item search-item">
+									<div class="row align-items-center justify-content-between">
+										<div>
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
+											<span><strong style="color:black">Kirby Jones</strong></span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Miami, Florida</span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Mutual Connections - 0</span>
+										</div>
+										<div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="addHover dropdown-item search-item m-0 p-3 f14 theme-blue rounded-bottom" style="border-top:1px solid #ccc">									
+										<strong> See all results for 'kir'</strong>
+								</div>
+
+							</div>
+							<!--dropdown menu ends here-->
+						</div>
+
+						<!--dropdown ends here-->
+                    </li>
+                </ul>
+                <!-- -------------- -->
+                <ul class="navbar-nav align-items-md-center">
+				
+                    <li class="nav-item mx-1">
+                        <a class="nav-link theme-blue" href="#">
+                            <span class="feather icon-help-circle f16 align-middle"></span>
+                            <span class="d-md-none ml-2"> Help </span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link theme-blue" href="#">
+                            <span class="feather icon-settings f16 align-middle"></span>
+                            <span class="d-md-none ml-2"> Settings </span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link theme-blue" href="#">
+                            <span class="feather f16 icon-bell align-middle"></span>
+                            <span class="d-md-none ml-2"> Notifications </span>
+                        </a>
+                    </li>
+                    <div class="d-md-none">
+                        <div class="dropdown-divider"></div>
+                        <li>
+                            <a class="nav-link" href="#">
+                                <span class="feather f16 icon-user align-middle"></span>
+                                <span class="d-md-none ml-2"> Profile </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">
+                                <span class="feather f16 icon-log-out align-middle"></span>
+                                <span class="d-md-none ml-2"> Logout </span>
+                            </a>
+                        </li>
+                    </div>
+                    <li class="dropdown d-none d-md-block ml-2">
+                        <div class="dropdown-toggle nav profile-icon-img overflow-hidden" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="max-height: 35px">
+                            <img src="./assets/images/kyle.png" class="user-img mb-1" height="30px">
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a class="dropdown-item" href="">Account</a></li>
+                            <li><a class="dropdown-item" href="">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav  -->
+	
+    <!-- profile_detail -->
+    <div class="profile_detail" id="Profile_page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-5 mb-2">
+                    <div class="sidebar pt-0 mx-md-1">
+                        <div class="text-center mb-3">
+                            <div style="width: min-content" class="d-inline-block">
+                                <div class="rounded-circle bg-blue p-2 sidebar_user">
+                                    <img src="./assets/images/kyle.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-center mb-3 pb-3 border-bottom user-title">Kyle Kirby <span class="fa fa-check-circle"></span>
+                        </h3>
+                        <p class="text-blue text-center mb-4 f14"><span class="feather icon-user"></span> Self </p>
+                        <h3>NETWORK</h3>
+                        <table class="table mb-4">
+                            <tbody><tr>
+                                <td>Network Connections</td>
+                                <td class="align-bottom">32</td>
+                            </tr>
+                            <tr>
+                                <td>Requests</td>
+                                <td class="align-bottom">3</td>
+                            </tr>
+                            <tr>
+                                <td>Suggestions</td>
+                                <td class="align-bottom">9</td>
+                            </tr>
+                        </tbody></table>
+                        <!-- table -->
+                        <center>
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5; right: -4px">
+                                    <button class="p-0" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden text-left">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/mike.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Mike Kirby"><b>Mike Kirby</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey f11" title="Mutual connections: 5">Mutual connections: 5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- --------------- -->
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden text-left">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/mike.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Bill Kirby"><b>Bill Kirby</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey f11" title="Mutual connections: 5">Mutual connections: 5 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="invite my-3 py-1 mb-4 mt-3 w-100 d-flex justify-content-center align-items-center btn btnpost btnStyle suggestions" data-toggle="modal" data-target="#inviteUser">
+                                <span class="feather icon-user-plus mr-2 py-2"></span>
+                                <span> Invite User </span>
+                            </button>
+                        </center>
+                        <hr class="mb-4 mx-n4 bg-blue border-0" style="height: 2px">
+                        <h3>VAULT</h3>
+                        <table class="table mb-4">
+                            <tbody><tr>
+                                <td>My Documents</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Requests</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Recommendations</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody></table>
+                        <!-- table -->
+                        <center>
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/health.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Update Info"><b>Update Info</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey" title="Health">Health</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user_box -->
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/insurance.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Update Info"><b>Update Info</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey" title="Insurance company">Insurance company</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user_box -->
+                        </center>
+                    </div>
+                    <!-- sidebar -->
+                </div>
+                <!-- main section -->
+                <div class="col-lg-9 col-md-8 col-sm-7 ">
+                    <!-- placeholder row -->
+						<div class="row ml-md-1" style="z-index: 10;margin-top: -55px;margin-bottom: 25px">
+							<div class="placeholder col-12 border-0" >
+							</div>
+						</div>
+						<!-- placeholder -->
+						
+						<!-- your search results -->
+						<div class="row bg-white px-md-4 pb-4 ml-md-1 rounded" style="margin-bottom: 32px">
+
+							<div class="col-12">
+								<div class="row f14 justify-content-start m-1">
+									<div class="d-flex align-items-center my-4 px-3">
+									<span>
+										<div class="mb-0 "><strong>Search Results</strong></div>
+									
+									</span>
+									</div>	
+									<div class="d-flex align-items-center my-4 p-2 " style="background-color:#F4F6FA ">
+										<div class=" custom-grey pr-2" id="out_displaying"><strong>Displaying</strong></div>
+										
+									<div>
+<!--											<button id="All users_tab" class="tablinks d-flex align-items-center bg-white" style="color: #4867ae;">
+															<div >All users on Kinnect</div>
+															<span class="fa fa-angle-down custom-grey ml-2"></span>
+											</button>-->
+											<div class="dropdown d-flex align-items-center bg-white">
+												<div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+													<div class="p-1 mr-n1 theme-blue" style="background-color: #fff;">
+														All users on Kinnect
+														<span class="fa fa-angle-down ml-2"></span>
+													</div>
+												</div>
+												<div class="dropdown-menu dropdown-menu-right f12 dropdown-ctm custom-grey " data-style="checkbox" x-placement="bottom-end" style="position: absolute; transform: translate3d(-80px, 26px, 0px); top: 0px; left: 0px; will-change: transform;">
+													<div class="dropdown-item">
+														<div class="form-check d-flex align-items-center">
+															<input type="checkbox" class="form-check-input mt-0" id="allCon" name="option1" value="something" checked="">All users on Kinnect
+														</div>
+													</div>
+													<div class="dropdown-item">
+														<div class="form-check d-flex align-items-center">
+															<input type="checkbox" class="form-check-input mt-0" id="existingCon" name="option2" value="something">Users with Mutual Connections
+														</div>
+													</div>
+												</div>
+											</div>										
+									</div>
+									</div>
+								</div>
+								<!-- -------------------- -->
+								<div class="reqContainer1 row m-2" id="my-page-1">
+								
+									<div class="col-12">
+										<div class="row justify-content-center">
+											<div class="addHover col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue requested">
+													<div class="col-3 p-0 overflow-hidden">
+														<img src="./assets/images/mike.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Mike Kirby
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Father
+															</div>
+															<div class="theme-blue" style="white-space: nowrap;">
+																Request received
+																<img src="./assets/images/incoming.svg" height="12px" class="mx-1">
+															</div>
+														</div>
+														<div class="col-4 pr-0 d-flex justify-content-end align-items-center theme-blue">
+															<img src="./assets/images/accept.svg" class="mx-1">
+															<button class="p-0" data-toggle="modal" data-target="#rejectReq">
+																<img src="./assets/images/reject.svg" class="ml-1">
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="addHover col-lg-5 mb-2">
+												<div class="row align-items-center bg-blue requested">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/bill.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Bill Kirby
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Grandfather
+															</div>
+															<div class="theme-blue" style="white-space: nowrap;">
+																Request sent
+																<img src="./assets/images/incoming.svg" height="12px" class="mx-1" style="transform: rotate(180deg);">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--normal profile tabs-->
+										
+										<div class="row justify-content-center">
+											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0 overflow-hidden">
+														<img src="./assets/images/emma.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-9 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Emma Amelia
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Sister
+															</div>
+														</div>
+														<div class="col-3 test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="addHover1 col-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Jacob Logan
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	Jacksonville
+																</div>
+																<div>
+																	Mutual Connections: 0
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row justify-content-center">
+											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Jacob Logan
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	Jacksonville
+																</div>
+																<div>
+																	Mutual Connections: 0
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="addHover1 col-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Jacob Logan
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	Jacksonville
+																</div>
+																<div>
+																	Mutual Connections: 0
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Jacob Logan
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	Jacksonville
+																</div>
+																<div>
+																	Mutual Connections: 0
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="addHover1 col-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Jacob Logan
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	Jacksonville
+																</div>
+																<div>
+																	Mutual Connections: 0
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row justify-content-center">
+											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Jacob Logan
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	Jacksonville
+																</div>
+																<div>
+																	Mutual Connections: 0
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="addHover1 col-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Jacob Logan
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	Jacksonville
+																</div>
+																<div>
+																	Mutual Connections: 0
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										
+									<!--normal profile tabs-->
+									</div>
+								</div>
+								<!----------------------- -->
+								<div class="justify-content-center my-pages row">
+									<!--<nav aria-label="...">-->
+									<div class="holder theme-blue f13">
+									<!--<div class="page_navigation theme-blue"></div>-->
+									  <ul class="col-12 justify-content-start itemContainer row theme-blue p-0 m-0" style="list-style-type:none;">
+										<li class="page-item"><a class="page-link border-0 rounded jp-previous" href="#">Previous</a></li>
+										<li class="page-item"><a class="page-link border-0 rounded jp-first" href="#my-page-1">1</a></li>
+										<li class="page-item"><a class="page-link border-0 rounded jp-hidden" href="#">2</a></li>
+										<li class="page-item"><a class="page-link border-0 rounded jp-hidden" href="#">3</a></li>
+										<li class="page-item"><a class="page-link border-0 rounded jp-hidden" href="#">4</a></li>
+										<li class="page-item"><a class="page-link border-0 rounded jp-hidden" href="#"><span class="fa fa-ellipsis-h rounded"></span></a></li>
+										<li class="page-item"><a class="page-link border-0 rounded jp-hidden" href="#">58</a></li>
+										<li class="page-item jp-next"><a class="page-link border-0 rounded jp-next" href="#">Next</a></li>
+									  </ul>
+									</div>
+								</div>
+
+								<div class="row m-1 f13 custom-grey justify-content-start">
+									<strong>Can't find the person you are looking for? <a href="#" class="theme-blue"><u> Invite them to Kinnect </u></a></strong> 
+								</div>
+							</div>
+						</div>
+						<!-- your  search results-->
+						<!-- SUGGESTIONS -->
+						<div class="row bg-white your-network px-md-4 pb-4 ml-md-1">
+					
+							<div class="col-12">
+								<div class="row">
+									<div class="col-12 d-flex justify-content-between align-items-center my-4 px-0">
+										<h3 class="mb-0">SUGGESTIONS</h3>
+										<a href="" class="view-all theme-blue f13">
+											<strong><u>View All</u></strong>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<!--starting the tab container-->
+							    <div class="reqContainer1 row ml-md-2">
+									<div class="col-12">
+										<div class="row justify-content-between">
+											<div class="col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue requested">
+													<div class="col-3 p-0 overflow-hidden">
+														<img src="./assets/images/mike.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Mike Kirby
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Father
+															</div>
+															<div class="theme-blue" style="white-space: nowrap;">
+																Request received
+																<img src="./assets/images/incoming.svg" height="12px" class="mx-1">
+															</div>
+														</div>
+														<div class="col-4 pr-0 d-flex justify-content-end align-items-center theme-blue">
+															<img src="./assets/images/accept.svg" class="mx-1">
+															<button class="p-0" data-toggle="modal" data-target="#rejectReq">
+																<img src="./assets/images/reject.svg" class="ml-1">
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue requested">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/bill.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Bill Kirby
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Grandfather
+															</div>
+															<div class="theme-blue" style="white-space: nowrap;">
+																Request sent
+																<img src="./assets/images/incoming.svg" height="12px" class="mx-1" style="transform: rotate(180deg);">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-between">
+											<div class="col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue">
+													<div class="col-3 p-0 overflow-hidden">
+														<img src="./assets/images/emma.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Emma Amelia
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Sister
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Jacob Logan
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Brother
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-between">
+											<div class="col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue">
+													<div class="col-3 p-0 overflow-hidden">
+														<img src="./assets/images/williams.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Williams
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Brother
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/nora.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Nora Aubrey
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Cousin
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-between">
+											<div class="col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue">
+													<div class="col-3 p-0 overflow-hidden">
+														<img src="./assets/images/williams.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Williams
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Brother
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/nora.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Nora Aubrey
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Cousin
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-between">
+											<div class="col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue">
+													<div class="col-3 p-0 overflow-hidden">
+														<img src="./assets/images/williams.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Williams
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Brother
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/nora.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start pt-3">
+														<div class="col-8 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Nora Aubrey
+															</div>
+															<div class="custom-light-grey text-truncate">
+																Cousin
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							</div><!--tab container-->
+						<!-- SUGGESTIONS -->
+						</div>
+				</div>
+			</div>
+		</div>
+                <!-- permissions -->
+	</div>			
+                <!-- Modals -->
+                <!-- Reject request -->
+                <div class="modal" id="rejectReq">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-3">
+                                    <div class="rounded-circle overflow-hidden mr-3">
+                                        <img src="./assets/images/mike.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Mike Kirby
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey f16">
+                                            Father
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+                                    Do you want to Decline Mike Kirby’s Connection Request?
+                                </div>
+                                <div class="row align-items-center justify-content-center my-4 position-relative">
+                                    <button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal">
+                                        Decline Connection
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reject request -->
+                
+                <!-- edit relationship -->
+                <div class="modal" id="editRel">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-start mt-3 pl-5">
+
+                                    <div class="rounded-circle overflow-hidden mr-3">
+                                        <img src="./assets/images/emma.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Emma Amelia
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey f16">
+                                            Sister
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-start px-5 mt-4 mb-3 custom-light-grey text-center">
+                                    <form class="w-100">
+                                        <div class="row my-4 text-left">
+                                            <div class="col-12">
+                                                What is your relationship to Emma Amelia? <br>
+                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required="">
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4 text-left">
+                                            <div class="col-12">
+                                                Immediate Family Type <br>
+                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required="">
+                                                    <option>Sibling</option>
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row text-left">
+                                            <div class="col-12">
+                                                Sibling Type <br>
+                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required="">
+                                                    <option>Sister</option>
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
+                                    <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
+                                        Save
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- edit relationship -->
+                <!-- delete request -->
+                <div class="modal" id="deleteReq">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-3">
+                                    <div class="rounded-circle overflow-hidden mr-3">
+                                        <img src="./assets/images/bill.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Bill Kirby
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey f16">
+                                            Grandfather
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+                                    Are you sure you don't want to add Bill Kirby as your grandfather?
+                                </div>
+                                <div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+                                    <button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal">
+                                        Cancel Connection
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- delete request -->
+                <!-- edit connection -->
+                <div class="modal" id="editCon">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-3">
+                                    <div class="rounded-circle overflow-hidden mr-3">
+                                        <img src="./assets/images/emma.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Emma Amelia
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey f16">
+                                            Sister
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+                                    <button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#removeCon">
+                                        Remove Connection
+                                    </button>
+                                    <button type="button" class="btn btn-primary border-0 bg-theme-blue mx-2 mx-md-4" data-dismiss="modal" data-toggle="modal" data-target="#editRel">
+                                        Edit Relationship
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- edit connection -->
+                <!-- remove connection -->
+                <div class="modal" id="removeCon">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-3">
+                                    <div class="rounded-circle overflow-hidden mr-3">
+                                        <img src="./assets/images/emma.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Emma Amelia
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey f16">
+                                            Sister
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+                                    Are you sure you want to remove Emma Amelia as your sister?
+                                </div>
+                                <div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+                                    <button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal">
+                                        Remove Connection
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- remove connection -->
+                <!-- edit permission -->
+                <div class="modal" id="editPerm">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-3">
+                                    <div class="rounded-circle overflow-hidden mr-3">
+                                        <img src="./assets/images/nora.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Nora Aubrey
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey f16">
+                                            Cousin
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+                                    <button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#removeAdmin">
+                                        Remove Admin
+                                    </button>
+                                    <button type="button" class="btn btn-primary border-0 bg-theme-blue mx-2 mx-md-4" data-dismiss="modal" data-toggle="modal" data-target="#editAccess">
+                                        Edit Access
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- edit permission -->
+                <!-- remove admin -->
+                <div class="modal" id="removeAdmin">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-3">
+                                    <div class="rounded-circle overflow-hidden mr-3">
+                                        <img src="./assets/images/nora.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Nora Aubrey
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey f16">
+                                            Cousin
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+                                    Are you sure you want to remove Emma Amelia as your sister?
+                                </div>
+                                <div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+                                    <button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal">
+                                        Remove Admin
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- remove admin -->
+                <!-- edit access -->
+                <div class="modal" id="editAccess">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-start justify-content-start mt-3 pl-5" style="flex-wrap:nowrap;">
+
+                                    <div class="rounded-circle overflow-hidden mr-3" style="flex-shrink: 0">
+                                        <img src="./assets/images/nora.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Nora Aubrey
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey w-75">
+                                            Nora can add and share files from the sections of your vault that you select
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+                                    <form class="w-75 f16">
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <span class="ml-3">Insurance</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked="">
+                                                    <span class="ml-3"> Legal</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked="">
+                                                    <span class="ml-3">Personal</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <span class="ml-3">Medical</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <span class="ml-3">Other</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row align-items-center justify-content-end position-relative mt-3 mb-3">
+                                    <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
+                                        Save
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- edit access -->
+                <!-- add permission -->
+                <div class="modal" id="addPerm">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-3">
+
+                                    <div>
+                                        <div style="font-size: 24px">
+                                            Select Admin
+                                        </div>
+                                        <div class="custom-light-grey">
+                                            Choose an existing connection or invite an admin to Kinnect 
+                                        </div>
+                                        <div class="input-group mt-4 border py-1" style="border-radius: 5px">
+                                            <span class="input-group-prepend">
+                                                <div class="input-group-text bg-transparent border-0">
+                                                    <img src="./assets/images/search.svg" class="custom-light-grey mr-2" height="14px">
+                                                </div>
+                                            </span>
+                                            <input class="border-0 bg-transparent search-ctm" type="search" placeholder="Search connections" id="network-search-input">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center justify-content-start px-5 mt-4 mb-3 text-center">
+                                    <div class="reqContainer" style="width: 90%">
+                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#addPerm2">
+                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+                                                <div class="row align-items-center justify-content-start mt-3">
+
+                                                    <div class="rounded-circle overflow-hidden mr-3">
+                                                        <img src="./assets/images/emma.png" height="40px">
+                                                    </div>
+                                                    <div class="text-left">
+                                                        <div class="f14 font-weight-bold">
+                                                            Emma Amelia
+                                                        </div>
+                                                        <div class="custom-light-grey">
+                                                            Sister
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#addPerm2">
+                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+                                                <div class="row align-items-center justify-content-start mt-3">
+
+                                                    <div class="rounded-circle overflow-hidden mr-3">
+                                                        <img src="./assets/images/jacob.png" height="40px">
+                                                    </div>
+                                                    <div class="text-left">
+                                                        <div class="f14 font-weight-bold">
+                                                            Jacob Logan
+                                                        </div>
+                                                        <div class="custom-light-grey">
+                                                            Brother
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#addPerm2">
+                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+                                                <div class="row align-items-center justify-content-start mt-3">
+
+                                                    <div class="rounded-circle overflow-hidden mr-3">
+                                                        <img src="./assets/images/nora.png" height="40px">
+                                                    </div>
+                                                    <div class="text-left">
+                                                        <div class="f14 font-weight-bold">
+                                                            Nora Aubrey
+                                                        </div>
+                                                        <div class="custom-light-grey">
+                                                            Cousin
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#addPerm2">
+                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+                                                <div class="row align-items-center justify-content-start mt-3">
+
+                                                    <div class="rounded-circle overflow-hidden mr-3">
+                                                        <img src="./assets/images/williams.png" height="40px">
+                                                    </div>
+                                                    <div class="text-left">
+                                                        <div class="f14 font-weight-bold">
+                                                            Williams
+                                                        </div>
+                                                        <div class="custom-light-grey">
+                                                            Brother
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#addPerm2">
+                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+                                                <div class="row align-items-center justify-content-start mt-3">
+
+                                                    <div class="rounded-circle overflow-hidden mr-3">
+                                                        <img src="./assets/images/emma.png" height="40px">
+                                                    </div>
+                                                    <div class="text-left">
+                                                        <div class="f14 font-weight-bold">
+                                                            Emma
+                                                        </div>
+                                                        <div class="custom-light-grey">
+                                                            Sister
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-end position-relative mt-4 mb-3 pr-5">
+                                    <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser">
+                                        Invite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- add permission -->
+                <!-- add permission - 2 -->
+                <div class="modal" id="addPerm2">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-start justify-content-start mt-3 pl-5" style="flex-wrap:nowrap;">
+
+                                    <div class="rounded-circle overflow-hidden mr-3" style="flex-shrink: 0">
+                                        <img src="./assets/images/jacob.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Jacob
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey w-75">
+                                            Jacob can add and share files from the sections of your vault that you select
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+                                    <form class="w-75 f16">
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <span class="ml-3">Insurance</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <span class="ml-3"> Legal</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <span class="ml-3">Personal</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <span class="ml-3">Medical</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <span class="ml-3">Other</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row align-items-center justify-content-between mt-4 mb-3 pl-5 pr-3 position-relative w-100">
+                                    <button type="button" class="btn btn-light bg-blue p-2 mr-2 mx-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#addPerm">
+                                        Back
+                                    </button>
+                                    <button type="button" class="btn btn-primary bg-theme-blue border-0 ml-2 mx-md-4" data-dismiss="modal">
+                                        Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- add permission - 2 -->
+                <!-- send connection -->
+                <div class="modal" id="sendCon">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-start mt-3 pl-5">
+
+                                    <div class="rounded-circle overflow-hidden mr-3">
+                                        <img src="./assets/images/mike.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Mike Kirby
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey f16">
+                                            Location: Orlando, FL
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-start px-5 mt-4 mb-3 custom-light-grey text-center">
+                                    <form class="w-100">
+                                        <div class="row my-4 text-left">
+                                            <div class="col-12">
+                                                What is your relationship to Mike? <br>
+                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required="">
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4 text-left">
+                                            <div class="col-12">
+                                                Immediate Family Type <br>
+                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required="">
+                                                    <option>Parent</option>
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row text-left">
+                                            <div class="col-12">
+                                                Parent Type <br>
+                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required="">
+                                                    <option>Father</option>
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
+                                    <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
+                                        Connect
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- send connection -->
+
+                <!-- --------------------------------- -->
+
+                <!-- invite user -->
+                <div class="modal" id="inviteUser">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-start mt-3">
+
+                                    <div class="pl-5">
+                                        <div style="font-size: 24px">
+                                            Who would you like to invite?
+                                        </div>
+                                        <div class="custom-light-grey">
+                                            We will send them a link to join you in Kinnect
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+                                    <form>
+                                        <div class="row my-4 f14 text-left">
+                                            <div class="col-6">
+                                                First Name <br>
+                                                <input class="mt-1 p-1 w-100 popupInput" required="">
+                                            </div>
+                                            <div class="col-6">
+                                                Last Name <br>
+                                                <input class="mt-1 p-1 w-100 popupInput" required="">
+                                            </div>
+                                        </div>
+                                        <div class="row text-left f14">
+                                            <div class="col-12">
+                                                Email <br>
+                                                <input type="email" class="mt-1 p-1 px-3 w-100 popupInput" placeholder="example@email.com" required="">
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
+                                    <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser2">
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- invite user -->
+                <!-- invite user-2 -->
+                <div class="modal" id="inviteUser2">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-start mt-3">
+
+                                    <div class="pl-5">
+                                        <div style="font-size: 24px">
+                                            Invite Marsh Kane
+                                        </div>
+                                        <div class="custom-light-grey">
+                                            marshkane20@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+                                    <form class="w-100">
+                                        <div class="row my-4 text-left">
+                                            <div class="col-12">
+                                                What is your relationship to Marsh Kane? <br>
+                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required="">
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4 text-left">
+                                            <div class="col-12">
+                                                Immediate Family Type <br>
+                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required="">
+                                                    <option>Sibling</option>
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row text-left">
+                                            <div class="col-12">
+                                                Sibling Type <br>
+                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required="">
+                                                    <option>Brother</option>
+                                                    <option>Immediate family</option>
+                                                    <option>Immediate family</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row align-items-center justify-content-between mt-4 mb-3 pl-5 pr-3 position-relative w-100">
+                                    <button type="button" class="btn btn-light bg-blue p-2 mr-2 mr-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser">
+                                        Back
+                                    </button>
+                                    <button type="button" class="btn btn-primary bg-theme-blue border-0 ml-2 ml-md-4" data-dismiss="modal">
+                                        Invite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- invite user-2 -->
+                <!-- confirm permission -->
+                <div class="modal" id="confirmPerm">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-start justify-content-start mt-3 pl-5" style="flex-wrap:nowrap;">
+
+                                    <div class="rounded-circle overflow-hidden mr-3" style="flex-shrink: 0">
+                                        <img src="./assets/images/williams.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Williams
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey w-75">
+                                            Williams can add and share files from the sections of your vault that you select
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+                                    <form class="w-75 f16">
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked="">
+                                                    <span class="ml-3">Insurance</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked="">
+                                                    <span class="ml-3"> Legal</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked="">
+                                                    <span class="ml-3">Personal</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked="">
+                                                    <span class="ml-3">Medical</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked="">
+                                                    <span class="ml-3">Other</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row align-items-center justify-content-end position-relative mt-3 mb-3">
+                                    <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
+                                        Accept
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- confirm permission -->
+                <!-- Reject permission -->
+                <div class="modal" id="rejectPerm">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-3">
+                                    <div class="rounded-circle overflow-hidden mr-3">
+                                        <img src="./assets/images/williams.png" height="100px">
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Williams
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey f16">
+                                            Brother
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+                                    Are you sure you don't want to add Williams as an admin?
+                                </div>
+                                <div class="row align-items-center justify-content-center my-4 position-relative">
+                                    <button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal">
+                                        Decline Permission
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reject permission -->
+
+                <!-- Modals -->
+            
+        </div>
+    </div>
+
+	<!--OPEN TABS jS FUNCTION-->
+
+	<script>
+	function change_given_blue()
+	{
+		document.getElementById("out_given").style.color="#4867ae";
+		document.getElementById("Given_tab").style.borderBottom="3px solid #4867ae";
+	}
+	function change_given_grey()
+	{
+		document.getElementById("out_given").style.color="#6b6e77";
+		document.getElementById("Given_tab").style.borderBottom="3px solid #f4f6fa";
+	}
+	function change_received_blue()
+	{
+		document.getElementById("out_received").style.color="#4867ae";
+		document.getElementById("Received_tab").style.borderBottom="3px solid #4867ae";
+	}
+	function change_received_grey()
+	{
+		document.getElementById("out_received").style.color="#6b6e77";
+ 		document.getElementById("Received_tab").style.borderBottom="3px solid #f4f6fa";
+	}
+	function opentab(evt, cName) 
+	{
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(cName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	
+		
+	</script>
+
+
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/wow.js"></script>
+    <script type="text/javascript" src="./assets/js/pagination.js"></script>		
+    <script type="text/javascript" src="./assets/js/jPages.js"></script>		
+
+	<script>
+			$("div.holder").jPages({
+		   containerID : "itemContainer"
+		 });
+
+		$('#page_container').pajination({
+		  num_page_links_to_display : 3,
+		  items_per_page : 6,
+		  wrap_around: true,
+		  show_first_last: false
+		});	
+	</script>
+</body>
+</html>
