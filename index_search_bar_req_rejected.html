@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Navigation -->
-  <nav class="navbar navbar-expand-md bg-white navbar-light" style=" width=100vw;">
+    <nav class="navbar navbar-expand-md bg-white navbar-light" style=" z-index: 300; width=100vw;">
 
 		<div class="container-fluid px-0">
             <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="LOGO" height="40px"></a>
@@ -48,13 +48,14 @@
                     </li>
                 </ul>
                 <!-- -------------------- -->
-                <ul class="navbar-nav justify-content-end d-none d-md-block" style="width: 40%">
+                <ul class="navbar-nav justify-content-end d-none d-md-block" style="width: 40%;">
+				
                     <li class="nav-item">
-						<!--SEARCH DROPDOWN-->
-						<div class="dropdown search-dropdown align-items-center justify-content-between bg-blue px-2 py-1">
-							<!--search toggle  bar starts here-->
+						<!--dropdown starts here-->
+                        <div class="dropdown align-items-center justify-content-between bg-blue px-2 py-1">
 
-							<div class="dropdown-toggle" data-toggle="dropdown">
+
+							<div class="dropdown-toggle " data-toggle="dropdown">
 							<!--dropdown toggle starts here-->
 								<div class="input-group w-100" >
 								<!--search bar 1-->
@@ -65,44 +66,42 @@
 										</div>
 									</span>							
 									<span class="input-group-prepend search-bar-1 px-2 py-1 m-1">
-											<input id="global-search-input" type="text" class="col-12 border-0 bg-transparent search-ctm search-bar-1" placeholder="Search">
+											<input id="global-search-input" type="text" class="border-0 bg-transparent search-ctm search-bar-1" placeholder="Search" onfocus="bl_active()">
 									</span>									
 
 									
 								</div>	
 								
 							</div>
-							<!--search bar ends here-->
-							<!--search menu starts-->
-							<div class="search-menu dropdown-menu f12 bg-white border-0">
+							<!--dropdown toggle ends here-->	
+							<!--dropdown menu starts here-->
+						<div class="search-menu dropdown-menu f12 bg-white border-0">
 								<!--ITEM 1-->
 								<div class="addHover dropdown-item search-item">
-									<div class="row align-items-center custom-grey justify-content-between">
-										<div>
-											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
+									<div class="row align-items-center custom-grey  justify-content-between">					
+										<div>	
+											<span><img src="./assets/images/mike.png" class="overflow-hidden p-0"></span>
 											<span><strong style="color:black">Mike Kirby</strong></span>
 										
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<span>Father</span>
-											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
-											<span class="theme-blue request-received-notif mr-4"><i>Request Received</i></span>
-											
-											<img class="request-received-notif border-0 m-0" style="height:20px;width:20px;" src="./assets/images/accept.svg">
-											<img class="request-received-notif border-0 m-0 ml-1" style="height:20px;width:20px;" src="./assets/images/reject.svg">
+										</div>
+										<div>
+											<span class="text-danger  search-bar-message pr-5" ><i>Request rejected</i></span>
 										</div>
 									</div>
 								</div>
 								<!--END OF ITEM 1-->
 
 								<!--ITEM 2-->								
-								<div class="addHover dropdown-item search-item ">
+								<div class="addHover dropdown-item search-item">
 									<div class="row align-items-center custom-grey  justify-content-between">
 										<div >
 											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
 											<span><strong style="color:black">Bill Kirby</strong></span>
 											<span class="fa fa-circle custom-grey fa-2 px-1"  style="font-size:0.3em;"></span>
 											<span class="custom-grey p1-3">Grandfather</span>
-											<span class="fa fa-circle theme-blue fa-2 px-1" style="font-size:0.3em;"></span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<i class="theme-blue">Request sent</i>
 										</div>
 										<div>
@@ -110,40 +109,39 @@
 									</div>								
 								</div>
 								<!--END OF ITEM 2-->
+								
 								<div class="addHover dropdown-item search-item">
-									<div class="row align-items-center custom-grey  justify-content-between">					
-										<div>	
-											<span><img src="./assets/images/nora.png" class="overflow-hidden p-0"></span>
+									<div class="row align-items-center custom-grey  justify-content-between">
+										<div>
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
 											<span><strong style="color:black">Kiran Solanki</strong></span>
-										
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<span>Sister</span>
 										</div>
 										<div>
-											<span class="text-success  search-bar-message pr-5" ><i>Request accepted</i></span>
+										</div> 
+									</div>
+								</div>
+								
+								<div class="addHover dropdown-item search-item">
+									<div class="row align-items-center custom-grey justify-content-between">
+										<div>
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
+											<span><strong style="color:black">Kirti Sen</strong></span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>India</span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Mutual Connections - 21</span>
+										</div>
+										<div>
 										</div>
 									</div>
 								</div>
 								
 								<div class="addHover dropdown-item search-item">
-									<div class="row align-items-center custom-grey  justify-content-between">					
-										<div>	
-											<span><img src="./assets/images/emma.png" class="overflow-hidden p-0"></span>
-											<span><strong style="color:black">Kirti Sen</strong></span>
-										
-											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
-											<span>India</span>
-										</div>
-										<div>
-											<span class="text-danger  search-bar-message pr-5" ><i>Request rejected</i></span>
-										</div>
-									</div>
-								</div>
-								
-								<div class="addHover dropdown-item search-item ">
 									<div class="row align-items-center custom-grey  justify-content-between">
 										<div>
-											<img src="./assets/images/bill.png" class="overflow-hidden p-0" >
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
 											<span><strong style="color:black">Mark Kirsten</strong></span>
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<span>Florida</span>
@@ -156,7 +154,7 @@
 								</div>
 								
 								
-								<div class="addHover dropdown-item search-item ">
+								<div class="addHover dropdown-item search-item">
 									<div class="row align-items-center custom-grey  justify-content-between">
 										<div>
 											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
@@ -171,7 +169,7 @@
 									</div>
 								</div>
 								
-								<div class="addHover dropdown-item search-item ">
+								<div class="addHover dropdown-item search-item">
 									<div class="row align-items-center custom-grey  justify-content-between">
 										<div>
 											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
@@ -186,7 +184,7 @@
 									</div>
 								</div>
 																
-								<div class="addHover dropdown-item search-item ">
+								<div class="addHover dropdown-item search-item">
 									<div class="row align-items-center custom-grey justify-content-between">
 										<div>
 											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
@@ -206,10 +204,10 @@
 								</div>
 
 							</div>
-
-							<!--search menu ends-->
+								<!--dropdown menu ends here-->
 						</div>
-						<!--SEARCH DROPDOWN ENDS-->
+
+						<!--dropdown ends here-->
                     </li>
                 </ul>
                 <!-- -------------- -->
@@ -1313,6 +1311,146 @@
                 <!-- permissions -->
 				</div>			
                 <!-- Modals -->
+				                <!-- request permission -->
+                <div class="modal" id="requestPerm">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-3">
+
+                                    <div class="w-75 pl-2">
+                                        <div style="font-size: 24px">
+                                            Request from
+                                        </div>
+                                        <div class="custom-light-grey">
+                                            Ask permission from an existing connection or invite someone on Kinnect to be their Admin
+                                        </div>
+                                        <div class="input-group mt-4 border py-1" style="border-radius: 5px">
+                                            <span class="input-group-prepend">
+                                                <div class="input-group-text bg-transparent border-0">
+                                                    <img src="./assets/images/search.svg" class="custom-light-grey mr-2" height="14px" />
+                                                </div>
+                                            </span>
+                                            <input class="border-0 bg-transparent search-ctm" type="search" placeholder="Search connections" id="network-search-input">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center justify-content-start px-5 mt-4 mb-3 text-center">
+                                    <div class="reqContainer" style="width: 90%">
+                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
+                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+                                                <div class="row align-items-center justify-content-start mt-3">
+
+                                                    <div class="rounded-circle overflow-hidden mr-3">
+                                                        <img src="./assets/images/emma.png" height="40px" />
+                                                    </div>
+                                                    <div class="text-left">
+                                                        <div class="f14 font-weight-bold">
+                                                            Emma Amelia
+                                                        </div>
+                                                        <div class="custom-light-grey">
+                                                            Sister
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
+                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+                                                <div class="row align-items-center justify-content-start mt-3">
+
+                                                    <div class="rounded-circle overflow-hidden mr-3">
+                                                        <img src="./assets/images/jacob.png" height="40px" />
+                                                    </div>
+                                                    <div class="text-left">
+                                                        <div class="f14 font-weight-bold">
+                                                            Jacob Logan
+                                                        </div>
+                                                        <div class="custom-light-grey">
+                                                            Brother
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
+                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+                                                <div class="row align-items-center justify-content-start mt-3">
+
+                                                    <div class="rounded-circle overflow-hidden mr-3">
+                                                        <img src="./assets/images/nora.png" height="40px" />
+                                                    </div>
+                                                    <div class="text-left">
+                                                        <div class="f14 font-weight-bold">
+                                                            Nora Aubrey
+                                                        </div>
+                                                        <div class="custom-light-grey">
+                                                            Cousin
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
+                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+                                                <div class="row align-items-center justify-content-start mt-3">
+
+                                                    <div class="rounded-circle overflow-hidden mr-3">
+                                                        <img src="./assets/images/williams.png" height="40px" />
+                                                    </div>
+                                                    <div class="text-left">
+                                                        <div class="f14 font-weight-bold">
+                                                            Williams
+                                                        </div>
+                                                        <div class="custom-light-grey">
+                                                            Brother
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
+                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+                                                <div class="row align-items-center justify-content-start mt-3">
+
+                                                    <div class="rounded-circle overflow-hidden mr-3">
+                                                        <img src="./assets/images/emma.png" height="40px" />
+                                                    </div>
+                                                    <div class="text-left">
+                                                        <div class="f14 font-weight-bold">
+                                                            Emma
+                                                        </div>
+                                                        <div class="custom-light-grey">
+                                                            Sister
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-end position-relative mt-4 mb-2 pr-5">
+                                    <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser">
+                                        Invite
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- request permission -->
+
                 <!-- Reject request -->
                 <div class="modal" id="rejectReq">
                     <div class="modal-dialog modal-dialog-centered">
@@ -2207,146 +2345,6 @@
                     </div>
                 </div>
                 <!-- confirm permission -->
-                <!-- request permission -->
-                <div class="modal" id="requestPerm">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content border-0 row p-4 m-0">
-                            <div class="col-12">
-                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
-                                    <button type="button" class="close" data-dismiss="modal">
-                                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                                    </button>
-                                </div>
-                                <div class="row align-items-center justify-content-center mt-3">
-
-                                    <div class="w-75 pl-2">
-                                        <div style="font-size: 24px">
-                                            Request from
-                                        </div>
-                                        <div class="custom-light-grey">
-                                            Ask permission from an existing connection or invite someone on Kinnect to be their Admin
-                                        </div>
-                                        <div class="input-group mt-4 border py-1" style="border-radius: 5px">
-                                            <span class="input-group-prepend">
-                                                <div class="input-group-text bg-transparent border-0">
-                                                    <img src="./assets/images/search.svg" class="custom-light-grey mr-2" height="14px" />
-                                                </div>
-                                            </span>
-                                            <input class="border-0 bg-transparent search-ctm" type="search" placeholder="Search connections" id="network-search-input">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center justify-content-start px-5 mt-4 mb-3 text-center">
-                                    <div class="reqContainer" style="width: 90%">
-                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
-                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
-                                                <div class="row align-items-center justify-content-start mt-3">
-
-                                                    <div class="rounded-circle overflow-hidden mr-3">
-                                                        <img src="./assets/images/emma.png" height="40px" />
-                                                    </div>
-                                                    <div class="text-left">
-                                                        <div class="f14 font-weight-bold">
-                                                            Emma Amelia
-                                                        </div>
-                                                        <div class="custom-light-grey">
-                                                            Sister
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
-                                        </div>
-                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
-                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
-                                                <div class="row align-items-center justify-content-start mt-3">
-
-                                                    <div class="rounded-circle overflow-hidden mr-3">
-                                                        <img src="./assets/images/jacob.png" height="40px" />
-                                                    </div>
-                                                    <div class="text-left">
-                                                        <div class="f14 font-weight-bold">
-                                                            Jacob Logan
-                                                        </div>
-                                                        <div class="custom-light-grey">
-                                                            Brother
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
-                                        </div>
-                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
-                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
-                                                <div class="row align-items-center justify-content-start mt-3">
-
-                                                    <div class="rounded-circle overflow-hidden mr-3">
-                                                        <img src="./assets/images/nora.png" height="40px" />
-                                                    </div>
-                                                    <div class="text-left">
-                                                        <div class="f14 font-weight-bold">
-                                                            Nora Aubrey
-                                                        </div>
-                                                        <div class="custom-light-grey">
-                                                            Cousin
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
-                                        </div>
-                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
-                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
-                                                <div class="row align-items-center justify-content-start mt-3">
-
-                                                    <div class="rounded-circle overflow-hidden mr-3">
-                                                        <img src="./assets/images/williams.png" height="40px" />
-                                                    </div>
-                                                    <div class="text-left">
-                                                        <div class="f14 font-weight-bold">
-                                                            Williams
-                                                        </div>
-                                                        <div class="custom-light-grey">
-                                                            Brother
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
-                                        </div>
-                                        <div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
-                                            <div class="col-12 mb-2 pl-5 d-flex justify-content-start">
-                                                <div class="row align-items-center justify-content-start mt-3">
-
-                                                    <div class="rounded-circle overflow-hidden mr-3">
-                                                        <img src="./assets/images/emma.png" height="40px" />
-                                                    </div>
-                                                    <div class="text-left">
-                                                        <div class="f14 font-weight-bold">
-                                                            Emma
-                                                        </div>
-                                                        <div class="custom-light-grey">
-                                                            Sister
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center justify-content-end position-relative mt-4 mb-2 pr-5">
-                                    <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser">
-                                        Invite
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- request permission -->
-
                 <!-- Reject permission -->
                 <div class="modal" id="rejectPerm">
                     <div class="modal-dialog modal-dialog-centered">

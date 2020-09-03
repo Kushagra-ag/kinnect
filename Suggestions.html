@@ -267,7 +267,7 @@
     <!-- nav  -->
 	
     <!-- profile_detail -->
-    <div class="profile_detail" id="Profile_page">
+    <div class="profile_detail suggestion_detail" id="Suggetion_page">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-5 mb-2">
@@ -430,110 +430,37 @@
 						<div class="row bg-white px-md-4 pb-4 ml-md-1 rounded" style="margin-bottom: 32px">
 
 							<div class="col-12">
-								<div class="row f14">
-									<span class="d-flex align-items-center m-2 pt-3">
-										<h3><strong>Search results</strong></h3>
-									</span>	
-									<span class="d-flex align-items-left custom-grey bg-blue m-1 p-1 mt-3">
-										<h3 class="pl-1 pr-3 my-1"><strong>Displaying</strong></h3>
-										
-										<div>
-											<!--</button>-->
-											<div class="dropdown d-flex align-items-center bg-white">
-												<div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-													<div class="p-1 mr-1 theme-blue" style="background-color: #fff;">
-														All users on Kinnect
-														<span class="fa fa-angle-down ml-2"></span>
-													</div>
-												</div>
-												<div class="dropdown-menu dropdown-menu-right f12 dropdown-ctm custom-grey " data-style="checkbox" x-placement="bottom-end" style="position: absolute; transform: translate3d(-80px, 26px, 0px); top: 0px; left: 0px; will-change: transform;">
-													<div class="dropdown-item">
-														<div class="form-check d-flex align-items-center">
-															<input type="checkbox" class="form-check-input mt-0" id="allCon" name="option1" value="something" checked="">All users on Kinnect
-														</div>
-													</div>
-													<div class="dropdown-item">
-														<div class="form-check d-flex align-items-center">
-															<input type="checkbox" class="form-check-input mt-0" id="existingCon" name="option2" value="something">Users with Mutual Connections
-														</div>
-													</div>
-												</div>
-											</div>										
-										</div>
-									</span>
+								<div class="row f14 d-flex m-2 justify-content-start">
+									<h3 class="font-weight-bold pt-4 pb-4 " style="color:black">Suggestions</h3>
+									<div class="custom-grey px-4 pt-4 pb-4">These are the people you may know. Connect with them to start sharing</div>	
 								</div>
 								<!-- -------------------- -->
-								<div class="reqContainer1 row m-2" id="my-page-1">
+								<div class="reqContainer1 row " id="my-page-1">
 								
-									<div class="col-12">
-										<div class="row justify-content-center">
-											<div class="addHover col-lg-5 mr-lg-5 mb-2">
-												<div class="row align-items-center bg-blue requested">
-													<div class="col-3 p-0 overflow-hidden">
-														<img src="./assets/images/mike.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-													</div>
-													<div class="col-9 row align-self-start pt-3">
-														<div class="col-8 d-flex flex-column">
-															<div class="f15 font-weight-bold text-truncate">
-																Mike Kirby
-															</div>
-															<div class="custom-light-grey text-truncate">
-																Father
-															</div>
-															<div class="theme-blue" style="white-space: nowrap;">
-																Request received
-																<img src="./assets/images/incoming.svg" height="12px" class="mx-1">
-															</div>
-														</div>
-														<div class="col-4 pr-0 d-flex justify-content-end align-items-center theme-blue">
-															<img src="./assets/images/accept.svg" class="mx-1">
-															<button class="p-0" data-toggle="modal" data-target="#rejectReq">
-																<img src="./assets/images/reject.svg" class="ml-1">
-															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="addHover col-lg-5 mb-2">
-												<div class="row align-items-center bg-blue requested">
-													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/bill.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-													</div>
-													<div class="col-9 row align-self-start pt-3">
-														<div class="col-8 d-flex flex-column">
-															<div class="f15 font-weight-bold text-truncate">
-																Bill Kirby
-															</div>
-															<div class="custom-light-grey text-truncate">
-																Grandfather
-															</div>
-															<div class="theme-blue" style="white-space: nowrap;">
-																Request sent
-																<img src="./assets/images/incoming.svg" height="12px" class="mx-1" style="transform: rotate(180deg);">
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!--normal profile tabs-->
-										
+									<div class="col-12 mx-3">
+									<!--normal profile tabs-->
 										<div class="row justify-content-center">
 											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
 												<div class="row align-items-center bg-blue profile">
-													<div class="col-3 p-0 overflow-hidden">
+													<div class="col-3 p-0" style="overflow: hidden;">
 														<img src="./assets/images/emma.png" class="m-1" style="max-height: 75px;min-height: 75px;">
 													</div>
 													<div class="col-9 row align-self-start justify-content-between p-3">
 														<div class="pl-3 d-flex flex-column">
 															<div class="f15 font-weight-bold text-truncate">
-																Emma Amelia
+																Kirti Sen
 															</div>
+															
 															<div class="custom-light-grey text-truncate">
-																Sister
-															</div>
+																<div>
+																	India
+																</div>
+																<div>
+																	Mutual Connections: 32
+																</div>
+															</div>													
 														</div>
-														<div class=" test-plus pt-3">
+														<div class="test-plus pt-3">
 															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
 														</div>
 													</div>
@@ -547,7 +474,7 @@
 													<div class="col-9 row align-self-start justify-content-between p-3">
 														<div class="pl-3 d-flex flex-column">
 															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
+																Kirby Jones
 															</div>
 															
 															<div class="custom-light-grey text-truncate">
@@ -555,7 +482,61 @@
 																	Jacksonville
 																</div>
 																<div>
-																	Mutual Connections: 0
+																	Mutual Connections: 30
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/emma.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Kirti Sen
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	India
+																</div>
+																<div>
+																	Mutual Connections: 28
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="addHover1 col-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Kirby Jones
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	Jacksonville
+																</div>
+																<div>
+																	Mutual Connections: 28
 																</div>
 															</div>													
 														</div>
@@ -571,20 +552,20 @@
 											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
 												<div class="row align-items-center bg-blue profile">
 													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+														<img src="./assets/images/emma.png" class="m-1" style="max-height: 75px;min-height: 75px;">
 													</div>
 													<div class="col-9 row align-self-start justify-content-between p-3">
 														<div class="pl-3 d-flex flex-column">
 															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
+																Kirti Sen
 															</div>
 															
 															<div class="custom-light-grey text-truncate">
 																<div>
-																	Jacksonville
+																	India
 																</div>
 																<div>
-																	Mutual Connections: 0
+																	Mutual Connections: 24
 																</div>
 															</div>													
 														</div>
@@ -602,7 +583,7 @@
 													<div class="col-9 row align-self-start justify-content-between p-3">
 														<div class="pl-3 d-flex flex-column">
 															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
+																Kirby Jones
 															</div>
 															
 															<div class="custom-light-grey text-truncate">
@@ -610,7 +591,7 @@
 																	Jacksonville
 																</div>
 																<div>
-																	Mutual Connections: 0
+																	Mutual Connections: 20
 																</div>
 															</div>													
 														</div>
@@ -621,24 +602,26 @@
 												</div>
 											</div>
 										</div>
+									
+										
 										<div class="row justify-content-center">
 											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
 												<div class="row align-items-center bg-blue profile">
 													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+														<img src="./assets/images/emma.png" class="m-1" style="max-height: 75px;min-height: 75px;">
 													</div>
 													<div class="col-9 row align-self-start justify-content-between p-3">
 														<div class="pl-3 d-flex flex-column">
 															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
+																Kirti Sen
 															</div>
 															
 															<div class="custom-light-grey text-truncate">
 																<div>
-																	Jacksonville
+																	Index
 																</div>
 																<div>
-																	Mutual Connections: 0
+																	Mutual Connections: 19
 																</div>
 															</div>													
 														</div>
@@ -656,7 +639,7 @@
 													<div class="col-9 row align-self-start justify-content-between p-3">
 														<div class="pl-3 d-flex flex-column">
 															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
+																Kirby Jones
 															</div>
 															
 															<div class="custom-light-grey text-truncate">
@@ -664,7 +647,7 @@
 																	Jacksonville
 																</div>
 																<div>
-																	Mutual Connections: 0
+																	Mutual Connections: 18
 																</div>
 															</div>													
 														</div>
@@ -680,20 +663,20 @@
 											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
 												<div class="row align-items-center bg-blue profile">
 													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+														<img src="./assets/images/emma.png" class="m-1" style="max-height: 75px;min-height: 75px;">
 													</div>
 													<div class="col-9 row align-self-start justify-content-between p-3">
 														<div class="pl-3 d-flex flex-column">
 															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
+																Kirti Sen
 															</div>
 															
 															<div class="custom-light-grey text-truncate">
 																<div>
-																	Jacksonville
+																	India
 																</div>
 																<div>
-																	Mutual Connections: 0
+																	Mutual Connections: 18
 																</div>
 															</div>													
 														</div>
@@ -711,7 +694,7 @@
 													<div class="col-9 row align-self-start justify-content-between p-3">
 														<div class="pl-3 d-flex flex-column">
 															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
+																Kirby Jones
 															</div>
 															
 															<div class="custom-light-grey text-truncate">
@@ -719,7 +702,116 @@
 																	Jacksonville
 																</div>
 																<div>
-																	Mutual Connections: 0
+																	Mutual Connections: 10
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/emma.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Kirti Sen
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	India
+																</div>
+																<div>
+																	Mutual Connections: 10
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="addHover1 col-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Kirby Jones
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	Jacksonville
+																</div>
+																<div>
+																	Mutual Connections: 8
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row justify-content-center">
+											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/emma.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Kirti Sen
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	India
+																</div>
+																<div>
+																	Mutual Connections: 8
+																</div>
+															</div>													
+														</div>
+														<div class="test-plus pt-3">
+															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="addHover1 col-lg-5 mb-2">
+												<div class="row align-items-center bg-blue profile">
+													<div class="col-3 p-0" style="overflow: hidden;">
+														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
+													</div>
+													<div class="col-9 row align-self-start justify-content-between p-3">
+														<div class="pl-3 d-flex flex-column">
+															<div class="f15 font-weight-bold text-truncate">
+																Kirby Jones
+															</div>
+															
+															<div class="custom-light-grey text-truncate">
+																<div>
+																	Jacksonville
+																</div>
+																<div>
+																	Mutual Connections: 6
 																</div>
 															</div>													
 														</div>
@@ -760,194 +852,6 @@
 						</div>
 						<!-- your  search results-->
 						<!-- SUGGESTIONS -->
-						<div class="row bg-white your-network px-md-4 pb-4 ml-md-1">
-					
-							<div class="col-12">
-								<div class="row">
-									<div class="col-12 d-flex justify-content-between align-items-center my-4 px-0">
-										<h3 class="mb-0">SUGGESTIONS</h3>
-										<a href="Suggestions.html" class="view-all theme-blue f13">
-											<strong><u>View All</u></strong>
-										</a>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-								<!--starting the tab container-->
-							<div class="reqContainer1 row m-2" id="my-page-1">
-								
-									<div class="col-12">
-										<div class="row justify-content-center">
-											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
-												<div class="row align-items-center bg-blue profile">
-													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-													</div>
-													<div class="col-9 row align-self-start justify-content-between p-3">
-														<div class="pl-3 d-flex flex-column">
-															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
-															</div>
-															
-															<div class="custom-light-grey text-truncate">
-																<div>
-																	Jacksonville
-																</div>
-																<div>
-																	Mutual Connections: 28
-																</div>
-															</div>													
-														</div>
-														<div class="test-plus pt-3">
-															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="addHover1 col-lg-5 mb-2">
-												<div class="row align-items-center bg-blue profile">
-													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-													</div>
-													<div class="col-9 row align-self-start justify-content-between p-3">
-														<div class="pl-3 d-flex flex-column">
-															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
-															</div>
-															
-															<div class="custom-light-grey text-truncate">
-																<div>
-																	Jacksonville
-																</div>
-																<div>
-																	Mutual Connections: 24
-																</div>
-															</div>													
-														</div>
-														<div class="test-plus pt-3">
-															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="row justify-content-center">
-											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
-												<div class="row align-items-center bg-blue profile">
-													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-													</div>
-													<div class="col-9 row align-self-start justify-content-between p-3">
-														<div class="pl-3 d-flex flex-column">
-															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
-															</div>
-															
-															<div class="custom-light-grey text-truncate">
-																<div>
-																	Jacksonville
-																</div>
-																<div>
-																	Mutual Connections: 22
-																</div>
-															</div>													
-														</div>
-														<div class="test-plus pt-3">
-															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="addHover1 col-lg-5 mb-2">
-												<div class="row align-items-center bg-blue profile">
-													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-													</div>
-													<div class="col-9 row align-self-start justify-content-between p-3">
-														<div class="pl-3 d-flex flex-column">
-															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
-															</div>
-															
-															<div class="custom-light-grey text-truncate">
-																<div>
-																	Jacksonville
-																</div>
-																<div>
-																	Mutual Connections: 15
-																</div>
-															</div>													
-														</div>
-														<div class="test-plus pt-3">
-															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										
-										<div class="row justify-content-center">
-											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
-												<div class="row align-items-center bg-blue profile">
-													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-													</div>
-													<div class="col-9 row align-self-start justify-content-between p-3">
-														<div class="pl-3 d-flex flex-column">
-															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
-															</div>
-															
-															<div class="custom-light-grey text-truncate">
-																<div>
-																	Jacksonville
-																</div>
-																<div>
-																	Mutual Connections: 8
-																</div>
-															</div>													
-														</div>
-														<div class="test-plus pt-3">
-															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="addHover1 col-lg-5 mb-2">
-												<div class="row align-items-center bg-blue profile">
-													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-													</div>
-													<div class="col-9 row align-self-start justify-content-between p-3">
-														<div class="pl-3 d-flex flex-column">
-															<div class="f15 font-weight-bold text-truncate">
-																Jacob Logan
-															</div>
-															
-															<div class="custom-light-grey text-truncate">
-																<div>
-																	Jacksonville
-																</div>
-																<div>
-																	Mutual Connections: 6
-																</div>
-															</div>													
-														</div>
-														<div class="test-plus pt-3">
-															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										
-										
-									<!--normal profile tabs-->
-									</div>
-								</div>
-															
-							</div><!--tab container-->
-						<!-- SUGGESTIONS -->
-						</div>
 				</div>
 			</div>
 		</div>

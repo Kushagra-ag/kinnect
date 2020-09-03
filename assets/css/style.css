@@ -86,7 +86,7 @@ body {
   color: #91949B !important;
   border:none;
   box-shadow: none;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 
@@ -640,7 +640,8 @@ body {
  color: #080E1C;
 }
 
-.backProfile{
+.back
+{
  border: 2px solid #4867AE;
  border-radius: 3px;
  color: #4867AE !important;
@@ -1341,9 +1342,6 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   border-radius: 5px;
 }
 
-.search-ctm {
-  width: calc(100% - 50px);
-}
 
 .addHover {
   cursor: pointer;
@@ -1361,75 +1359,105 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   overflow: hidden;
 }
 
+.search-menu{
+	margin-top:0.5rem;
+}
 
 .search-menu .search-item img{
 	height: 40px;
-    width: 40px;
-	margin: 5px;
+	margin-left:0.5rem;
+	margin-right:0.5rem;
     border-radius: 50%;
+	border: 0.5px solid #6b6e77;
 }
+.search-item
+{
+	height:flex;
+	margin-left:0px!important;
+
+	padding-left:1rem;
+	padding-right:1rem;
+	padding-top:0.5rem;
+	padding-bottom:0.5rem;
+	width:50vw;
+}
+
+/*
 .search-menu .search-item p{
 	color:#6b6e77;
 	font-size:8;
 	margin-bottom:0;
 }
+*/
 
-.fa-circle
+.dropdown-menu .search-menu .search-item
 {
-	font-size: .3em;
-    padding-bottom: 0px;
-}
-.search-menu .search-item{
 	background-color:white;
-    width: 50vw;
 }
-.search-menu{
-	margin-top: 15px;
+.search-menu.active{
 	border-radius:5px;
-	
+	display:flex;
 }
 
 .search-bar-1
 {
 	position:relative;
 	display:block;
+	
+	padding:0px!important;
 }
 
 
-.search-bar-2
+
+.search-bar-1 img{
+	padding:0px!important;
+}
+.navbar {
+	z-index:300;
+}
+
+.bl {
+	display:block;
+    position: absolute;
+	height: 200vh;
+    width: 200vw;
+    background-color: #000;
+    opacity: 0;
+    top:0;
+	z-index:100;
+}
+.search-dropdown .dropdown-toggle{
+	margin:0px!important;
+}
+.dropdown-toggle:hover {
+	cursor:text;
+}
+
+
+/*.search-ctm:focus +.bl{
+  opacity:0.5;
+}
+#collapsibleNavbar>li>input .bl
 {
-	position:relative;
+	  opacity:0.5;
+}
+*/
+.request-icons img{
+	height:20px;
+	width:20px;
+
+}
+.request-received-notif  img{
 	display:none;
 }
 
 
-.bl {
-	display: none;
-    position: absolute;
-	height: 200vh;
-    width: 100vw;
-    background-color: #000;
-    opacity: 0.5;
-    top:0;
-	z-index:-10;
+.maange-search input[type="text"]:hover +.bl div{
+	opacity:0.5;
 }
 
-.
+/*******search screen******/
 
-.search-ctm:focus +.bl{
-  opacity:0.5;
-  z-index:100;
-  display:block;
-}
-
-.search-item img{
-	height:5px;
-	width:5px;
-}
-/*
-.pagination{
-	color:#4867ae;
-}*/
 .itemContainer>li a
 {
 	font-weight:bold;
@@ -1471,7 +1499,7 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 .addHover1:hover .test-plus button{
 	opacity:1;
 }
-
+/*******search screen******/
 
 
 /*
