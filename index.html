@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css" />
 </head>
 <body>
+	<h3 id="backdrop" class="bl" style="display: none">
+	</h3>
     <!-- Navigation -->
   <nav class="navbar navbar-expand-md bg-white navbar-light" style=" width=100vw;">
 
@@ -65,7 +67,8 @@
 										</div>
 									</span>							
 									<span class="input-group-prepend search-bar-1 px-2 py-1 m-1">
-											<input id="global-search-input" type="text" class="col-12 border-0 bg-transparent search-ctm search-bar-1" placeholder="Search">
+											<button onclick="change_BL();" onchange="change_BL_2();"><input id="global-search-input" type="text" class="col-12 border-0 bg-transparent search-ctm search-bar-1" placeholder="Search" onfocus="change_BL();" onblur="change_BL_2();">
+											</button>
 									</span>									
 
 									
@@ -2396,6 +2399,15 @@
 	<!--OPEN TABS jS FUNCTION-->
 
 	<script>
+	function change_BL()
+	{
+		document.getElementById("backdrop").style.display="block";
+	}
+	function change_BL_2()
+	{
+		document.getElementById("backdrop").style.display="none";
+	}
+
 	function change_given_blue()
 	{
 		document.getElementById("out_given").style.color="#4867ae";

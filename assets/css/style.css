@@ -1417,18 +1417,18 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 }
 
 .bl {
-	display:block;
     position: absolute;
 	height: 200vh;
-    width: 200vw;
+    width: 100vw;
     background-color: #000;
-    opacity: 0;
+    opacity: 0.5;
     top:0;
 	z-index:100;
 }
-.search-dropdown .dropdown-toggle{
+
+/*.search-dropdown .dropdown-toggle{
 	margin:0px!important;
-}
+}*/
 .dropdown-toggle:hover {
 	cursor:text;
 }
