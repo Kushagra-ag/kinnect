@@ -14,72 +14,68 @@
 </head>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md bg-white navbar-light" style=" width=100vw;">
+	<h3 id="backdrop" class="bl" style="display: none" onclick="change_BL_2();">
+	</h3>
+	<!-- Navigation -->
+  	<nav class="navbar navbar-expand-md bg-white navbar-light" style=" width=100vw;" >
 
 		<div class="container-fluid px-0">
-            <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="LOGO" height="40px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse w-100 justify-content-between mr-n2" id="collapsibleNavbar">
-                <ul class="navbar-nav justify-content-end d-md-none mt-3">
-                    <li class="nav-item">
-                        <div class="d-flex justify-content-between align-items-center bg-blue px-2 py-1">
-                            <div class="">
-                                <div class="input-group">
-                                    <span class="input-group-prepend">
-                                        <div class="input-group-text bg-transparent border-0"><i class="feather icon-search custom-light-grey mr-2"></i></div>
-                                    </span>
-                                    <input class="border-0 bg-transparent" type="search" placeholder="Search" id="global-search-input">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <!-- -------------------------- -->
-                <ul class="navbar-nav f14">
-                    <li class="nav-item mr-2 ml-md-5">
-                        <a class="nav-link theme-blue nw position-relative" href="#">
-                            <span class="feather icon-share-2 mr-2"></span> Network
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="fa fa-object-group mr-2"></span> Vault
-                        </a>
-                    </li>
-                </ul>
-                <!-- -------------------- -->
-                <ul class="navbar-nav justify-content-end d-none d-md-block" style="width: 40%">
-                    <li class="nav-item">
+			<a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="LOGO" height="40px"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse w-100 justify-content-between mr-n2" id="collapsibleNavbar">
+				<ul class="navbar-nav justify-content-end d-md-none mt-3">
+					<li class="nav-item">
+						<div class="d-flex justify-content-between align-items-center bg-blue px-2 py-1">
+							<div class="">
+								<div class="input-group">
+									<span class="input-group-prepend">
+										<div class="input-group-text bg-transparent border-0"><i class="feather icon-search custom-light-grey mr-2"></i></div>
+									</span>
+									<input class="border-0 bg-transparent" type="search" placeholder="Search" id="global-search-input">
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!-- -------------------------- -->
+				<ul class="navbar-nav f14" >
+					<li class="nav-item mr-2 ml-md-5">
+						<a class="nav-link theme-blue nw position-relative" href="#">
+							<span class="feather icon-share-2 mr-2"></span> Network
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span class="fa fa-object-group mr-2"></span> Vault
+						</a>
+					</li>
+				</ul>
+				<!-- -------------------- -->
+				<ul class="navbar-nav justify-content-end d-none d-md-block" style="width: 40%">
+					<li class="nav-item">
 						<!--SEARCH DROPDOWN-->
-						<div class="dropdown align-items-center justify-content-between bg-blue px-2 py-1">
+						<div class="dropdown search-dropdown align-items-center justify-content-between bg-blue px-2" onfocusin="change_BL();" >
 							<!--search toggle  bar starts here-->
 
-							<div class="dropdown-toggle" data-toggle="dropdown">
-							<!--dropdown toggle starts here-->
-								<div class="input-group w-100" >
-								<!--search bar 1-->
-										
-									<span class="input-group-prepend search-bar-1">
-										<div class="input-group-text bg-transparent border-0">
-											<img src="./assets/images/search.svg" class="custom-light-grey mr-2" height="14px">
-										</div>
-									</span>							
-									<span class="input-group-prepend search-bar-1 px-2 py-1 m-1">
-											<input id="global-search-input" type="text" class="border-0 bg-transparent search-ctm search-bar-1" placeholder="Search" onfocus="bl_active()">
-									</span>									
-
+							<div class="dropdown-toggle search-toggle" onclick="change_BL();" data-toggle="dropdown" aria-expanded="false">
+								<div class="input-group w-100">
+									<!--search bar 1-->
+									<button class="search-ctm search-toggle" style="margin-top: 0.2rem;margin-bottom: 0.2rem;">
+										<span class="input-group-prepend search-bar-1 px-2 py-1 m-1">
+												<input id="global-search-input" type="text" class="col-12 border-0 bg-transparent search-ctm search-bar-1" placeholder="Search">
+										</span>									
+									</button>
 									
 								</div>	
 								
 							</div>
 							<!--search bar ends here-->
 							<!--search menu starts-->
-							<div class="search-menu dropdown-menu f12 bg-white border-0">
+							<div class="search-menu dropdown-menu f12 bg-white border-0 my-3 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
 								<!--ITEM 1-->
-								<div class="addHover dropdown-item search-item">
+								<div class="addHover dropdown-item search-item" onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey justify-content-between">
 										<div>
 											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
@@ -91,21 +87,21 @@
 											<span class="theme-blue request-received-notif mr-4"><i>Request Received</i></span>
 											
 											<img class="request-received-notif border-0 m-0" style="height:20px;width:20px;" src="./assets/images/accept.svg">
-											<img class="request-received-notif border-0 m-0 ml-1" style="height:20px;width:20px;" src="./assets/images/reject.svg">
+											<img class="request-received-notif border-0 m-0 ml-2" style="height:20px;width:20px;" src="./assets/images/reject.svg">
 										</div>
 									</div>
 								</div>
 								<!--END OF ITEM 1-->
 
 								<!--ITEM 2-->								
-								<div class="addHover dropdown-item search-item ">
+								<div class="addHover dropdown-item search-item " onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey  justify-content-between">
-										<div >
-											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
+										<div>
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
 											<span><strong style="color:black">Bill Kirby</strong></span>
-											<span class="fa fa-circle custom-grey fa-2 px-1"  style="font-size:0.3em;"></span>
-											<span class="custom-grey p1-3">Grandfather</span>
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span class="custom-grey p1-3">Grandfather</span>
+											<span class="fa fa-circle theme-blue fa-2 px-1" style="font-size:0.3em;"></span>
 											<i class="theme-blue">Request sent</i>
 										</div>
 										<div>
@@ -113,44 +109,48 @@
 									</div>								
 								</div>
 								<!--END OF ITEM 2-->
-								
-								<div class="addHover dropdown-item search-item ">
-									<div class="row align-items-center custom-grey  justify-content-between">
-										<div>
-											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
+								<div class="addHover dropdown-item search-item" onmouseenter="change_BL();">
+									<div class="row align-items-center custom-grey  justify-content-between">					
+										<div>	
+											<span><img src="./assets/images/nora.png" class="overflow-hidden p-0"></span>
 											<span><strong style="color:black">Kiran Solanki</strong></span>
+										
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<span>Sister</span>
 										</div>
 										<div>
-										</div> 
+											<span class="text-success  search-bar-message pr-5"><i>Request accepted</i></span>
+										</div>
 									</div>
 								</div>
 								
-								<div class="addHover dropdown-item search-item ">
-									<div class="row align-items-center custom-grey justify-content-between">
-										<div>
-											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
+								<div class="addHover dropdown-item search-item" onmouseenter="change_BL();">
+									<div class="row align-items-center custom-grey  justify-content-between">					
+										<div>	
+											<span><img src="./assets/images/emma.png" class="overflow-hidden p-0"></span>
 											<span><strong style="color:black">Kirti Sen</strong></span>
+										
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<span>India</span>
-											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
-											<span>Mutual Connections - 21</span>
 										</div>
 										<div>
+											<span class="text-danger  search-bar-message pr-5"><i>Request rejected</i></span>
 										</div>
 									</div>
 								</div>
 								
-								<div class="addHover dropdown-item search-item ">
+								<div class="addHover addHover1 dropdown-item search-item " onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey  justify-content-between">
 										<div>
-											<img src="./assets/images/nora.png" class="overflow-hidden p-0" >
+											<img src="./assets/images/bill.png" class="overflow-hidden p-0">
 											<span><strong style="color:black">Mark Kirsten</strong></span>
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<span>Florida</span>
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<span>Mutual Connections - 10</span>
+											<span class="test-plus pt-3">
+												<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);align-self:center; height:20px;"></button>
+											</span>
 										</div>
 										<div>
 										</div>
@@ -158,52 +158,62 @@
 								</div>
 								
 								
-								<div class="addHover dropdown-item search-item ">
+								<div class="addHover addHover1 dropdown-item search-item " onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey  justify-content-between">
 										<div>
-											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
 											<span><strong style="color:black">Kiran Jain</strong></span>
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<span>Canada</span>
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<span>Mutual Connections - 8</span>
+											<span class="test-plus pt-3">
+												<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);align-self:center; height:20px;"></button>
+											</span>
+
 										</div>
 									</div>
 									<div>
 									</div>
 								</div>
 								
-								<div class="addHover dropdown-item search-item ">
+								<div class="addHover addHover1 dropdown-item search-item " onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey  justify-content-between">
 										<div>
-											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
 											<span><strong style="color:black">Sam Kirby</strong></span>
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
-											<span>Tallahassee, Florida</span>
+											<span>Tallahassee, Florida, USA</span>
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<span>Mutual Connections - 5</span>
+											<span class="test-plus pt-3">
+												<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);align-self:center; height:20px;"></button>
+											</span>
 										</div>
 										<div>
 										</div>
 									</div>
 								</div>
 																
-								<div class="addHover dropdown-item search-item ">
+								<div class="addHover addHover1 dropdown-item search-item " onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey justify-content-between">
 										<div>
-											<img src="./assets/images/mike.png" class="overflow-hidden p-0" >
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
 											<span><strong style="color:black">Kirby Jones</strong></span>
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
-											<span>Miami, Florida</span>
+											<span>Miami, Florida, USA</span>
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
 											<span>Mutual Connections - 0</span>
+											<span class="test-plus pt-3">
+												<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);align-self:center; height:20px;"></button>
+											</span>
 										</div>
 										<div>
 										</div>
 									</div>
 								</div>
 								
-								<div class="addHover dropdown-item search-item m-0 p-3 f14 theme-blue rounded-bottom" style="border-top:1px solid #ccc">									
+								<div class="addHover dropdown-item search-item m-0 p-3 f14 theme-blue rounded-bottom" onmouseenter="change_BL();" style="border-top:1px solid #ccc">									
 										<strong> See all results for 'kir'</strong>
 								</div>
 
@@ -212,59 +222,59 @@
 							<!--search menu ends-->
 						</div>
 						<!--SEARCH DROPDOWN ENDS-->
-                    </li>
-                </ul>
-                <!-- -------------- -->
-                <ul class="navbar-nav align-items-md-center">
+					</li>
+				</ul>				<!-- -------------- -->
+				<ul class="navbar-nav align-items-md-center">
 				
-                    <li class="nav-item mx-1">
-                        <a class="nav-link theme-blue" href="#">
-                            <span class="feather icon-help-circle f16 align-middle"></span>
-                            <span class="d-md-none ml-2"> Help </span>
-                        </a>
-                    </li>
-                    <li class="nav-item mx-1">
-                        <a class="nav-link theme-blue" href="#">
-                            <span class="feather icon-settings f16 align-middle"></span>
-                            <span class="d-md-none ml-2"> Settings </span>
-                        </a>
-                    </li>
-                    <li class="nav-item mx-1">
-                        <a class="nav-link theme-blue" href="#">
-                            <span class="feather f16 icon-bell align-middle"></span>
-                            <span class="d-md-none ml-2"> Notifications </span>
-                        </a>
-                    </li>
-                    <div class="d-md-none">
-                        <div class="dropdown-divider"></div>
-                        <li>
-                            <a class="nav-link" href="#">
-                                <span class="feather f16 icon-user align-middle"></span>
-                                <span class="d-md-none ml-2"> Profile </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">
-                                <span class="feather f16 icon-log-out align-middle"></span>
-                                <span class="d-md-none ml-2"> Logout </span>
-                            </a>
-                        </li>
-                    </div>
-                    <li class="dropdown d-none d-md-block ml-2">
-                        <div class="dropdown-toggle nav profile-icon-img overflow-hidden" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="max-height: 35px">
-                            <img src="./assets/images/kyle.png" class="user-img mb-1" height="30px">
-                        </div>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a class="dropdown-item" href="">Account</a></li>
-                            <li><a class="dropdown-item" href="">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- nav  -->
+					<li class="nav-item mx-1">
+						<a class="nav-link theme-blue" href="#">
+							<span class="feather icon-help-circle f16 align-middle"></span>
+							<span class="d-md-none ml-2"> Help </span>
+						</a>
+					</li>
+					<li class="nav-item mx-1">
+						<a class="nav-link theme-blue" href="#">
+							<span class="feather icon-settings f16 align-middle"></span>
+							<span class="d-md-none ml-2"> Settings </span>
+						</a>
+					</li>
+					<li class="nav-item mx-1">
+						<a class="nav-link theme-blue" href="#">
+							<span class="feather f16 icon-bell align-middle"></span>
+							<span class="d-md-none ml-2"> Notifications </span>
+						</a>
+					</li>
+					<div class="d-md-none">
+						<div class="dropdown-divider"></div>
+						<li>
+							<a class="nav-link" href="#">
+								<span class="feather f16 icon-user align-middle"></span>
+								<span class="d-md-none ml-2"> Profile </span>
+							</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#">
+								<span class="feather f16 icon-log-out align-middle"></span>
+								<span class="d-md-none ml-2"> Logout </span>
+							</a>
+						</li>
+					</div>
+					<li class="dropdown d-none d-md-block ml-2">
+						<div class="dropdown-toggle nav profile-icon-img overflow-hidden" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="max-height: 35px">
+							<img src="./assets/images/kyle.png" class="user-img mb-1" height="30px">
+						</div>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a class="dropdown-item" href="">Account</a></li>
+							<li><a class="dropdown-item" href="">Profile</a></li>
+							<li><a class="dropdown-item" href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- nav  -->
+
 	
     <!-- profile_detail -->
     <div class="profile_detail suggestion_detail" id="Suggetion_page">
@@ -427,19 +437,19 @@
 						<!-- placeholder -->
 						
 						<!-- your search results -->
-						<div class="row bg-white px-md-4 pb-4 ml-md-1 rounded" style="margin-bottom: 32px">
+						<div class="row bg-white rounded" style="margin-bottom: 32px">
 
-							<div class="col-12">
-								<div class="row f14 d-flex m-2 justify-content-start">
-									<h3 class="font-weight-bold pt-4 pb-4 " style="color:black">Suggestions</h3>
-									<div class="custom-grey px-4 pt-4 pb-4">These are the people you may know. Connect with them to start sharing</div>	
+							<div class="col-12 my-1">
+								<div class="row f14 d-flex mx-3 mt-4 mb-3 justify-content-start">
+									<h3 class="font-weight-bold " style="color:black">Suggestions</h3>
+									<div class="custom-grey pl-3">You may know these people. Connect with them to start sharing</div>	
 								</div>
 								<!-- -------------------- -->
-								<div class="reqContainer1 row " id="my-page-1">
+								<div class="reqContainer1 row mx-1" id="my-page-1">
 								
-									<div class="col-12 mx-3">
+									<div class="col-12">
 									<!--normal profile tabs-->
-										<div class="row justify-content-center">
+										<div class="row justify-content-center mb-1">
 											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
 												<div class="row align-items-center bg-blue profile">
 													<div class="col-3 p-0" style="overflow: hidden;">
@@ -493,7 +503,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="row justify-content-center">
+										<div class="row justify-content-center my-1">
 											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
 												<div class="row align-items-center bg-blue profile">
 													<div class="col-3 p-0" style="overflow: hidden;">
@@ -548,7 +558,7 @@
 											</div>
 										</div>
 										
-										<div class="row justify-content-center">
+										<div class="row justify-content-center my-1">
 											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
 												<div class="row align-items-center bg-blue profile">
 													<div class="col-3 p-0" style="overflow: hidden;">
@@ -604,7 +614,7 @@
 										</div>
 									
 										
-										<div class="row justify-content-center">
+										<div class="row justify-content-center my-1">
 											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
 												<div class="row align-items-center bg-blue profile">
 													<div class="col-3 p-0" style="overflow: hidden;">
@@ -659,7 +669,7 @@
 											</div>
 										</div>
 										
-										<div class="row justify-content-center">
+										<div class="row justify-content-center my-1">
 											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
 												<div class="row align-items-center bg-blue profile">
 													<div class="col-3 p-0" style="overflow: hidden;">
@@ -713,7 +723,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="row justify-content-center">
+										<div class="row justify-content-center my-1">
 											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
 												<div class="row align-items-center bg-blue profile">
 													<div class="col-3 p-0" style="overflow: hidden;">
@@ -768,67 +778,13 @@
 											</div>
 										</div>
 										
-										<div class="row justify-content-center">
-											<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
-												<div class="row align-items-center bg-blue profile">
-													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/emma.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-													</div>
-													<div class="col-9 row align-self-start justify-content-between p-3">
-														<div class="pl-3 d-flex flex-column">
-															<div class="f15 font-weight-bold text-truncate">
-																Kirti Sen
-															</div>
-															
-															<div class="custom-light-grey text-truncate">
-																<div>
-																	India
-																</div>
-																<div>
-																	Mutual Connections: 8
-																</div>
-															</div>													
-														</div>
-														<div class="test-plus pt-3">
-															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="addHover1 col-lg-5 mb-2">
-												<div class="row align-items-center bg-blue profile">
-													<div class="col-3 p-0" style="overflow: hidden;">
-														<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-													</div>
-													<div class="col-9 row align-self-start justify-content-between p-3">
-														<div class="pl-3 d-flex flex-column">
-															<div class="f15 font-weight-bold text-truncate">
-																Kirby Jones
-															</div>
-															
-															<div class="custom-light-grey text-truncate">
-																<div>
-																	Jacksonville
-																</div>
-																<div>
-																	Mutual Connections: 6
-																</div>
-															</div>													
-														</div>
-														<div class="test-plus pt-3">
-															<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
 										
 										
 									<!--normal profile tabs-->
 									</div>
 								</div>
 								<!----------------------- -->
-								<div class="justify-content-center my-pages row">
+								<div class="justify-content-center my-pages row px-0">
 									<!--<nav aria-label="...">-->
 									<div class="holder theme-blue f13">
 									<!--<div class="page_navigation theme-blue"></div>-->
@@ -845,7 +801,7 @@
 									</div>
 								</div>
 
-								<div class="row m-1 f13 custom-grey justify-content-start">
+								<div class="row ml-1 p-4 f13 custom-grey justify-content-start">
 									<strong>Can't find the person you are looking for? <a href="#" class="theme-blue"><u> Invite them to Kinnect </u></a></strong> 
 								</div>
 							</div>
@@ -1800,64 +1756,68 @@
 
 	<!--OPEN TABS jS FUNCTION-->
 
-	<script>
-	function change_given_blue()
-	{
-		document.getElementById("out_given").style.color="#4867ae";
-		document.getElementById("Given_tab").style.borderBottom="3px solid #4867ae";
-	}
-	function change_given_grey()
-	{
-		document.getElementById("out_given").style.color="#6b6e77";
-		document.getElementById("Given_tab").style.borderBottom="3px solid #f4f6fa";
-	}
-	function change_received_blue()
-	{
-		document.getElementById("out_received").style.color="#4867ae";
-		document.getElementById("Received_tab").style.borderBottom="3px solid #4867ae";
-	}
-	function change_received_grey()
-	{
-		document.getElementById("out_received").style.color="#6b6e77";
- 		document.getElementById("Received_tab").style.borderBottom="3px solid #f4f6fa";
-	}
-	function opentab(evt, cName) 
-	{
-	  var i, tabcontent, tablinks;
-	  tabcontent = document.getElementsByClassName("tabcontent");
-	  for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	  }
-	  tablinks = document.getElementsByClassName("tablinks");
-	  for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	  }
-	  document.getElementById(cName).style.display = "block";
-	  evt.currentTarget.className += " active";
-	}
-	
-		
-	</script>
-
-
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
     <script type="text/javascript" src="./assets/js/popper.min.js"></script>
     <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./assets/js/wow.js"></script>
-    <script type="text/javascript" src="./assets/js/pagination.js"></script>		
     <script type="text/javascript" src="./assets/js/jPages.js"></script>		
 
+	<script>
+		$('body').on("click", ".dropdown-menu", function (e) {
+				$(this).parent().is(".show") && e.stopPropagation();
+			});
+		
+		function change_BL()
+		{
+			document.getElementById("backdrop").style.display="block";
+		}
+		function change_BL_2()
+		{
+			document.getElementById("backdrop").style.display="none";
+		}
+
+		function change_given_blue()
+		{
+			document.getElementById("out_given").style.color="#4867ae";
+			document.getElementById("Given_tab").style.borderBottom="3px solid #4867ae";
+		}
+		function change_given_grey()
+		{
+			document.getElementById("out_given").style.color="#6b6e77";
+			document.getElementById("Given_tab").style.borderBottom="3px solid #f4f6fa";
+		}
+		function change_received_blue()
+		{
+			document.getElementById("out_received").style.color="#4867ae";
+			document.getElementById("Received_tab").style.borderBottom="3px solid #4867ae";
+		}
+		function change_received_grey()
+		{
+			document.getElementById("out_received").style.color="#6b6e77";
+			document.getElementById("Received_tab").style.borderBottom="3px solid #f4f6fa";
+		}
+		function opentab(evt, cName) 
+		{
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(cName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+		
+			
+	</script>
 	<script>
 			$("div.holder").jPages({
 		   containerID : "itemContainer"
 		 });
 
-		$('#page_container').pajination({
-		  num_page_links_to_display : 3,
-		  items_per_page : 6,
-		  wrap_around: true,
-		  show_first_last: false
-		});	
 	</script>
 </body>
 </html>

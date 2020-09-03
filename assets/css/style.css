@@ -1429,8 +1429,9 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 /*.search-dropdown .dropdown-toggle{
 	margin:0px!important;
 }*/
-.dropdown-toggle:hover {
-	cursor:text;
+
+.search-toggle:hover {
+  cursor: text;
 }
 
 
@@ -1456,6 +1457,14 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 	opacity:0.5;
 }
 
+.search-ctm
+{
+  width: calc(100%);	
+}
+.search-ctm-1
+{
+  width: calc(100%-50px);  
+}
 /*******search screen******/
 
 .itemContainer>li a
