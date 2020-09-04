@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css" />
 </head>
 <body>
-	<h3 id="backdrop" class="bl" style="display: none" onclick="change_BL_2();">
+	<h3 id="backdrop" class="bl" style="display: none" onclick="change_BL_2(); change_pos_icon_back();">
 	</h3>
 	<!-- Navigation -->
   	<nav class="navbar navbar-expand-md bg-white navbar-light" style=" width=100vw;" >
@@ -57,17 +57,24 @@
 
 						<div class="dropdown search-dropdown align-items-center justify-content-between bg-blue px-2" onfocusin="change_BL();" >
 							<!--search toggle  bar starts here-->
-							<div class="dropdown-toggle search-toggle" onclick="change_BL();" data-toggle="dropdown" aria-expanded="false">
+							<div class="dropdown-toggle search-toggle" onclick="change_BL(); change_pos_icon();" data-toggle="dropdown" aria-expanded="false">
 								<div class="input-group w-100">
 									<!--search bar 1-->
 									<button class="search-ctm border-0 bg-blue search-toggle">
 
 										<span class="input-group-prepend search-bar-1 py-1">
 										      	<span class="col-1">
-										      		<button type="submit" class="fa fa-search custom-grey pb-1 mb-1"></button>
+										      		<button type="submit" id="my-search-icon-1" class="fa fa-search custom-grey bg-blue pb-1 mb-1" style="display: block;">
+										      			
+										      		</button>
 										      	</span>
 										      	<span class="col-11 pl-1 mb-1">
 										      		<input  id="global-search-input" type="text" class=" border-0 bg-transparent search-ctm search-bar-1" placeholder="Search">
+										      	</span>
+										      	<span class="col-1">
+										      		<button type="submit" id="my-search-icon-2" class="fa fa-search custom-grey bg-blue pb-1 mb-1" style="display: none;">
+										      			
+										      		</button>
 										      	</span>
 										</span>									
 									</button>
@@ -78,41 +85,7 @@
 							<!--search bar ends here-->
 							<!--search menu starts-->
 							<div class="search-menu dropdown-menu f12 bg-white border-0 my-3 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
-								<!--ITEM 1-->
-								<div class="addHover dropdown-item search-item" onmouseenter="change_BL();">
-									<div class="row align-items-center custom-grey justify-content-between">
-										<div>
-											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
-											<span><strong style="color:black">Mike Kirby</strong></span>
-										
-											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
-											<span>Father</span>
-											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
-											<span class="theme-blue request-received-notif mr-4"><i>Request Received</i></span>
-											
-											<img class="request-received-notif border-0 m-0" style="height:20px;width:20px;" src="./assets/images/accept.svg">
-											<img class="request-received-notif border-0 m-0 ml-2" style="height:20px;width:20px;" src="./assets/images/reject.svg">
-										</div>
-									</div>
-								</div>
-								<!--END OF ITEM 1-->
-
-								<!--ITEM 2-->								
-								<div class="addHover dropdown-item search-item " onmouseenter="change_BL();">
-									<div class="row align-items-center custom-grey  justify-content-between">
-										<div>
-											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
-											<span><strong style="color:black">Bill Kirby</strong></span>
-											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
-											<span class="custom-grey p1-3">Grandfather</span>
-											<span class="fa fa-circle theme-blue fa-2 px-1" style="font-size:0.3em;"></span>
-											<i class="theme-blue">Request sent</i>
-										</div>
-										<div>
-										</div>
-									</div>								
-								</div>
-								<!--END OF ITEM 2-->
+								<!--Start-->
 								<div class="addHover dropdown-item search-item" onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey  justify-content-between">					
 										<div>	
@@ -127,7 +100,8 @@
 										</div>
 									</div>
 								</div>
-								
+								<!--End-->
+								<!--Start-->																
 								<div class="addHover dropdown-item search-item" onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey  justify-content-between">					
 										<div>	
@@ -142,26 +116,56 @@
 										</div>
 									</div>
 								</div>
-								
+								<!--End-->						
+								<!--Start-->
+								<div class="addHover dropdown-item search-item" onmouseenter="change_BL();">
+									<div class="row align-items-center custom-grey justify-content-between">
+										<div >
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
+											<span><strong style="color:black">Mike Kirby</strong></span>
+										
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span>Father</span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span class="theme-blue request-received-notif mr-4"><i>Request Received</i></span>
+											
+											<img class="request-received-notif border-0 m-0" style="height:20px;width:20px;" src="./assets/images/accept.svg">
+											<img class="request-received-notif border-0 m-0 ml-2" style="height:20px;width:20px;" src="./assets/images/reject.svg">
+										</div>
+									</div>
+								</div>
+								<!--End-->
+								<!--Start-->								
+								<div class="addHover dropdown-item search-item " onmouseenter="change_BL();">
+									<div class="row align-items-center custom-grey  justify-content-between">
+										<div>
+											<img src="./assets/images/mike.png" class="overflow-hidden p-0">
+											<span><strong style="color:black">Bill Kirby</strong></span>
+											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
+											<span class="custom-grey p1-3">Grandfather</span>
+											<span class="fa fa-circle theme-blue fa-2 px-1" style="font-size:0.3em;"></span>
+											<i class="theme-blue">Request sent</i>
+										</div>
+										<div>
+										</div>
+									</div>								
+								</div>
+								<!--End-->		
+								<!--Start-->																
 								<div class="addHover addHover1 dropdown-item search-item " onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey  justify-content-between">
 										<div>
 											<img src="./assets/images/bill.png" class="overflow-hidden p-0">
 											<span><strong style="color:black">Mark Kirsten</strong></span>
 											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
-											<span>Florida</span>
-											<span class="fa fa-circle custom-grey fa-2 px-1" style="font-size:0.3em;"></span>
-											<span>Mutual Connections - 10</span>
-											<span class="test-plus pt-3">
-												<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);align-self:center; height:20px;"></button>
-											</span>
+											<span>Uncle</span>
 										</div>
 										<div>
 										</div>
 									</div>
 								</div>
-								
-								
+								<!--End-->								
+								<!--Start-->
 								<div class="addHover addHover1 dropdown-item search-item " onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey  justify-content-between">
 										<div>
@@ -180,7 +184,8 @@
 									<div>
 									</div>
 								</div>
-								
+								<!--End-->								
+								<!--Start-->																
 								<div class="addHover addHover1 dropdown-item search-item " onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey  justify-content-between">
 										<div>
@@ -198,7 +203,8 @@
 										</div>
 									</div>
 								</div>
-																
+								<!--End-->								
+								<!--Start-->												
 								<div class="addHover addHover1 dropdown-item search-item " onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey justify-content-between">
 										<div>
@@ -216,11 +222,14 @@
 										</div>
 									</div>
 								</div>
-								
-								<div class="addHover dropdown-item search-item m-0 p-3 f14 theme-blue rounded-bottom" onmouseenter="change_BL();" style="border-top:1px solid #ccc">									
-										<a href="search.html" class="theme-blue"><strong> See all results for 'kir'</strong></a>
-								</div>
-
+								<!--End-->								
+								<!--Start click for all search results-->			
+								<a href="search.html" class="theme-blue">
+									<div class="addHover dropdown-item search-item m-0 p-3 f14 theme-blue rounded-bottom" onmouseenter="change_BL();" style="border-top:1px solid #ccc">
+											<strong> See all results for 'kir'</strong>
+									</div>
+								</a>
+								<!--End-->
 							</div>
 
 							<!--search menu ends-->
@@ -284,153 +293,155 @@
 	<div class="profile_detail">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-3 col-md-4 col-sm-5 mb-2">
-					<div class="sidebar pt-0 mx-md-1">
-						<div class="text-center mb-3">
-							<div style="width: min-content" class="d-inline-block">
-								<div class="rounded-circle bg-blue p-2 sidebar_user">
-									<img src="./assets/images/kyle.png" alt="" />
-								</div>
-							</div>
-						</div>
-						<h3 class="text-center mb-3 pb-3 border-bottom user-title">Kyle Kirby <span class="fa fa-check-circle"></span>
-						</h3>
-						<p class="text-blue text-center mb-4 f14"><span class="feather icon-user"></span> Self </p>
-						<h3>NETWORK</h3>
-						<table class="table mb-4">
-							<tr>
-								<td>Network Connections</td>
-								<td class="align-bottom">32</td>
-							</tr>
-							<tr>
-								<td>Requests</td>
-								<td class="align-bottom">3</td>
-							</tr>
-							<tr>
-								<td>Suggestions</td>
-								<td class="align-bottom">9</td>
-							</tr>
-						</table>
-						<!-- table -->
-						<center>
-							<div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
-								<div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5; right: -4px">
-									<button class="p-0" data-toggle="modal" data-target="#sendCon">
-										<img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center" />
-									</button>
-									<img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start" />
-								</div>
-								<div class="col-2 p-0 overflow-hidden text-left">
-									<a href="#">
-										<img class="" src="./assets/images/mike.png" alt="" style="max-height: 40px;min-height: 40px;">
-									</a>
-								</div>
-								<div class="col-9">
-									<div class="row align-items-center">
-										<div class="col-11 text-left">
-											<div class="" title="Mike Kirby"><b>Mike Kirby</b>
-											</div>
-											<div class="text-truncate custom-light-grey f11" title="Mutual connections: 5">Mutual connections: 5</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- --------------- -->
-							<div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
-								<div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
-									<button class="p-0" data-toggle="modal" data-target="#sendCon">
-										<img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center" />
-									</button>
-									<img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start" />
-								</div>
-								<div class="col-2 p-0 overflow-hidden text-left">
-									<a href="#">
-										<img class="" src="./assets/images/mike.png" alt="" style="max-height: 40px;min-height: 40px;">
-									</a>
-								</div>
-								<div class="col-9">
-									<div class="row align-items-center">
-										<div class="col-11 text-left">
-											<div class="" title="Bill Kirby"><b>Bill Kirby</b>
-											</div>
-											<div class="text-truncate custom-light-grey f11" title="Mutual connections: 5">Mutual connections: 5 </div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<button class="invite my-3 py-1 mb-4 mt-3 w-100 d-flex justify-content-center align-items-center btn btnpost btnStyle suggestions" data-toggle="modal" data-target="#inviteUser">
-								<span class="feather icon-user-plus mr-2 py-2"></span>
-								<span> Invite User </span>
-							</button>
-						</center>
-						<hr class="mb-4 mx-n4 bg-blue border-0" style="height: 2px" />
-						<h3>VAULT</h3>
-						<table class="table mb-4">
-							<tr>
-								<td>My Documents</td>
-								<td>14</td>
-							</tr>
-							<tr>
-								<td>Requests</td>
-								<td>6</td>
-							</tr>
-							<tr>
-								<td>Recommendations</td>
-								<td>3</td>
-							</tr>
-						</table>
-						<!-- table -->
-						<center>
-							<div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
-								<div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
-									<button class="p-0" data-toggle="modal" data-target="#sendCon">
-										<img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center" />
-									</button>
-									<img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start" />
-								</div>
-								<div class="col-2 p-0 overflow-hidden">
-									<a href="#">
-										<img class="" src="./assets/images/health.png" alt="" style="max-height: 40px;min-height: 40px;">
-									</a>
-								</div>
-								<div class="col-9">
-									<div class="row align-items-center">
-										<div class="col-11 text-left">
-											<div class="" title="Update Info"><b>Update Info</b>
-											</div>
-											<div class="text-truncate custom-light-grey" title="Health">Health</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- user_box -->
-							<div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
-								<div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
-									<button class="p-0" data-toggle="modal" data-target="#sendCon">
-										<img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center" />
-									</button>
-									<img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start" />
-								</div>
-								<div class="col-2 p-0 overflow-hidden">
-									<a href="#">
-										<img class="" src="./assets/images/insurance.png" alt="" style="max-height: 40px;min-height: 40px;">
-									</a>
-								</div>
-								<div class="col-9">
-									<div class="row align-items-center">
-										<div class="col-11 text-left">
-											<div class="" title="Update Info"><b>Update Info</b>
-											</div>
-											<div class="text-truncate custom-light-grey" title="Insurance company">Insurance company</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- user_box -->
-						</center>
-					</div>
-					<!-- sidebar -->
-				</div>
+            	<!--profile sidebar--->
+                <div class="col-lg-3 col-md-4 col-sm-5 mb-2">
+                    <div class="sidebar pt-0 mx-md-1">
+                        <div class="text-center mb-3">
+                            <div style="width: min-content" class="d-inline-block">
+                                <div class="rounded-circle bg-blue p-2 sidebar_user">
+                                    <img src="./assets/images/kyle.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-center mb-3 pb-3 border-bottom user-title">Kyle Kirby <span class="fa fa-check-circle"></span>
+                        </h3>
+                        <p class="text-blue text-center mb-4 f14"><span class="feather icon-user"></span> Self </p>
+                        <h3>NETWORK</h3>
+                        <table class="table mb-4">
+                            <tbody><tr>
+                                <td>Network Connections</td>
+                                <td class="align-bottom">32</td>
+                            </tr>
+                            <tr>
+                                <td>Requests</td>
+                                <td class="align-bottom">3</td>
+                            </tr>
+                            <tr>
+                                <td>Suggestions</td>
+                                <td class="align-bottom">9</td>
+                            </tr>
+                        </tbody></table>
+                        <!-- table -->
+                        <center>
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5; right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden text-left">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/mike.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Mike Kirby"><b>Mike Kirby</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey f11" title="Mutual connections: 5">Mutual connections: 5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- --------------- -->
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden text-left">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/mike.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Bill Kirby"><b>Bill Kirby</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey f11" title="Mutual connections: 5">Mutual connections: 5 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="invite my-3 py-1 mb-4 mt-3 w-100 d-flex justify-content-center align-items-center btn btnpost btnStyle suggestions" data-toggle="modal" data-target="#inviteUser">
+                                <span class="feather icon-user-plus mr-2 py-2"></span>
+                                <span> Invite User </span>
+                            </button>
+                        </center>
+                        <hr class="mb-4 mx-n4 bg-blue border-0" style="height: 2px">
+                        <h3>VAULT</h3>
+                        <table class="table mb-4">
+                            <tbody><tr>
+                                <td>My Documents</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Requests</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Recommendations</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody></table>
+                        <!-- table -->
+                        <center>
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/health.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Update Info"><b>Update Info</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey" title="Health">Health</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user_box -->
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/insurance.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Update Info"><b>Update Info</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey" title="Insurance company">Insurance company</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user_box -->
+                        </center>
+                    </div>
+                    <!-- sidebar -->
+                </div>
+                <!--profile sidebar end-->
 				<!-- main section -->
 				<div class="col-lg-9 col-md-8 col-sm-7">
 					<!-- placeholder row -->
@@ -519,12 +530,12 @@
 														</div>
 														<div class="theme-blue" style="white-space: nowrap;">
 															Request received
-															<img src="./assets/images/incoming.svg" height="12px" class="mx-1">
+															<img src="./assets/images/incoming.svg" height="12px" class="mx-1 bg-blue">
 														</div>
 													</div>
 													<div class="col-4 pr-0 d-flex justify-content-end align-items-center theme-blue">
 														<img src="./assets/images/accept.svg" class="mx-1">
-														<button class="p-0" data-toggle="modal" data-target="#rejectReq">
+														<button class="p-0 bg-blue" data-toggle="modal" data-target="#rejectReq">
 															<img src="./assets/images/reject.svg" class="ml-1">
 														</button>
 													</div>
@@ -770,10 +781,10 @@
 							<div class="container">
 							<!--given and received tabs-->
 								<div class="row mb-3 tab">
-									<button id="Given_tab" class="tablinks col-6 d-flex align-items-center justify-content-center text-uppercase pb-2 font-weight-bold" style="border-bottom: 3px solid #4867ae; color: #4867ae;" onclick="opentab(event,'Given'); change_given_blue();change_received_grey();">
+									<button id="Given_tab" class="tablinks bg-white col-6 d-flex align-items-center justify-content-center text-uppercase pb-2 font-weight-bold" style="border-bottom: 3px solid #4867ae; color: #4867ae;" onclick="opentab(event,'Given'); change_given_blue();change_received_grey();">
 											<h3 id="out_given">Given</h3>
 									</button>
-									<button id="Received_tab" class="tablinks col-6 d-flex align-items-center justify-content-center text-uppercase pb-2 font-weight-bold" style="border-bottom: 3px solid #f4f6fa; color: #6b6e77;" onclick="opentab(event,'Received'); change_given_grey();change_received_blue();">
+									<button id="Received_tab" class="tablinks bg-white col-6 d-flex align-items-center justify-content-center text-uppercase pb-2 font-weight-bold" style="border-bottom: 3px solid #f4f6fa; color: #6b6e77;" onclick="opentab(event,'Received'); change_given_grey();change_received_blue();">
 										<h3 id="out_received">Received</h3>
 									</button>
 								</div>
@@ -868,10 +879,10 @@
 														</div>
 													</div>
 													<div class="col-4 pr-0 d-flex justify-content-end align-items-center theme-blue">
-														<button class="p-0" data-toggle="modal" data-target="#confirmPerm">
+														<button class="p-0 bg-blue" data-toggle="modal" data-target="#confirmPerm">
 															<img src="./assets/images/accept.svg" class="mx-1">
 														</button>
-														<button class="p-0" data-toggle="modal" data-target="#rejectPerm">
+														<button class="p-0 bg-blue" data-toggle="modal" data-target="#rejectPerm">
 															<img src="./assets/images/reject.svg" class="ml-1">
 														</button>
 													</div>
@@ -2424,7 +2435,16 @@
 		$('body').on("click", ".dropdown-menu", function (e) {
 				$(this).parent().is(".show") && e.stopPropagation();
 			});
-		
+		function change_pos_icon()
+		{
+			document.getElementById("my-search-icon-1").style.display="none";
+			document.getElementById("my-search-icon-2").style.display="block";
+		}		
+		function change_pos_icon_back()
+		{
+			document.getElementById("my-search-icon-1").style.display="block";
+			document.getElementById("my-search-icon-2").style.display="none";
+		}				
 		function change_BL()
 		{
 			document.getElementById("backdrop").style.display="block";
