@@ -1399,19 +1399,15 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 	display:flex;
 }
 
-.search-bar-1
+/*.search-bar-1
 {
 	position:relative;
 	display:block;
-	
-	padding:0px!important;
-}
+}*/
 
 
 
-.search-bar-1 img{
-	padding:0px!important;
-}
+
 .navbar {
 	z-index:300;
 }

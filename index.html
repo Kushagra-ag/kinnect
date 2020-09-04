@@ -49,25 +49,32 @@
 						</a>
 					</li>
 				</ul>
+
 				<!-- -------------------- -->
-				<ul class="navbar-nav justify-content-end d-none d-md-block" style="width: 40%">
+				<ul class="navbar-nav m-0 justify-content-end d-none d-md-block" style="width: 40%">
 					<li class="nav-item">
 						<!--SEARCH DROPDOWN-->
+
 						<div class="dropdown search-dropdown align-items-center justify-content-between bg-blue px-2" onfocusin="change_BL();" >
 							<!--search toggle  bar starts here-->
-
 							<div class="dropdown-toggle search-toggle" onclick="change_BL();" data-toggle="dropdown" aria-expanded="false">
 								<div class="input-group w-100">
 									<!--search bar 1-->
-									<button class="search-ctm search-toggle" style="margin-top: 0.2rem;margin-bottom: 0.2rem;">
-										<span class="input-group-prepend search-bar-1 px-2 py-1 m-1">
-												<input id="global-search-input" type="text" class="col-12 border-0 bg-transparent search-ctm search-bar-1" placeholder="Search">
+									<button class="search-ctm border-0 bg-blue search-toggle">
+
+										<span class="input-group-prepend search-bar-1 py-1">
+										      	<span class="col-1">
+										      		<button type="submit" class="fa fa-search custom-grey pb-1 mb-1"></button>
+										      	</span>
+										      	<span class="col-11 pl-1 mb-1">
+										      		<input  id="global-search-input" type="text" class=" border-0 bg-transparent search-ctm search-bar-1" placeholder="Search">
+										      	</span>
 										</span>									
 									</button>
-									
-								</div>	
-								
+								</div>									
 							</div>
+	
+
 							<!--search bar ends here-->
 							<!--search menu starts-->
 							<div class="search-menu dropdown-menu f12 bg-white border-0 my-3 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
@@ -220,7 +227,8 @@
 						</div>
 						<!--SEARCH DROPDOWN ENDS-->
 					</li>
-				</ul>				<!-- -------------- -->
+				</ul>
+				<!-- -------------- -->
 				<ul class="navbar-nav align-items-md-center">
 				
 					<li class="nav-item mx-1">
