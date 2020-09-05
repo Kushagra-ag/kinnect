@@ -1517,3 +1517,49 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 {
 		font-weight: bold;
 }*/
+
+/**********PROFILE PAGE*************/
+
+.my-details
+{
+  min-width: 35vw;
+  min-height: 40vh;
+}
+.my-contact-card
+{
+  min-width: 35vw;
+  min-height: 40vh;
+}
+.my-insurance
+{
+  width: 22vw;
+  height: 20vh;
+}
+
+ 
+.profile-placeholder {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.insurance-placeholder {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.account-strength-placeholder {
+  height: 15px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/**********************************/
+
+
+
+
