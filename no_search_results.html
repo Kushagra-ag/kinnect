@@ -17,7 +17,7 @@
 	<h3 id="backdrop" class="bl" style="display: none;" onclick="change_BL_2(); change_pos_icon_back();">
 	</h3>
 	<!-- Navigation -->
-  	<nav class="navbar navbar-expand-md bg-white navbar-light" style=" width=100vw;" >
+  	<nav class="navbar navbar-expand-md bg-white navbar-light" style="" >
 
 		<div class="container-fluid px-0">
 			<a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="LOGO" height="40px"></a>
@@ -71,7 +71,7 @@
 										      		</button>
 										      	</span>
 										      	<span class="col-11 pl-1 pr-0 ml-1 mr-lg-1 mt-1">
-										      		<input id="global-search-input" type="text" class=" border-0 bg-transparent search-ctm search-bar-1" placeholder="Search">
+										      		<input id="global-search-input" type="text" class="search-bar-1-focus border-0 bg-transparent search-ctm search-bar-1" placeholder="Search">
 										      	</span>
 										      	<span class="">
 										      		<button type="submit" id="my-search-icon-2" class="bg-white theme-blue p-1 p-lg-2 mb-1 px-2 fa fa-search custom-grey bg-blue " style="display: none;">
@@ -571,7 +571,7 @@
 									</div>
 
 									<div class="py-2 col-6">
-									<button class="bg-blue  px-3 py-2 custom-grey" onclick="topFunction(); change_BL();">
+									<button class="bg-blue  px-3 py-2 custom-grey" onclick="topFunction(); change_BL(); getFocus();">
 										Back to Search
 									</button>    
 									</div>									
@@ -1812,7 +1812,8 @@
 		}
 		function getFocus() 
 		{
-		  document.getElementById("global-search-input").focus();
+			console.log("Test");
+		  document.getElementsByClassName("search-bar-1-focus")[0].focus();
 		}
 
 		function topFunction() 
