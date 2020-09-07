@@ -14,10 +14,10 @@
 	<h3 id="backdrop" class="bl" style="display: none" onclick="change_BL_2(); change_pos_icon_back();">
 	</h3>
 	<!-- Navigation -->
-  	<nav class="navbar navbar-expand-md bg-white navbar-light" style="" >
+  	<nav class="navbar navbar-expand-md bg-white navbar-light" >
 
 		<div class="container-fluid px-0">
-			<a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="LOGO" height="40px"></a>
+			<a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="LOGO" id="navbar-logo"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -51,27 +51,27 @@
 				</ul>
 
 				<!-- -------------------- -->
-				<ul class="navbar-nav m-0 justify-content-end d-none d-md-block" style="width: 40%">
+				<ul  id="navbar-nav-search-dropdown" class="navbar-nav m-0 justify-content-end d-none d-md-block">
 					<li class="nav-item">
 						<!--SEARCH DROPDOWN-->
 
-						<div class="dropdown search-dropdown align-items-center justify-content-between bg-blue px-1" onfocusin="change_BL();" >
+						<div class="dropdown search-dropdown align-items-center justify-content-between bg-blue " onfocusin="change_BL();" >
 							<!--search toggle  bar starts here-->
 							<div class="dropdown-toggle search-toggle" onclick="change_BL(); change_pos_icon();" data-toggle="dropdown" aria-expanded="false">
 								<div class="input-group w-100">
 									<!--search bar 1-->
 									<div class="col-12 p-0">
-										<span class="input-group-prepend search-bar-1 pt-1">
-										      	<span class=" ">
-										      		<button type="submit" id="my-search-icon-1" style="display: block;" class="fa fa-search custom-grey bg-blue pb-1 p-lg-2 mb-1">
+										<span class="input-group-prepend search-bar-1 ">
+										      	<span class="align-self-center py-2 my-1 ml-1 px-1">
+										      		<button type="submit" id="my-search-icon-1" style="display: block;" class="fa fa-search theme-blue bg-blue"><!-- padding:0.8rem-->
 										      			
 										      		</button>
 										      	</span>
-										      	<span class="col-11 pl-1 pr-0 ml-1 mr-lg-1 mt-1">
+										      	<span class="px-1   py-2 my-1 align-self-center h-100" style="width:100%;">
 										      		<input id="global-search-input" type="text" class=" border-0 bg-transparent search-ctm search-bar-1" placeholder="Search">
 										      	</span>
-										      	<span class="">
-										      		<button type="submit" id="my-search-icon-2" class="bg-white theme-blue p-1 p-lg-2 mb-1 px-2 fa fa-search custom-grey bg-blue " style="display: none;">
+										      	<span class="align-self-center ">
+										      		<button type="submit" id="my-search-icon-2" class="rounded mr-1 bg-white theme-blue fa fa-search " style="display: none; padding: 0.9rem"> <!--4867ae f4f6fa  6b6e77padding:0.8rem-->
 										      			
 										      		</button>
 										      	</span>
@@ -83,9 +83,9 @@
 
 							<!--search bar ends here-->
 							<!--search menu starts-->
-							<div class="search-menu dropdown-menu f12 bg-white border-0 my-3 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
+							<div class="search-menu dropdown-menu f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
 								<!--Start-->
-								<div class="addHover dropdown-item search-item" onmouseenter="change_BL();">
+								<div class="addHover dropdown-item search-item mt-2" onmouseenter="change_BL();">
 									<div class="row align-items-center custom-grey  justify-content-between">					
 										<div>	
 											<span><img src="./assets/images/nora.png" class="overflow-hidden p-0"></span>
@@ -121,7 +121,7 @@
 										  			<circle cx="8" cy="8" r="8"/>
 												</svg>
 											</span>
-											<span>Mutual Connections : 10</span>
+											<span >Mutual Connections : 10</span>
 										</div>
 										<div>
 											<span class="text-danger  search-bar-message pr-5"><i>Request rejected</i></span>
@@ -330,8 +330,8 @@
 						</li>
 					</div>
 					<li class="dropdown d-none d-md-block ml-2">
-						<div class="dropdown-toggle nav profile-icon-img overflow-hidden" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="max-height: 35px">
-							<img src="./assets/images/kyle.png" class="user-img mb-1" height="30px">
+						<div id="navbar-profile-dropdown-toggle" class="dropdown-toggle nav profile-icon-img overflow-hidden" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<img id="navbar-profile-pic" src="./assets/images/kyle.png" class="user-img mb-1">
 						</div>
 						<ul class="dropdown-menu dropdown-menu-right">
 							<li><a class="dropdown-item" href="">Account</a></li>
@@ -353,7 +353,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-5 mb-2">
                     <div class="sidebar pt-0 mx-md-1">
                         <div class="text-center mb-3">
-                            <div style="width: min-content" class="d-inline-block">
+                            <div id="profile-sidebar"  class="d-inline-block">
                                 <div class="rounded-circle bg-blue p-2 sidebar_user">
                                     <img src="./assets/images/kyle.png" alt="">
                                 </div>
