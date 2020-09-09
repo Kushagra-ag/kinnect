@@ -1220,12 +1220,15 @@ body {
   display: none!important;
 }
 
+.nav-bar-last-dropdown-toggle-icon{
+  opacity: 0.4; 
+  background-color: #ccc; 
+  padding: 0.2rem ;
+}
+
+
 .dropdown-toggle.nav::after{
-  margin-top: auto;
-  margin-bottom: auto;
-
-
-  transform: scale(1.3);
+  display: none;
 }			
 
 .dropdown-toggle::after{
