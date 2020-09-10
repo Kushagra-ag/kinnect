@@ -1552,6 +1552,11 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 	opacity:0;
   background-color: transparent;
 }
+.test-plus1 button{
+  height:26px;
+  width:26px;
+  background-color: transparent;
+}
 .request-received-icons
 {
   height:24px;
