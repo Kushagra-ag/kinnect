@@ -1621,6 +1621,50 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 /**********************************/
 
+#insurance-popup{
+  color: white; 
+  right: 10px; 
+  white-space: nowrap;  
+  background-color: #4867ae; 
+  font-size: 10px;
+  opacity: 0;
+}
 
+.profile-suggestions{
+  border: 1px solid #ccc;
+  height: 16%;"
+}
 
+.account-strength-bar + .tooltip > .tooltip-inner {
+    background-color: #4867ae; 
+    color: #FFFFFF; 
+    padding: 15px;
+    font-size: 20px;
+  }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

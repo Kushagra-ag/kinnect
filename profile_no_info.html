@@ -518,7 +518,11 @@
 	                    	Where do you store your insurance?
 	                    </div>
 						<div class="col-2 mx-0 px-0 pl-1">
-							<button class="bg-white mx-0 px-0">
+							<div id="insurance-popup" class="position-absolute p-1 mt-n4" >
+								This will help us understand and serve you better
+							</div>
+
+							<button class="bg-white mx-0 px-0" onmouseover="insurance_popup_open();" onmouseleave="insurance_popup_close();">
 								<img src="./assets/images/help-icon2.svg">
 							</button>
 						</div>
@@ -548,7 +552,27 @@
 					<div class="f14 font-weight-bold custom-light-grey">
 						You may also know
 					</div>
-					<div class="overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-2" style="border: 1px solid #000;height: 16%;">
+					<div class="profile-suggestions overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-2" >
+						<div class="col-3 p-1 m-0 " >
+							<img src="./assets/images/mike.png" class="w-100">
+						</div>
+						<div class="col-7 mx-0 pl-1 px-0 text-truncate" >
+							<strong class="f14">Mike Kirby<br></strong>
+							Mutual Connections: 12
+						</div>
+						<div class="m-0 p-0 d-flex align-items-center">
+							<span class="test-plus1 m-0 p-0">
+								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
+								</button>
+							</span>
+						</div>
+						<div>
+							<span class=" m-0 p-0">
+	                            <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1" >
+							</span>
+						</div>
+					</div>
+					<div class="profile-suggestions overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" >
 						<div class="col-3 p-1 m-0 " >
 							<img src="./assets/images/mike.png" class="w-100">
 						</div>
@@ -568,27 +592,7 @@
 							</span>
 						</div>
 					</div>
-					<div class="overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" style="border: 1px solid #000;height: 16%;">
-						<div class="col-3 p-1 m-0 " >
-							<img src="./assets/images/mike.png" class="w-100">
-						</div>
-						<div class="col-7 mx-0 pl-1 px-0" >
-							<strong class="f14">Mike Kirby<br></strong>
-							Mutual Connections: 12
-						</div>
-						<div class="m-0 p-0 d-flex align-items-center">
-							<span class="test-plus1 m-0 p-0">
-								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
-								</button>
-							</span>
-						</div>
-						<div>
-							<span class=" m-0 p-0">
-	                            <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1" >
-							</span>
-						</div>
-					</div>
-					<div class="overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" style="border: 1px solid #000;height: 16%;">
+					<div class="profile-suggestions overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" >
 						<div class="col-3 p-1 m-0 " >
 							<img src="./assets/images/mike.png" class="w-100">
 						</div>
@@ -608,7 +612,7 @@
 							</span>
 						</div>
 					</div>				
-					<div class="overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" style="border: 1px solid #000;height: 16%;">
+					<div class="profile-suggestions overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" >
 						<div class="col-3 p-1 m-0 " >
 							<img src="./assets/images/mike.png" class="w-100">
 						</div>
@@ -628,7 +632,7 @@
 							</span>
 						</div>
 					</div>
-					<div class="overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" style="border: 1px solid #000;height: 16%;">
+					<div class="profile-suggestions overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" >
 						<div class="col-3 p-1 m-0 " >
 							<img src="./assets/images/mike.png" class="w-100">
 						</div>
@@ -1467,6 +1471,16 @@
 		$('body').on("click", ".dropdown-menu", function (e) {
 				$(this).parent().is(".show") && e.stopPropagation();
 			});
+
+		function insurance_popup_open()
+		{
+			document.getElementById("insurance-popup").style.opacity=1;
+		}
+		function insurance_popup_close()
+		{
+			document.getElementById("insurance-popup").style.opacity=0;
+		}
+
 		function change_pos_icon()
 		{
 			document.getElementById("my-search-icon-1").style.display="none";
