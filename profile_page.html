@@ -347,7 +347,7 @@
 	<!-- nav  -->
 
 	<!----placeholder--->
-	<div class="row bg-blue justify-content-center mx-5 " style="padding-top: 80px;">
+	<div class="row bg-blue justify-content-center mx-5 pl-3" style="padding-top: 80px;">
 		<div class="col-12 " style="z-index: 10;margin-top: -55px;">
 			<div class="placeholder col-12">
 				
@@ -357,55 +357,82 @@
 	<!----placeholder--->
 
 	<!---BODY--->
-	<div class="row d-flex justify-content-center mx-5">
+	<div class="row d-flex justify-content-center mx-5 pl-3">
 		<div class="col-lg-9 col-sm-12 row mb-4">
 
 			<!------My profle------->
-			<div class="col-sm-6 col-xs-12 bg-blue pl-lg-0 mb-4 " style="height: 250px; ">
-				<div class="col-11 pt-3 mr-5 pr-0 d-flex justify-content-end bg-white position-absolute rounded">
-					<img src="./assets/images/edit.svg">
-				</div>
-				<span class="align-items-center d-flex bg-white h-100 rounded">
+			<div class="col-lg-6 col-xs-12 bg-blue pl-lg-0 mb-4 " style="height: 250px; max-width: 60%;">
+				
+				<div class="align-items-center d-flex bg-white h-100 rounded col-12">
 					<!------My profle items------->
-					<img src="./assets/images/user-pic.jpg" class="pl-3" style="border-radius: 50%;" height="70%">
-					<div class="pl-3 pr-1 f13 d-xs-none d-sm-block  my-info">
-						<strong class="custom-grey">
+					<div class="col-lg-6 col-xs-12">
+						<img src="./assets/images/user-pic.jpg" class=" w-100" style="border-radius: 50%;">
+					</div>
+					<div class="col-lg-6 col-xs-12 custom-grey  p-0 m-0 pl-lg-1 f13 h-100 my-info">
+						<div class="d-flex justify-content-end pt-3 pr-1  ">
+							<img src="./assets/images/edit.svg" >
+						</div>
+						<div class="pt-3">
 							<h3><strong class="f18" style="color: black;">Kyle Kirby</strong></h3>
-							<p>
-								<img src="./assets/images/Icon material-cake.svg" height="15px" class="pr-2 pb-1">March 8 (Age 32)<br>
-								<i class="fa fa-map-marker theme-blue pr-2" aria-hidden="true" style="padding-top: 0.15rem;"></i>Miami Florida
-							</p>
-						</strong>
-						<i class="custom-light-grey font-weight-bold">Travelling the world in style!</i><br><br>
-						<u class="theme-blue font-weight-bold">Total Connections: 33</u>
+						</div>
+						<div class=" row font-weight-bold pt-2 pl-3">
+							<div class="d-flex align-self-center">
+								<img src="./assets/images/Icon material-cake.svg" height="18px">
+							</div>
+							<div class="pl-2 pt-2">
+								March 8 (Age 32)
+							</div>
+						</div>
+						<div class="row font-weight-bold pt-1 pl-3 " >
+							<div class="pt-1">
+								<i class="fa fa-lg fa-map-marker theme-blue pr-1" height="20px" aria-hidden="true" style=""></i>
+							</div>
+							<div class="pl-2 mt-1">
+								Miami, Florida
+							</div>
+						</div>
+						<div class="pt-4">
+							<i class="custom-light-grey f12 font-weight-bold ">Travelling the world in style!</i><br><br>
+							<u class="theme-blue f14 font-weight-bold">Total Connections: 33</u>
+						</div>
 					</div>
 					<!-------My profile items------>
-				</span>
+				</div>
 			</div>
 			<!------My profle------->
 
 			<!------My contact card------->
 			<div  class="col-sm-6  col-xs-12  bg-blue pr-lg-0 mb-4" style="height: 250px;">
-				<div class="col-11 pt-3 pr-0 mr-5 d-flex justify-content-end bg-white position-absolute rounded">
-					<img src="./assets/images/edit.svg">
-				</div>
-				<span class="align-items-center d-flex bg-white h-100 rounded ">
+				<span class="align-items-center d-flex bg-white h-100 rounded col-12 px-0">
 					<!-----My contact details----->
-					<div class="pr-1 f14 align-items-center d-flex" style="padding-left: 2rem;">
-						<strong class="custom-light-grey ">
-							<h3><strong class="f17" style="color: black;">Mailing Address</strong></h3>
+					<div class="col-12 p-0 m-0 pl-lg-1 f13 h-100 custom-light-grey ml-3" style="">
+							<div class="d-flex justify-content-end pt-3 mr-4 pr-2">
+								<img src="./assets/images/edit.svg" >
+							</div>
 
-							<p class="pl-4">
-								Thomas James street, <br>
-								Miami Florida, 33101 <br>
-								USA
-							</p>
-							<p>
-								<strong class="f16" style="color: black;">Phone:</strong> (555)555-1234
-							</p>
-								<strong class="f16" style="color: black;">Email:</strong> kylekirby@kinnectus.com
-							
-						</strong>
+							<div class="pt-3 col-12 ">
+								<div >
+									<h3><strong class="f17" style="color: black;">Mailing Address</strong></h3>
+								</div>
+								<div class="pt-1 pl-4">
+									<div class="pb-1">
+										Thomas James street, 
+									</div>
+									<div class="pb-1">
+										Miami Florida, 33101 
+									</div>
+									<div>
+										USA
+									</div>
+								</div>
+								<div class="pt-2">
+										<strong class="f16" style="color: black;">Phone:</strong> (555)555-1234
+								</div>
+								<div class="pt-2">
+									<strong class="f16" style="color: black;">Email:</strong> kylekirby@kinnectus.com
+								</div>
+							</div>							
+
 					</div>
 					<!--------------------------->
 				</span>
@@ -429,23 +456,20 @@
 				<!-------Account Strength------>
 
 				<!---------ABOUT ME--------------->
-				<div class="w-100 px-0 custom-grey rounded bg-white my-4 pt-2"  style="">
-					<div class=" f15 py-2 pl-3 pt-2">
-						<strong style="color: black;">ABOUT ME</strong>
-					</div>
-				
+				<div class="w-100 px-0 custom-grey rounded bg-white my-4 pt-3"  style="">
+					
 					<!---------Work----------->
 					<div class="mt-3 mb-3 mx-5 f16" style=" "> 
-						<div class="d-flex px-4 mx-2 justify-content-between">	
-							<h3 class="font-weight-light" style="color: black;">Work</h3>
-							<button class="p-0 bg-transparent" data-toggle="modal" data-target="#addWork">
-								<i class="mt-2 fa fa-times font-weight-light mr-1 theme-blue" style="transform: rotate(45deg); height: 12px;"></i>
+						<div class="d-flex px-0 mx-0 justify-content-between">	
+							<div class="font-weight-light f18" style="color: black;">Work</div>
+							<button class=" mr-3 bg-transparent d-flex align-self-center" data-toggle="modal" data-target="#addWork" style="padding-right: 1.1rem;">
+								<img src="./assets/images/Icon feather-plus.svg" height="20px">
 							</button>
 						</div>
 						<div class="row my-2 d-flex justify-content-center"  style="">
 							<div class="row col-5 bg-blue rounded mr-5">
 								<div>
-									<img src=" ./assets/images/Icon awesome-graduation-cap.svg" height="100%" class="pt-4 pb-4 pr-4 pl-2">									
+									<img src=" ./assets/images/Icon material-work.svg" height="100%" class="pt-4 pb-4 pr-4 pl-2">									
 								</div>
 								<div class="pt-2 f13">
 									<strong style="color: black">The Kinnect Company<br></strong>
@@ -455,7 +479,7 @@
 							</div>
 							<div class="row  col-5 bg-blue rounded ">
 								<div>
-									<img src=" ./assets/images/Icon awesome-graduation-cap.svg" height="100%" class="pt-4 pb-4 pr-4 pl-2">									
+									<img src=" ./assets/images/Icon material-work.svg" height="100%" class="pt-4 pb-4 pr-4 pl-2">									
 								</div>
 								<div class="pt-2 f13">
 									<strong style="color: black">The Kinnect Company<br></strong>
@@ -468,7 +492,7 @@
 						<div  class="row mt-3 d-flex justify-content-center"  style="display: block;">
 							<div id="hidden-work-1"  class="row  col-5 bg-blue rounded mr-5">
 								<div id="hidden-work-11">
-									<img src=" ./assets/images/Icon awesome-graduation-cap.svg" height="100%" class="pt-4 pb-4 pr-4 pl-2">									
+									<img src=" ./assets/images/Icon material-work.svg" height="100%" class="pt-4 pb-4 pr-4 pl-2">									
 								</div>
 								<div class="pt-2 f13" id="hidden-work-12">
 									<strong style="color: black">The Kinnect Company<br></strong>
@@ -478,7 +502,7 @@
 							</div>
 							<div id="hidden-work-2" class="row  col-5 bg-blue rounded ">
 								<div id="hidden-work-21">
-									<img src=" ./assets/images/Icon awesome-graduation-cap.svg" height="100%" class="pt-4 pb-4 pr-4 pl-2">									
+									<img src=" ./assets/images/Icon material-work.svg" height="100%" class="pt-4 pb-4 pr-4 pl-2">									
 								</div>
 								<div class="pt-2 f13" id="hidden-work-22">
 									<strong style="color: black">The Kinnect Company<br></strong>
@@ -509,10 +533,10 @@
 				
 					<!---------Education------>
 					<div class="mt-3 mb-3 mx-5 f16" style=" "> 
-						<div class="d-flex px-4 mx-2 justify-content-between">	
-							<h3 class="font-weight-light" style="color: black;">Education</h3>
-							<button class="p-0 bg-transparent" data-toggle="modal" data-target="#addHome">
-								<i class="mt-2 fa fa-times font-weight-light mr-1 theme-blue" style="transform: rotate(45deg); height: 12px;"></i>
+						<div class="d-flex px-0 mx-0 justify-content-between">	
+							<div class="font-weight-light f18" style="color: black;">Education</div>
+							<button class=" mr-3 bg-transparent d-flex align-self-center" data-toggle="modal" data-target="#addEducation" style="padding-right: 1.1rem;">
+								<img src="./assets/images/Icon feather-plus.svg" height="20px">
 							</button>
 						</div>
 						<div class="row my-2 d-flex justify-content-center"  style="">
@@ -582,10 +606,10 @@
 				
 					<!----------Home------------>
 					<div class="mt-3 mb-3 pb-5 mx-5 f16" style=" "> 
-						<div class="d-flex px-4 mx-2 justify-content-between">	
-							<h3 class="font-weight-light" style="color: black;">Home</h3>
-							<button class="p-0 bg-transparent" data-toggle="modal" data-target="#addHome">
-								<i class="mt-2 fa fa-times font-weight-light mr-1 theme-blue" style="transform: rotate(45deg); height: 12px;"></i>
+						<div class="d-flex px-0 mx-0 justify-content-between">	
+							<div class="font-weight-light f18" style="color: black;">Home</div>
+							<button class=" mr-3 bg-transparent d-flex align-self-center" data-toggle="modal" data-target="#addHome" style="padding-right: 1.1rem;">
+								<img src="./assets/images/Icon feather-plus.svg" height="20px">
 							</button>
 						</div>
 						<div class="row my-2 d-flex justify-content-center"  style="">
@@ -667,7 +691,7 @@
                     <div class="custom-grey f16 ">
                     	Where do you store your insurance?
                     </div>
-                    <div class="container p-0 pt-3 font-weight-bold custom-grey f12" style="">
+                    <div class="container p-0 pt-3  custom-grey f12" style="">
                         <div class="insurance-checkboxes">
                           <label class="insurance-checkboxes"><input type="checkbox" value="" checked=""><span class="pl-2 py-1">Option 1</span></label>
                         </div>
@@ -692,96 +716,106 @@
 					<div class="f14 font-weight-bold custom-light-grey">
 						You may also know
 					</div>
-					<div class="py-1 addHover1 mt-3 w-100 bg-white rounded d-flex align-items-center" style="border: 1px solid #000;height: 16%;">
-						<div>
-							<img src="./assets/images/mike.png" class="pl-1" height="55rem">
+					<div class="overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-2" style="border: 1px solid #000;height: 16%;">
+						<div class="col-3 p-1 m-0 " >
+							<img src="./assets/images/mike.png" class="w-100">
 						</div>
-						<div class="pl-3" >
+						<div class="col-7 mx-0 pl-1 px-0" >
 							<strong class="f14">Mike Kirby<br></strong>
 							Mutual Connections: 12
 						</div>
-						<div class="d-flex justify-content-center align-items-center">
-							<div class="test-plus1 ml-2">
-								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);align-self:center; height:23px;">
+						<div class="m-0 p-0 d-flex align-items-center">
+							<span class="test-plus1 m-0 p-0">
+								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
 								</button>
-							</div>
-							<div class=" mb-5 ">
-		                            <img src="./assets/images/close.svg" class="mt-1 ml-2" >
-							</div>
+							</span>
+						</div>
+						<div>
+							<span class=" m-0 p-0">
+	                            <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1" >
+							</span>
 						</div>
 					</div>
-					<div class="py-1 addHover1 mt-3 w-100 bg-white rounded d-flex align-items-center" style="border: 1px solid #000;height: 16%;">
-						<div>
-							<img src="./assets/images/mike.png" class="pl-1" height="55rem">
+					<div class="overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" style="border: 1px solid #000;height: 16%;">
+						<div class="col-3 p-1 m-0 " >
+							<img src="./assets/images/mike.png" class="w-100">
 						</div>
-						<div class="pl-3" >
+						<div class="col-7 mx-0 pl-1 px-0" >
 							<strong class="f14">Mike Kirby<br></strong>
 							Mutual Connections: 12
 						</div>
-						<div class="d-flex justify-content-center align-items-center">
-							<div class="test-plus1 ml-2">
-								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);align-self:center; height:23px;">
+						<div class="m-0 p-0 d-flex align-items-center">
+							<span class="test-plus1 m-0 p-0">
+								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
 								</button>
-							</div>
-							<div class=" mb-5 ">
-		                            <img src="./assets/images/close.svg" class="mt-1 ml-2" >
-							</div>
+							</span>
+						</div>
+						<div>
+							<span class=" m-0 p-0">
+	                            <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1" >
+							</span>
 						</div>
 					</div>
-					<div class="py-1 addHover1 mt-3 w-100 bg-white rounded d-flex align-items-center" style="border: 1px solid #000;height: 16%;">
-						<div>
-							<img src="./assets/images/mike.png" class="pl-1" height="55rem">
+					<div class="overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" style="border: 1px solid #000;height: 16%;">
+						<div class="col-3 p-1 m-0 " >
+							<img src="./assets/images/mike.png" class="w-100">
 						</div>
-						<div class="pl-3" >
+						<div class="col-7 mx-0 pl-1 px-0" >
 							<strong class="f14">Mike Kirby<br></strong>
 							Mutual Connections: 12
 						</div>
-						<div class="d-flex justify-content-center align-items-center">
-							<div class="test-plus1 ml-2">
-								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);align-self:center; height:23px;">
+						<div class="m-0 p-0 d-flex align-items-center">
+							<span class="test-plus1 m-0 p-0">
+								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
 								</button>
-							</div>
-							<div class=" mb-5 ">
-		                            <img src="./assets/images/close.svg" class="mt-1 ml-2" >
-							</div>
+							</span>
+						</div>
+						<div>
+							<span class=" m-0 p-0">
+	                            <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1" >
+							</span>
 						</div>
 					</div>				
-					<div class="py-1 addHover1 mt-3 w-100 bg-white rounded d-flex align-items-center" style="border: 1px solid #000;height: 16%;">
-						<div>
-							<img src="./assets/images/mike.png" class="pl-1" height="55rem">
+					<div class="overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" style="border: 1px solid #000;height: 16%;">
+						<div class="col-3 p-1 m-0 " >
+							<img src="./assets/images/mike.png" class="w-100">
 						</div>
-						<div class="pl-3" >
+						<div class="col-7 mx-0 pl-1 px-0" >
 							<strong class="f14">Mike Kirby<br></strong>
 							Mutual Connections: 12
 						</div>
-						<div class="d-flex justify-content-center align-items-center">
-							<div class="test-plus1 ml-2">
-								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);align-self:center; height:23px;">
+						<div class="m-0 p-0 d-flex align-items-center">
+							<span class="test-plus1 m-0 p-0">
+								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
 								</button>
-							</div>
-							<div class=" mb-5 ">
-		                            <img src="./assets/images/close.svg" class="mt-1 ml-2" >
-							</div>
+							</span>
+						</div>
+						<div>
+							<span class=" m-0 p-0">
+	                            <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1" >
+							</span>
 						</div>
 					</div>
-					<div class="py-1 addHover1 mt-3 w-100 bg-white rounded d-flex align-items-center" style="border: 1px solid #000;height: 16%;">
-						<div>
-							<img src="./assets/images/mike.png" class="pl-1" height="55rem">
+					<div class="overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3" style="border: 1px solid #000;height: 16%;">
+						<div class="col-3 p-1 m-0 " >
+							<img src="./assets/images/mike.png" class="w-100">
 						</div>
-						<div class="pl-3" >
+						<div class="col-7 mx-0 pl-1 px-0" >
 							<strong class="f14">Mike Kirby<br></strong>
 							Mutual Connections: 12
 						</div>
-						<div class="d-flex justify-content-center align-items-center">
-							<div class="test-plus1 ml-2">
-								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);align-self:center; height:23px;">
+						<div class="m-0 p-0 d-flex align-items-center">
+							<span class="test-plus1 m-0 p-0">
+								<button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
 								</button>
-							</div>
-							<div class=" mb-5 ">
-		                            <img src="./assets/images/close.svg" class="mt-1 ml-2" >
-							</div>
+							</span>
 						</div>
-					</div>	
+						<div>
+							<span class=" m-0 p-0">
+	                            <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1" >
+							</span>
+						</div>
+					</div>
 				</div>
 			</span>			
 			<!------YOU MAY ALSO KNOW--------->
@@ -791,30 +825,29 @@
 	<!---BODY--->
 		<!-- Modals -->
 		<!-- Add Work -->
-		<div class="modal" id="addWork">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content border-0 row pt-5 pb-4 m-3 px-5 ">
-					<div class="col-12 d-flex justify-content-end">
-						<button style="border-radius: 50%; opacity: 0.75;" class=" bg-custom-light-grey" >
-							<i class="white fa fa-times"></i>
+		<div class="modal" id="addWork" >
+			<div class="modal-dialog modal-dialog-centered bg-white" style="">
+				<div class="modal-content border-0 row pt-2 pb-3 m-2 mx-5 px-3 ">
+					<div class="row align-items-start justify-content-end position-absolute h-100 w-100 ">
+						<button type="button" class="close" data-dismiss="modal">
+							<img src="./assets/images/popupclose.svg" height="24px" class="" />
 						</button>
 					</div>
-
 			        <div class="modal-header border-0">
 			          <h4 class="modal-title f20 font-weight-bold">Add work experience</h4>
 			        </div>
 					<div class="col-12">
 						<div class="row text-left custom-grey font-weight-bold f13 pt-4">
 							<div class="col-12">
-								Company name <br />
-								<input type="email" class="mt-1 p-2 px-3 w-100 popupInput" placeholder="" required />
+								Company name <br>
+								<input type="email" class="mt-1 p-2 px-3 w-100 popupInput" placeholder="" required="">
 							</div>
 							<div class="col-12 pt-3 ">
-								Position/ Title <br />
-								<input type="email" class="mt-1 p-2 px-3 w-100 popupInput" placeholder="" required />
+								Position/ Title <br>
+								<input type="email" class="mt-1 p-2 px-3 w-100 popupInput" placeholder="" required="">
 							</div>
 							<div class="col-12 pt-4 rounded">
-								<button class="px-3 custom-light-grey py-2 bg-blue rounded">
+								<button class="px-3 font-weight-bold custom-light-grey py-2 bg-blue rounded">
 									ADD LOGO
 								</button>
 							</div>
@@ -922,11 +955,11 @@
 		<!-- Add Work -->
 		<!-- Add Education -->
 		<div class="modal" id="addEducation">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content border-0 row pt-3 pb-4 m-3 px-5 ">
-					<div class="col-12 d-flex justify-content-end pt-4 px-0 mx-0">
-						<button style="border-radius: 50%; opacity: 0.75;" class=" bg-custom-light-grey position-absolute" >
-							<i class="fa fa-times white"></i>
+			<div class="modal-dialog modal-dialog-centered bg-white">
+				<div class="modal-content  border-0 row pt-2 pb-3 m-2 mx-5 px-3 ">
+					<div class="row align-items-start justify-content-end position-absolute h-100 w-100 ">
+						<button type="button" class="close" data-dismiss="modal">
+							<img src="./assets/images/popupclose.svg" height="24px" class="" />
 						</button>
 					</div>
 
@@ -1056,11 +1089,11 @@
 		<!-- Add Education -->
 		<!-- Add Home -->
 		<div class="modal" id="addHome">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content border-0 row pt-3 pb-4 m-3 px-5 ">
-					<div class="col-12 d-flex justify-content-end pt-1">
-						<button style="border-radius: 50%; opacity: 0.75;" class=" bg-custom-light-grey position-absolute" >
-							<i class="fa fa-times white"></i>
+			<div class="modal-dialog modal-dialog-centered bg-white">
+				<div class="modal-content  border-0 row pt-2 pb-3 m-2 mx-5 px-3">
+					<div class="row align-items-start justify-content-end position-absolute h-100 w-100 ">
+						<button type="button" class="close" data-dismiss="modal">
+							<img src="./assets/images/popupclose.svg" height="24px" class="" />
 						</button>
 					</div>
 
