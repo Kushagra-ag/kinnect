@@ -1404,16 +1404,6 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .my-info {
-    opacity: 0;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .my-info {
-    opacity: 1;
-  }
-}
 /*
 .search-menu{
 	margin-top:0.6rem!important;
