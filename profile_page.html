@@ -542,8 +542,11 @@
 						<!------hidden row------>	
 						<!------Show button------>	
 						<div class="d-flex justify-content-end  mr-4">
-							<button type="button"  class="show-buttons bg-white theme-blue"  data-toggle="collapse" data-target="#hidden-work-row">
+							<button id="show-more-work" type="button"  class="show-buttons bg-white theme-blue"  data-toggle="collapse" data-target="#hidden-work-row" onclick="show_more_hide_w();">
 								<u >Show more</u> <span class="fa fa-angle-down theme-blue font-weight-bold "></span>
+							</button>
+							<button id="show-less-work" type="button"  class="show-buttons bg-white theme-blue"  data-toggle="collapse" data-target="#hidden-work-row" onclick="show_less_hide_w();" style="display:none;">
+								<u >Show less</u> <span class="fa fa-angle-down theme-blue font-weight-bold " style="transform: rotate(180deg);"></span>
 							</button>
 						</div>
 						<!------Show button------>					</div>					
@@ -633,9 +636,12 @@
 						<!------hidden row------>	
 						<!------Show button------>	
 						<div class="d-flex justify-content-end mr-4">
-							<button type="button"  class="show-buttons bg-white theme-blue"  data-toggle="collapse" data-target="#hidden-education-row">
+							<button id="show-more-ed" type="button"  class="show-buttons bg-white theme-blue"  data-toggle="collapse" data-target="#hidden-education-row" onclick="show_more_hide_e();">
 								<u >Show more</u> <span class="fa fa-angle-down theme-blue font-weight-bold "></span>
 							</button>
+							<button id="show-less-ed" type="button"  class="show-buttons bg-white theme-blue"  data-toggle="collapse" data-target="#hidden-education-row" onclick="show_less_hide_e();" style="display:none;">
+								<u >Show less</u> <span class="fa fa-angle-down theme-blue font-weight-bold " style="transform: rotate(180deg);"></span>
+							</button>							
 						</div>
 						<!------Show button------>
 					</div>
@@ -726,9 +732,12 @@
 						<!------hidden row------>	
 						<!------Show button------>	
 						<div class="d-flex justify-content-end pb-5 mr-4">
-							<button type="button"  class="show-buttons bg-white theme-blue"  data-toggle="collapse" data-target="#hidden-home-row">
+							<button id="show-more-home" type="button"  class="show-buttons bg-white theme-blue"  data-toggle="collapse" data-target="#hidden-home-row" onclick="show_more_hide_h();">
 								<u >Show more</u> <span class="fa fa-angle-down theme-blue font-weight-bold "></span>
 							</button>
+							<button id="show-less-home" type="button"  class="show-buttons bg-white theme-blue"  data-toggle="collapse" data-target="#hidden-home-row" style="display: none;" onclick="show_less_hide_h();">
+								<u >Show less</u> <span class="fa fa-angle-down theme-blue font-weight-bold" style="transform: rotate(180deg);"></span>
+							</button>							
 						</div>
 						<!------Show button------>
 					</div>					
@@ -1708,6 +1717,36 @@
 			  $('[data-toggle="tooltip"]').tooltip();   
 			});
 
+		function show_less_hide_w()
+		{
+			document.getElementById("show-more-work").style.display="block";
+			document.getElementById("show-less-work").style.display="none";
+		}
+		function show_more_hide_w()
+		{
+			document.getElementById("show-more-work").style.display="none";
+			document.getElementById("show-less-work").style.display="block";
+		}		
+		function show_less_hide_e()
+		{
+			document.getElementById("show-more-ed").style.display="block";
+			document.getElementById("show-less-ed").style.display="none";
+		}
+		function show_more_hide_e()
+		{
+			document.getElementById("show-more-ed").style.display="none";
+			document.getElementById("show-less-ed").style.display="block";
+		}
+		function show_less_hide_h()
+		{
+			document.getElementById("show-more-home").style.display="block";
+			document.getElementById("show-less-home").style.display="none";
+		}
+		function show_more_hide_h()
+		{
+			document.getElementById("show-more-home").style.display="none";
+			document.getElementById("show-less-home").style.display="block";
+		}
 		function insurance_popup_open()
 		{
 			document.getElementById("insurance-popup").style.opacity=1;
