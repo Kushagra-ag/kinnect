@@ -1638,3 +1638,25 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 .show-buttons{
     font-size: 11px;
 }
+
+.stage-texts{
+
+  position:absolute;
+  margin-top: 4.2rem;
+  background-color: #4867ae; 
+  color: white;
+  font-weight: light;
+  white-space: nowrap;
+  font-size: 10px;
+  padding: 2px;
+  display: none;
+}
+
+.stages{
+  display: none;
+  position:absolute;
+  border: 1px solid #000; 
+  height: 10px; 
+  width: 13.3%; 
+  margin-top: 2.7rem;"
+}
