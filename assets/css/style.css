@@ -1613,10 +1613,10 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 #insurance-popup{
   color: white; 
-  right: 10px; 
+  right: 0px; 
   white-space: nowrap;  
   background-color: #4867ae; 
-  font-size: 10px;
+  font-size: 11px;
   opacity: 0;
 }
 
@@ -1625,36 +1625,16 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   height: 16%;"
 }
 
-.account-strength-bar + .tooltip > .tooltip-inner {
-    background-color: #4867ae; 
-    color: #FFFFFF; 
-    padding: 15px;
-    font-size: 20px;
-  }
+/*
+.about-me-block{
+  max-height: 79px;
+}*/
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+.show-buttons button:active{
+  border: 0px;
+  font-weight: bold;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+.show-buttons{
+    font-size: 11px;
 }
