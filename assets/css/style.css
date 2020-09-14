@@ -1649,14 +1649,35 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   white-space: nowrap;
   font-size: 10px;
   padding: 2px;
-  display: none;
+
 }
 
 .stages{
-  display: none;
-  position:absolute;
-  border: 1px solid #000; 
   height: 10px; 
-  width: 13.3%; 
-  margin-top: 2.7rem;"
+  max-width: 13%; 
+  margin-top: 2.7rem;
+  margin-bottom: 2.7rem;
+  margin-left: 0.3rem;
 }
+
+.profile-pcm-s-completion-meter {
+    background: -webkit-linear-gradient(90deg,#544bc2,#17afb8,#2f7b15);
+    background: -moz-linear-gradient(90deg,#544bc2,#17afb8,#2f7b15);
+    background: -o-linear-gradient(90deg,#544bc2,#17afb8,#2f7b15);
+    background: linear-gradient(90deg,#544bc2,#17afb8,#2f7b15);
+    height: 12px;
+    width: 100%;
+    position: relative;
+    border-radius: 2px;
+}
+
+.profile-pcm-s-completion-meter {
+    background: -webkit-linear-gradient(90deg,#544bc2,#17afb8,#2f7b15);
+    background: -moz-linear-gradient(90deg,#544bc2,#17afb8,#2f7b15);
+    background: -o-linear-gradient(90deg,#544bc2,#17afb8,#2f7b15);
+    background: linear-gradient(90deg,#544bc2,#17afb8,#2f7b15);
+    height: 12px;
+    width: 100%;
+    position: relative;
+    border-radius: 2px;
+  }
