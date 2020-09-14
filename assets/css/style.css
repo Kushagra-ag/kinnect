@@ -1342,6 +1342,10 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   scrollbar-color: #81848e #4867ae00;
   scrollbar-width: thin;
 }
+.reqContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 
 .reqContainer1 {
   max-height: 290px;
