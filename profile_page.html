@@ -998,20 +998,21 @@
     <!---BODY--->
     <!-- Modals -->
     <!-- My info -->
-    <div class="modal" id="myinformation">
-        <div class="modal-dialog modal-dialog-centered bg-white" style="">
-            <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-4" style="z-index: 1;">
-                <button type="button" class="close" data-dismiss="modal">
-                    <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                </button>
-            </div>
-            <div class="modal-content border-0 row pt-3 pb-3 m-2 mx-4 px-3 ">
-                <div class="modal-header border-0">
+    <div class="modal  " id="myinformation" style="padding-right: 0px!important;">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 750px!important;">
+
+            <div class="modal-content border-0 row mx-4 px-4 pt-4 pb-4 " style="border-radius: 0px!important;">
+                <div class="row mt-lg-n1 ml-lg-n5 align-items-start justify-content-end position-absolute w-100 " style="z-index: 1;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>            
+                <div class="modal-header  border-0">
                     <h4 class="modal-title f20 ">My information</h4>
                 </div>
                 <div class="col-12">
                     <div class="row text-left custom-grey font-weight-bold f13 pt-3">
-                        <div class="col-6 p-0">
+                        <div class="col-md-4 col-xs-12 p-0">
                             <div class=" p-0 justify-content-center d-flex">
                                 <img src="./assets/images/user-pic.jpg" style="border-radius: 50%; height: 100px; ">
                             </div>
@@ -1021,62 +1022,70 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-6 p-0">
-                            <div class="col-12">
-                                First Name <br>
-                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Kyle" required="">
+                        <div class="col-md-8 col-xs-12 p-0">
+                            <div class="col-12 d-flex">
+                                <div class="col-6">
+                                    First Name <br>
+                                    <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Kyle" required="">
+                                </div>
+                                <div class="col-6 p-0 pl-3">
+                                    Last Name <br>
+                                    <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Kirby" required="">
+                                </div>
                             </div>
-                            <div class="col-12 pt-4 ">
-                                Last Name <br>
-                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Kirby" required="">
+                            <div class="col-12 d-flex pt-3">
+                                <div class="col-6 ">
+                                    Birthday <br>
+                                    <input type="date" class="mt-1  p-2  px-3 w-100 popupInput1 custom-light-grey" value="1982-03-08" required="">
+                                </div>                        
+                                <div class="col-6 dropdown p-0 pl-3">
+                                    <br>
+                                    <div class=" mt-1 dropdown-toggle rounded py-1 d-flex " data-toggle="dropdown" style="border: 1px solid #81848e">
+                                        <div class=" f15 my-1 col-9 font-weight-light" style="background-color: #fff; border-radius: 5px">
+                                            Gender
+                                        </div>
+                                        <div class="d-flex align-items-center col-2 ">
+                                            <i class=" fa fa-angle-down px-1 rounded" style="background-color: #ccc; color: white; padding-top: 0.1rem;padding-bottom: 0.1rem;"></i>
+                                        </div>              
+                                    </div>
+                                    <div class="position-absolute font-weight-light" style="font-size: 10px">
+                                        Gender is not displayed on your profile
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-item custom-grey">
+                                            Male
+                                        </div>
+                                        <div class="dropdown-item custom-grey">
+                                            Female
+                                        </div>
+                                        <div class="dropdown-item custom-grey">
+                                            Don't wish to disclose
+                                        </div>                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-12 pt-3 d-flex">
-                            <div class="col-6 p-0 ">
-                                Birthday <br>
-                                <input type="date" class="mt-1  p-2 px-3 col-11 popupInput1 custom-light-grey" value="1982-03-08" required="">
+                        <div class="col-12 p-0 d-flex pt-4">
+                            <div class="col-4">
+                                Country <br>
+                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="USA" required="">
                             </div>                        
-                            <div class="col-6 dropdown p-0 ml-3 pt-4">
-                                <div class="dropdown-toggle rounded col-11 m-0 p-0 py-1 d-flex " data-toggle="dropdown" style="border: 1px solid #81848e">
-                                    <div class=" f15 my-1 col-9 font-weight-light" style="background-color: #fff; border-radius: 5px">
-                                        Gender
-                                    </div>
-                                    <div class="d-flex align-items-center col-2 ">
-                                        <i class=" fa fa-angle-down px-1 rounded" style="background-color: #ccc; color: white; padding-top: 0.1rem;padding-bottom: 0.1rem;"></i>
-                                    </div>
-                                </div>
-                                <div class="dropdown-menu">
-                                    <div class="dropdown-item custom-grey">
-                                        Male
-                                    </div>
-                                    <div class="dropdown-item custom-grey">
-                                        Female
-                                    </div>
-                                    <div class="dropdown-item custom-grey">
-                                        Don't wish to disclose
-                                    </div>                                        
-                                </div>
+                            <div class="col-4">
+                                State <br>
+                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Florida" required="">
                             </div>
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            Country <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="USA" required="">
-                        </div>                        
-                        <div class="col-12 pt-3 ">
-                            State <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Florida" required="">
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            City <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Miami" required="">
+                            <div class="col-4">
+                                City <br>
+                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Miami" required="">
+                            </div>
                         </div>
                         <div class="col-12 pt-3 ">
                             Tagline <br>
                             <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Travelling the world in style!" required="">
                         </div>
 
-                        <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
+                        <div class=" col-12 pt-3 pb-4 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
                             <button class="p-1 px-3 f14 bg-theme-blue" style="color: white;">Save</button>
                         </div>
                     </div>
@@ -1102,12 +1111,12 @@
                 </div>    
 
                 <div class="col-12 pt-2">
-                    <div class="row text-left custom-grey font-weight-bold f13 ">
+                    <div class="row text-left custom-grey f11 ">
                         <div class="col-12">
                             Street <br>
                             <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
                         </div>
-                        <div class="col-12 d-flex pt-3 justify-content-between m-0 p-0">
+                        <div class="col-12 d-flex pt-2 justify-content-between m-0 p-0">
                             <div class="col-6 ">
                                 Country <br>
                                 <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
@@ -1117,7 +1126,7 @@
                                 <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
                             </div>
                         </div>
-                        <div class="col-12 d-flex pt-3 justify-content-between m-0 p-0">
+                        <div class="col-12 d-flex pt-2 justify-content-between m-0 p-0">
                             <div class="col-6 ">
                                 City <br>
                                 <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
@@ -1128,24 +1137,25 @@
                             </div>
                         </div>
 
-                        <div class="col-12 pt-3">
+                        <div class="col-12 pt-4">
                             Who can see your contact information <br>
                             <div class="pt-2">
-                                <input type="checkbox"><span class="ml-2 custom-light-grey font-weight-light">All connections</span><br>
+                                <input type="checkbox">
+                                <span class="ml-2 custom-light-grey font-weight-light">All connections</span>
                             </div>
                             <div class="pt-1">
                                 <input type="checkbox" checked>
                                 <span class="ml-2 custom-light-grey font-weight-light">Select people from connections</span>
                                 <span>
                                     <button class="ml-3 px-3 font-weight-bold f11 bg-blue rounded custom-grey" data-toggle="modal" data-target="#editaccess" data-dismiss="modal">
-                                        EDIT 
+                                        Edit 
                                     </button>
                                 </span>
                             </div>
                         </div>
 
 
-                        <div class="col-12 d-flex pt-3 justify-content-between m-0 p-0">
+                        <div class="col-12 d-flex pt-4 justify-content-between m-0 p-0">
                             <div class="col-6 ">
                                 Phone <br>
                                 <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
@@ -1324,33 +1334,34 @@
     </div>
     <!--  edit access -->        
     <!-- Add Work -->
-    <div class="modal" id="addWork">
-        <div class="modal-dialog modal-dialog-centered bg-white" style="">
-            <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-4" style="z-index: 1;">
-                <button type="button" class="close" data-dismiss="modal">
-                    <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                </button>
-            </div>
-            <div class="modal-content border-0 row pt-3 pb-3 m-2 mx-4 px-3 ">
-                <div class="modal-header border-0">
-                    <h4 class="modal-title f20 font-weight-bold">Add work experience</h4>
+    <div class="modal" id="addWork" >
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row pt-4 pb-4  px-5 " style="border-radius:0px;">
+                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                    </button>                    
+                </div>
+
+                <div class="modal-header border-0 ">
+                    <h4 class="modal-title f20 font-weight-bold ">Add work experience</h4>
                 </div>
                 <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
+                    <div class="row text-left custom-grey font-weight-bold f13 pt-3">
                         <div class="col-12">
                             Company name <br>
-                            <input type="email" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
                         </div>
                         <div class="col-12 pt-3 ">
-                            Position/ Title <br>
-                            <input type="email" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                            Position/Title <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
                         </div>
-                        <div class="col-12 pt-4 rounded">
-                            <button class="px-3 font-weight-bold custom-light-grey py-2 bg-blue rounded">
+                        <div class="col-12 pt-3 rounded">
+                            <button class="px-4 custom-grey font-weight-bold py-1 bg-blue rounded">
                                 ADD LOGO
                             </button>
                         </div>
-                        <div class=" col-12 pt-4">
+                        <div class=" col-12 pt-3">
                             <div class="w-100 d-flex justify-content-between mr-1">
                                 <div class="col-6 d-flex pl-0 ml-0">
                                     Start Date
@@ -1446,7 +1457,7 @@
                             <input type="checkbox" class="mr-2 theme-blue">
                             <div>I currently work here</div>
                         </div>
-                        <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
+                        <div class="col-12 pt-3 pb-4 custom-light-grey font-weight-light d-flex justify-content-end">
                             <button class="p-1 px-3 f14 bg-theme-blue" style="color: white;">Save</button>
                         </div>
                     </div>
@@ -1728,33 +1739,34 @@
     </div>
     <!-- Add Home -->
     <!-- Edit Work -->
-    <div class="modal" id="editWork">
-        <div class="modal-dialog modal-dialog-centered bg-white" style="">
-            <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-4" style="z-index: 1;">
-                <button type="button" class="close" data-dismiss="modal">
-                    <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                </button>s
-            </div>
-            <div class="modal-content border-0 row pt-3 pb-3 m-2 mx-4 px-3 ">
-                <div class="modal-header border-0">
-                    <h4 class="modal-title f20 font-weight-bold">Edit work experience</h4>
+    <div class="modal" id="editWork" >
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row pt-4 pb-4  px-5 " style="border-radius:0px;">
+                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                    </button>                    
+                </div>
+
+                <div class="modal-header border-0 ">
+                    <h4 class="modal-title f20 font-weight-bold ">Edit work experience</h4>
                 </div>
                 <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
+                    <div class="row text-left custom-grey font-weight-bold f13 pt-3">
                         <div class="col-12">
                             Company name <br>
-                            <input type="email" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="The Kinnect Company" required="">
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="The Kinnect Company" required="">
                         </div>
                         <div class="col-12 pt-3 ">
-                            Position/ Title <br>
-                            <input type="email" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Founder and CEO" required="">
+                            Position/Title <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Founder and CEO" required="">
                         </div>
-                        <div class="col-12 pt-4 rounded">
-                            <button class="px-3 font-weight-bold custom-light-grey py-2 bg-blue rounded">
+                        <div class="col-12 pt-3 rounded">
+                            <button class="px-4 custom-grey font-weight-bold py-1 bg-blue rounded">
                                 ADD LOGO
                             </button>
                         </div>
-                        <div class=" col-12 pt-4">
+                        <div class=" col-12 pt-3">
                             <div class="w-100 d-flex justify-content-between mr-1">
                                 <div class="col-6 d-flex pl-0 ml-0">
                                     Start Date
@@ -1847,11 +1859,12 @@
                             </div>
                         </div>
                         <div class=" col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex align-items-center">
-                            <input type="checkbox" class="mr-2 theme-blue">
+                            <input type="checkbox" class="mr-2 theme-blue" checked="">
                             <div>I currently work here</div>
                         </div>
-                        <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
-                            <button class="p-1 px-3 f14 bg-theme-blue" style="color: white;">Save</button>
+                        <div class="col-12 pt-3 pb-4 custom-light-grey font-weight-light d-flex justify-content-between">
+                            <button class="p-1 px-3 f14 bg-blue custom-light-grey font-weight-bold ">Delete</button>
+                            <button class="p-1 px-3 mr-1 f14 bg-theme-blue" style="color: white;">Save</button>
                         </div>
                     </div>
                 </div>
