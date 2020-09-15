@@ -1776,3 +1776,15 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   margin-left: 1.1rem; 
   margin-right: 0.025rem;
 }
+
+.you-may-also-know{
+  color: #81848e;
+}
+
+.you-may-also-know strong{
+  color: black;
+}
+
+.private-info-tag{
+  color: black;
+}
