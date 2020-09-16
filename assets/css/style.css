@@ -1804,7 +1804,7 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 .close-modal-button{
   margin-top: -0.4rem;
-  margin-left: -3.2rem;
+  margin-left: -3.8rem;
   text-align: right;
   display: flex;
   position:absolute;
