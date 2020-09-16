@@ -1039,7 +1039,7 @@
                                     <input type="date" class="mt-1  p-2  px-3 w-100 popupInput1 custom-light-grey" value="1982-03-08" required="">
                                 </div>                        
                                 <div class="col-6 dropdown p-0 pl-3">
-                                    <br>
+                                    Gender<br>
                                     <div class=" mt-1 dropdown-toggle rounded py-1 d-flex " data-toggle="dropdown" style="border: 1px solid #81848e">
                                         <div class=" f15 my-1 col-9 font-weight-light" style="background-color: #fff; border-radius: 5px">
                                             Gender
@@ -1048,7 +1048,7 @@
                                             <i class=" fa fa-angle-down px-1 rounded" style="background-color: #ccc; color: white; padding-top: 0.1rem;padding-bottom: 0.1rem;"></i>
                                         </div>              
                                     </div>
-                                    <div class="position-absolute font-weight-light" style="font-size: 10px">
+                                    <div id="my-info-gender-tagline" class="">
                                         Gender is not displayed on your profile
                                     </div>
                                     <div class="dropdown-menu">
@@ -1059,7 +1059,7 @@
                                             Female
                                         </div>
                                         <div class="dropdown-item custom-grey">
-                                            Don't wish to disclose
+                                            Other
                                         </div>                                        
                                     </div>
                                 </div>
@@ -1096,15 +1096,15 @@
     <!-- My info -->
     <!-- contact details -->
     <div class="modal" id="mycontactdetails">
-        <div class="modal-dialog modal-dialog-centered bg-white" style="">
-            <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-4" style="z-index: 1;">
-                <button type="button" class="close" data-dismiss="modal">
-                    <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                </button>
-            </div>
-            <div class="modal-content border-0 row pt-2 pb-3 m-2 mx-4 px-3 ">
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row pt-3 pb-3 " style="border-radius: 0px; padding: 2.5rem;">
+                <div class="close-modal-button row w-100 justify-content-end">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>                
                 <div class="modal-header border-0 d-flex f20 ">
-                        Contact details
+                        Contact information
                 </div>
                 <div class="modal-header f13 mb-0 py-0 border-0 custom-grey font-weight-bold">
                     Mailing Address
@@ -1137,25 +1137,33 @@
                             </div>
                         </div>
 
-                        <div class="col-12 pt-4">
+                        <div class="col-12 pt-4 font-weight-bold">
                             Who can see your contact information <br>
-                            <div class="pt-2">
-                                <input type="checkbox">
-                                <span class="ml-2 custom-light-grey font-weight-light">All connections</span>
+                            <div class="pt-2 d-flex">
+                                <div class="contact-modal-checkbox">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="pb-1">
+                                    <span class="ml-2 custom-light-grey font-weight-light">All connections</span>
+                                </div>
                             </div>
-                            <div class="pt-1">
-                                <input type="checkbox" checked>
-                                <span class="ml-2 custom-light-grey font-weight-light">Select people from connections</span>
-                                <span>
+                            <div class="pt-1 d-flex">
+                                <div class="contact-modal-checkbox">
+                                    <input type="checkbox" checked>
+                                </div>
+                                <div class="">
+                                    <span class="ml-2 custom-light-grey font-weight-light">Select people from connections</span>
+                                </div>
+                                <div>
                                     <button class="ml-3 px-3 font-weight-bold f11 bg-blue rounded custom-grey" data-toggle="modal" data-target="#editaccess" data-dismiss="modal">
                                         Edit 
                                     </button>
-                                </span>
+                                </div>
                             </div>
                         </div>
 
 
-                        <div class="col-12 d-flex pt-4 justify-content-between m-0 p-0">
+                        <div class="col-12 d-flex pt-4 justify-content-between font-weight-bold m-0 p-0">
                             <div class="col-6 ">
                                 Phone <br>
                                 <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
@@ -1166,7 +1174,7 @@
                             </div>
                         </div>
 
-                        <div class=" pb-3 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
+                        <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
                             <button class="p-1 px-3 f14 bg-theme-blue" style="color: white;">Save</button>
                         </div>
                     </div>

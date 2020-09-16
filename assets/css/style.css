@@ -1788,3 +1788,33 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 .private-info-tag{
   color: black;
 }
+
+#my-info-gender-tagline{
+  position: absolute;
+  color: #4867ae;
+  font-size:10px;
+  font-weight: lighter;
+  text-align: center;
+  width: 92%;
+}
+
+.contact-modal-checkbox{
+  padding-top: 0.1rem;
+}
+
+.close-modal-button{
+  margin-top: -0.4rem;
+  margin-left: -3.2rem;
+  text-align: right;
+  display: flex;
+  position:absolute;
+  z-index: 1;
+}
+
+.other-hidden-info{
+  color: black;
+  font-size: 18px;
+  cursor: context-menu;
+  z-index: 1;
+}
+
