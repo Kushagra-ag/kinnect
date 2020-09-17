@@ -1343,6 +1343,7 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   scrollbar-color: #81848e #4867ae00;
   scrollbar-width: thin;
 }
+
 .reqContainer {
   overflow-y: auto;
   overflow-x: hidden;
@@ -1818,3 +1819,289 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   z-index: 1;
 }
 
+/***********************************************/
+.help-main-menu>.row1{
+  font-weight: bold;
+  background-color: #f4f6fa;
+  color: #707070;
+  font-size: 18px;
+
+  padding-left: 2rem;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+}
+
+.help-main-menu>.row2{
+}
+
+
+.help-main-menu-items:hover {
+
+  background-color: #4867ae;
+  color: white;
+}
+
+.help-main-menu-items{
+ 
+  text-align: center;
+ 
+  color: #4867ae;
+  height: 140px;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: white;
+
+}
+
+.help-main-menu-items>.icon svg{
+  fill: #4867ae;
+} 
+
+.help-main-menu-items:hover >.icon svg{
+  fill: #fff;
+}
+
+.help-main-menu-items:hover >.icon> svg>path{
+  stroke: #fff;
+}
+
+.help-main-menu-items:hover >.my-chat-icon svg>path{
+  stroke: #4867ae;
+}
+
+
+
+ .help-main-menu-items>.text{
+ font-size: 15px;
+ font-weight: bold;
+ margin-top: 2rem;
+}
+
+/***********************************************/
+/***********************************************/
+
+.help-contact-us> .row1{
+  font-weight: bold;
+  background-color: #f4f6fa;
+  color: #4867ae;
+  font-size: 18px;
+
+  text-align: center;
+
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+}
+
+
+
+.help-contact-us> .row2> .nav-pills> .tab-head> a{
+  color: #4867ae;
+  text-decoration: none;
+}
+.help-contact-us> .row2> .nav-pills> .tab-head> button{
+  background-color: transparent;
+}
+
+.help-contact-us> .row2> .nav-pills{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  border:0px;
+  padding: 0px;
+
+  background-color: transparent;
+}
+
+.help-contact-us> .row2> .nav-pills> div{
+  padding: 0px;
+
+}
+
+#Report{
+  color: #4867ae;
+  padding-bottom: 1rem;
+}
+
+#Feedback{
+  color: #6b6e77;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #fff;
+}  
+
+#GetinTouch{
+  color: #6b6e77;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #fff;
+}
+
+#Report-tab-head{
+  border-bottom: 3px solid #4867ae;
+
+}
+
+#Feedback-tab-head{
+  border-bottom: 3px solid #fff;
+
+}  
+
+#GetinTouch-tab-head{
+  border-bottom: 3px solid #fff;
+
+}
+
+#Report a{
+  color: #4867ae;
+}
+
+#Feedback a{
+  color: #6b6e77;
+
+}  
+
+#GetinTouch a{
+  color: #6b6e77;
+ 
+}
+
+.contact-us-tabs{
+  height: 73vh;
+}
+
+.contact-us-tab-heading{
+  text-align: center;
+}
+
+.feedback-stars{
+  text-align: center;
+}
+
+.feedback-tab{
+  height: 73vh;
+}
+
+.star-ratings >button{
+  padding: 0.2rem;
+  background: transparent;
+}
+
+.marked-star svg>path{
+  fill:#FFA500;
+}
+
+.contact-us-report-sub-heading{
+  text-align: center;
+}
+
+.report-issues select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+
+  
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+/**********************************************************************/
+
+.faq-questions{
+  padding: 0px;
+  background-color: #f4f6fa;
+  border-radius: 5px;
+  display:flex;
+
+  align-items:center;
+  width: 100%;
+}
+.faq-answers{
+  color: #81848e;
+  padding-top:1rem;
+  padding-left: 4.2rem;
+  padding-right: 3rem;
+  background-color: #f4f6fa;
+  padding-bottom: 1rem;
+
+  border-radius: 5px;
+}
+
+.FAQ-sub-ques .fa-angle-down{
+  font-size:20px ; 
+  color: white; 
+
+  background-color: #4867ae; 
+  border-top-left-radius: 5px; 
+  border-bottom-left-radius: 5px;
+}
+
+.FAQ-sub-ques{
+  margin-right: 2rem;
+}
+
+.FAQS a{
+  text-decoration: none;
+}
+
+.FAQS{
+  height:300px;
+  margin-top: 1.5rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  overflow-y: scroll;
+}
+
+.FAQS::-webkit-scrollbar-track
+{
+  padding-right: 3rem;
+  padding-left: 3rem;
+  background-color: white;
+}
+
+.FAQS::-webkit-scrollbar
+{
+  width: 4px;
+  background-color: #CE1F26;
+  margin-right: 10px;
+}
+
+.FAQS::-webkit-scrollbar-thumb
+{
+  background-color: #6B6E77AA;
+  border-radius: 5px;
+}
+
+
+.angle-down-blue i{
+  font-size:18px ; 
+  color: #4867ae; 
+  margin-right: 1.5rem;
+  background-color: white; 
+  border-top-left-radius: 5px; 
+  border-bottom-left-radius: 5px;
+/*  transform: rotate(180deg);*/
+}
+
+.FAQ-ques{
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+
+
+/*.get-in-touch-text-area{
+  margin-left: 31.5%;
+  margin-right: 31.5%;
+}*/
+
+/**************************************************************/

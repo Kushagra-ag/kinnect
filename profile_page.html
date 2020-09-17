@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <h3 id="backdrop" class="bl" style="display: none" onclick="change_BL_2(); change_pos_icon_back();">
+    <h3 id="backdrop" class="bl" style="display: none;" onclick="change_BL_2(); change_pos_icon_back();">
     </h3>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md bg-white navbar-light" >
@@ -305,7 +305,7 @@
                 <ul class="navbar-nav align-items-md-center">
                 
                     <li class="nav-item mx-1">
-                        <a class="nav-link theme-blue" href="#">
+                        <a class="nav-link theme-blue" href="#" data-toggle="modal" data-target="#helpmain">
                             <span class="feather icon-help-circle f16 align-middle"></span>
                             <span class="d-md-none ml-2"> Help </span>
                         </a>
@@ -2152,6 +2152,849 @@
         </div>
     </div>
     <!-- Edit Home -->
+    <!------------------------------------------------------------HELP CENTER----------------------------------------->
+    <!-- main menu -->
+    <div class="modal" id="helpmain">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 row p-0 m-0 help-main-menu">
+                <div class="col-12 w-100 help-main-menu p-0 ">
+                    <div class="row1 py-2 m-0">
+                        Help Center
+                    </div>
+                    <div class="row2 px-2 m-4 d-flex justify-content-between">
+                        <button class="col-4 help-main-menu-items" data-toggle="modal" data-target="#helpcontactus" data-dismiss="modal">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="54.328" height="54.328" viewBox="0 0 44.612 44.614">
+                                  <path id="Icon_awesome-tools" data-name="Icon awesome-tools" d="M43.661,34.476l-10.2-10.2a6.469,6.469,0,0,0-7.441-1.211l-9.288-9.288V8.364L5.577,0,0,5.576,8.365,16.729h5.411l9.288,9.288a6.483,6.483,0,0,0,1.211,7.441l10.2,10.2a3.239,3.239,0,0,0,4.592,0l4.592-4.592a3.255,3.255,0,0,0,0-4.592ZM28.9,19.6a9.167,9.167,0,0,1,6.526,2.7L37.117,24a12.333,12.333,0,0,0,3.816-2.57,12.53,12.53,0,0,0,3.3-11.91,1.043,1.043,0,0,0-1.751-.479L36,15.517l-5.916-.985L29.1,8.617l6.482-6.482a1.052,1.052,0,0,0-.5-1.76,12.551,12.551,0,0,0-11.9,3.3A12.347,12.347,0,0,0,19.6,12.7l7.153,7.153A9.492,9.492,0,0,1,28.9,19.6Zm-9.053,7.144-4.94-4.94L1.63,35.1A5.576,5.576,0,0,0,9.515,42.98L20.284,32.211a9.356,9.356,0,0,1-.436-5.463ZM5.577,41.124a2.091,2.091,0,1,1,2.091-2.091A2.1,2.1,0,0,1,5.577,41.124Z" transform="translate(0.004)" />
+                                </svg>
+                            </div>
+                            <div class="text" style="">
+                                Setup Wizard
+                            </div>
+                        </button>
+                        <button class="col-4 help-main-menu-items" data-toggle="modal" data-target="#helpfaq" data-dismiss="modal">
+                            <div class="icon my-chat-icon">
+                                <svg id="Icon_ionic-ios-chatbubbles" data-name="Icon ionic-ios-chatbubbles" xmlns="http://www.w3.org/2000/svg" width="54.328" height="54.328" viewBox="0 0 54.328 54.328">
+                                  <path id="Path_148" data-name="Path 148" d="M49.276,38.975a3.164,3.164,0,0,1,.431-1.593,4.4,4.4,0,0,1,.274-.4,21.161,21.161,0,0,0,3.6-11.793C53.625,13.144,43.464,3.375,30.9,3.375c-10.957,0-20.1,7.457-22.24,17.356A20.987,20.987,0,0,0,8.177,25.2,22.153,22.153,0,0,0,30.509,47.281a26.9,26.9,0,0,0,6.164-1.006c1.476-.4,2.938-.94,3.317-1.084A3.453,3.453,0,0,1,41.2,44.97a3.4,3.4,0,0,1,1.319.261l7.4,2.625a1.766,1.766,0,0,0,.509.131,1.039,1.039,0,0,0,1.045-1.045,1.678,1.678,0,0,0-.065-.353Z" transform="translate(0.742 -3.375)" />
+                                  <path id="Path_149" data-name="Path 149" d="M38.7,40.2c-.47.131-1.071.274-1.724.418a24.1,24.1,0,0,1-4.44.588A22.153,22.153,0,0,1,10.205,19.119a24.691,24.691,0,0,1,.2-2.795c.078-.562.17-1.123.3-1.672.131-.588.287-1.175.457-1.75l-1.045.927A19.435,19.435,0,0,0,3.375,28.443,19.218,19.218,0,0,0,6.614,39.152c.3.457.47.81.418,1.045s-1.554,8.1-1.554,8.1A1.048,1.048,0,0,0,5.83,49.3a1.064,1.064,0,0,0,.666.235.937.937,0,0,0,.379-.078L14.2,46.57a2.041,2.041,0,0,1,1.567.026A21.98,21.98,0,0,0,23.7,48.163a20.511,20.511,0,0,0,15.685-7.2s.418-.575.9-1.254C39.8,39.883,39.25,40.053,38.7,40.2Z" transform="translate(-3.375 4.793)"/>
+                                </svg>
+                            </div>  
+                            <div class="text">
+                                FAQ
+                            </div>
+                        </button>
+                        <button class="col-4 help-main-menu-items" data-toggle="modal" data-target="#helpcontactus" data-dismiss="modal">
+                            <div class="icon ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="54.621" height="54.726" viewBox="0 0 54.621 54.726">
+                                  <path id="Icon_feather-phone-call" data-name="Icon feather-phone-call" d="M54.785,42.818V50.6A5.191,5.191,0,0,1,49.127,55.8a51.363,51.363,0,0,1-22.4-7.968A50.61,50.61,0,0,1,11.157,32.255a51.363,51.363,0,0,1-7.968-22.5A5.191,5.191,0,0,1,8.354,4.1H16.14a5.191,5.191,0,0,1,5.191,4.464,33.325,33.325,0,0,0,1.817,7.293,5.191,5.191,0,0,1-1.168,5.476l-3.3,3.3A41.526,41.526,0,0,0,34.256,40.2l3.3-3.3a5.191,5.191,0,0,1,5.476-1.168,33.324,33.324,0,0,0,7.293,1.817A5.191,5.191,0,0,1,54.785,42.818Z" transform="translate(-1.666 -2.595)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                </svg>
+                            </div>  
+                            <div class="text">
+                                Contact Us
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main menu -->
+    <!-- contact us -->
+    <div class="modal" id="helpcontactus">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 70vw!important;">
+            <div class="modal-content border-0 row p-0 m-0 ">
+                <div class="col-12 w-100 help-contact-us p-0 ">
+                    <div class="row1 py-2 m-0">
+                        <div class="position-absolute pl-4">
+                           <button class="bg-blue theme-blue" data-toggle="modal"  data-target="#helpmain" data-dismiss="modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24.699" height="18.273" viewBox="0 0 24.699 18.273">
+                                    <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left" d="M10.773,19.7l-.929.929a1,1,0,0,1-1.418,0L.291,12.5a1,1,0,0,1,0-1.418L8.426,2.942a1,1,0,0,1,1.418,0l.929.929a1,1,0,0,1-.017,1.435l-5.042,4.8H23.691a1,1,0,0,1,1,1v1.339a1,1,0,0,1-1,1H5.714l5.042,4.8A1,1,0,0,1,10.773,19.7Z" transform="translate(0.004 -2.647)" fill="#4867ae"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div>
+                            Contact Us
+                        </div>
+                    </div>
+
+                    <div class="row2 d-flex justify-content-between">
+                        <div class="nav nav-pills col-12 pt-4 p-0 m-0">
+                            
+                            <a href="#Reporttab" id="Report-tab-head" data-toggle="pill" class="active tab-head col-4">
+                                <button id="Report" onclick="make_report_active();">
+                                    Report a problem
+                                </button>
+                            </a>
+                            
+                            <a href="#Feedbacktab" id="Feedback-tab-head"  data-toggle="pill" class="tab-head col-4" >
+                                <button id="Feedback" onclick="make_feedback_active();">
+                                    Submit a feedback
+                                </button>
+                            </a>
+                        
+                            <a href="#GetinTouchtab" id="GetinTouch-tab-head" data-toggle="pill"  class="tab-head col-4">
+                                <button id="GetinTouch" onclick="make_getintouch_active();">
+                                    Get in touch
+                                </button>
+                            </a>
+                
+                        </div>
+                    </div>
+                    <div class="row3 d-flex justify-content-between">
+                        <div class="tab-content col-12">
+                            <div id="Reporttab" class="tab-pane active px-5 pt-3 pb-4 contact-us-tabs">
+                                <div class="col-12 f20 font-weight-bold pt-4 contact-us-tab-heading">
+                                    Let's get this fixed
+                                </div>
+                                <div class="f15 custom-grey mx-md-5 px-md-5 pt-3 contact-us-report-sub-heading">
+                                    We apologize that you've found an issue with the system, <br>
+                                    please let us know where you found it
+                                </div>
+                                <div class=" report-issues pt-3 d-flex justify-content-center" style="">
+                                    <select class="p-2 custom-grey rounded col-5" name="issue-target" id="issue-target-id">
+                                        <option value="vault">Vault</option>
+                                        <option value="network">Network</option>
+                                        <option value="profile">Profile</option>
+                                        <option value="setting">Setting</option>
+                                    </select>
+                                </div>
+                                <div class="pt-4 f18 custom-grey d-flex justify-content-center">
+                                    Please explain what the issue is
+                                </div>
+                                <div class="pt-2">
+                                    <div class="d-flex justify-content-center">
+                                       <textarea class="rounded pt-2 pl-2" rows="5" cols="70" placeholder="Please describe the issue here..."></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-end col-10 pt-4 mr-n1 ">
+                                        <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff">
+                                            Report
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="Feedbacktab" class="tab-pane fade px-5 pt-3 pb-4 contact-us-tabs">
+                                <div class="col-12 f20 font-weight-bold pt-4 contact-us-tab-heading">
+                                    Tell us how we're doing
+                                </div>
+                                <div class="f18 custom-grey mx-md-5 px-md-5 pt-3 feedback-stars">
+                                    How would you rate the Kinnect platform?<br>
+                                    
+
+                                </div>
+                                <div class="pt-4 pb-4 d-flex justify-content-center  star-ratings" style="">
+                                    <!------------------------1-------------------------->
+                                    <button class="marked-star">
+                                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
+                                          <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.856.951,10.367,8.026,2.56,9.165a1.711,1.711,0,0,0-.946,2.918l5.648,5.5L5.926,25.361a1.709,1.709,0,0,0,2.48,1.8l6.984-3.671,6.984,3.671a1.71,1.71,0,0,0,2.479-1.8l-1.336-7.775,5.648-5.5a1.711,1.711,0,0,0-.946-2.918L20.413,8.026,16.924.951A1.711,1.711,0,0,0,13.856.951Z" transform="translate(-1.096 0.001)" fill="rgba(72,103,174,0.5)" />
+                                        </svg>
+                                    </button>
+                                    <!------------------------1-------------------------->
+                                    <!------------------------2-------------------------->
+                                    <button class="marked-star">
+                                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
+                                          <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.856.951,10.367,8.026,2.56,9.165a1.711,1.711,0,0,0-.946,2.918l5.648,5.5L5.926,25.361a1.709,1.709,0,0,0,2.48,1.8l6.984-3.671,6.984,3.671a1.71,1.71,0,0,0,2.479-1.8l-1.336-7.775,5.648-5.5a1.711,1.711,0,0,0-.946-2.918L20.413,8.026,16.924.951A1.711,1.711,0,0,0,13.856.951Z" transform="translate(-1.096 0.001)" fill="rgba(72,103,174,0.5)" />
+                                        </svg>
+                                    </button>
+                                    <!------------------------2-------------------------->
+                                    <!------------------------3-------------------------->
+                                    <button class="marked-star">
+                                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
+                                          <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.856.951,10.367,8.026,2.56,9.165a1.711,1.711,0,0,0-.946,2.918l5.648,5.5L5.926,25.361a1.709,1.709,0,0,0,2.48,1.8l6.984-3.671,6.984,3.671a1.71,1.71,0,0,0,2.479-1.8l-1.336-7.775,5.648-5.5a1.711,1.711,0,0,0-.946-2.918L20.413,8.026,16.924.951A1.711,1.711,0,0,0,13.856.951Z" transform="translate(-1.096 0.001)" fill="rgba(72,103,174,0.5)" />
+                                        </svg>
+                                    </button>
+                                    <!------------------------3-------------------------->
+                                    <!------------------------4-------------------------->
+                                    <button class="marked-star">
+                                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
+                                          <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.856.951,10.367,8.026,2.56,9.165a1.711,1.711,0,0,0-.946,2.918l5.648,5.5L5.926,25.361a1.709,1.709,0,0,0,2.48,1.8l6.984-3.671,6.984,3.671a1.71,1.71,0,0,0,2.479-1.8l-1.336-7.775,5.648-5.5a1.711,1.711,0,0,0-.946-2.918L20.413,8.026,16.924.951A1.711,1.711,0,0,0,13.856.951Z" transform="translate(-1.096 0.001)" fill="rgba(72,103,174,0.5)" />
+                                        </svg>
+                                    </button>
+                                    <!------------------------4-------------------------->
+                                    <!------------------------5-------------------------->
+                                    <button class="marked-star">
+                                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
+                                          <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.856.951,10.367,8.026,2.56,9.165a1.711,1.711,0,0,0-.946,2.918l5.648,5.5L5.926,25.361a1.709,1.709,0,0,0,2.48,1.8l6.984-3.671,6.984,3.671a1.71,1.71,0,0,0,2.479-1.8l-1.336-7.775,5.648-5.5a1.711,1.711,0,0,0-.946-2.918L20.413,8.026,16.924.951A1.711,1.711,0,0,0,13.856.951Z" transform="translate(-1.096 0.001)" fill="rgba(72,103,174,0.5)" />
+                                        </svg>
+                                    </button>
+                                    <!------------------------5-------------------------->
+                                    <!------------------------6-------------------------->
+                                    <button>
+                                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
+                                          <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.856.951,10.367,8.026,2.56,9.165a1.711,1.711,0,0,0-.946,2.918l5.648,5.5L5.926,25.361a1.709,1.709,0,0,0,2.48,1.8l6.984-3.671,6.984,3.671a1.71,1.71,0,0,0,2.479-1.8l-1.336-7.775,5.648-5.5a1.711,1.711,0,0,0-.946-2.918L20.413,8.026,16.924.951A1.711,1.711,0,0,0,13.856.951Z" transform="translate(-1.096 0.001)" fill="rgba(72,103,174,0.5)" />
+                                        </svg>
+                                    </button>
+                                    <!------------------------6-------------------------->
+                                    <!------------------------7-------------------------->
+                                    <button>
+                                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
+                                          <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.856.951,10.367,8.026,2.56,9.165a1.711,1.711,0,0,0-.946,2.918l5.648,5.5L5.926,25.361a1.709,1.709,0,0,0,2.48,1.8l6.984-3.671,6.984,3.671a1.71,1.71,0,0,0,2.479-1.8l-1.336-7.775,5.648-5.5a1.711,1.711,0,0,0-.946-2.918L20.413,8.026,16.924.951A1.711,1.711,0,0,0,13.856.951Z" transform="translate(-1.096 0.001)" fill="rgba(72,103,174,0.5)" />
+                                        </svg>
+                                    </button>
+                                    <!------------------------7-------------------------->
+                                    <!------------------------8-------------------------->
+                                    <button>
+                                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
+                                          <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.856.951,10.367,8.026,2.56,9.165a1.711,1.711,0,0,0-.946,2.918l5.648,5.5L5.926,25.361a1.709,1.709,0,0,0,2.48,1.8l6.984-3.671,6.984,3.671a1.71,1.71,0,0,0,2.479-1.8l-1.336-7.775,5.648-5.5a1.711,1.711,0,0,0-.946-2.918L20.413,8.026,16.924.951A1.711,1.711,0,0,0,13.856.951Z" transform="translate(-1.096 0.001)" fill="rgba(72,103,174,0.5)" />
+                                        </svg>
+                                    </button>
+                                    <!------------------------8-------------------------->
+                                    <!------------------------9-------------------------->
+                                    <button>
+                                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
+                                          <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.856.951,10.367,8.026,2.56,9.165a1.711,1.711,0,0,0-.946,2.918l5.648,5.5L5.926,25.361a1.709,1.709,0,0,0,2.48,1.8l6.984-3.671,6.984,3.671a1.71,1.71,0,0,0,2.479-1.8l-1.336-7.775,5.648-5.5a1.711,1.711,0,0,0-.946-2.918L20.413,8.026,16.924.951A1.711,1.711,0,0,0,13.856.951Z" transform="translate(-1.096 0.001)" fill="rgba(72,103,174,0.5)" />
+                                        </svg>
+                                    </button>
+                                    <!------------------------9-------------------------->
+                                    <!------------------------10-------------------------->
+                                    <button >
+                                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
+                                          <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.856.951,10.367,8.026,2.56,9.165a1.711,1.711,0,0,0-.946,2.918l5.648,5.5L5.926,25.361a1.709,1.709,0,0,0,2.48,1.8l6.984-3.671,6.984,3.671a1.71,1.71,0,0,0,2.479-1.8l-1.336-7.775,5.648-5.5a1.711,1.711,0,0,0-.946-2.918L20.413,8.026,16.924.951A1.711,1.711,0,0,0,13.856.951Z" transform="translate(-1.096 0.001)" fill="rgba(72,103,174,0.5)" />
+                                        </svg>
+                                    </button>
+                                    <!------------------------10-------------------------->
+                                </div>
+                                <div class=" f18 custom-grey d-flex justify-content-center" style="padding-top: 0.9rem;">
+                                    Explain your feelings in words
+                                </div>
+                                <div class="pt-2">
+                                    <div class="d-flex justify-content-center">
+                                       <textarea class="rounded pt-2 pl-2" rows="5" cols="70" placeholder="Please descirbe your experience here..."></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-end col-10 pt-4 mr-n1">
+                                        <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="GetinTouchtab" class="tab-pane fade px-5 pt-3 pb-4 contact-us-tabs">
+                                <div class="w-100 d-flex justify-content-center" style="">
+                                    <div class="" style="width:42%">
+                                        <div class="col-12 f20 font-weight-bold pt-4 contact-us-tab-heading" >
+                                            We are eager to hear from you
+                                        </div>
+                                        <div class="get-in-touch-text-area col-12" style="">
+                                            <div class="pt-4 " >
+                                                <div class="custom-grey font-weight-bold" >
+                                                    Subject
+                                                </div>
+                                                <div class="">
+                                                   <textarea class="rounded pt-2 w-100"  rows="1" placeholder="" style="">
+                                                   </textarea>
+                                               </div>                                    
+                                            </div>
+
+                                            <div class="pt-4 " >
+                                                <div class="custom-grey font-weight-bold " >
+                                                    Message
+                                                </div>
+                                                <div class="">
+                                                   <textarea class="rounded pt-2 w-100"  rows="5"  placeholder="" style="">
+                                                   </textarea>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-4 col-12 d-flex justify-content-end">
+                                            <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff">
+                                                Send
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact us -->
+    <!-- FAQ -->
+    <div class="modal" id="helpfaq">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 70vw!important;">
+            <div class="modal-content border-0 row p-0 m-0 ">
+                <div class="col-12 w-100 help-contact-us p-0 ">
+                    <div class="row1 py-2 m-0">
+                        <div class="position-absolute pl-4">
+                           <button class="bg-blue theme-blue" data-toggle="modal"  data-target="#helpmain" data-dismiss="modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24.699" height="18.273" viewBox="0 0 24.699 18.273">
+                                    <path id="Icon_awesome-arrow-left" data-name="Icon awesome-arrow-left" d="M10.773,19.7l-.929.929a1,1,0,0,1-1.418,0L.291,12.5a1,1,0,0,1,0-1.418L8.426,2.942a1,1,0,0,1,1.418,0l.929.929a1,1,0,0,1-.017,1.435l-5.042,4.8H23.691a1,1,0,0,1,1,1v1.339a1,1,0,0,1-1,1H5.714l5.042,4.8A1,1,0,0,1,10.773,19.7Z" transform="translate(0.004 -2.647)" fill="#4867ae"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div>
+                            FAQ
+                        </div>
+                    </div>
+                    <div class="FAQS ">
+                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer1">
+                            <div class="f16 theme-blue">
+                                Why choose Kinnect?
+                            </div>
+                            <div class="angle-down-blue">
+                                <i class="fa-angle-down fa p-1 font-weight-bold "></i>
+                            </div>
+                        </a>
+                        <div class="FAQ-sub-ques collapse" id="FAQ-answer1">
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3" style=""></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer1" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer2">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer2" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer3">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer3" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer4">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer4" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer5">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer5" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                        </div>
+
+                        <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
+                        </div>
+
+                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer2">
+                            <div class="f16 theme-blue">
+                                Why choose Kinnect?
+                            </div>
+                            <div class="angle-down-blue">
+                                <i class="fa-angle-down fa p-1 font-weight-bold" ></i>
+                            </div>
+                        </a>
+                        <div class="FAQ-sub-ques collapse" id="FAQ-answer2">
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3" style=""></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer1" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer2">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer2" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer3">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer3" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer4">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer4" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer5">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer5" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                        </div>
+                        <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
+                        </div>
+
+                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer3">
+                            <div class="f16 theme-blue">
+                                Why choose Kinnect?
+                            </div>
+                            <div class="angle-down-blue">
+                                <i class="fa-angle-down fa p-1 font-weight-bold"></i>
+                            </div>
+                        </a>
+                        <div class="FAQ-sub-ques collapse" id="FAQ-answer3">
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3" style=""></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer1" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer2">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer2" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer3">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer3" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer4">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer4" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer5">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer5" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                        </div>
+                        <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
+                        </div>
+
+                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer4">
+                            <div class="f16 theme-blue">
+                                Why choose Kinnect?
+                            </div>
+                            <div class="angle-down-blue">
+                                <i class="fa-angle-down fa p-1 font-weight-bold"></i>
+                            </div>
+                        </a>
+                        <div class="FAQ-sub-ques collapse" id="FAQ-answer4">
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3" style=""></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer1" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer2">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer2" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer3">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer3" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer4">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer4" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer5">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer5" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                        </div>
+                        <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
+                        </div>
+
+                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer5">
+                            <div class="f16 theme-blue">
+                                Why choose Kinnect?
+                            </div>
+                            <div class="angle-down-blue">
+                                <i class="fa-angle-down fa p-1 font-weight-bold" style=""></i>
+                            </div>
+                        </a>
+                        <div class="FAQ-sub-ques collapse" id="FAQ-answer5">
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3" style=""></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer1" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer2">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer2" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer3">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer3" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer4">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer4" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer5">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer5" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                        </div>
+                        <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
+                        </div>
+
+                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer6">
+                            <div class="f16 theme-blue">
+                                Why choose Kinnect?
+                            </div>
+                            <div class="angle-down-blue">
+                                <i class="fa-angle-down fa p-1 font-weight-bold "></i>
+                            </div>
+                        </a>
+                        <div class="FAQ-sub-ques collapse" id="FAQ-answer6">                            
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3" style=""></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer1" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer2">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer2" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer3">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer3" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer4">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer4" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer5">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer5" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                        </div>
+                        <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
+                        </div> 
+
+                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer7">
+                            <div class="f16 theme-blue">
+                                Why choose Kinnect?
+                            </div>
+                            <div class="angle-down-blue">
+                                <i class="fa-angle-down fa p-1 font-weight-bold" style=""></i>
+                            </div>
+                        </a>
+                        <div class="FAQ-sub-ques collapse" id="FAQ-answer7">
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3" style=""></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer1" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer2">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer2" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer3">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer3" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer4">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer4" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer5">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer5" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                        </div>
+                        <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
+                        </div>
+
+                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer8">
+                            <div class="f16 theme-blue">
+                                Why choose Kinnect?
+                            </div>
+                            <div class="angle-down-blue">
+                                <i class="fa-angle-down fa p-1 font-weight-bold"></i>
+                            </div>
+                        </a>
+                        <div class="FAQ-sub-ques collapse" id="FAQ-answer8">
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3" style=""></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer1" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer2">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer2" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer3">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer3" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer4">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer4" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer5">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer5" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                        </div>
+                        <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="pt-4 mx-5 custom-grey f16">
+                            Couldn't find what you were looking for? 
+                            <a href="#" style="text-decoration: none;" class="theme-blue">
+                                <u> 
+                                    Send us your question
+                                </u>
+                            </a>
+                        </div>
+                        <div class="pt-1 mx-5 custom-grey f14 pb-5">
+                            We will send you an answer over email and include it in FAQ to help others.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- FAQ -->
+    <!------------------------------------------------------------HELP CENTER----------------------------------------->
     <!-- Modal -->
     <!--OPEN TABS jS FUNCTION-->
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
@@ -2168,6 +3011,43 @@
     $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
     });
+
+
+    function make_report_active()
+    {
+        document.getElementById("Report").style.color="#4867ae";
+        document.getElementById("Report-tab-head").style.borderBottom="3px solid #4867ae";
+
+        document.getElementById("Feedback").style.color="#6b6e77";
+        document.getElementById("Feedback-tab-head").style.borderBottom="3px solid #fff";
+
+        document.getElementById("GetinTouch").style.color="#6b6e77";
+        document.getElementById("GetinTouch-tab-head").style.borderBottom="3px solid #fff";
+    }
+
+    function make_feedback_active()
+    {
+        document.getElementById("Feedback").style.color="#4867ae";
+        document.getElementById("Feedback-tab-head").style.borderBottom="3px solid #4867ae";
+        
+        document.getElementById("Report").style.color="#6b6e77";
+        document.getElementById("Report-tab-head").style.borderBottom="3px solid #fff";
+
+        document.getElementById("GetinTouch").style.color="#6b6e77";
+        document.getElementById("GetinTouch-tab-head").style.borderBottom="3px solid #fff";
+    }
+
+    function make_getintouch_active()
+    {
+        document.getElementById("GetinTouch").style.color="#4867ae";
+        document.getElementById("GetinTouch-tab-head").style.borderBottom="3px solid #4867ae";
+
+        document.getElementById("Report").style.color="#6b6e77";
+        document.getElementById("Report-tab-head").style.borderBottom="3px solid #fff";
+
+        document.getElementById("Feedback").style.color="#6b6e77";
+        document.getElementById("Feedback-tab-head").style.borderBottom="3px solid #fff";
+    }
 
     function show_less_hide_w() {
         document.getElementById("show-more-work").style.display = "block";
