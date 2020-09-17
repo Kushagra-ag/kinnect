@@ -2480,6 +2480,42 @@
 			  $('[data-toggle="tooltip"]').tooltip();   
 			});
 
+        function make_report_active()
+        {
+            document.getElementById("Report").style.color="#4867ae";
+            document.getElementById("Report-tab-head").style.borderBottom="3px solid #4867ae";
+
+            document.getElementById("Feedback").style.color="#6b6e77";
+            document.getElementById("Feedback-tab-head").style.borderBottom="3px solid #fff";
+
+            document.getElementById("GetinTouch").style.color="#6b6e77";
+            document.getElementById("GetinTouch-tab-head").style.borderBottom="3px solid #fff";
+        }
+
+        function make_feedback_active()
+        {
+            document.getElementById("Feedback").style.color="#4867ae";
+            document.getElementById("Feedback-tab-head").style.borderBottom="3px solid #4867ae";
+            
+            document.getElementById("Report").style.color="#6b6e77";
+            document.getElementById("Report-tab-head").style.borderBottom="3px solid #fff";
+
+            document.getElementById("GetinTouch").style.color="#6b6e77";
+            document.getElementById("GetinTouch-tab-head").style.borderBottom="3px solid #fff";
+        }
+
+        function make_getintouch_active()
+        {
+            document.getElementById("GetinTouch").style.color="#4867ae";
+            document.getElementById("GetinTouch-tab-head").style.borderBottom="3px solid #4867ae";
+
+            document.getElementById("Report").style.color="#6b6e77";
+            document.getElementById("Report-tab-head").style.borderBottom="3px solid #fff";
+
+            document.getElementById("Feedback").style.color="#6b6e77";
+            document.getElementById("Feedback-tab-head").style.borderBottom="3px solid #fff";
+        }
+
 		function show_less_hide_w()
 		{
 			document.getElementById("show-more-work").style.display="block";

@@ -1927,14 +1927,13 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 #Feedback{
   color: #6b6e77;
   padding-bottom: 1rem;
-  border-bottom: 3px solid #fff;
 }  
 
 #GetinTouch{
   color: #6b6e77;
   padding-bottom: 1rem;
-  border-bottom: 3px solid #fff;
 }
+
 
 #Report-tab-head{
   border-bottom: 3px solid #4867ae;
