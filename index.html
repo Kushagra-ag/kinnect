@@ -83,7 +83,7 @@
 
                             <!--search bar ends here-->
                             <!--search menu starts-->
-                            <div class="search-menu dropdown-menu f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
+                            <div class="search-menu dropdown-menu-pseudo dropdown-menu f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
                                 <!--Start-->
                                 <div class="addHover dropdown-item search-item mt-2" onmouseenter="change_BL();">
                                     <a href="profile-connected-1.html" style="text-decoration:none;">
@@ -549,7 +549,7 @@
                                                     <span class="fa fa-angle-down ml-3 font-weight-bold"></span>
                                                 </div>
                                             </div>
-                                            <div class="dropdown-menu dropdown-menu-right f12 dropdown-ctm custom-grey" data-style="checkbox">
+                                            <div class="dropdown-menu dropdown-menu-pseudo dropdown-menu-right f12 dropdown-ctm custom-grey" data-style="checkbox">
                                                 <div class="dropdown-item">
                                                     <div class="form-check d-flex align-items-center">
                                                         <input type="checkbox" class="form-check-input mt-0" id="allCon" name="option1" value="something" checked="">Show All connections
@@ -881,7 +881,7 @@
 													<span class="fa fa-angle-down ml-2"></span>
 												</div>
 											</div>
-											<div class="dropdown-menu dropdown-menu-right f12 dropdown-ctm custom-grey" data-style="checkbox">
+											<div class="dropdown-menu dropdown-menu-pseudo dropdown-menu-right f12 dropdown-ctm custom-grey" data-style="checkbox">
 												<div class="dropdown-item">
 													<div class="form-check d-flex align-items-center">
 														<input type="checkbox" class="form-check-input mt-0" id="allPer" name="option1" value="something" checked="">Show All permissions
@@ -1150,7 +1150,7 @@
 													<span class="fa fa-angle-down ml-2"></span>
 												</div>
 											</div>
-											<div class="dropdown-menu dropdown-menu-right f12 dropdown-ctm custom-grey" data-style="checkbox">
+											<div class="dropdown-menu dropdown-menu-pseudo dropdown-menu-right f12 dropdown-ctm custom-grey" data-style="checkbox">
 												<div class="dropdown-item">
 													<div class="form-check d-flex align-items-center">
 														<input type="checkbox" class="form-check-input mt-0" id="allPer" name="option1" value="something" checked="">Show All permissions
@@ -1744,7 +1744,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
-													<span class="ml-3">Insurance</span>
+                                                    <img src="./assets/images/insurance.svg" height="16px" class="ml-2" title="Insurance">
+													<span class="pl-1">Insurance</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -1753,7 +1754,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
-													<span class="ml-3"> Legal</span>
+                                                    <img src="./assets/images/legal.svg" height="16px" class="ml-2" title="Legal">
+													<span class="pl-1"> Legal</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -1762,7 +1764,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
-													<span class="ml-3">Personal</span>
+                                                    <img src="./assets/images/personal.svg" height="16px" class="ml-2" title="Personal">
+													<span class="pl-1">Personal</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -1771,7 +1774,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
-													<span class="ml-3">Medical</span>
+                                                    <img src="./assets/images/medical.svg" height="16px" class="ml-2" title="Medical">
+													<span class="pl-1">Medical</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -1780,7 +1784,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
-													<span class="ml-3">Other</span>
+                                                    <img src="./assets/images/other.svg" height="16px" class="ml-2" title="Other">
+													<span class="pl-1">Other</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -1817,13 +1822,15 @@
 											Choose an existing connection or invite an admin to Kinnect 
 										</div>
 										<div class="input-group mt-4 border py-1" style="border-radius: 5px">
-											<span class="input-group-prepend">
-												<div class="input-group-text bg-transparent border-0">
-													<img src="./assets/images/search.svg" class="custom-light-grey mr-2" height="14px" />
-												</div>
-											</span>
-											<input class="border-0 bg-transparent search-ctm" type="search" placeholder="Search connections" id="network-search-input">
-										</div>
+                                            <span class="input-group-prepend">
+                                                <div class="input-group-text bg-transparent border-0">
+                                                    <img src="./assets/images/search.svg" class="custom-light-grey" height="14px">
+                                                </div>
+                                            </span>
+                                            <span class="" style="width: 88%;">
+                                               <input class="pt-1 border-0 bg-transparent w-100" type="search" placeholder="Search connections" id="network-search-input">
+                                           </span>
+                                        </div>
 									</div>
 								</div>
 
@@ -1937,7 +1944,7 @@
 				</div>
 				<!-- add permission -->
 				<!-- add permission - 2 -->
-				<div class="modal" id="addPerm2">
+				<div class="modal " id="addPerm2">
 					<div class="modal-dialog modal-dialog-centered">
 						<div class="modal-content border-0 row p-4 m-0">
 							<div class="col-12">
@@ -1967,7 +1974,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
-													<span class="ml-3">Insurance</span>
+                                                    <img src="./assets/images/insurance.svg" height="16px" class="ml-2" title="Insurance">
+													<span class="pl-1">Insurance</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -1976,7 +1984,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
-													<span class="ml-3"> Legal</span>
+                                                    <img src="./assets/images/legal.svg" height="16px" class="ml-2" title="Legal">
+													<span class="pl-1"> Legal</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -1985,7 +1994,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
-													<span class="ml-3">Personal</span>
+                                                    <img src="./assets/images/personal.svg" height="16px" class="ml-2" title="Personal">
+													<span class="pl-1">Personal</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -1994,7 +2004,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
-													<span class="ml-3">Medical</span>
+                                                    <img src="./assets/images/medical.svg" height="16px" class="ml-2" title="Medical">
+													<span class="pl-1">Medical</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -2003,7 +2014,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
-													<span class="ml-3">Other</span>
+                                                    <img src="./assets/images/other.svg" height="16px" class="ml-2" title="Other">
+													<span class="pl-1">Other</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -2247,7 +2259,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
-													<span class="ml-3">Insurance</span>
+                                                    <img src="./assets/images/insurance.svg" height="16px" class="ml-2" title="Insurance">
+													<span class="pl-1">Insurance</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -2256,7 +2269,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
-													<span class="ml-3"> Legal</span>
+                                                    <img src="./assets/images/legal.svg" height="16px" class="ml-2" title="Legal">
+													<span class="pl-1"> Legal</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -2265,7 +2279,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
-													<span class="ml-3">Personal</span>
+                                                    <img src="./assets/images/personal.svg" height="16px" class="ml-2" title="Personal">
+													<span class="pl-1">Personal</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -2274,7 +2289,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
-													<span class="ml-3">Medical</span>
+                                                    <img src="./assets/images/medical.svg" height="16px" class="ml-2" title="Medical">
+													<span class="pl-1">Medical</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -2283,7 +2299,8 @@
 											<div class="col-12 mb-1">
 												<div class="form-check d-flex align-items-center mb-2">
 													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
-													<span class="ml-3">Other</span>
+                                                    <img src="./assets/images/other.svg" height="16px" class="ml-2" title="Other">
+													<span class="pl-1">Other</span>
 												</div>
 											</div>
 											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
@@ -2320,13 +2337,15 @@
 											Ask permission from an existing connection or invite someone on Kinnect to be their Admin
 										</div>
 										<div class="input-group mt-4 border py-1" style="border-radius: 5px">
-											<span class="input-group-prepend">
-												<div class="input-group-text bg-transparent border-0">
-													<img src="./assets/images/search.svg" class="custom-light-grey mr-2" height="14px" />
-												</div>
-											</span>
-											<input class="border-0 bg-transparent search-ctm" type="search" placeholder="Search connections" id="network-search-input">
-										</div>
+                                            <span class="input-group-prepend">
+                                                <div class="input-group-text bg-transparent border-0">
+                                                    <img src="./assets/images/search.svg" class="custom-light-grey" height="14px">
+                                                </div>
+                                            </span>
+                                            <span class="" style="width: 88%;">
+                                               <input class="pt-1 border-0 bg-transparent w-100" type="search" placeholder="Search connections" id="network-search-input">
+                                           </span>
+                                        </div>
 									</div>
 								</div>
 
@@ -2440,6 +2459,99 @@
 				</div>
 				<!-- request permission -->
 
+                <!---request permission 2-->
+                <div class="modal" id="requestPerm2">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                                    </button>
+                                </div>
+                                <div class="row align-items-start justify-content-start mt-3 pl-5" style="flex-wrap:nowrap;">
+
+                                    <div class="rounded-circle overflow-hidden mr-3" style="flex-shrink: 0">
+                                        <img src="./assets/images/jacob.png" height="100px" />
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Jacob Logan
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey w-75">
+                                            You are requesting Jacob permission to add and share files from the below sections of their Vault
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+                                    <form class="w-75 f16">
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/insurance.svg" height="16px" class="ml-2" title="Insurance">
+                                                    <span class="pl-1">Insurance</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/legal.svg" height="16px" class="ml-2" title="Legal">
+                                                    <span class="pl-1"> Legal</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/personal.svg" height="16px" class="ml-2" title="Personal">
+                                                    <span class="pl-1">Personal</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/medical.svg" height="16px" class="ml-2" title="Medical">
+                                                    <span class="pl-1">Medical</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/other.svg" height="16px" class="ml-2" title="Other">
+                                                    <span class="pl-1">Other</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row align-items-center justify-content-between mb-3 px-5 mx-1 position-relative" style="margin-top: 2rem">
+                                    <button type="button" class="btn btn-light bg-blue p-2 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm">
+                                        Back
+                                    </button>
+                                    <button type="button" class="btn btn-primary border-0 bg-theme-blue" data-dismiss="modal">
+                                        Request
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---request permission 2-->
+
 				<!-- Reject permission -->
 				<div class="modal" id="rejectPerm">
 					<div class="modal-dialog modal-dialog-centered">
@@ -2460,7 +2572,13 @@
 											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
 										</div>
 										<div class="custom-light-grey f16">
-											Brother
+											<div class="mt-1 nowrap">
+                                                <img src="./assets/images/insurance.svg" height="16px" class="mr-1" title="Insurance">
+                                                <img src="./assets/images/medical.svg" height="16px" class="mr-1" title="Medical">
+                                                <img src="./assets/images/personal.svg" height="16px" class="mr-1" title="Personal">
+                                                <img src="./assets/images/legal.svg" height="16px" class="mr-1" title="Legal">
+                                                <img src="./assets/images/other.svg" height="16px" class="mr-1" title="Other">
+                                            </div>
 										</div>
 									</div>
 								</div>
@@ -3339,7 +3457,7 @@
 	<script type="text/javascript" src="./assets/js/jPages.min.js"></script>
 
 	<script>
-		$('body').on("click", ".dropdown-menu", function (e) {
+		$('body').on("click", ".dropdown-menu-pseudo", function (e) {
 				$(this).parent().is(".show") && e.stopPropagation();
 			});
 

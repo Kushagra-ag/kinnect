@@ -1559,6 +1559,13 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 {
   width: calc(100%-50px);  
 }
+
+
+.search-ctm-3
+{
+  width: calc(100%-14px);
+}
+
 /*******search screen******/
 
 .itemContainer>li a
