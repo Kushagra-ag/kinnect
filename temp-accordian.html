@@ -2323,10 +2323,10 @@
                                 </div>
                                 <div class=" report-issues pt-3 d-flex justify-content-center" style="">
                                     <select class="p-2 custom-grey rounded col-5" name="issue-target" id="issue-target-id">
-                                        <option value="vault"><div>Vault</div></option>
-                                        <option value="network"><div>Network</div></option>
-                                        <option value="profile"><div>Profile</div></option>
-                                        <option value="setting"><div>Setting</div></option>
+                                        <option value="vault">Vault</option>
+                                        <option value="network">Network</option>
+                                        <option value="profile">Profile</option>
+                                        <option value="setting">Setting</option>
                                     </select>
                                 </div>
                                 <div class="pt-4 f18 custom-grey d-flex justify-content-center">
@@ -2336,7 +2336,7 @@
                                     <div class="d-flex justify-content-center">
                                        <textarea class="rounded pt-2 pl-2" rows="5" cols="70" placeholder="Please describe the issue here..."></textarea>
                                     </div>
-                                    <div class="d-flex justify-content-end col-10 pt-3 mr-n1 ">
+                                    <div class="d-flex justify-content-end col-10 pt-4 mr-n1 ">
                                         <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff">
                                             Report
                                         </button>
@@ -2353,7 +2353,7 @@
                                     
 
                                 </div>
-                                <div class="pt-4 pb-3 d-flex justify-content-center  star-ratings" style="">
+                                <div class="pt-4 pb-4 d-flex justify-content-center  star-ratings" style="">
                                     <!------------------------1-------------------------->
                                     <button class="marked-star">
                                         <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
@@ -2425,7 +2425,7 @@
                                     </button>
                                     <!------------------------10-------------------------->
                                 </div>
-                                <div class="f18 custom-grey d-flex justify-content-center" style="padding-top: 0.9rem;">
+                                <div class=" f18 custom-grey d-flex justify-content-center" style="padding-top: 0.9rem;">
                                     Explain your feelings in words
                                 </div>
                                 <div class="pt-2">
@@ -2442,31 +2442,33 @@
                             
                             <div id="GetinTouchtab" class="tab-pane fade px-5 pt-3 pb-4 contact-us-tabs">
                                 <div class="w-100 d-flex justify-content-center" style="">
-                                    <div class="" style="width:45%">
+                                    <div class="" style="width:42%">
                                         <div class="col-12 f20 font-weight-bold pt-4 contact-us-tab-heading" >
                                             We are eager to hear from you
                                         </div>
                                         <div class="get-in-touch-text-area col-12" style="">
-                                            <div class="pt-4 mt-1 " >
-                                                <div class="custom-grey f16" >
+                                            <div class="pt-4 " >
+                                                <div class="custom-grey font-weight-bold" >
                                                     Subject
                                                 </div>
                                                 <div class="">
-                                                   <input class="rounded w-100 p-2"   placeholder="" style="">
-                                                </div>                                    
+                                                   <textarea class="rounded pt-2 w-100"  rows="1" placeholder="" style="">
+                                                   </textarea>
+                                               </div>                                    
                                             </div>
 
-                                            <div class="pt-4 mt-1" >
-                                                <div class="custom-grey f16 " >
+                                            <div class="pt-4 " >
+                                                <div class="custom-grey font-weight-bold " >
                                                     Message
                                                 </div>
                                                 <div class="">
-                                                   <textarea class="rounded pt-2 w-100"  rows="6"  placeholder="" style="">  </textarea>
+                                                   <textarea class="rounded pt-2 w-100"  rows="5"  placeholder="" style="">
+                                                   </textarea>
                                                </div>
                                             </div>
                                         </div>
                                         <div class="pt-4 col-12 d-flex justify-content-end">
-                                            <button class="f14 bg-theme-blue p-1 px-3" style="color: #fff">
+                                            <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff">
                                                 Send
                                             </button>
                                         </div>
@@ -2497,7 +2499,7 @@
                             FAQ
                         </div>
                     </div>
-                    <div class="FAQS accordian-group pt-2">
+                    <div class="FAQS accordian-group">
                         <!------------------------------>
                         <button class="FAQ-ques justify-content-between"  data-toggle="collapse" data-target="#FAQ-answer1">
                             <div class="f16 theme-blue">
@@ -3148,6 +3150,7 @@
     $('button').click( function(e) {
     jQuery('.collapse').collapse('hide');
     });
+
 
     $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();

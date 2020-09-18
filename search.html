@@ -1503,10 +1503,10 @@
                                 </div>
                                 <div class=" report-issues pt-3 d-flex justify-content-center" style="">
                                     <select class="p-2 custom-grey rounded col-5" name="issue-target" id="issue-target-id">
-                                        <option value="vault">Vault</option>
-                                        <option value="network">Network</option>
-                                        <option value="profile">Profile</option>
-                                        <option value="setting">Setting</option>
+                                        <option value="vault"><div>Vault</div></option>
+                                        <option value="network"><div>Network</div></option>
+                                        <option value="profile"><div>Profile</div></option>
+                                        <option value="setting"><div>Setting</div></option>
                                     </select>
                                 </div>
                                 <div class="pt-4 f18 custom-grey d-flex justify-content-center">
@@ -1516,7 +1516,7 @@
                                     <div class="d-flex justify-content-center">
                                        <textarea class="rounded pt-2 pl-2" rows="5" cols="70" placeholder="Please describe the issue here..."></textarea>
                                     </div>
-                                    <div class="d-flex justify-content-end col-10 pt-4 mr-n1 ">
+                                    <div class="d-flex justify-content-end col-10 pt-3 mr-n1 ">
                                         <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff">
                                             Report
                                         </button>
@@ -1533,7 +1533,7 @@
                                     
 
                                 </div>
-                                <div class="pt-4 pb-4 d-flex justify-content-center  star-ratings" style="">
+                                <div class="pt-4 pb-3 d-flex justify-content-center  star-ratings" style="">
                                     <!------------------------1-------------------------->
                                     <button class="marked-star">
                                         <svg class="stars" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 28.589 27.363">
@@ -1605,7 +1605,7 @@
                                     </button>
                                     <!------------------------10-------------------------->
                                 </div>
-                                <div class=" f18 custom-grey d-flex justify-content-center" style="padding-top: 0.9rem;">
+                                <div class="f18 custom-grey d-flex justify-content-center" style="padding-top: 0.9rem;">
                                     Explain your feelings in words
                                 </div>
                                 <div class="pt-2">
@@ -1622,33 +1622,31 @@
                             
                             <div id="GetinTouchtab" class="tab-pane fade px-5 pt-3 pb-4 contact-us-tabs">
                                 <div class="w-100 d-flex justify-content-center" style="">
-                                    <div class="" style="width:42%">
+                                    <div class="" style="width:45%">
                                         <div class="col-12 f20 font-weight-bold pt-4 contact-us-tab-heading" >
                                             We are eager to hear from you
                                         </div>
                                         <div class="get-in-touch-text-area col-12" style="">
-                                            <div class="pt-4 " >
-                                                <div class="custom-grey font-weight-bold" >
+                                            <div class="pt-4 mt-1 " >
+                                                <div class="custom-grey f16" >
                                                     Subject
                                                 </div>
                                                 <div class="">
-                                                   <textarea class="rounded pt-2 w-100"  rows="1" placeholder="" style="">
-                                                   </textarea>
-                                               </div>                                    
+                                                   <input class="rounded w-100 p-2"   placeholder="" style="">
+                                                </div>                                    
                                             </div>
 
-                                            <div class="pt-4 " >
-                                                <div class="custom-grey font-weight-bold " >
+                                            <div class="pt-4 mt-1" >
+                                                <div class="custom-grey f16 " >
                                                     Message
                                                 </div>
                                                 <div class="">
-                                                   <textarea class="rounded pt-2 w-100"  rows="5"  placeholder="" style="">
-                                                   </textarea>
+                                                   <textarea class="rounded pt-2 w-100"  rows="6"  placeholder="" style="">  </textarea>
                                                </div>
                                             </div>
                                         </div>
                                         <div class="pt-4 col-12 d-flex justify-content-end">
-                                            <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff">
+                                            <button class="f14 bg-theme-blue p-1 px-3" style="color: #fff">
                                                 Send
                                             </button>
                                         </div>
@@ -1679,21 +1677,21 @@
                             FAQ
                         </div>
                     </div>
-                    <div class="FAQS ">
-                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer1">
+                    <div class="FAQS accordian-group pt-2">
+                        <!------------------------------>
+                        <button class="FAQ-ques justify-content-between"  data-toggle="collapse" data-target="#FAQ-answer1">
                             <div class="f16 theme-blue">
                                 Why choose Kinnect?
                             </div>
-                            <div class="angle-down-blue">
-                                <i class="fa-angle-down fa p-1 font-weight-bold "></i>
-                            </div>
-                        </a>
+                            <span class="fa fa-angle-down angle-down-blue js-rotate-if-collapsed"></span>
+                        </button>
+                        
                         <div class="FAQ-sub-ques collapse" id="FAQ-answer1">
                             <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3" style=""></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1704,7 +1702,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1715,7 +1713,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1726,7 +1724,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1737,7 +1735,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1748,21 +1746,20 @@
 
                         <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
                         </div>
-
-                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer2">
+                        <!------------------------------->
+                        <button class="FAQ-ques justify-content-between" data-toggle="collapse"  data-target="#FAQ-answer2">
                             <div class="f16 theme-blue">
                                 Why choose Kinnect?
                             </div>
-                            <div class="angle-down-blue">
-                                <i class="fa-angle-down fa p-1 font-weight-bold" ></i>
-                            </div>
-                        </a>
+                            <span class="fa fa-angle-down angle-down-blue js-rotate-if-collapsed"></span>
+                        </button>
+                        
                         <div class="FAQ-sub-ques collapse" id="FAQ-answer2">
                             <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3" style=""></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1773,7 +1770,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1784,7 +1781,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1795,7 +1792,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1806,7 +1803,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1814,23 +1811,23 @@
                                 The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
                             </div>
                         </div>
+
                         <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
                         </div>
-
-                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer3">
+                        <!--------------------------------->
+                        <button class="FAQ-ques justify-content-between"  data-toggle="collapse" data-target="#FAQ-answer3">
                             <div class="f16 theme-blue">
                                 Why choose Kinnect?
                             </div>
-                            <div class="angle-down-blue">
-                                <i class="fa-angle-down fa p-1 font-weight-bold"></i>
-                            </div>
-                        </a>
+                            <span class="fa fa-angle-down angle-down-blue js-rotate-if-collapsed"></span>
+                        </button>
+
                         <div class="FAQ-sub-ques collapse" id="FAQ-answer3">
                             <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3" style=""></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1841,7 +1838,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1852,7 +1849,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1863,7 +1860,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1874,7 +1871,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1882,23 +1879,23 @@
                                 The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
                             </div>
                         </div>
+
                         <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
                         </div>
-
-                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer4">
+                        <!---------------------------------->
+                        <button class="FAQ-ques justify-content-between"  data-toggle="collapse" data-target="#FAQ-answer4">
                             <div class="f16 theme-blue">
                                 Why choose Kinnect?
                             </div>
-                            <div class="angle-down-blue">
-                                <i class="fa-angle-down fa p-1 font-weight-bold"></i>
-                            </div>
-                        </a>
+                            <span class="fa fa-angle-down angle-down-blue js-rotate-if-collapsed"></span>
+                        </button>
+
                         <div class="FAQ-sub-ques collapse" id="FAQ-answer4">
                             <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3" style=""></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1909,7 +1906,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1920,7 +1917,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1931,7 +1928,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1942,7 +1939,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1950,23 +1947,23 @@
                                 The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
                             </div>
                         </div>
+
                         <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
                         </div>
-
-                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer5">
+                        <!---------------------------------->
+                        <button class="FAQ-ques justify-content-between"  data-toggle="collapse" data-target="#FAQ-answer5">
                             <div class="f16 theme-blue">
                                 Why choose Kinnect?
                             </div>
-                            <div class="angle-down-blue">
-                                <i class="fa-angle-down fa p-1 font-weight-bold" style=""></i>
-                            </div>
-                        </a>
+                            <span class="fa fa-angle-down angle-down-blue js-rotate-if-collapsed"></span>
+                        </button>
+
                         <div class="FAQ-sub-ques collapse" id="FAQ-answer5">
                             <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3" style=""></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1977,7 +1974,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1988,7 +1985,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -1999,7 +1996,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2010,7 +2007,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2018,23 +2015,23 @@
                                 The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
                             </div>
                         </div>
+                        
                         <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
                         </div>
-
-                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer6">
+                        <!----------------------------------->
+                        <button class="FAQ-ques justify-content-between"  data-toggle="collapse" data-target="#FAQ-answer6">
                             <div class="f16 theme-blue">
                                 Why choose Kinnect?
                             </div>
-                            <div class="angle-down-blue">
-                                <i class="fa-angle-down fa p-1 font-weight-bold "></i>
-                            </div>
-                        </a>
-                        <div class="FAQ-sub-ques collapse" id="FAQ-answer6">                            
+                            <span class="fa fa-angle-down angle-down-blue js-rotate-if-collapsed"></span>
+                        </button>
+
+                        <div class="FAQ-sub-ques collapse" id="FAQ-answer6">
                             <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3" style=""></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2045,7 +2042,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2056,7 +2053,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2067,7 +2064,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2078,7 +2075,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2086,23 +2083,23 @@
                                 The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
                             </div>
                         </div>
+                        
                         <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
                         </div> 
-
-                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer7">
+                        <!------------------------------------>
+                        <button class="FAQ-ques justify-content-between"  data-toggle="collapse" data-target="#FAQ-answer7">
                             <div class="f16 theme-blue">
                                 Why choose Kinnect?
                             </div>
-                            <div class="angle-down-blue">
-                                <i class="fa-angle-down fa p-1 font-weight-bold" style=""></i>
-                            </div>
-                        </a>
+                            <span class="fa fa-angle-down angle-down-blue js-rotate-if-collapsed"></span>
+                        </button>
+
                         <div class="FAQ-sub-ques collapse" id="FAQ-answer7">
                             <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3" style=""></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2113,7 +2110,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2124,7 +2121,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2135,7 +2132,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2146,7 +2143,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2154,23 +2151,23 @@
                                 The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
                             </div>
                         </div>
+
                         <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
                         </div>
-
-                        <a class="FAQ-ques justify-content-between" data-toggle="collapse" href="#FAQ-answer8">
+                        <!------------------------------------>
+                        <button class="FAQ-ques justify-content-between"  data-toggle="collapse" data-target="#FAQ-answer8">
                             <div class="f16 theme-blue">
                                 Why choose Kinnect?
                             </div>
-                            <div class="angle-down-blue">
-                                <i class="fa-angle-down fa p-1 font-weight-bold"></i>
-                            </div>
-                        </a>
+                            <span class="fa fa-angle-down angle-down-blue js-rotate-if-collapsed"></span>
+                        </button>
+
                         <div class="FAQ-sub-ques collapse" id="FAQ-answer8">
                             <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3" style=""></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2181,7 +2178,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2192,7 +2189,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue ">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2203,7 +2200,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2214,7 +2211,7 @@
                                 <div class="">
                                     <i class="fa-angle-down fa p-2 px-3"></i>
                                 </div>
-                                <div class="pl-4 f14 theme-blue font-weight-bold">
+                                <div class="pl-4 f14 theme-blue">
                                     Is my information safe on Kinnect?
                                 </div>
                             </a>
@@ -2222,9 +2219,78 @@
                                 The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
                             </div>
                         </div>
+
                         <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
                         </div>
+                        <!------------------------------------>
+                        <button class="FAQ-ques justify-content-between"  data-toggle="collapse" data-target="#FAQ-answer9">
+                            <div class="f16 theme-blue">
+                                Why choose Kinnect?
+                            </div>
+                            <span class="fa fa-angle-down angle-down-blue js-rotate-if-collapsed"></span>
+                        </button>
 
+                        <div class="FAQ-sub-ques collapse" id="FAQ-answer10">
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer1">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3" style=""></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer1" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer2">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue ">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer2" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer3">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue ">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer3" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer4">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer4" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                            <a class="mt-3 faq-questions" data-toggle="collapse" href="#faqanswer5">
+                                <div class="">
+                                    <i class="fa-angle-down fa p-2 px-3"></i>
+                                </div>
+                                <div class="pl-4 f14 theme-blue">
+                                    Is my information safe on Kinnect?
+                                </div>
+                            </a>
+                            <div id="faqanswer5" class="faq-answers collapse">
+                                The Kinnect system prioritizes safety and privacy above all. We use military-grade encryption and take every precaution possible to ensure that your data is protected. We also believe in simplicity and choice, which is why we allow users to customize their security settings. Learn more about security here.
+                            </div>
+                        </div>
+
+                        <div class="" style="border-bottom: 1.5px solid #ccc; margin-right: 2rem;">                            
+                        </div>                        
+                        <!------------------------------------>
                     </div>
 
                     <div>
@@ -2236,7 +2302,7 @@
                                 </u>
                             </a>
                         </div>
-                        <div class="pt-1 mx-5 custom-grey f14 pb-5">
+                        <div class="pt-1 mx-5 custom-grey f13 pb-5">
                             We will send you an answer over email and include it in FAQ to help others.
                         </div>
                     </div>
@@ -2264,6 +2330,10 @@
 		$('body').on("click", ".dropdown-menu", function (e) {
 				$(this).parent().is(".show") && e.stopPropagation();
 			});
+
+        $('button').click( function(e) {
+        jQuery('.collapse').collapse('hide');
+        });
 
 	    function make_report_active()
 	    {

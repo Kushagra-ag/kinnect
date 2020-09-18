@@ -1922,6 +1922,16 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 }
 
+.report-issues-select{
+  box-shadow: 0 0 4px #0000006e;
+  border-radius: 5px;
+  border:0px solid #ccc;
+}
+
+.report-issues-select option{
+  font-size: 25px;
+}
+
 #Report{
   color: #4867ae;
   padding-bottom: 1rem;
@@ -1996,22 +2006,25 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   text-align: center;
 }
 
-.report-issues select {
+.report-issues select{
   -webkit-appearance: none;
   -moz-appearance: none;
   background: transparent;
 
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-position-y: 5px;
-
   
-  margin-right: 2rem;
   padding: 1rem;
   padding-right: 2rem;
 }
 
+textarea::placeholder{
+  font-size: 1.1em;
+}
+
+
+.get-in-touch-text-area input{
+  border: 1px solid #6b6e77;
+  padding: 0.4rem;
+}
 /**********************************************************************/
 
 .faq-questions{
@@ -2023,14 +2036,18 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   align-items:center;
   width: 100%;
 }
+
+
+
 .faq-answers{
   color: #81848e;
   padding-top:1rem;
   padding-left: 4.2rem;
-  padding-right: 3rem;
+  padding-right: 2rem;
   background-color: #f4f6fa;
   padding-bottom: 1rem;
 
+  font-size: 13px;
   border-radius: 5px;
 }
 
@@ -2061,6 +2078,7 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 .FAQS::-webkit-scrollbar-track
 {
+  margin-top: 1rem;
   padding-right: 3rem;
   padding-left: 3rem;
   background-color: white;
@@ -2069,7 +2087,7 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 .FAQS::-webkit-scrollbar
 {
   width: 4px;
-  background-color: #CE1F26;
+  background-color: #fff;
   margin-right: 10px;
 }
 
@@ -2080,13 +2098,16 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 }
 
 
-.angle-down-blue i{
+.FAQ-ques span{
   font-size:18px ; 
   color: #4867ae; 
-  margin-right: 1.5rem;
+  margin-right: 3rem;
   background-color: white; 
   border-top-left-radius: 5px; 
   border-bottom-left-radius: 5px;
+
+
+  font-weight: bold;
 /*  transform: rotate(180deg);*/
 }
 
@@ -2097,8 +2118,24 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   display: flex;
   align-items: center;
   font-weight: 500;
+  
+
 }
 
+.FAQS> button{
+  width: 100%;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+ [data-toggle="collapse"][aria-expanded="true"] > .js-rotate-if-collapsed
+        {
+            -webkit-transform: rotate(180deg);
+            -moz-transform:    rotate(180deg);
+            -ms-transform:     rotate(180deg);
+            -o-transform:      rotate(180deg);
+            transform:         rotate(180deg);
+        }
 
 
 /*.get-in-touch-text-area{
