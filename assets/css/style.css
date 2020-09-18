@@ -2122,6 +2122,25 @@ textarea::placeholder{
 
 }
 
+.card{
+  border:0px solid #000;
+  
+}
+
+.card-header{
+  padding: 0px;
+  border:0px solid #000;
+  margin-top: 1rem;
+}
+
+.card-body{
+  padding: 0px;
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
 .FAQS> button{
   width: 100%;
   background-color: transparent;
