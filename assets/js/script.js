@@ -1,4 +1,14 @@
-      
+  
+    $('body').on("click", ".dropdown-menu-pseudo", function (e) {
+        $(this).parent().is(".show") && e.stopPropagation();
+      });
+
+
+    $('button').click( function(e) {
+    jQuery('.collapse').collapse('hide');
+    });
+
+
 
      
     function make_report_active()
@@ -75,6 +85,46 @@
         document.getElementById("insurance-popup").style.opacity = 0;
     }
 
+  /**************************************network page given and received*********************************************/  
+    function change_given_blue()
+    {
+      document.getElementById("out_given").style.color="#4867ae";
+      document.getElementById("Given_tab").style.borderBottom="3px solid #4867ae";
+    }
+    function change_given_grey()
+    {
+      document.getElementById("out_given").style.color="#6b6e77";
+      document.getElementById("Given_tab").style.borderBottom="3px solid #f4f6fa";
+    }
+    function change_received_blue()
+    {
+      document.getElementById("out_received").style.color="#4867ae";
+      document.getElementById("Received_tab").style.borderBottom="3px solid #4867ae";
+    }
+    function change_received_grey()
+    {
+      document.getElementById("out_received").style.color="#6b6e77";
+      document.getElementById("Received_tab").style.borderBottom="3px solid #f4f6fa";
+    }
+    function opentab(evt, cName) 
+    {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+
+
+
+    /*******************Search bar search icon******************************************/
     function change_pos_icon() {
         document.getElementById("my-search-icon-1").style.display = "none";
         document.getElementById("my-search-icon-2").style.display = "block";
