@@ -85,7 +85,7 @@
 
                             <!--search bar ends here-->
                             <!--search menu starts-->
-                            <div class="search-menu dropdown-menu f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
+                            <div class="search-menu dropdown-menu dropdown-menu-pseudo f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
                                 <!--Start-->
                                 <div class="addHover dropdown-item search-item mt-2" onmouseenter="change_BL();">
                                     <a href="profile-connected-1.html" style="text-decoration:none;">
@@ -535,7 +535,7 @@
                             </div>
                             <div class="m-0 ml-n3 mr-2  p-0 d-flex align-items-center">
                                 <span class="test-plus1 m-0 p-0">
-                                    <button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
+                                    <button data-toggle="modal" data-target="#sendCon"><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
                                     </button>
                                 </span>
                             </div>
@@ -555,7 +555,7 @@
                             </div>
                             <div class="m-0 ml-n3 mr-2  p-0 d-flex align-items-center">
                                 <span class="test-plus1 m-0 p-0">
-                                    <button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
+                                    <button data-toggle="modal" data-target="#sendCon"><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
                                     </button>
                                 </span>
                             </div>
@@ -575,7 +575,7 @@
                             </div>
                             <div class="m-0 ml-n3 mr-2  p-0 d-flex align-items-center">
                                 <span class="test-plus1 m-0 p-0">
-                                    <button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
+                                    <button data-toggle="modal" data-target="#sendCon"><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
                                     </button>
                                 </span>
                             </div>
@@ -595,7 +595,7 @@
                             </div>
                             <div class="m-0 ml-n3 mr-2  p-0 d-flex align-items-center">
                                 <span class="test-plus1 m-0 p-0">
-                                    <button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
+                                    <button data-toggle="modal" data-target="#sendCon"><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
                                     </button>
                                 </span>
                             </div>
@@ -615,7 +615,7 @@
                             </div>
                             <div class="m-0 ml-n3 mr-2  p-0 d-flex align-items-center">
                                 <span class="test-plus1 m-0 p-0">
-                                    <button><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
+                                    <button data-toggle="modal" data-target="#sendCon"><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
                                     </button>
                                 </span>
                             </div>
@@ -2287,6 +2287,76 @@
         </div>
     </div>
     <!-- Edit Home -->
+    <!-- send connection -->
+    <div class="modal" id="sendCon">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 row p-4 m-0">
+                <div class="col-12">
+                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                        </button>
+                    </div>
+                    <div class="row align-items-center justify-content-start mt-3 pl-5">
+
+                        <div class="rounded-circle overflow-hidden mr-3">
+                            <img src="./assets/images/mike.png" height="100px" />
+                        </div>
+                        <div>
+                            <div class="f20 font-weight-bold mb-1">
+                                Mike Kirby
+                                <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                            </div>
+                            <div class="custom-light-grey f16">
+                                Location: Orlando, FL
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-start px-5 mt-4 mb-3 custom-light-grey text-center">
+                        <form class="w-100">
+                            <div class="row my-4 text-left">
+                                <div class="col-12">
+                                    What is your relationship to Mike? <br />
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row my-4 text-left">
+                                <div class="col-12">
+                                    Immediate Family Type <br />
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required>
+                                        <option>Parent</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row text-left">
+                                <div class="col-12">
+                                    Parent Type <br />
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required>
+                                        <option>Father</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
+                        <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
+                            Connect
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- send connection -->
     <!-- Modal -->
     <!--OPEN TABS jS FUNCTION-->
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
@@ -2295,107 +2365,7 @@
     <script type="text/javascript" src="./assets/js/wow.js"></script>
     <script type="text/javascript" src="./assets/js/jPages.js"></script>
     <script type="text/javascript" src="./assets/js/jPages.min.js"></script>
-    <script>
-    $('body').on("click", ".dropdown-menu", function(e) {
-        $(this).parent().is(".show") && e.stopPropagation();
-    });
-
-    $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-
-    function make_report_active()
-    {
-        document.getElementById("Report").style.color="#4867ae";
-        document.getElementById("Report-tab-head").style.borderBottom="3px solid #4867ae";
-
-        document.getElementById("Feedback").style.color="#6b6e77";
-        document.getElementById("Feedback-tab-head").style.borderBottom="3px solid #fff";
-
-        document.getElementById("GetinTouch").style.color="#6b6e77";
-        document.getElementById("GetinTouch-tab-head").style.borderBottom="3px solid #fff";
-    }
-
-    function make_feedback_active()
-    {
-        document.getElementById("Feedback").style.color="#4867ae";
-        document.getElementById("Feedback-tab-head").style.borderBottom="3px solid #4867ae";
-        
-        document.getElementById("Report").style.color="#6b6e77";
-        document.getElementById("Report-tab-head").style.borderBottom="3px solid #fff";
-
-        document.getElementById("GetinTouch").style.color="#6b6e77";
-        document.getElementById("GetinTouch-tab-head").style.borderBottom="3px solid #fff";
-    }
-
-    function make_getintouch_active()
-    {
-        document.getElementById("GetinTouch").style.color="#4867ae";
-        document.getElementById("GetinTouch-tab-head").style.borderBottom="3px solid #4867ae";
-
-        document.getElementById("Report").style.color="#6b6e77";
-        document.getElementById("Report-tab-head").style.borderBottom="3px solid #fff";
-
-        document.getElementById("Feedback").style.color="#6b6e77";
-        document.getElementById("Feedback-tab-head").style.borderBottom="3px solid #fff";
-    }
-
-    function show_less_hide_w() {
-        document.getElementById("show-more-work").style.display = "block";
-        document.getElementById("show-less-work").style.display = "none";
-    }
-
-    function show_more_hide_w() {
-        document.getElementById("show-more-work").style.display = "none";
-        document.getElementById("show-less-work").style.display = "block";
-    }
-
-    function show_less_hide_e() {
-        document.getElementById("show-more-ed").style.display = "block";
-        document.getElementById("show-less-ed").style.display = "none";
-    }
-
-    function show_more_hide_e() {
-        document.getElementById("show-more-ed").style.display = "none";
-        document.getElementById("show-less-ed").style.display = "block";
-    }
-
-    function show_less_hide_h() {
-        document.getElementById("show-more-home").style.display = "block";
-        document.getElementById("show-less-home").style.display = "none";
-    }
-
-    function show_more_hide_h() {
-        document.getElementById("show-more-home").style.display = "none";
-        document.getElementById("show-less-home").style.display = "block";
-    }
-
-    function insurance_popup_open() {
-        document.getElementById("insurance-popup").style.opacity = 1;
-    }
-
-    function insurance_popup_close() {
-        document.getElementById("insurance-popup").style.opacity = 0;
-    }
-
-    function change_pos_icon() {
-        document.getElementById("my-search-icon-1").style.display = "none";
-        document.getElementById("my-search-icon-2").style.display = "block";
-    }
-
-    function change_pos_icon_back() {
-        document.getElementById("my-search-icon-1").style.display = "block";
-        document.getElementById("my-search-icon-2").style.display = "none";
-    }
-
-    function change_BL() {
-        document.getElementById("backdrop").style.display = "block";
-    }
-
-    function change_BL_2() {
-        document.getElementById("backdrop").style.display = "none";
-    }
-    </script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 
 </html>

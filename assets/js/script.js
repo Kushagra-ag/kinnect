@@ -1,3 +1,6 @@
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
 
     /*******************************Pagination ********************************************/
     $("div.holder").jPages({
