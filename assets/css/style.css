@@ -1823,6 +1823,13 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 }
 
 /***********************************************/
+.left-arrow-help-center{
+  position: absolute;
+  padding-left: 1.5rem;
+  top:0.35rem;
+}
+
+
 .help-main-menu>.row1{
   font-weight: bold;
   background-color: #f4f6fa;
@@ -2095,7 +2102,6 @@ textarea::placeholder{
 
 .FAQ-ques{
   padding-top: 1rem;
-  padding-bottom: 0.5rem;
   margin-right: 2rem;
   display: flex;
   align-items: center;
@@ -2113,6 +2119,10 @@ textarea::placeholder{
   margin-top: 1rem;
 }
 
+.card-header> a>div{
+  text-decoration: none;
+}
+
 .card-body{
   padding: 0px;
 }
@@ -2121,10 +2131,24 @@ textarea::placeholder{
   box-shadow: none;
 }
 
+.btn-link:hover{
+  text-decoration: none;
+}
+
+.btn-link:focus{
+  text-decoration: none;
+}
+
 .FAQS> button{
   width: 100%;
   background-color: transparent;
   font-weight: bold;
+}
+
+.line-below-faq-set{
+  border-bottom: 1.5px solid #ccc; 
+  margin-right: 2rem;
+  padding-top: 0.5rem;
 }
 
  [data-toggle="collapse"][aria-expanded="true"] > .js-rotate-if-collapsed
@@ -2158,7 +2182,7 @@ textarea::placeholder{
 .select-selected {
   background-color: transparent;
   padding: 0px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 /* Style the arrow inside the select element: */
