@@ -1,16 +1,63 @@
-  
+
+    /*******************************Pagination ********************************************/
+    $("div.holder").jPages({
+     containerID : "itemContainer"
+     });
+
+
+    
+    /*************************************search*******************************************/
+    function change_dropdown()
+    {
+      document.getElementById("all-users-dropdown-toggle").style.display="none";
+      document.getElementById("mutual-users-dropdown-toggle").style.display="block";      
+    }
+
+    function change_dropdown_back()
+    {
+      document.getElementById("all-users-dropdown-toggle").style.display="block";
+      document.getElementById("mutual-users-dropdown-toggle").style.display="none";     
+    }
+
+
+    /***********************************no search results***********************************/    
+    mybutton = document.getElementById("Back-to-search-button");
+    // When the user scrolls down 20px from the top of the document, show the button
+
+    function scrollFunction() 
+    {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function getFocus() 
+    {
+      console.log("Test");
+      document.getElementsByClassName("search-bar-1-focus")[0].focus();
+    }
+
+    function topFunction() 
+    {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0;
+    }
+
+
+    /******************************make dropdown stick********************************************************/
     $('body').on("click", ".dropdown-menu-pseudo", function (e) {
         $(this).parent().is(".show") && e.stopPropagation();
       });
 
-
+    /***********************************FAQ************************************************/
     $('button').click( function(e) {
     jQuery('.collapse').collapse('hide');
     });
 
 
 
-     
+    /*********************************COntact us****************************************************/ 
     function make_report_active()
     {
         document.getElementById("Report").style.color="#4867ae";
@@ -47,6 +94,7 @@
         document.getElementById("Feedback-tab-head").style.borderBottom="3px solid #fff";
     }
 
+    /***********************************My profile*******************************************/
     function show_less_hide_w() {
         document.getElementById("show-more-work").style.display = "block";
         document.getElementById("show-less-work").style.display = "none";
