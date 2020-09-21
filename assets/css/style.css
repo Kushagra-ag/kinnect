@@ -2042,9 +2042,6 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   text-align: center;
 }
 
-.report-issue-select-menu option{
-  font-size: 13px;
-}
 
 
 textarea::placeholder{
@@ -2248,13 +2245,13 @@ textarea::placeholder{
 /* Style the arrow inside the select element: */
 .select-selected:after {
   position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+  font-family: FontAwesome;
+  content: "\f107";
+    right: 10px;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900; 
 }
 
 /* Point the arrow upwards when the select box is open (active): */
@@ -2494,8 +2491,6 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
 /* style the items (options), including the selected item: */
 .select-items-1 div{
   color: #6B6E77;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   cursor: pointer;
   padding-left: 1rem;
   font-weight: lighter;
@@ -2523,7 +2518,8 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
   
     font-size: 13px;
     box-shadow: 0 3px 6px #00000033;
-    border-radius: 5px;
+    border: 1px solid #000;
+    border-bottom: 1px solid #fff;
 }
 
 /* Hide the items when the select box is closed: */
@@ -2532,7 +2528,8 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
 }
 
 .select-items-1 div:hover, .same-as-selected-1 {
-  background-color: #F4F6FA;
+  background-color: DodgerBlue;
+  color: white;
 }
 
 /***************************************************************/

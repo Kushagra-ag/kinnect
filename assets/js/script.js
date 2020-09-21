@@ -289,7 +289,7 @@
         then close all select boxes: */
         document.addEventListener("click", closeAllSelect);
 
- /**********************************CUSTOM SELECT Profile page start and end date modals***********************************/     
+ /**********************************CUSTOM SELECT Profile page start and end date modals (NOW VAULT TOO)***********************************/     
 
         var x, i, j, l, ll, selElmnt, a, b, c;
         /* Look for any elements with the class "custom-select": */
@@ -371,4 +371,4 @@
 
         /* If the user clicks anywhere outside the select box,
         then close all select boxes: */
-        document.addEventListener("click", closeAllSelect);        
+        document.addEventListener("click", closeAllSelect);
