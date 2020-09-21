@@ -318,10 +318,142 @@
                         </a>
                     </li>
                     <li class="nav-item mx-1">
-                        <a class="nav-link theme-blue" href="#">
-                            <span class="feather f16 icon-bell align-middle"></span>
-                            <span class="d-md-none ml-2"> Notifications </span>
-                        </a>
+                        <div class="dropdown">
+                            <div class="nav-link theme-blue dropdown-toggle" data-toggle="dropdown"  onclick="change_BL();">
+                                <span class="feather f16 icon-bell align-middle"></span>
+                                <span class="d-md-none ml-2"> Notifications </span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-right notification-dropdown dropdown-menu-pseudo" onmouseenter="change_BL();" onclick="change_BL();">
+                                
+                                <div class="notifications">
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item" onmouseenter="change_BL();">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-picture container">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="notifications-setting-symbol">
+                                                    <img src="./assets/images/nora.png" class="">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex notification-text">
+                                                <div class="theme-blue font-weight-bold">
+                                                    Mike Kirby
+                                                </div>
+                                                <div class="">
+                                                    &nbsp;has sent you a connection request
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center test-plus">
+                                            <button class="bg-transparent p-0  ">
+                                                <img class="request-received-notif border-0" style="height: 20px; width: 20px;" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notif border-0 m-0" style="height: 20px; width: 20px;" src="./assets/images/reject.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item" onmouseenter="change_BL();">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-picture">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                            </div>
+                                            <div class="d-flex notification-text">
+                                                <div class="">
+                                                    Update you phone number in your profile section
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vertical-icon-notify-item test-plus ">
+                                            <button>
+                                                <img src="./assets/images/more-vertical.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item-old" onmouseenter="change_BL();">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-picture container">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="notifications-setting-symbol">
+                                                    <img src="./assets/images/nora.png" class="">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex notification-text">
+                                                <div class="theme-blue font-weight-bold">
+                                                    Mike Kirby
+                                                </div>
+                                                <div class="">
+                                                    &nbsp;has sent you a connection request
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center test-plus">
+                                            <button class="bg-transparent p-0  ">
+                                                <img class="request-received-notif border-0" style="height: 20px; width: 20px;" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notif border-0 m-0" style="height: 20px; width: 20px;" src="./assets/images/reject.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item-old" onmouseenter="change_BL();">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-picture">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                            </div>
+                                            <div class="d-flex notification-text">
+                                                <div class="">
+                                                    Update you phone number in your profile section
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vertical-icon-notify-item test-plus ">
+                                            <button>
+                                                <img src="./assets/images/more-vertical.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item-old" onmouseenter="change_BL();">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-picture container">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="notifications-setting-symbol">
+                                                    <img src="./assets/images/nora.png" class="">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex notification-text">
+                                                <div class="">
+                                                    Mike Kirby has accepted your connection request
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center test-plus">
+                                            <button class="bg-transparent p-0  ">
+                                                <img class="request-received-notif border-0" style="height: 20px; width: 20px;" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notif border-0 m-0" style="height: 20px; width: 20px;" src="./assets/images/reject.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                </div>
+                                <div  class="notifications-view-all">
+                                    
+                                    <a href="notifications.html" class="addHover dropdown-item notify-item rounded-bottom" onmouseenter="change_BL();">
+                                            <strong> View all</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <div class="d-md-none">
                         <div class="dropdown-divider"></div>
@@ -524,7 +656,7 @@
 								<div class="mt-4 mb-3">
                                     <div class="" style="color:black">
                                         <h3>
-                                            NOTIFICATIONS
+                                            Notifications
                                         </h3>
                                     </div>
 									<div class="custom-grey mt-3 ">
@@ -536,7 +668,7 @@
 								<!-- -------------------- -->
 								<div class=" mt-2">
 									<!--normal profile tabs-->
-									<div class="col-12 notifications-page-view-all-visited addHover">
+									<div class="col-12 notifications-page-view-all-visited addHover addHover1">
                                         <div class="d-flex align-items-center">
                                             <div class="view-all-notif-user-pic">
                                                 <img src="./assets/images/user-pic.jpg" class="">
@@ -555,45 +687,43 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div class="mt-n2">
-                                                    4h
-                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center test-plus">
+                                                <button class="bg-blue p-0  ml-3">
+                                                    <img class="request-received-notif border-0" style="" src="./assets/images/accept.svg">
+                                                </button>
+                                                <button class="bg-blue p-0 ml-1">
+                                                    <img class="request-received-notif border-0 m-0" style="" src="./assets/images/reject.svg">
+                                                </button>
                                             </div>
                                         </div>
-                                        <div class="d-flex mr-2">
-                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class=" custom-light-grey font-weight-light">
+                                                4h
+                                            </h3>
                                         </div>
 									</div>
-                                    <div class="col-12 notifications-page-view-all-visited addHover">
+                                    <div class="col-12 notifications-page-view-all-visited addHover addHover1">
                                         <div class="d-flex align-items-center">
                                             <div class="view-all-notif-user-pic">
                                                 <img src="./assets/images/user-pic.jpg" class="">
-                                                <div class="overlay-notif-img" style="">
-                                                    <img src="./assets/images/nora.png" class="" style="">
-                                                </div>
+
                                             </div>
                                             <div class="view-all-notif-text">
-                                                <div class="d-flex">
-                                                    <div class="theme-blue ">
-                                                        <h3>Mike Kirby</h3>
-                                                    </div>
-                                                    <div >
-                                                        <h3 class="font-weight-light">
-                                                            &nbsp;has sent you a connection request
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-n2">
-                                                    4h
+                                                <div class="d-flex col-9 p-0">
+                                                    This is a reminder to update your phone number in your profile section in my contact information
                                                 </div>
                                             </div>
+
                                         </div>
-                                        <div class="d-flex mr-2">
-                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class=" custom-light-grey font-weight-light">
+                                                4h
+                                            </h3>
                                         </div>
                                     </div>
 
-                                    <div class="col-12 notifications-page-view-all addHover">
+                                    <div class="col-12 notifications-page-view-all addHover addHover1">
                                         <div class="d-flex align-items-center">
                                             <div class="view-all-notif-user-pic">
                                                 <img src="./assets/images/user-pic.jpg" class="">
@@ -612,16 +742,23 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div class="mt-n2">
-                                                    4h
-                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center test-plus">
+                                                <button class="bg-blue p-0  ml-3">
+                                                    <img class="request-received-notif border-0" style="" src="./assets/images/accept.svg">
+                                                </button>
+                                                <button class="bg-blue p-0 ml-1">
+                                                    <img class="request-received-notif border-0 m-0" style="" src="./assets/images/reject.svg">
+                                                </button>
                                             </div>
                                         </div>
-                                        <div class="d-flex mr-2">
-                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class=" custom-light-grey font-weight-light">
+                                                4h
+                                            </h3>
                                         </div>
                                     </div>
-                                    <div class="col-12 notifications-page-view-all addHover">
+                                    <div class="col-12 notifications-page-view-all addHover addHover1">
                                         <div class="d-flex align-items-center">
                                             <div class="view-all-notif-user-pic">
                                                 <img src="./assets/images/user-pic.jpg" class="">
@@ -640,16 +777,23 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div class="mt-n2">
-                                                    4h
-                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center test-plus">
+                                                <button class="bg-blue p-0  ml-3">
+                                                    <img class="request-received-notif border-0" style="" src="./assets/images/accept.svg">
+                                                </button>
+                                                <button class="bg-blue p-0 ml-1">
+                                                    <img class="request-received-notif border-0 m-0" style="" src="./assets/images/reject.svg">
+                                                </button>
                                             </div>
                                         </div>
-                                        <div class="d-flex mr-2">
-                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class=" custom-light-grey font-weight-light">
+                                                4h
+                                            </h3>
                                         </div>
                                     </div>
-                                    <div class="col-12 notifications-page-view-all addHover">
+                                    <div class="col-12 notifications-page-view-all addHover addHover1">
                                         <div class="d-flex align-items-center">
                                             <div class="view-all-notif-user-pic">
                                                 <img src="./assets/images/user-pic.jpg" class="">
@@ -668,13 +812,20 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div class="mt-n2">
-                                                    4h
-                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center test-plus">
+                                                <button class="bg-blue p-0  ml-3">
+                                                    <img class="request-received-notif border-0" style="" src="./assets/images/accept.svg">
+                                                </button>
+                                                <button class="bg-blue p-0 ml-1">
+                                                    <img class="request-received-notif border-0 m-0" style="" src="./assets/images/reject.svg">
+                                                </button>
                                             </div>
                                         </div>
-                                        <div class="d-flex mr-2">
-                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class=" custom-light-grey font-weight-light">
+                                                4h
+                                            </h3>
                                         </div>
                                     </div>
 
@@ -691,7 +842,7 @@
                                 <!-- -------------------- -->
                                 <div class=" mt-2">
                                     <!--normal profile tabs-->
-                                    <div class="col-12 notifications-page-view-all-visited addHover">
+                                    <div class="col-12 notifications-page-view-all-visited addHover addHover1">
                                         <div class="d-flex align-items-center">
                                             <div class="view-all-notif-user-pic">
                                                 <img src="./assets/images/user-pic.jpg" class="">
@@ -710,17 +861,24 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div class="mt-n2">
-                                                    4h
-                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center test-plus">
+                                                <button class="bg-blue p-0  ml-3">
+                                                    <img class="request-received-notif border-0" style="" src="./assets/images/accept.svg">
+                                                </button>
+                                                <button class="bg-blue p-0 ml-1">
+                                                    <img class="request-received-notif border-0 m-0" style="" src="./assets/images/reject.svg">
+                                                </button>
                                             </div>
                                         </div>
-                                        <div class="d-flex mr-2">
-                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class=" custom-light-grey font-weight-light">
+                                                3d
+                                            </h3>
                                         </div>
                                     </div>
 
-                                    <div class="col-12 notifications-page-view-all addHover">
+                                    <div class="col-12 notifications-page-view-all addHover addHover1">
                                         <div class="d-flex align-items-center">
                                             <div class="view-all-notif-user-pic">
                                                 <img src="./assets/images/user-pic.jpg" class="">
@@ -739,16 +897,23 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div class="mt-n2">
-                                                    4h
-                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center test-plus">
+                                                <button class="bg-blue p-0  ml-3">
+                                                    <img class="request-received-notif border-0" style="" src="./assets/images/accept.svg">
+                                                </button>
+                                                <button class="bg-blue p-0 ml-1">
+                                                    <img class="request-received-notif border-0 m-0" style="" src="./assets/images/reject.svg">
+                                                </button>
                                             </div>
                                         </div>
-                                        <div class="d-flex mr-2">
-                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class=" custom-light-grey font-weight-light">
+                                                5d
+                                            </h3>
                                         </div>
                                     </div>
-                                    <div class="col-12 notifications-page-view-all addHover">
+                                    <div class="col-12 notifications-page-view-all addHover addHover1">
                                         <div class="d-flex align-items-center">
                                             <div class="view-all-notif-user-pic">
                                                 <img src="./assets/images/user-pic.jpg" class="">
@@ -767,13 +932,20 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div class="mt-n2">
-                                                    4h
-                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center test-plus">
+                                                <button class="bg-blue p-0  ml-3">
+                                                    <img class="request-received-notif border-0" style="" src="./assets/images/accept.svg">
+                                                </button>
+                                                <button class="bg-blue p-0 ml-1">
+                                                    <img class="request-received-notif border-0 m-0" style="" src="./assets/images/reject.svg">
+                                                </button>
                                             </div>
                                         </div>
-                                        <div class="d-flex mr-2">
-                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class=" custom-light-grey font-weight-light">
+                                                2w
+                                            </h3>
                                         </div>
                                     </div>
                                     <!--normal profile tabs-->
