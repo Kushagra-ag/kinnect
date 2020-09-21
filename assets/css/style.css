@@ -1969,6 +1969,34 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 12vh;
 }
 
+@media only screen and (max-width: 1007px){
+  .contact-us-tab-heading {
+    display: none;
+ }
+}
+
+@media only screen and (max-width: 1007px){
+  .contact-us-report-sub-heading
+ {
+     font-size: 14px;
+ }
+}
+
+@media only screen and (max-width: 800px){
+  .issue-heading {
+    display: none;
+ }
+}
+
+
+@media only screen and (max-width: 1007px){
+  .issue-heading {
+    font-size: 14px;
+ }
+}
+
+
+
 #Report{
   color: #4867ae;
   padding-bottom: 1rem;
@@ -2001,7 +2029,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 #GetinTouchtab{
-  width: 35%!important;
+  width: 35%;
 
 }
 
