@@ -1914,11 +1914,15 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   text-align: center;
 
 
+  height: 7vh;
+
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; 
 }
 
-
+.help-contact-us>.row2{
+  height: 11vh;
+}
 
 .help-contact-us> .row2> .nav-pills> .tab-head> a{
   color: #4867ae;
@@ -1940,7 +1944,6 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 .help-contact-us> .row2> .nav-pills> div{
   padding: 0px;
-
 }
 
 .help-contact-us> .row3{
@@ -1952,6 +1955,13 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.help-contact-us >.FAQS{
+  height: 60vh;
+}
+.help-contact-us> .last-row-faq{
+  height: 23vh;
 }
 
 #Report{
@@ -1985,6 +1995,11 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 }
 
+#GetinTouchtab{
+  width: 35%!important;
+
+}
+
 #Report a{
   color: #4867ae;
 }
@@ -2000,7 +2015,7 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 }
 
 .contact-us-tabs{
- 
+ width: 70%;
  }
 
 .contact-us-tab-heading{
@@ -2012,7 +2027,6 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 }
 
 .feedback-tab{
-  height: 73vh;
 }
 
 .star-ratings >button{
