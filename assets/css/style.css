@@ -1947,6 +1947,13 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   height: 73.5vh;
 }
 
+.help-contact-us> .row3> .tab-content{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #Report{
   color: #4867ae;
   padding-bottom: 1rem;
