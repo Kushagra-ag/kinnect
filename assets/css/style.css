@@ -1836,9 +1836,13 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 .left-arrow-help-center{
   position: absolute;
   padding-left: 1.5rem;
-  top:0.35rem;
+  top:0.37rem;
+
 }
 
+.left-arrow-help-center> button>svg{
+  height: 15px;
+}
 
 .help-main-menu>.row1{
   font-weight: bold;
@@ -1939,6 +1943,9 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 }
 
+.help-contact-us> .row3{
+  height: 73.5vh;
+}
 
 #Report{
   color: #4867ae;
@@ -1986,8 +1993,8 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 }
 
 .contact-us-tabs{
-  height: 73vh;
-}
+ 
+ }
 
 .contact-us-tab-heading{
   text-align: center;
@@ -2219,6 +2226,7 @@ textarea::placeholder{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 /* Style items (options): */
