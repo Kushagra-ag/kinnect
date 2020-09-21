@@ -1170,7 +1170,7 @@ body {
  .maange-search{
   margin-top: 0;
   margin-left: 0;
-}		 
+}    
 .account-list li {
  margin-bottom: 5px;
  text-align: center;
@@ -1230,7 +1230,7 @@ body {
 
 .dropdown-toggle.nav::after{
   display: none;
-}			
+}     
 
 .dropdown-toggle::after{
   display: inline-block;
@@ -1449,15 +1449,15 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 /*
 .search-menu{
-	margin-top:0.6rem!important;
+  margin-top:0.6rem!important;
 }
 */
 .search-menu .search-item img{
-	height: 40px;
-	margin-left:0.5rem;
-	margin-right:0.5rem;
+  height: 40px;
+  margin-left:0.5rem;
+  margin-right:0.5rem;
     border-radius: 50%;
-	border: 0.5px solid #6b6e77;
+  border: 0.5px solid #6b6e77;
 }
 
 .edit-access-item img{
@@ -1470,58 +1470,58 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 .search-item
 {
-	height:flex;
-	margin-left:0px!important;
+  height:flex;
+  margin-left:0px!important;
 
-	padding-left:1rem;
-	padding-right:1rem;
-	padding-top:0.5rem;
-	padding-bottom:0.5rem;
-	width:50vw;
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  width:50vw;
 }
 
 /*
 .search-menu .search-item p{
-	color:#6b6e77;
-	font-size:8;
-	margin-bottom:0;
+  color:#6b6e77;
+  font-size:8;
+  margin-bottom:0;
 }
 */
 
 .dropdown-menu .search-menu .search-item
 {
-	background-color:white;
+  background-color:white;
 }
 .search-menu.active{
-	border-radius:5px;
-	display:flex;
+  border-radius:5px;
+  display:flex;
 }
 
 /*.search-bar-1
 {
-	position:relative;
-	display:block;
+  position:relative;
+  display:block;
 }*/
 
 
 
 
 .navbar {
-	z-index:300;
+  z-index:300;
 }
 
 .bl {
     position: fixed;
-	height: 100vh;
+  height: 100vh;
     width: 100vw;
     background-color: #000;
     opacity: 0.5;
     top:0;
-	z-index:100;
+  z-index:100;
 }
 
 /*.search-dropdown .dropdown-toggle{
-	margin:0px!important;
+  margin:0px!important;
 }*/
 
 .search-toggle:hover {
@@ -1534,26 +1534,26 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 }
 #collapsibleNavbar>li>input .bl
 {
-	  opacity:0.5;
+    opacity:0.5;
 }
 */
 .request-icons img{
-	height:20px;
-	width:20px;
+  height:20px;
+  width:20px;
 
 }
 .request-received-notif  img{
-	display:none;
+  display:none;
 }
 
 
 .maange-search input[type="text"]:hover +.bl div{
-	opacity:0.5;
+  opacity:0.5;
 }
 
 .search-ctm
 {
-  width: calc(100%);	
+  width: calc(100%);  
 }
 .search-ctm-1
 {
@@ -1566,10 +1566,10 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 .itemContainer>li a
 {
-	font-weight:bold;
-	background-color:#fff;
-	color:#4867ae;
-	text-align:center;
+  font-weight:bold;
+  background-color:#fff;
+  color:#4867ae;
+  text-align:center;
 }
 
 .itemContainer>li a:hover{
@@ -1583,18 +1583,18 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 }
 
 .jp-hidden .active a{
-	background-color: #ffffff;
+  background-color: #ffffff;
     color: #4867ae;
 }
 .jp-first a{
-	background-color: #4867ae;
+  background-color: #4867ae;
     color: #ffffff;
 }
 
 .test-plus button{
-	height:26px;
-	width:26px;
-	opacity:0;
+  height:26px;
+  width:26px;
+  opacity:0;
   background-color: transparent;
 }
 .test-plus1 button{
@@ -1613,7 +1613,7 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 }
 
 .addHover1:hover .test-plus button{
-	opacity:1;
+  opacity:1;
 }
 /*******search screen******/
 
@@ -1621,7 +1621,7 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 /*
 .page-icon-search-page 
 {
-		font-weight: bold;
+    font-weight: bold;
 }*/
 
 /**********PROFILE PAGE*************/
@@ -1755,6 +1755,9 @@ button, button:active:not(.invite), button:focus:not(.invite) {
   height: 20px;
  }
 
+.location-icon {
+    padding-top: 0.4rem;
+}
 
 .My-profile {
   cursor: context-menu;
@@ -1787,6 +1790,13 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 .you-may-also-know strong{
   color: black;
+}
+
+.insurance-checkboxes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0rem;
+    padding-bottom: 0.25rem;
 }
 
 .private-info-tag{
@@ -2234,4 +2244,244 @@ textarea::placeholder{
 .select-items div:hover, .same-as-selected {
   background-color: #F4F6FA;
 }
-/**************************************************************/
+
+/***************************************************************/
+.notification-dropdown{
+  padding-bottom: 0px;
+box-shadow: 0px 0.1px 6px -1px #00000059;
+}
+
+.notifications{
+  width:28rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-picture{
+ padding-left: 1.5rem!important;
+ padding-right: 0px!important;
+}
+
+.user-picture img{
+  height: 40px;
+  width: 40px;
+  padding-left: 0.02rem;
+  padding-top: 0.02rem;
+
+  border-radius: 50%;
+  background-color: #6B6E77;
+
+  border: 1px solid #6B6E77;
+}
+
+.notifications-setting-symbol img{
+
+  position: absolute;
+  height: 15px;
+  width: 15px;
+
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid white;
+
+  margin-left: -0.88rem;
+  margin-top: 0.25rem;
+
+  padding-bottom: 0.02rem;
+
+}
+
+.notification-text{
+  color: #6B6E77;
+  font-size: 12px;
+  padding-left: 2rem;
+}
+
+.notify-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px;
+  width: 100%;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.notify-item svg{
+  margin-right: 1.5rem;
+
+}
+
+.vertical-icon-notify-item img{
+  height: 14px;
+  width: 14px;
+  display: flex;
+}
+
+.vertical-icon-notify-item{
+  padding-right: 1rem;
+  margin-top: -0.25rem;
+}
+
+.notifications-view-all a{
+
+  color: #4867ae;
+  font-size: 13px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  padding-left: 1.5rem;
+  border-top: 2px solid #ccc;
+}
+
+.notifications-view-all a:hover{
+  text-decoration: none;
+  color: #4867ae;
+
+}
+
+
+/****************************************************************/
+.view-all-notif-user-pic img{
+  height:50px;
+  width: 50px;
+
+  border-radius: 50%;
+  background-color: #6B6E77;
+  border: 1.5px solid #6B6E77;
+
+  padding-top: 0.03rem;
+  padding-left: 0.03rem;
+  padding-bottom: 0.01rem;
+}
+
+.overlay-notif-img img{
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+
+  margin-top: -1.3rem;
+  margin-left: 1.75rem;
+
+  padding-top: 0.01rem;
+  padding-left: 0.02rem;
+  padding-right: 0.02rem; 
+  padding-bottom: 0.02rem;
+}
+
+.view-all-notif-user-pic {
+    padding-left: 0.5rem;
+}
+
+.view-all-notif-text {
+    padding-left: 2rem;
+    font-size: 15px;
+    color: rgb(107, 110, 119);
+}
+
+.notifications-page-view-all-visited {
+    padding-top: 0.88rem;
+    padding-bottom: 0.88rem;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    background-color: rgb(244, 246, 250);
+    border-radius: 0px;
+    border-bottom: 1.5px solid rgb(204, 204, 204);
+}
+
+.notifications-page-view-all {
+    padding-top: 0.88rem;
+    padding-bottom: 0.88rem;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    border-radius: 0px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+
+/************************************************************/
+
+/***********************************************************************/
+
+.custom-select-1 {
+  width: 45%;
+  position: relative;
+  border: 1px solid #6b6e77;
+  border-radius: 5px;
+}
+
+.custom-select-1 select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected-1 {
+  background-color: transparent;
+  padding: 0px;
+  font-size: 13px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected-1:after {
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f107";
+    right: 10px;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900; 
+
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+
+/* style the items (options), including the selected item: */
+.select-items-1 div{
+  color: #6B6E77;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  padding-left: 1rem;
+  font-weight: lighter;
+
+}
+
+.select-selected-1 {
+  color: #6B6E77;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  padding-left: 1rem;
+  
+}
+
+/* Style items (options): */
+.select-items-1 {
+
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  
+    font-size: 13px;
+    box-shadow: 0 3px 6px #00000033;
+    border-radius: 5px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide-1 {
+  display: none;
+}
+
+.select-items-1 div:hover, .same-as-selected-1 {
+  background-color: #F4F6FA;
+}
+
+/***************************************************************/

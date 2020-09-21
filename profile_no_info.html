@@ -388,10 +388,10 @@
                                     </div>
                                 </div>
                                 <div class="d-flex font-weight-bold  ">
-                                    <div class="pt-1 location-icon">
+                                    <div class="location-icon">
                                         <i class="fa fa-lg fa-map-marker theme-blue px-1" aria-hidden="true"></i>
                                     </div>
-                                    <div class="pl-2 mt-1 pt-1 text-truncate" "="" title="Miami, Florida">
+                                    <div class="pl-2 mt-1 pt-1 text-truncate" " title="Miami, Florida" >
                                         Miami, Florida
                                     </div>
                                 </div>
@@ -610,40 +610,64 @@
 				
 				<!-------Insurance Column---------->
 				<span class=" d-flex bg-blue h-100 rounded ">
-					<div class=" rounded  pl-4  mb-5 py-2  bg-white" style="max-width:270px">
-						<div class="row w-100 mx-0 px-0 col-12">
-		                    <div class="custom-grey f16 col-10 px-0 mx-0">
-		                    	Where do you store your insurance?
-		                    </div>
-							<div class="col-2 mx-0 px-0 pl-1">
-								<div id="insurance-popup" class="position-absolute p-1 mt-n4" >
-									This will help us understand and serve you better
-								</div>
+                    <div class=" rounded  pl-4  mb-5 py-2  bg-white" style="max-width:270px">
+                        <div class="row w-100 mx-0 px-0 col-12">
+                            <div class="custom-grey f16 col-10 px-0 mx-0">
+                                Where do you store your insurance?
+                            </div>
+                            <div class="col-2 mx-0 px-0 pl-1">
+                                <div id="insurance-popup" class="position-absolute p-1 mt-n4">
+                                    This will help us understand and serve you better
+                                </div>
+                                <button class="bg-white mx-0 px-0" onmouseover="insurance_popup_open();" onmouseleave="insurance_popup_close();">
+                                    <img src="./assets/images/help-icon2.svg" style="height: 20px;" class="pt-1">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="container p-0 pt-3  custom-grey f12" style="">
+                            
+                            <label class="insurance-checkboxes">
+                                <div>
+                                    <input type="checkbox" value="" checked="">
+                                </div>
+                                <div class="pl-2 mb-1 ">
+                                    Option 1
+                                </div>
+                            </label>
+                        
+                            <label class="insurance-checkboxes">
+                                <div>
+                                    <input type="checkbox" value="" checked="">
+                                </div>
+                                <div class="pl-2 mb-1 ">
+                                    Option 2
+                                </div>
+                            </label>
 
-								<button class="bg-white mx-0 px-0" onmouseover="insurance_popup_open();" onmouseleave="insurance_popup_close();">
-									<img src="./assets/images/help-icon2.svg" style="height: 20px;" class="pt-1">
-								</button>
-							</div>
-		                </div>
-	                    <div class="container p-0 pt-3  custom-grey f12" style="">
-	                        <div class="insurance-checkboxes">
-	                          <label class="insurance-checkboxes"><input type="checkbox" value="" checked=""><span class="pl-2 py-1">Option 1</span></label>
-	                        </div>
-	                        <div class="insurance-checkboxes">
-	                          <label class="insurance-checkboxes"><input type="checkbox" value="" checked=""><span class="pl-2 py-1">Option 2</span></label>
-	                        </div>
-	                        <div class="insurance-checkboxes">
-	                          <label class="insurance-checkboxes"><input type="checkbox" value="" checked=""><span class="pl-2 py-1">Option 3</span></label>
-	                        </div>          
-	                        <div class="insurance-checkboxes">
-	                          <label class="insurance-checkboxes"><input class="theme-blue" type="checkbox" value="" checked=""><span class="pl-2 py-1">Option 4</span></label>
-	                        </div>          
-	                    	<div class=" pt-1 font-weight-bold theme-blue f13">
-			                   	<u><a href="#" class="theme-blue">Skip</a></u>            
-	                    	</div>
-	                    </div>
-					</div>
-				</span>
+                            <label class="insurance-checkboxes">
+                                <div>
+                                    <input type="checkbox" value="" checked="">
+                                </div>
+                                <div class="pl-2 mb-1 ">
+                                    Option 3
+                                </div>
+                            </label>
+
+                            <label class="insurance-checkboxes">
+                                <div>
+                                    <input type="checkbox" value="" checked="">
+                                </div>
+                                <div class="pl-2 mb-1 ">
+                                    Option 4
+                                </div>
+                            </label>
+
+                            <div class=" pt-1 font-weight-bold theme-blue f13">
+                                <u><a href="#" class="theme-blue">Skip</a></u>
+                            </div>
+                        </div>
+                    </div>
+                </span>
 				<!------YOU MAY ALSO KNOW--------->
                 <span class=" d-flex bg-blue h-100 rounded mt-3">
                     <div class="rounded bg-blue w-100" style="height: 400px; max-width: 270px;">
@@ -1948,10 +1972,10 @@
         </div>
     </div>
     <!--  edit access -->        
-    <!-- Add Work -->
+     <!-- Add Work -->
     <div class="modal" id="addWork" >
         <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row pt-4 pb-4  px-5 " style="border-radius:0px;">
+            <div class="modal-content border-0 row  px-5 " style="border-radius:0px; padding-top: 2rem; padding-bottom: 2rem;">
                 <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
                     <button type="button" class="close" data-dismiss="modal">
                         <img src="./assets/images/popupclose.svg" height="24px" class="">
@@ -1987,93 +2011,57 @@
                             </div>
                             <div class="w-100 d-flex justify-content-between">
                                 <div class="col-6 d-flex mx-0 px-0">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                Month
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
+                                    <div class="custom-select-1 col-6 px-0" >
+                                        <select name="month" id="addWork-start-month"  >
+                                            <option value="" class="" disabled selected hidden>
+                                                Month 
+                                            </option>
+                                            <option value="0">Jan</option>
+                                            <option value="1">Feb</option>
+                                            <option value="2">Mar</option>
+                                        </select>
                                     </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
+                                    <div class="custom-select-1 col-5 px-0 ml-1">
+                                         <select name="year" id="addWork-start-year">
+                                            <option value="" class="" disabled selected hidden>
                                                 Year
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                            </option>
+                                            <option value="0">2020</option>
+                                            <option value="1">2019</option>
+                                            <option value="2">2018</option>
+                                        </select>
+                                   </div>
+                               </div>
                                 <div class="col-6 d-flex mx-0 px-0 ml-2 pl-1" style="margin-left: 0.8rem;">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                Month
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
+                                    <div class="custom-select-1 col-6 px-0">
+                                        <select name="month" id="addWork-end-month">
+                                            <option value="" class="" disabled selected hidden>
+                                                Month 
+                                            </option>
+                                            <option value="0">Jan</option>
+                                            <option value="1">Feb</option>
+                                            <option value="2">Mar</option>
+                                        </select>
                                     </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
+                                    <div class="custom-select-1 col-5 px-0 ml-1">
+                                         <select name="year" id="addWork-end-year">
+                                            <option value="" class="" disabled selected hidden>
                                                 Year
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
+                                            </option>
+                                            <option value="0">2020</option>
+                                            <option value="1">2019</option>
+                                            <option value="2">2018</option>
+                                        </select>
+                                   </div>
                                 </div>
                             </div>
                         </div>
                         <div class=" col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex align-items-center">
-                            <input type="checkbox" class="mr-2 theme-blue">
+                            <input type="checkbox" class="mr-2 theme-blue" onclick="disable();" ondblclick="enable();">
                             <div>I currently work here</div>
                         </div>
                         <div class="col-12 pt-3 pb-4 custom-light-grey font-weight-light d-flex justify-content-end">
-                            <button class="p-1 px-3 f14 bg-theme-blue" style="color: white;">Save</button>
+                            <button class="p-1 px-3 f14 bg-theme-blue" data-dismiss="modal" data-toggle="modal" style="color: white;">Save</button>
                         </div>
                     </div>
                 </div>
@@ -2123,84 +2111,48 @@
                             </div>
                             <div class="w-100 d-flex justify-content-between">
                                 <div class="col-6 d-flex mx-0 px-0">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                Month
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
+                                    <div class="custom-select-1 col-6 px-0" >
+                                        <select name="month" id="addedu-start-month"  >
+                                            <option value="" class="" disabled selected hidden>
+                                                Month 
+                                            </option>
+                                            <option value="0">Jan</option>
+                                            <option value="1">Feb</option>
+                                            <option value="2">Mar</option>
+                                        </select>
                                     </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
+                                    <div class="custom-select-1 col-5 px-0 ml-1">
+                                         <select name="year" id="addedu-start-year">
+                                            <option value="" class="" disabled selected hidden>
                                                 Year
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                            </option>
+                                            <option value="0">2020</option>
+                                            <option value="1">2019</option>
+                                            <option value="2">2018</option>
+                                        </select>
+                                   </div>
+                               </div>
                                 <div class="col-6 d-flex mx-0 px-0 ml-2 pl-1" style="margin-left: 0.8rem;">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                Month
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
+                                    <div class="custom-select-1 col-6 px-0">
+                                        <select name="month" id="addedu-end-month">
+                                            <option value="" class="" disabled selected hidden>
+                                                Month 
+                                            </option>
+                                            <option value="0">Jan</option>
+                                            <option value="1">Feb</option>
+                                            <option value="2">Mar</option>
+                                        </select>
                                     </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
+                                    <div class="custom-select-1 col-5 px-0 ml-1">
+                                         <select name="year" id="addedu-end-year">
+                                            <option value="" class="" disabled selected hidden>
                                                 Year
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
+                                            </option>
+                                            <option value="0">2020</option>
+                                            <option value="1">2019</option>
+                                            <option value="2">2018</option>
+                                        </select>
+                                   </div>
                                 </div>
                             </div>
                         </div>
@@ -2209,7 +2161,7 @@
                             <div>I currently study here</div>
                         </div>
                         <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
-                            <button class="p-1 px-3 f14 bg-theme-blue" style="color: white;">Save</button>
+                            <button class="p-1 px-3 f14 bg-theme-blue" data-dismiss="modal" data-toggle="modal" style="color: white;">Save</button>
                         </div>
                     </div>
                 </div>
@@ -2230,7 +2182,7 @@
                     <h4 class="modal-title f20 font-weight-bold ">Add home</h4>
                 </div>
                 <div class="col-12">
-                    <div class="row text-left custom-grey font-1weight-bold f13 pt-3">
+                    <div class="row text-left custom-grey font-weight-bold f13 pt-3">
                         <div class="col-12">
                             Country <br />
                             <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required />
@@ -2259,84 +2211,48 @@
                             </div>
                             <div class="w-100 d-flex justify-content-between">
                                 <div class="col-6 d-flex mx-0 px-0">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                Month
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
+                                    <div class="custom-select-1 col-6 px-0" >
+                                        <select name="month" id="addhome-start-month"  >
+                                            <option value="" class="" disabled selected hidden>
+                                                Month 
+                                            </option>
+                                            <option value="0">Jan</option>
+                                            <option value="1">Feb</option>
+                                            <option value="2">Mar</option>
+                                        </select>
                                     </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
+                                    <div class="custom-select-1 col-5 px-0 ml-1">
+                                         <select name="year" id="addhome-start-year">
+                                            <option value="" class="" disabled selected hidden>
                                                 Year
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                            </option>
+                                            <option value="0">2020</option>
+                                            <option value="1">2019</option>
+                                            <option value="2">2018</option>
+                                        </select>
+                                   </div>
+                               </div>
                                 <div class="col-6 d-flex mx-0 px-0 ml-2 pl-1" style="margin-left: 0.8rem;">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                Month
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
+                                    <div class="custom-select-1 col-6 px-0">
+                                        <select name="month" id="addhome-end-month">
+                                            <option value="" class="" disabled selected hidden>
+                                                Month 
+                                            </option>
+                                            <option value="0">Jan</option>
+                                            <option value="1">Feb</option>
+                                            <option value="2">Mar</option>
+                                        </select>
                                     </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
+                                    <div class="custom-select-1 col-5 px-0 ml-1">
+                                         <select name="year" id="addhome-end-year">
+                                            <option value="" class="" disabled selected hidden>
                                                 Year
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
+                                            </option>
+                                            <option value="0">2020</option>
+                                            <option value="1">2019</option>
+                                            <option value="2">2018</option>
+                                        </select>
+                                   </div>
                                 </div>
                             </div>
                         </div>
@@ -2345,7 +2261,7 @@
                             <div>I currently live here</div>
                         </div>
                         <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
-                            <button class="p-1 px-3 f14 bg-theme-blue" style="color: white;">Save</button>
+                            <button class="p-1 px-3 f14 bg-theme-blue" data-dismiss="modal" data-toggle="modal" style="color: white;">Save</button>
                         </div>
                     </div>
                 </div>
@@ -2356,7 +2272,7 @@
     <!-- Edit Work -->
     <div class="modal" id="editWork" >
         <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row pt-4 pb-4  px-5 " style="border-radius:0px;">
+            <div class="modal-content border-0 row  px-5 " style="border-radius:0px;  padding-top: 2rem; padding-bottom: 2rem;">
                 <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
                     <button type="button" class="close" data-dismiss="modal">
                         <img src="./assets/images/popupclose.svg" height="24px" class="">
@@ -2759,76 +2675,76 @@
         </div>
     </div>
     <!-- Edit Home -->
-                    <!-- send connection -->
-                <div class="modal" id="sendCon">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content border-0 row p-4 m-0">
-                            <div class="col-12">
-                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
-                                    <button type="button" class="close" data-dismiss="modal">
-                                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                                    </button>
-                                </div>
-                                <div class="row align-items-center justify-content-start mt-3 pl-5">
+        <!-- send connection -->
+    <div class="modal" id="sendCon">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 row p-4 m-0">
+                <div class="col-12">
+                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                        </button>
+                    </div>
+                    <div class="row align-items-center justify-content-start mt-3 pl-5">
 
-                                    <div class="rounded-circle overflow-hidden mr-3">
-                                        <img src="./assets/images/mike.png" height="100px" />
-                                    </div>
-                                    <div>
-                                        <div class="f20 font-weight-bold mb-1">
-                                            Mike Kirby
-                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
-                                        </div>
-                                        <div class="custom-light-grey f16">
-                                            Location: Orlando, FL
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center justify-content-start px-5 mt-4 mb-3 custom-light-grey text-center">
-                                    <form class="w-100">
-                                        <div class="row my-4 text-left">
-                                            <div class="col-12">
-                                                What is your relationship to Mike? <br />
-                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required>
-                                                    <option>Immediate family</option>
-                                                    <option>Immediate family</option>
-                                                    <option>Immediate family</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row my-4 text-left">
-                                            <div class="col-12">
-                                                Immediate Family Type <br />
-                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required>
-                                                    <option>Parent</option>
-                                                    <option>Immediate family</option>
-                                                    <option>Immediate family</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row text-left">
-                                            <div class="col-12">
-                                                Parent Type <br />
-                                                <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required>
-                                                    <option>Father</option>
-                                                    <option>Immediate family</option>
-                                                    <option>Immediate family</option>
-                                                </select>
-                                            </div>
-
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
-                                    <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
-                                        Connect
-                                    </button>
-                                </div>
+                        <div class="rounded-circle overflow-hidden mr-3">
+                            <img src="./assets/images/mike.png" height="100px" />
+                        </div>
+                        <div>
+                            <div class="f20 font-weight-bold mb-1">
+                                Mike Kirby
+                                <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                            </div>
+                            <div class="custom-light-grey f16">
+                                Location: Orlando, FL
                             </div>
                         </div>
                     </div>
+                    <div class="row align-items-center justify-content-start px-5 mt-4 mb-3 custom-light-grey text-center">
+                        <form class="w-100">
+                            <div class="row my-4 text-left">
+                                <div class="col-12">
+                                    What is your relationship to Mike? <br />
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row my-4 text-left">
+                                <div class="col-12">
+                                    Immediate Family Type <br />
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required>
+                                        <option>Parent</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row text-left">
+                                <div class="col-12">
+                                    Parent Type <br />
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required>
+                                        <option>Father</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
+                        <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
+                            Connect
+                        </button>
+                    </div>
                 </div>
-                <!-- send connection -->
+            </div>
+        </div>
+    </div>
+    <!-- send connection -->
     <!-- Modal -->
 
 	<!--OPEN TABS jS FUNCTION-->

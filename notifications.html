@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Kinnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -10,12 +9,14 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css" />
-</head>
+    <link rel="stylesheet" type="text/css" href="./assets/css/jPages.css" />
 
+</head>
+</head>
 <body>
-    <h3 id="backdrop" class="bl" style="display: none;" onclick="change_BL_2(); change_pos_icon_back();">
-    </h3>
-    <!-- Navigation -->
+	<h3 id="backdrop" class="bl" style="display: none" onclick="change_BL_2(); change_pos_icon_back();">
+	</h3>
+	<!-- Navigation -->
     <nav class="navbar navbar-expand-md bg-white navbar-light" >
 
         <div class="container-fluid px-0">
@@ -85,7 +86,7 @@
 
                             <!--search bar ends here-->
                             <!--search menu starts-->
-                            <div class="search-menu dropdown-menu-pseudo dropdown-menu f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
+                            <div class="search-menu dropdown-menu dropdown-menu-pseudo f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
                                 <!--Start-->
                                 <div class="addHover dropdown-item search-item mt-2" onmouseenter="change_BL();">
                                     <a href="profile-connected-1.html" style="text-decoration:none;">
@@ -342,7 +343,7 @@
                             <img id="navbar-profile-pic" src="./assets/images/kyle.png" class="user-img mb-1">
                             <i class="nav-bar-last-dropdown-toggle-icon fa fa-angle-down ml-1 my-2 font-weight-bold rounded"></i>
                         </div>
-                        <ul class="dropdown-menu  dropdown-menu-right">
+                        <ul class="dropdown-menu dropdown-menu-right">
                             <li><a class="dropdown-item" href="">Account</a></li>
                             <li><a class="dropdown-item" href="./profile_page.html">Profile</a></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
@@ -352,1723 +353,444 @@
             </div>
         </div>
     </nav>
-    <!-- nav  -->
-    <!---BODY--->
-    <div class="container-fluid ">
-        <div class="row">
-            <!----placeholder--->
-            <div class="profile-pages-placeholder placeholder row" style="">
-            </div>
-            <!----placeholder--->
-            <div class="Profile-block col-lg-9 col-sm-12" style="">
-                <div class="row">
-                    <!------My profle------->
-                    <div class="Profile-block-content col-md-6 col-xs-12 bg-blue pl-lg-0  mb-4 ">
-                        <div class="My-profile align-items-center overflow-hidden d-flex bg-white h-100 rounded col-12">
-                            <!------My profle items------->
-                            <div class="col-md-6 profile-display-pic text-truncate px-3" >
-                                <img src="./assets/images/user-pic.jpg" class="w-100 ">
-                            </div>
-                            <div class="col-md-6 custom-grey p-0 m-0 pl-1 f13 h-100 my-info text-truncate">
-                                <div class="d-flex justify-content-end pt-3 pr-1  ">
-                                    <button class="bg-transparent" data-toggle="modal" data-target="#myinformation">
-                                        <img src="./assets/images/edit.svg">
-                                    </button>
-                                </div>
-                                <div class="pt-2 mt-1">
-                                    <h3><strong class="f18" style="color: black;">Kyle Kirby</strong></h3>
-                                </div>
-                                <div class=" d-flex font-weight-bold  ">
-                                    <div class="cake-icon d-flex align-self-center">
-                                        <img src="./assets/images/Icon material-cake.svg">
-                                    </div>
-                                    <div class="pl-2 pt-2 text-truncate" title=" March 8 (Age 32)">
-                                        March 8 (Age 32)
-                                    </div>
-                                </div>
-                                <div class="d-flex font-weight-bold  ">
-                                    <div class="location-icon">
-                                        <i class="fa fa-lg fa-map-marker theme-blue px-1" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="pl-2 mt-1 pt-1 text-truncate" " title="Miami, Florida" >
-                                        Miami, Florida
-                                    </div>
-                                </div>
-                                <div class="pt-3 text-truncate" title="Travelling the world in style!">
-                                    <i class="custom-light-grey f13">Travelling the world in style!</i>
-                                </div>
-                                <div class="pt-3 text-truncate" title="Total Connections: 33">
-                                    <u class="theme-blue f14 font-weight-bold">Total Connections: 33</u>
+	<!-- nav  -->
+	
+    <!-- profile_detail -->
+    <div class="profile_detail suggestion_detail" id="Suggetion_page">
+        <div class="container-fluid">
+            <div class="row">
+            	<!--profile sidebar--->
+                <div class="col-lg-3 col-md-4 col-sm-5 mb-2">
+                    <div class="sidebar pt-0 mx-md-1">
+                        <div class="text-center mb-3">
+                            <div style="width: min-content" class="d-inline-block">
+                                <div class="rounded-circle bg-blue p-2 sidebar_user">
+                                    <img src="./assets/images/kyle.png" alt="">
                                 </div>
                             </div>
-                            <!-------My profile items------>
                         </div>
-                    </div>
-                    <!------My profle------->
-                    <!------My contact card------->
-                    <div class="My-contact-block col-md-6  col-xs-12  bg-blue pr-lg-0 mb-4" >
-                        <span class="align-items-center d-flex bg-white h-100 rounded col-12 px-0 overflow-hidden">
-                            <!-----My contact details----->
-                            <div class="col-12 p-0 m-0 pl-lg-1 f13 h-100 custom-light-grey ml-3" >
-                                <div class="d-flex justify-content-end pt-3 mr-4 pr-2">
-                                    <button class="bg-transparent" data-toggle="modal" data-target="#mycontactdetails">
-                                        <img src="./assets/images/edit.svg">
+                        <h3 class="text-center mb-3 pb-3 border-bottom user-title">Kyle Kirby <span class="fa fa-check-circle"></span>
+                        </h3>
+                        <p class="text-blue text-center mb-4 f14"><span class="feather icon-user"></span> Self </p>
+                        <h3>NETWORK</h3>
+                        <table class="table mb-4">
+                            <tbody><tr>
+                                <td>Network Connections</td>
+                                <td class="align-bottom">32</td>
+                            </tr>
+                            <tr>
+                                <td>Requests</td>
+                                <td class="align-bottom">3</td>
+                            </tr>
+                            <tr>
+                                <td>Suggestions</td>
+                                <td class="align-bottom">9</td>
+                            </tr>
+                        </tbody></table>
+                        <!-- table -->
+                        <center>
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5; right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
                                     </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
                                 </div>
-                                <div class="My-contact-details pt-2 col-12 " >
-                                    <div>
-                                        <h3><strong class="f17" style="color: black;">Mailing Address</strong></h3>
-                                    </div>
-                                    <div class="pt-1 pl-4">
-                                        <div class="pb-1">
-                                            Thomas James street,
+                                <div class="col-2 p-0 overflow-hidden text-left">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/mike.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Mike Kirby"><b>Mike Kirby</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey f11" title="Mutual connections: 5">Mutual connections: 5</div>
                                         </div>
-                                        <div class="pb-1">
-                                            Miami Florida, 33101
-                                        </div>
-                                        <div>
-                                            USA
-                                        </div>
-                                    </div>
-                                    <div class="pt-2">
-                                        <strong class="f16" style="color: black;">Phone:</strong> (555)555-1234
-                                    </div>
-                                    <div class="pt-2">
-                                        <strong class="f16" style="color: black;">Email:</strong> kylekirby@kinnectus.com
                                     </div>
                                 </div>
                             </div>
-                            <!--------------------------->
-                        </span>
+                            <!-- --------------- -->
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden text-left">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/mike.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Bill Kirby"><b>Bill Kirby</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey f11" title="Mutual connections: 5">Mutual connections: 5 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="invite my-3 py-1 mb-4 mt-3 w-100 d-flex justify-content-center align-items-center btn btnpost btnStyle suggestions" data-toggle="modal" data-target="#inviteUser">
+                                <span class="feather icon-user-plus mr-2 py-2"></span>
+                                <span> Invite User </span>
+                            </button>
+                        </center>
+                        <hr class="mb-4 mx-n4 bg-blue border-0" style="height: 2px">
+                        <h3>VAULT</h3>
+                        <table class="table mb-4">
+                            <tbody><tr>
+                                <td>My Documents</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Requests</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Recommendations</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody></table>
+                        <!-- table -->
+                        <center>
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/health.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Update Info"><b>Update Info</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey" title="Health">Health</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user_box -->
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/insurance.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Update Info"><b>Update Info</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey" title="Insurance company">Insurance company</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user_box -->
+                        </center>
                     </div>
-                    <!------My contact card------->
+                    <!-- sidebar -->
                 </div>
-                <!------Account STrength and About Me--------->
-                <div class=" row bg-blue rounded " style="">
-                    <!-------Account Strength------>
-                    <div class="w-100 px-0 rounded bg-white" style="">
-                        <div class="custom-light-grey f16 pt-4 pl-4 mt-1 ml-3 ">
-                            Account Strength: <strong style="color: black;">Beginner</strong>
-                        </div>
+                <!--profile sidebar end-->
+                <!-- main section -->
+                <div class="col-lg-9 col-md-8 col-sm-7 ">
+                    <!-- placeholder row -->
+						<div class="row ml-md-1" style="z-index: 10;margin-top: -55px;margin-bottom: 25px">
+							<div class="placeholder col-12 border-0" >
+							</div>
+						</div>
+						<!-- placeholder -->
+						
+						<!-- SUGGESTIONS -->
+						<div class="row bg-white px-md-4 pb-4 ml-md-1 rounded" style="margin-bottom: 32px">
 
-                        <!--Stage wise divisions------>
-                        <div class="custom-light-grey pt-1 pb-3  my-3 d-flex justify-content-center">
-                            <svg xmlns="http://www.w3.o rg/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="874" height="36" viewBox="0 0 874 36" style="width: 90%">
-                                <defs>
-                                    <clipPath id="clip-path">
-                                        <rect id="Rectangle_200" data-name="Rectangle 200" width="10" height="124" transform="translate(264 557) rotate(90)" fill="#fff" />
-                                    </clipPath>
-                                    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-                                        <stop offset="0" stop-color="#17a454" />
-                                        <stop offset="0.502" stop-color="#1490c4" stop-opacity="0.831" />
-                                        <stop offset="1" stop-color="#4867ae" />
-                                    </linearGradient>
-                                    <clipPath id="clip-path-2">
-                                        <rect id="Rectangle_199" data-name="Rectangle 199" width="10" height="125" transform="translate(639 557) rotate(90)" fill="#fff" />
-                                    </clipPath>
-                                    <clipPath id="clip-path-3">
-                                        <rect id="Rectangle_186" data-name="Rectangle 186" width="10" height="122" transform="translate(1011 557) rotate(90)" fill="url(#linear-gradient)"/>
-                                    </clipPath>                                    
-                                    <clipPath id="clip-path-4">
-                                        <rect id="Rectangle_201" data-name="Rectangle 201" width="10" height="126" transform="translate(889 557) rotate(90)" fill="url(#linear-gradient)"/>
-                                    </clipPath>                                    
-                                    <clipPath id="clip-path-5">
-                                        <rect id="Rectangle_202" data-name="Rectangle 202" width="10" height="124" transform="translate(763 557) rotate(90)" fill="url(#linear-gradient)"/>
-                                    </clipPath>                                    
-                                    <clipPath id="clip-path-6">
-                                        <rect id="Rectangle_197" data-name="Rectangle 197" width="10" height="122" transform="translate(514 557) rotate(90)" fill="#url(#linear-gradient)">
-                                    </clipPath>                                    
-                                    <clipPath id="clip-path-7">
-                                    <rect id="Rectangle_198" data-name="Rectangle 198" width="10" height="122" transform="translate(389 557) rotate(90)" fill="#url(#linear-gradient)"/>
-                                    </clipPath>                                    
-                                </defs>
-                                <g id="Group_364" data-name="Group 364" transform="translate(-140 -544)">
-                                    
-                                    
-                                    <g id="Mask_Group_6" data-name="Mask Group 6" clip-path="url(#clip-path)">
-                                        <rect id="bg_gradient" data-name="bg gradient" width="36" height="871" transform="translate(1011 544) rotate(90)" fill="url(#linear-gradient)" >
-                                        	<title>Upload your Profile Picture</title>
-                                        </rect>
-                                    </g>
-                                    <g id="Mask_Group_5" data-name="Mask Group 5" clip-path="url(#clip-path-2)">
-                                        <rect id="bg_gradient-2" data-name="bg gradient" width="36" height="871" transform="translate(1011 544) rotate(90)" fill="url(#linear-gradient)" >
-                                        	<title>Upload your first document</title>
-                                        </rect>
-                                    </g>
-                                    <g id="Group_365" data-name="Group 365">
-                                        <g id="Mask_Group_7" data-name="Mask Group 7" clip-path="url(#clip-path-3)">
-                                            <rect id="bg_gradient-2" data-name="bg gradient" width="36" height="871" transform="translate(1011 544) rotate(90)" fill="url(#linear-gradient)" >
-                                                <title>Upload at least 1 document in each category</title>
-                                            </rect>                                        
-                                        </g>
-                                        <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path-4)">
-                                            <rect id="bg_gradient-2" data-name="bg gradient" width="36" height="871" transform="translate(1011 544) rotate(90)" fill="url(#linear-gradient)" >
-                                                <title>Make your first admin</title>
-                                            </rect>
-                                        </g>
-                                        <g id="Mask_Group_2" data-name="Mask Group 2" clip-path="url(#clip-path-5)">
-                                            <rect id="bg_gradient-2" data-name="bg gradient" width="36" height="871" transform="translate(1011 544) rotate(90)" fill="url(#linear-gradient)" >
-                                                <title>Share your First Document</title>
-                                            </rect>
-                                        </g>
-                                    </g>
+							<div class="col-12 my-1">
+								<div class="mt-4 mb-3">
+                                    <div class="" style="color:black">
+                                        <h3>
+                                            NOTIFICATIONS
+                                        </h3>
+                                    </div>
+									<div class="custom-grey mt-3 ">
+                                        <h3 class="font-weight-normal">
+                                            Recent
+                                        </h3>
+                                    </div>	
+								</div>
+								<!-- -------------------- -->
+								<div class=" mt-2">
+									<!--normal profile tabs-->
+									<div class="col-12 notifications-page-view-all-visited addHover">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-notif-user-pic">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="overlay-notif-img" style="">
+                                                    <img src="./assets/images/nora.png" class="" style="">
+                                                </div>
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="d-flex">
+                                                    <div class="theme-blue ">
+                                                        <h3>Mike Kirby</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            &nbsp;has sent you a connection request
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-n2">
+                                                    4h
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2">
+                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        </div>
+									</div>
+                                    <div class="col-12 notifications-page-view-all-visited addHover">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-notif-user-pic">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="overlay-notif-img" style="">
+                                                    <img src="./assets/images/nora.png" class="" style="">
+                                                </div>
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="d-flex">
+                                                    <div class="theme-blue ">
+                                                        <h3>Mike Kirby</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            &nbsp;has sent you a connection request
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-n2">
+                                                    4h
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2">
+                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        </div>
+                                    </div>
 
-                                    <g id="Mask_Group_3" data-name="Mask Group 3" clip-path="url(#clip-path-6)">
-                                        <rect id="bg_gradient-2" data-name="bg gradient" width="36" height="871" transform="translate(1011 544) rotate(90)" fill="url(#linear-gradient)" >
-                                            <title>Connect with or invite a person on Kinnect</title>
-                                        </rect>
-                                    </g>
+                                    <div class="col-12 notifications-page-view-all addHover">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-notif-user-pic">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="overlay-notif-img" style="">
+                                                    <img src="./assets/images/nora.png" class="" style="">
+                                                </div>
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="d-flex">
+                                                    <div class="theme-blue ">
+                                                        <h3>Mike Kirby</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            &nbsp;has sent you a connection request
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-n2">
+                                                    4h
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2">
+                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 notifications-page-view-all addHover">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-notif-user-pic">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="overlay-notif-img" style="">
+                                                    <img src="./assets/images/nora.png" class="" style="">
+                                                </div>
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="d-flex">
+                                                    <div class="theme-blue ">
+                                                        <h3>Mike Kirby</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            &nbsp;has sent you a connection request
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-n2">
+                                                    4h
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2">
+                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 notifications-page-view-all addHover">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-notif-user-pic">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="overlay-notif-img" style="">
+                                                    <img src="./assets/images/nora.png" class="" style="">
+                                                </div>
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="d-flex">
+                                                    <div class="theme-blue ">
+                                                        <h3>Mike Kirby</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            &nbsp;has sent you a connection request
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-n2">
+                                                    4h
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2">
+                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        </div>
+                                    </div>
 
-                                    <g id="Group_307-2" data-name="Group 307">
-                                        <rect id="Rectangle_165-2" data-name="Rectangle 165" width="10" height="3" transform="translate(641 557) rotate(90)" fill="#fff" />
-                                        <rect id="Rectangle_166-2" data-name="Rectangle 166" width="10" height="3" transform="translate(765 557) rotate(90)" fill="#fff" />
-                                        <rect id="Rectangle_167-2" data-name="Rectangle 167" width="10" height="3" transform="translate(1014 557) rotate(90)" fill="#fff" />
-                                        <rect id="Rectangle_168-2" data-name="Rectangle 168" width="10" height="3" transform="translate(890 557) rotate(90)" fill="#fff" />
-                                        <rect id="Rectangle_174-2" data-name="Rectangle 174" width="10" height="3" transform="translate(267 557) rotate(90)" fill="#fff" />
-                                        <rect id="Rectangle_175-2" data-name="Rectangle 175" width="10" height="3" transform="translate(392 557) rotate(90)" fill="#fff" />
-                                        <rect id="Rectangle_176-2" data-name="Rectangle 176" width="10" height="3" transform="translate(516 557) rotate(90)" fill="#fff" />
-                                    </g>
-                                    <g id="Group_304" data-name="Group 304" transform="translate(702.969 -174.031)">
-                                        <g id="Ellipse_55" data-name="Ellipse 55" transform="translate(275.031 718.031)" fill="#fff" stroke="#17a454" stroke-width="3">
-                                            <circle cx="18" cy="18" r="18" stroke="none" />
-                                            <circle cx="18" cy="18" r="16.5" fill="none" />
-                                        </g>
-                                        <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M7.205.429l-1.576,3.2L2.1,4.139a.773.773,0,0,0-.427,1.318L4.227,7.943l-.6,3.512a.772.772,0,0,0,1.12.813L7.9,10.61l3.155,1.658a.773.773,0,0,0,1.12-.813l-.6-3.512L14.12,5.457a.773.773,0,0,0-.427-1.318l-3.526-.514L8.591.429a.773.773,0,0,0-1.385,0Z" transform="translate(284.948 730.203)" fill="#17a454" stroke="#17a454" stroke-width="1.5" />
-                                    </g>
-                                    <g id="Group_305" data-name="Group 305" transform="translate(345.817 -174.183)">
-                                        <g id="Ellipse_55-2" data-name="Ellipse 55" transform="translate(275.183 718.183)" fill="#fff" stroke="#4088c0" stroke-width="3">
-                                            <circle cx="18" cy="18" r="18" stroke="none" />
-                                            <circle cx="18" cy="18" r="16.5" fill="none" />
-                                        </g>
-                                        <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt" d="M6.2,7.266A3.563,3.563,0,0,0,9.687,3.633,3.563,3.563,0,0,0,6.2,0,3.563,3.563,0,0,0,2.712,3.633,3.563,3.563,0,0,0,6.2,7.266Zm3.1.807H7.965a4.062,4.062,0,0,1-3.531,0H3.1A3.166,3.166,0,0,0,0,11.3v.4a1.188,1.188,0,0,0,1.162,1.211H11.237A1.188,1.188,0,0,0,12.4,11.706v-.4A3.166,3.166,0,0,0,9.3,8.073Z" transform="translate(286.737 729.724)" fill="#4088c0" />
-                                    </g>
-                                    <g id="Mask_Group_4" data-name="Mask Group 4" clip-path="url(#clip-path-7)">
-                                        <rect id="bg_gradient-2" data-name="bg gradient" width="36" height="871" transform="translate(1011 544) rotate(90)" fill="url(#linear-gradient)" >
-                                            <title>Update your Profile Info</title>
-                                        </rect>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
+									<!--normal profile tabs-->
+								</div>
+								<!----------------------- -->
+                                <div class="mt-3 mb-3">
+                                    <div class="custom-grey mt-3 ">
+                                        <h3 class="font-weight-normal">
+                                            Earlier
+                                        </h3>
+                                    </div>  
+                                </div>
+                                <!-- -------------------- -->
+                                <div class=" mt-2">
+                                    <!--normal profile tabs-->
+                                    <div class="col-12 notifications-page-view-all-visited addHover">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-notif-user-pic">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="overlay-notif-img" style="">
+                                                    <img src="./assets/images/nora.png" class="" style="">
+                                                </div>
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="d-flex">
+                                                    <div class="theme-blue ">
+                                                        <h3>Mike Kirby</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            &nbsp;has sent you a connection request
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-n2">
+                                                    4h
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2">
+                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
+                                        </div>
+                                    </div>
 
-                        <div class="d-flex  justify-content-center theme-blue font-weight-bold f13 pt-1 pb-3">
-                            <a href="#" class="theme-blue"><u>Update your profile info</u></a>
-                        </div>
-                    </div>
-                    <!-------Account Strength------>
-                    <!---------ABOUT ME--------------->
-                    <div class="w-100 px-0 custom-grey rounded bg-white my-4 pt-3" style="">
-                        <!---------Work----------->
-                        <div class="mt-4 mb-3 mx-5 f16" style=" ">
-                            <div class="d-flex px-0 mx-0 justify-content-between">
-                                <div class="font-weight-light f18" style="color: black;">Work</div>
-                                <button class=" bg-transparent d-flex align-self-center px-0 mr-3 pr-3" data-toggle="modal" data-target="#addWork">
-                                    <img src="./assets/images/Icon feather-plus.svg" height="20px">
-                                </button>
-                            </div>
-                            <div class="row my-2 d-flex justify-content-center" style="">
-                                <div class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded mr-md-5 justify-content-between">
-                                    <div class="col-3 m-0 p-0 d-flex align-items-center">
-                                        <img src=" ./assets/images/Icon material-work.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class="d-flex align-items-center f13 col-8 m-0 p-0 text-truncate">
-                                        <div>
-                                            <strong style="color: black">The Kinnect Company<br></strong>
-                                            Founder and CEO<br>
-                                            January 2020 - Current
+                                    <div class="col-12 notifications-page-view-all addHover">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-notif-user-pic">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="overlay-notif-img" style="">
+                                                    <img src="./assets/images/nora.png" class="" style="">
+                                                </div>
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="d-flex">
+                                                    <div class="theme-blue ">
+                                                        <h3>Mike Kirby</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            &nbsp;has sent you a connection request
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-n2">
+                                                    4h
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2">
+                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
                                         </div>
                                     </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editWork">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded justify-content-between">
-                                    <div class="col-3 m-0 p-0 d-flex align-items-center">
-                                        <img src=" ./assets/images/Icon material-work.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class="d-flex align-items-center f13 col-8 m-0 p-0 text-truncate">
-                                        <div>
-                                            <strong style="color: black">The Kinnect Company<br></strong>
-                                            Founder and CEO<br>
-                                            January 2020 - Current
+                                    <div class="col-12 notifications-page-view-all addHover">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-notif-user-pic">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="overlay-notif-img" style="">
+                                                    <img src="./assets/images/nora.png" class="" style="">
+                                                </div>
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="d-flex">
+                                                    <div class="theme-blue ">
+                                                        <h3>Mike Kirby</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            &nbsp;has sent you a connection request
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-n2">
+                                                    4h
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2">
+                                            <img src="./assets/images/more-vertical.svg" height="22px" class="mx-1">
                                         </div>
                                     </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editWork">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
+                                    <!--normal profile tabs-->
                                 </div>
-                            </div>
-                            <!-------hidden row------>
-                            <div id="hidden-work-row" class="row mt-3 collapse justify-content-center">
-                                <div id="hidden-work-1" class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded mr-md-5 justify-content-between">
-                                    <div class="col-3 m-0 p-0 align-items-center" id="hidden-work-11">
-                                        <img src=" ./assets/images/Icon material-work.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class=" align-items-center f13 col-8 m-0 p-0 text-truncate" id="hidden-work-12">
-                                        <div>
-                                            <strong style="color: black">The Kinnect Company<br></strong>
-                                            Founder and CEO<br>
-                                            January 2020 - Current
-                                        </div>
-                                    </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3" id="hidden-work-13">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editWork">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                                <div id="hidden-work-1" class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded justify-content-between">
-                                    <div class="col-3 m-0 p-0 align-items-center" id="hidden-work-21">
-                                        <img src=" ./assets/images/Icon material-work.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class="align-items-center f13 col-8 m-0 p-0 text-truncate" id="hidden-work-22">
-                                        <div>
-                                            <strong style="color: black">The Kinnect Company<br></strong>
-                                            Founder and CEO<br>
-                                            January 2020 - Current
-                                        </div>
-                                    </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3" id="hidden-work-23">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editWork">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!------hidden row------>
-                            <!------Show button------>
-                            <div class="d-flex justify-content-end  mr-4">
-                                <button id="show-more-work" type="button" class="show-buttons bg-white theme-blue" data-toggle="collapse" data-target="#hidden-work-row" onclick="show_more_hide_w();">
-                                    <u>Show more</u> <span class="fa fa-angle-down theme-blue font-weight-bold "></span>
-                                </button>
-                                <button id="show-less-work" type="button" class="show-buttons bg-white theme-blue" data-toggle="collapse" data-target="#hidden-work-row" onclick="show_less_hide_w();" style="display:none;">
-                                    <u>Show less</u> <span class="fa fa-angle-down theme-blue font-weight-bold " style="transform: rotate(180deg);"></span>
-                                </button>
-                            </div>
-                            <!------Show button------>
-                        </div>
-                        <!---------Work----------->
-                        <!---------Education------>
-                        <div class="mt-4 mb-3 mx-5 f16" style=" ">
-                            <div class="d-flex px-0 mx-0 justify-content-between">
-                                <div class="font-weight-light f18" style="color: black;">Education</div>
-                                <button class=" bg-transparent d-flex align-self-center px-0 mr-3 pr-3" data-toggle="modal" data-target="#addEducation">
-                                    <img src="./assets/images/Icon feather-plus.svg" height="20px">
-                                </button>
-                            </div>
-                            <div class="row my-2 d-flex justify-content-center" style="">
-                                <div class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded mr-md-5 justify-content-between">
-                                    <div class="col-3 m-0 p-0 d-flex align-items-center">
-                                        <img src=" ./assets/images/Icon awesome-graduation-cap.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class="d-flex align-items-center f13 col-8 m-0 p-0 text-truncate">
-                                        <div>
-                                            <strong style="color: black">Samford University<br></strong>
-                                            MBA, Finance<br>
-                                            May 2018 - Present
-                                        </div>
-                                    </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editEducation">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded justify-content-between">
-                                    <div class="col-3 m-0 p-0 d-flex align-items-center">
-                                        <img src=" ./assets/images/Icon awesome-graduation-cap.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class="d-flex align-items-center f13 col-8 m-0 p-0 text-truncate">
-                                        <div>
-                                            <strong style="color: black">Harvard University<br></strong>
-                                            MBA, General Management<br>
-                                            March 2012 - April 2015
-                                        </div>
-                                    </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editEducation">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-------hidden row------>
-                            <div id="hidden-education-row" class="row mt-3 collapse justify-content-center">
-                                <div id="hidden-education-1" class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded mr-md-5 justify-content-between">
-                                    <div class="col-3 m-0 p-0 d-flex align-items-center" id="hidden-education-11">
-                                        <img src=" ./assets/images/Icon awesome-graduation-cap.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class="d-flex align-items-center f13 col-8 m-0 p-0 text-truncate" id="hidden-education-12">
-                                        <div>
-                                            <strong style="color: black">Samford University<br></strong>
-                                            MBA, Finance<br>
-                                            May 2018 - Present
-                                        </div>
-                                    </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3" id="hidden-education-13">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editEducation">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                                <div id="hidden-education-2" class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded justify-content-between">
-                                    <div class="col-3 m-0 p-0 d-flex align-items-center" id="hidden-education-21">
-                                        <img src=" ./assets/images/Icon awesome-graduation-cap.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class="d-flex align-items-center f13 col-8 m-0 p-0 text-truncate" id="hidden-education-22">
-                                        <div>
-                                            <strong style="color: black">Harvard University<br></strong>
-                                            MBA, General Management<br>
-                                            March 2012 - April 2015
-                                        </div>
-                                    </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3" id="hidden-education-23">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editEducation">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!------hidden row------>
-                            <!------Show button------>
-                            <div class="d-flex justify-content-end mr-4">
-                                <button id="show-more-ed" type="button" class="show-buttons bg-white theme-blue" data-toggle="collapse" data-target="#hidden-education-row" onclick="show_more_hide_e();">
-                                    <u>Show more</u> <span class="fa fa-angle-down theme-blue font-weight-bold "></span>
-                                </button>
-                                <button id="show-less-ed" type="button" class="show-buttons bg-white theme-blue" data-toggle="collapse" data-target="#hidden-education-row" onclick="show_less_hide_e();" style="display:none;">
-                                    <u>Show less</u> <span class="fa fa-angle-down theme-blue font-weight-bold " style="transform: rotate(180deg);"></span>
-                                </button>
-                            </div>
-                            <!------Show button------>
-                        </div>
-                        <!----------Education------->
-                        <!----------Home------------>
-                        <div class="mt-4 mb-3 mx-5 f16" style=" ">
-                            <div class="d-flex px-0 mx-0 justify-content-between">
-                                <div class="font-weight-light f18" style="color: black;">Home</div>
-                                <button class=" bg-transparent d-flex align-self-center px-0 mr-3 pr-3" data-toggle="modal" data-target="#addHome">
-                                    <img src="./assets/images/Icon feather-plus.svg" height="20px">
-                                </button>
-                            </div>
-                            <div class="row my-2 d-flex justify-content-center" style="">
-                                <div class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded mr-md-5 justify-content-between">
-                                    <div class="col-3 m-0 p-0 d-flex align-items-center">
-                                        <img src=" ./assets/images/Icon awesome-home.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class="d-flex align-items-center f13 col-8 m-0 p-0 text-truncate">
-                                        <div>
-                                            <strong style="color: black">Miami, Florida<br></strong>
-                                            USA<br>
-                                            January 2020 - Current
-                                        </div>
-                                    </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editHome">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded justify-content-between">
-                                    <div class="col-3 m-0 p-0 d-flex align-items-center">
-                                        <img src=" ./assets/images/Icon awesome-home.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class="d-flex align-items-center f13 col-8 m-0 p-0 text-truncate">
-                                        <div>
-                                            <strong style="color: black">Jacksonville, Florida<br></strong>
-                                            USA<br>
-                                            January 2019 - December 2019
-                                        </div>
-                                    </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editHome">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-------hidden row------>
-                            <div id="hidden-home-row" class="collapse row mt-3  justify-content-center">
-                                <div id="hidden-home-1" class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded mr-md-5 justify-content-between">
-                                    <div class="col-3 m-0 p-0 d-flex align-items-center" id="hidden-home-11">
-                                        <img src=" ./assets/images/Icon awesome-home.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class="d-flex align-items-center f13 col-8 m-0 p-0 text-truncate" id="hidden-home-12">
-                                        <div>
-                                            <strong style="color: black">Miami, Florida<br></strong>
-                                            USA<br>
-                                            January 2020 - Current
-                                        </div>
-                                    </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3" id="hidden-home-13">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editHome">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                                <div id="hidden-home-2" class="about-me-block row col-md-5 col-xs-12 bg-blue py-3 rounded justify-content-between">
-                                    <div class="col-3 m-0 p-0 d-flex align-items-center" id="hidden-home-21">
-                                        <img src=" ./assets/images/Icon awesome-home.svg" class="py-2 pl-2">
-                                    </div>
-                                    <div class="d-flex align-items-center f13 col-8 m-0 p-0 text-truncate" id="hidden-home-22">
-                                        <div>
-                                            <strong style="color: black">Jacksonville, Florida<br></strong>
-                                            USA<br>
-                                            January 2019 - December 2019
-                                        </div>
-                                    </div>
-                                    <div class="col-1 m-0 p-0 pl-2 mt-n3" id="hidden-home-23">
-                                        <button class=" bg-transparent" data-toggle="modal" data-target="#editHome">
-                                            <img src="./assets/images/edit.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!------hidden row------>
-                            <!------Show button------>
-                            <div class="d-flex justify-content-end pb-5 mr-4">
-                                <button id="show-more-home" type="button" class="show-buttons bg-white theme-blue" data-toggle="collapse" data-target="#hidden-home-row" onclick="show_more_hide_h();">
-                                    <u>Show more</u> <span class="fa fa-angle-down theme-blue font-weight-bold "></span>
-                                </button>
-                                <button id="show-less-home" type="button" class="show-buttons bg-white theme-blue" data-toggle="collapse" data-target="#hidden-home-row" style="display: none;" onclick="show_less_hide_h();">
-                                    <u>Show less</u> <span class="fa fa-angle-down theme-blue font-weight-bold" style="transform: rotate(180deg);"></span>
-                                </button>
-                            </div>
-                            <!------Show button------>
-                        </div>
-                        <!----------Home------------>
-                    </div>
-                    <!---------ABOUT ME--------------->
-                </div>
-                <!------Account STrength and About Me--------->
-            </div>
-            <!--------Insurance and People You may know--------------->
-            <div class="col-lg-3  col-sm-5 bg-blue mb-2 pr-0 " style="height: 90%; padding-left: 2rem; padding-right: 0.5rem;">
-                <!-------Insurance Column---------->
-                <span class=" d-flex bg-blue h-100 rounded ">
-                    <div class=" rounded  pl-4  mb-5 py-2  bg-white" style="max-width:270px">
-                        <div class="row w-100 mx-0 px-0 col-12">
-                            <div class="custom-grey f16 col-10 px-0 mx-0">
-                                Where do you store your insurance?
-                            </div>
-                            <div class="col-2 mx-0 px-0 pl-1">
-                                <div id="insurance-popup" class="position-absolute p-1 mt-n4">
-                                    This will help us understand and serve you better
-                                </div>
-                                <button class="bg-white mx-0 px-0" onmouseover="insurance_popup_open();" onmouseleave="insurance_popup_close();">
-                                    <img src="./assets/images/help-icon2.svg" style="height: 20px;" class="pt-1">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="container p-0 pt-3  custom-grey f12" style="">
-                            
-                            <label class="insurance-checkboxes">
-                                <div>
-                                    <input type="checkbox" value="" checked="">
-                                </div>
-                                <div class="pl-2 mb-1 ">
-                                    Option 1
-                                </div>
-                            </label>
-                        
-                            <label class="insurance-checkboxes">
-                                <div>
-                                    <input type="checkbox" value="" checked="">
-                                </div>
-                                <div class="pl-2 mb-1 ">
-                                    Option 2
-                                </div>
-                            </label>
+                                <!----------------------- -->
 
-                            <label class="insurance-checkboxes">
-                                <div>
-                                    <input type="checkbox" value="" checked="">
-                                </div>
-                                <div class="pl-2 mb-1 ">
-                                    Option 3
-                                </div>
-                            </label>
+							</div>
+						</div>
+						<!-- SUGGESTIONS -->
+				</div>
+			</div>
+		</div>
+                <!-- permissions -->
+	</div>			
 
-                            <label class="insurance-checkboxes">
-                                <div>
-                                    <input type="checkbox" value="" checked="">
-                                </div>
-                                <div class="pl-2 mb-1 ">
-                                    Option 4
-                                </div>
-                            </label>
-
-                            <div class=" pt-1 font-weight-bold theme-blue f13">
-                                <u><a href="#" class="theme-blue">Skip</a></u>
-                            </div>
-                        </div>
-                    </div>
-                </span>
-                <!------YOU MAY ALSO KNOW--------->
-                <span class=" d-flex bg-blue h-100 rounded mt-3">
-                    <div class="rounded bg-blue w-100" style="height: 400px; max-width: 270px;">
-                        <div class="f14 custom-light-grey">
-                            You may also know
-                        </div>
-                        <div class="profile-suggestions overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-2">
-                            <div class="col-3 p-1 m-0 ">
-                                <img src="./assets/images/mike.png" class="w-100">
-                            </div>
-                            <div class="you-may-also-know col-7 ml-1 mx-0 mr-1 px-0 text-truncate">
-                                <strong class="f14">Mike Kirby<br></strong>
-                                Mutual Connections: 12
-                            </div>
-                            <div class="m-0 ml-n3 mr-2  p-0 d-flex align-items-center">
-                                <span class="test-plus1 m-0 p-0">
-                                    <button data-toggle="modal" data-target="#sendCon"><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
-                                    </button>
-                                </span>
-                            </div>
-                            <div class="m-0 p-0 d-flex align-items-start">
-                                <span class=" m-0 p-0">
-                                    <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="profile-suggestions overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3">
-                            <div class="col-3 p-1 m-0 ">
-                                <img src="./assets/images/mike.png" class="w-100">
-                            </div>
-                            <div class="you-may-also-know col-7 ml-1 mx-0 mr-1 px-0 text-truncate">
-                                <strong class="f14">Mike Kirby<br></strong>
-                                Mutual Connections: 12
-                            </div>
-                            <div class="m-0 ml-n3 mr-2  p-0 d-flex align-items-center">
-                                <span class="test-plus1 m-0 p-0">
-                                    <button data-toggle="modal" data-target="#sendCon"><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
-                                    </button>
-                                </span>
-                            </div>
-                            <div class="m-0 p-0 d-flex align-items-start">
-                                <span class=" m-0 p-0">
-                                    <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="profile-suggestions overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3">
-                            <div class="col-3 p-1 m-0 ">
-                                <img src="./assets/images/mike.png" class="w-100">
-                            </div>
-                            <div class="you-may-also-know col-7 ml-1 mx-0 mr-1 px-0 text-truncate">
-                                <strong class="f14">Mike Kirby<br></strong>
-                                Mutual Connections: 12
-                            </div>
-                            <div class="m-0 ml-n3 mr-2  p-0 d-flex align-items-center">
-                                <span class="test-plus1 m-0 p-0">
-                                    <button data-toggle="modal" data-target="#sendCon"><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
-                                    </button>
-                                </span>
-                            </div>
-                            <div class="m-0 p-0 d-flex align-items-start">
-                                <span class=" m-0 p-0">
-                                    <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="profile-suggestions overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3">
-                            <div class="col-3 p-1 m-0 ">
-                                <img src="./assets/images/mike.png" class="w-100">
-                            </div>
-                            <div class="you-may-also-know col-7 ml-1 mx-0 mr-1 px-0 text-truncate">
-                                <strong class="f14">Mike Kirby<br></strong>
-                                Mutual Connections: 12
-                            </div>
-                            <div class="m-0 ml-n3 mr-2  p-0 d-flex align-items-center">
-                                <span class="test-plus1 m-0 p-0">
-                                    <button data-toggle="modal" data-target="#sendCon"><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
-                                    </button>
-                                </span>
-                            </div>
-                            <div class="m-0 p-0 d-flex align-items-start">
-                                <span class=" m-0 p-0">
-                                    <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="profile-suggestions overflow-hidden w-100 bg-white rounded d-flex align-items-center mt-3">
-                            <div class="col-3 p-1 m-0 ">
-                                <img src="./assets/images/mike.png" class="w-100">
-                            </div>
-                            <div class="you-may-also-know col-7 ml-1 mx-0 mr-1 px-0 text-truncate">
-                                <strong class="f14">Mike Kirby<br></strong>
-                                Mutual Connections: 12
-                            </div>
-                            <div class="m-0 ml-n3 mr-2  p-0 d-flex align-items-center">
-                                <span class="test-plus1 m-0 p-0">
-                                    <button data-toggle="modal" data-target="#sendCon"><img src="./assets/images/reject.svg" class="border-0" style="transform: rotate(45deg);height:23px;">
-                                    </button>
-                                </span>
-                            </div>
-                            <div class="m-0 p-0 d-flex align-items-start">
-                                <span class=" m-0 p-0">
-                                    <img src="./assets/images/close.svg" class="pb-3 mb-4 ml-1">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </span>
-                <!------YOU MAY ALSO KNOW--------->
-            </div>
-            <!--------Insurance and People You may know--------------->
-        </div>
-    </div>
-    <!---BODY--->
     <!-- Modals -->
-    <!-- My info -->
-    <div class="modal  " id="myinformation" style="padding-right: 0px!important;">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 750px!important;">
 
-            <div class="modal-content border-0 row mx-4 px-4 pt-4 pb-4 " style="border-radius: 0px!important;">
-                <div class="row mt-lg-n1 ml-lg-n5 align-items-start justify-content-end position-absolute w-100 " style="z-index: 1;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                    </button>
-                </div>            
-                <div class="modal-header  border-0">
-                    <h4 class="modal-title f20 ">My information</h4>
-                </div>
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-3">
-                        <div class="col-md-4 col-xs-12 p-0">
-                            <div class=" p-0 justify-content-center d-flex">
-                                <img src="./assets/images/user-pic.jpg" style="border-radius: 50%; height: 100px; ">
-                            </div>
-                            <div class="pt-2 mt-1 rounded d-flex justify-content-center">
-                                <button class="px-3 font-weight-bold custom-light-grey py-2 bg-blue rounded">
-                                    UPDATE PHOTO
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-xs-12 p-0">
-                            <div class="col-12 d-flex">
-                                <div class="col-6">
-                                    First Name <br>
-                                    <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Kyle" required="">
-                                </div>
-                                <div class="col-6 p-0 pl-3">
-                                    Last Name <br>
-                                    <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Kirby" required="">
-                                </div>
-                            </div>
-                            <div class="col-12 d-flex pt-3">
-                                <div class="col-6 ">
-                                    Birthday <br>
-                                    <input type="date" class="mt-1  p-2  px-3 w-100 popupInput1 custom-light-grey" value="1982-03-08" required="">
-                                </div>                        
-                                <div class="col-6 dropdown p-0 pl-3">
-                                    Gender<br>
-                                    <div class=" mt-1 dropdown-toggle rounded py-1 d-flex " data-toggle="dropdown" style="border: 1px solid #81848e">
-                                        <div class=" f15 my-1 col-9 font-weight-light" style="background-color: #fff; border-radius: 5px">
-                                            Select
-                                        </div>
-                                        <div class="d-flex align-items-center col-2 ">
-                                            <i class=" fa fa-angle-down px-1 rounded" style="background-color: #ccc; color: white; padding-top: 0.1rem;padding-bottom: 0.1rem;"></i>
-                                        </div>              
-                                    </div>
-                                    <div id="my-info-gender-tagline" class="">
-                                        Gender is not displayed on your profile
-                                    </div>
-                                    <div class="dropdown-menu">
-                                        <div class="dropdown-item custom-grey">
-                                            Male
-                                        </div>
-                                        <div class="dropdown-item custom-grey">
-                                            Female
-                                        </div>
-                                        <div class="dropdown-item custom-grey">
-                                            Other
-                                        </div>                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 p-0 d-flex pt-4">
-                            <div class="col-4">
-                                Country <br>
-                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="USA" required="">
-                            </div>                        
-                            <div class="col-4">
-                                State <br>
-                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Florida" required="">
-                            </div>
-                            <div class="col-4">
-                                City <br>
-                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Miami" required="">
-                            </div>
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            Tagline <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Travelling the world in style!" required="">
-                        </div>
-
-                        <div class=" col-12 pt-3 pb-4 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
-                            <button class="p-1 px-3 f14 bg-theme-blue" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- My info -->
-    <!-- contact details -->
-    <div class="modal" id="mycontactdetails">
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row pt-4 pb-4 " style="border-radius: 0px; padding: 2.5rem;">
-                <div class="close-modal-button row w-100 justify-content-end">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>
-                </div>                
-                <div class="modal-header border-0 d-flex f20 ">
-                        Contact information
-                </div>
-                <div class="modal-header f13 mb-0 py-0 border-0 custom-grey font-weight-bold">
-                    Mailing Address
-                </div>    
-
-                <div class="col-12 pt-2">
-                    <div class="row text-left custom-grey f11 ">
-                        <div class="col-12">
-                            Street <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="col-12 d-flex pt-2 justify-content-between m-0 p-0">
-                            <div class="col-6 ">
-                                Country <br>
-                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                            </div>
-                            <div class="col-6 ">
-                                State <br>
-                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex pt-2 justify-content-between m-0 p-0">
-                            <div class="col-6 ">
-                                City <br>
-                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                            </div>
-                            <div class="col-6 ">
-                                ZIP <br>
-                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                            </div>
-                        </div>
-
-                        <div class="col-12 pt-4 font-weight-bold">
-                            Who can see your contact information <br>
-                            <div class="pt-2 d-flex">
-                                <div class="contact-modal-checkbox">
-                                    <input type="checkbox">
-                                </div>
-                                <div class="pb-1">
-                                    <span class="ml-2 custom-light-grey font-weight-light">All connections</span>
-                                </div>
-                            </div>
-                            <div class="pt-1 d-flex">
-                                <div class="contact-modal-checkbox">
-                                    <input type="checkbox" checked="">
-                                </div>
-                                <div class="">
-                                    <span class="ml-2 custom-light-grey font-weight-light">Select people from connections</span>
-                                </div>
-                                <div>
-                                    <button class="ml-3 px-3 font-weight-bold f11 bg-blue rounded custom-grey" data-toggle="modal" data-target="#editaccess" data-dismiss="modal">
-                                        Edit 
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-12 d-flex pt-4 justify-content-between font-weight-bold m-0 p-0">
-                            <div class="col-6 ">
-                                Phone <br>
-                                <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                            </div>
-                            <div class="col-6 ">
-                                Email <br>
-                                <input type="email" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                            </div>
-                        </div>
-
-                        <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
-                            <button class="p-1 px-3 f14 bg-theme-blue" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- contact details -->    
-    <!--  edit access -->
-    <div class="modal" id="editaccess">
-        <div class="modal-dialog modal-dialog-centered bg-white" style="">
-            <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-4" style="z-index: 1;">
-                <button type="button" class="close" data-dismiss="modal">
-                    <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                </button>
-            </div>
-            <div class="modal-content border-0 row m-4 px-5  ">
-                <div class="modal-header mb-0 pb-0 border-0 d-flex " style="font-size: 23px">
-                        Edit access
-                </div>
-                <div class="modal-header f13 pt-0 mt-0 mb-3 py-0 border-0 custom-grey ">
-                    Select connections who can see your contact information
-                </div>    
-
-                <div class="col-12 pt-2 modal-header pb-0 border-0">
-                    <div class="w-100 custom-grey font-weight-bold f13 ">
-                        <div class="input-group w-100">
-                            <!--search bar 1-->
-                            <div class=" w-100" >
-                                <span class="input-group-prepend rounded" style=" border: 1px solid #6b6e77;">
-                                    <span class="align-self-center  ml-1">
-                                        <button type="submit" style="display: block;" class="custom-grey bg-white rounded" style="">
-                                            <!-- padding:0.8rem-->
-                                            <img src="./assets/images/search.svg" height="15px">
-                                        </button>
-                                    </span>
-                                    <span class="px-1 py-1 align-self-center h-100" style="width:100%;">
-                                        <input id="global-search-input" type="text" class=" border-0 bg-transparent " placeholder="Search">
-                                    </span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 pt-3 modal-header border-0">
-                    <div class="w-100  pt-0 pb-0 custom-grey font-weight-bold f13 reqContainer1 ">
-                        <div class="col-12 px-0 mx-0 d-flex align-items-center justify-content-start modal-header edit-access-item">
-                            <div class="">
-                                <input type="checkbox" name="" checked="">
-                            </div>
-                            <div class="d-flex align-items-center ml-3">
-                                <div class="">
-                                    <img src="./assets/images/emma.png">
-                                </div>
-                                <div class="ml-2">
-                                    <div style="color: black;" class="f14">
-                                        Emma Amelia
-                                    </div>
-                                    <div class="f11">
-                                        Sister
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 px-0 mx-0 d-flex align-items-center justify-content-start modal-header edit-access-item">
-                            <div class="">
-                                <input type="checkbox" name="" checked="">
-                            </div>
-                            <div class="d-flex align-items-center ml-3">
-                                <div class="">
-                                    <img src="./assets/images/jacob.png">
-                                </div>
-                                <div class="ml-2">
-                                    <div style="color: black;" class="f14">
-                                        Jacob Logan
-                                    </div>
-                                    <div class="f11">
-                                        Brother
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 px-0 mx-0 d-flex align-items-center justify-content-start modal-header edit-access-item">
-                            <div class="">
-                                <input type="checkbox" name="" checked="">
-                            </div>
-                            <div class="d-flex align-items-center ml-3">
-                                <div class="">
-                                    <img src="./assets/images/nora.png">
-                                </div>
-                                <div class="ml-2">
-                                    <div style="color: black;" class="f14">
-                                        Nora Aubrey
-                                    </div>
-                                    <div class="f11">
-                                        Cousin
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                        <div class="col-12 px-0 mx-0 d-flex align-items-center justify-content-start modal-header edit-access-item">
-                            <div class="">
-                                <input type="checkbox" name="" checked="">
-                            </div>
-                            <div class="d-flex align-items-center ml-3">
-                                <div class="">
-                                    <img src="./assets/images/williams.png">
-                                </div>
-                                <div class="ml-2">
-                                    <div style="color: black;" class="f14">
-                                        Williams
-                                    </div>
-                                    <div class="f11">
-                                        Brother
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                        <div class="col-12 px-0 mx-0 d-flex align-items-center justify-content-start modal-header edit-access-item">
-                            <div class="">
-                                <input type="checkbox" name="" checked="">
-                            </div>
-                            <div class="d-flex align-items-center ml-3">
-                                <div class="">
-                                    <img src="./assets/images/emma.png">
-                                </div>
-                                <div class="ml-2">
-                                    <div style="color: black;" class="f14">
-                                        Emma Amelia
-                                    </div>
-                                    <div class="f11">
-                                        Sister
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="col-12 px-0 mx-0 d-flex align-items-center justify-content-start modal-header edit-access-item">
-                            <div class="">
-                                <input type="checkbox" name="" checked="">
-                            </div>
-                            <div class="d-flex align-items-center ml-3">
-                                <div class="">
-                                    <img src="./assets/images/emma.png">
-                                </div>
-                                <div class="ml-2">
-                                    <div style="color: black;" class="f14">
-                                        Emma Amelia
-                                    </div>
-                                    <div class="f11">
-                                        Sister
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
-                    <button class="p-1 px-3 f15 bg-theme-blue" style="color: white;">Save</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!--  edit access -->        
-    <!-- Add Work -->
-    <div class="modal" id="addWork" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row  px-5 " style="border-radius:0px; padding-top: 2rem; padding-bottom: 2rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
-
-                <div class="modal-header border-0 ">
-                    <h4 class="modal-title f20 font-weight-bold ">Add work experience</h4>
-                </div>
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-3">
-                        <div class="col-12">
-                            Company name <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            Position/Title <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="col-12 pt-3 rounded">
-                            <button class="px-4 custom-grey font-weight-bold py-1 bg-blue rounded">
-                                ADD LOGO
-                            </button>
-                        </div>
-                        <div class=" col-12 pt-3">
-                            <div class="w-100 d-flex justify-content-between mr-1">
-                                <div class="col-6 d-flex pl-0 ml-0">
-                                    Start Date
-                                </div>
-                                <div class="col-6 d-flex pl-0 ml-3">
-                                    End Date
-                                </div>
-                            </div>
-                            <div class="w-100 d-flex justify-content-between">
-                                <div class="col-6 d-flex mx-0 px-0">
-                                    <div class="custom-select-1 col-6 px-0" >
-                                        <select name="month" id="addWork-start-month"  >
-                                            <option value="" class="" disabled selected hidden>
-                                                Month 
-                                            </option>
-                                            <option value="0">Jan</option>
-                                            <option value="1">Feb</option>
-                                            <option value="2">Mar</option>
-                                        </select>
-                                    </div>
-                                    <div class="custom-select-1 col-5 px-0 ml-1">
-                                         <select name="year" id="addWork-start-year">
-                                            <option value="" class="" disabled selected hidden>
-                                                Year
-                                            </option>
-                                            <option value="0">2020</option>
-                                            <option value="1">2019</option>
-                                            <option value="2">2018</option>
-                                        </select>
-                                   </div>
-                               </div>
-                                <div class="col-6 d-flex mx-0 px-0 ml-2 pl-1" style="margin-left: 0.8rem;">
-                                    <div class="custom-select-1 col-6 px-0">
-                                        <select name="month" id="addWork-end-month">
-                                            <option value="" class="" disabled selected hidden>
-                                                Month 
-                                            </option>
-                                            <option value="0">Jan</option>
-                                            <option value="1">Feb</option>
-                                            <option value="2">Mar</option>
-                                        </select>
-                                    </div>
-                                    <div class="custom-select-1 col-5 px-0 ml-1">
-                                         <select name="year" id="addWork-end-year">
-                                            <option value="" class="" disabled selected hidden>
-                                                Year
-                                            </option>
-                                            <option value="0">2020</option>
-                                            <option value="1">2019</option>
-                                            <option value="2">2018</option>
-                                        </select>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex align-items-center">
-                            <input type="checkbox" class="mr-2 theme-blue" onclick="disable();" ondblclick="enable();">
-                            <div>I currently work here</div>
-                        </div>
-                        <div class="col-12 pt-3 pb-4 custom-light-grey font-weight-light d-flex justify-content-end">
-                            <button class="p-1 px-3 f14 bg-theme-blue" data-dismiss="modal" data-toggle="modal" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Add Work -->    
-    <!-- Add Education -->
-    <div class="modal" id="addEducation">
-        <div class="modal-dialog modal-dialog-centered bg-white" style="">
-            <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-4" style="z-index: 1;">
-                <button type="button" class="close" data-dismiss="modal">
-                    <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                </button>
-            </div>
-            <div class="modal-content border-0 row pt-3 pb-3 m-2 mx-4 px-3 ">
-                <div class="modal-header border-0">
-                    <h4 class="modal-title f20 font-weight-bold ">Add education</h4>
-                </div>
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-3">
-                        <div class="col-12">
-                            Institution <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required />
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            Level of Study <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required />
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            Field of Study <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required />
-                        </div>
-                        <div class="col-12 pt-4 rounded">
-                            <button class="px-4 custom-grey font-weight-bold py-1 bg-blue rounded">
-                                ADD PHOTO
-                            </button>
-                        </div>
-                        <div class=" col-12 pt-4">
-                            <div class="w-100 d-flex justify-content-between mr-1">
-                                <div class="col-6 d-flex pl-0 ml-0">
-                                    Start Date
-                                </div>
-                                <div class="col-6 d-flex pl-0 ml-3">
-                                    End Date
-                                </div>
-                            </div>
-                            <div class="w-100 d-flex justify-content-between">
-                                <div class="col-6 d-flex mx-0 px-0">
-                                    <div class="custom-select-1 col-6 px-0" >
-                                        <select name="month" id="addedu-start-month"  >
-                                            <option value="" class="" disabled selected hidden>
-                                                Month 
-                                            </option>
-                                            <option value="0">Jan</option>
-                                            <option value="1">Feb</option>
-                                            <option value="2">Mar</option>
-                                        </select>
-                                    </div>
-                                    <div class="custom-select-1 col-5 px-0 ml-1">
-                                         <select name="year" id="addedu-start-year">
-                                            <option value="" class="" disabled selected hidden>
-                                                Year
-                                            </option>
-                                            <option value="0">2020</option>
-                                            <option value="1">2019</option>
-                                            <option value="2">2018</option>
-                                        </select>
-                                   </div>
-                               </div>
-                                <div class="col-6 d-flex mx-0 px-0 ml-2 pl-1" style="margin-left: 0.8rem;">
-                                    <div class="custom-select-1 col-6 px-0">
-                                        <select name="month" id="addedu-end-month">
-                                            <option value="" class="" disabled selected hidden>
-                                                Month 
-                                            </option>
-                                            <option value="0">Jan</option>
-                                            <option value="1">Feb</option>
-                                            <option value="2">Mar</option>
-                                        </select>
-                                    </div>
-                                    <div class="custom-select-1 col-5 px-0 ml-1">
-                                         <select name="year" id="addedu-end-year">
-                                            <option value="" class="" disabled selected hidden>
-                                                Year
-                                            </option>
-                                            <option value="0">2020</option>
-                                            <option value="1">2019</option>
-                                            <option value="2">2018</option>
-                                        </select>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex align-items-center">
-                            <input type="checkbox" class="mr-2 theme-blue">
-                            <div>I currently study here</div>
-                        </div>
-                        <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
-                            <button class="p-1 px-3 f14 bg-theme-blue" data-dismiss="modal" data-toggle="modal" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Add Education -->
-    <!-- Add Home -->
-    <div class="modal" id="addHome">
-        <div class="modal-dialog modal-dialog-centered bg-white" style="">
-            <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-4" style="z-index: 1;">
-                <button type="button" class="close" data-dismiss="modal">
-                    <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                </button>
-            </div>
-            <div class="modal-content border-0 row pt-3 pb-3 m-2 mx-4 px-3 ">
-                <div class="modal-header border-0 pt-3">
-                    <h4 class="modal-title f20 font-weight-bold ">Add home</h4>
-                </div>
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-3">
-                        <div class="col-12">
-                            Country <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required />
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            State <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required />
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            City <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required />
-                        </div>
-                        <div class="col-12 pt-4 rounded">
-                            <button class="px-4 custom-grey font-weight-bold py-1 bg-blue rounded">
-                                ADD PHOTO
-                            </button>
-                        </div>
-                        <div class=" col-12 pt-4">
-                            <div class="w-100 d-flex justify-content-between mr-1">
-                                <div class="col-6 d-flex pl-0 ml-0">
-                                    Start Date
-                                </div>
-                                <div class="col-6 d-flex pl-0 ml-3">
-                                    End Date
-                                </div>
-                            </div>
-                            <div class="w-100 d-flex justify-content-between">
-                                <div class="col-6 d-flex mx-0 px-0">
-                                    <div class="custom-select-1 col-6 px-0" >
-                                        <select name="month" id="addhome-start-month"  >
-                                            <option value="" class="" disabled selected hidden>
-                                                Month 
-                                            </option>
-                                            <option value="0">Jan</option>
-                                            <option value="1">Feb</option>
-                                            <option value="2">Mar</option>
-                                        </select>
-                                    </div>
-                                    <div class="custom-select-1 col-5 px-0 ml-1">
-                                         <select name="year" id="addhome-start-year">
-                                            <option value="" class="" disabled selected hidden>
-                                                Year
-                                            </option>
-                                            <option value="0">2020</option>
-                                            <option value="1">2019</option>
-                                            <option value="2">2018</option>
-                                        </select>
-                                   </div>
-                               </div>
-                                <div class="col-6 d-flex mx-0 px-0 ml-2 pl-1" style="margin-left: 0.8rem;">
-                                    <div class="custom-select-1 col-6 px-0">
-                                        <select name="month" id="addhome-end-month">
-                                            <option value="" class="" disabled selected hidden>
-                                                Month 
-                                            </option>
-                                            <option value="0">Jan</option>
-                                            <option value="1">Feb</option>
-                                            <option value="2">Mar</option>
-                                        </select>
-                                    </div>
-                                    <div class="custom-select-1 col-5 px-0 ml-1">
-                                         <select name="year" id="addhome-end-year">
-                                            <option value="" class="" disabled selected hidden>
-                                                Year
-                                            </option>
-                                            <option value="0">2020</option>
-                                            <option value="1">2019</option>
-                                            <option value="2">2018</option>
-                                        </select>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex align-items-center">
-                            <input type="checkbox" class="mr-2 theme-blue">
-                            <div>I currently live here</div>
-                        </div>
-                        <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
-                            <button class="p-1 px-3 f14 bg-theme-blue" data-dismiss="modal" data-toggle="modal" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Add Home -->
-    <!-- Edit Work -->
-    <div class="modal" id="editWork" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row  px-5 " style="border-radius:0px;  padding-top: 2rem; padding-bottom: 2rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
-
-                <div class="modal-header border-0 ">
-                    <h4 class="modal-title f20 font-weight-bold ">Edit work experience</h4>
-                </div>
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-3">
-                        <div class="col-12">
-                            Company name <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="The Kinnect Company" required="">
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            Position/Title <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Founder and CEO" required="">
-                        </div>
-                        <div class="col-12 pt-3 rounded">
-                            <button class="px-4 custom-grey font-weight-bold py-1 bg-blue rounded">
-                                ADD LOGO
-                            </button>
-                        </div>
-                        <div class=" col-12 pt-3">
-                            <div class="w-100 d-flex justify-content-between mr-1">
-                                <div class="col-6 d-flex pl-0 ml-0">
-                                    Start Date
-                                </div>
-                                <div class="col-6 d-flex pl-0 ml-3">
-                                    End Date
-                                </div>
-                            </div>
-                            <div class="w-100 d-flex justify-content-between">
-                                <div class="col-6 d-flex mx-0 px-0">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                January
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                2020
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 d-flex mx-0 px-0 ml-2 pl-1" style="margin-left: 0.8rem;">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                Month
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                Year
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex align-items-center">
-                            <input type="checkbox" class="mr-2 theme-blue" checked="">
-                            <div>I currently work here</div>
-                        </div>
-                        <div class="col-12 pt-3 pb-4 custom-light-grey font-weight-light d-flex justify-content-between">
-                            <button class="p-1 px-3 f14 bg-blue custom-light-grey font-weight-bold ">Delete</button>
-                            <button class="p-1 px-3 mr-1 f14 bg-theme-blue" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Edit Work -->
-    <!-- Edit Education -->
-    <div class="modal" id="editEducation">
-        <div class="modal-dialog modal-dialog-centered bg-white" style="">
-            <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-4" style="z-index: 1;">
-                <button type="button" class="close" data-dismiss="modal">
-                    <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                </button>
-            </div>
-            <div class="modal-content border-0 row pt-3 pb-3 m-2 mx-4 px-3 ">
-                <div class="modal-header border-0">
-                    <h4 class="modal-title f20 font-weight-bold ">Edit education</h4>
-                </div>
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-3">
-                        <div class="col-12">
-                            Institution <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Samford University" required />
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            Level of Study <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Bachelors of Arts" required />
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            Field of Study <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Arts" required />
-                        </div>
-                        <div class="col-12 pt-4 rounded">
-                            <button class="px-4 custom-grey font-weight-bold py-1 bg-blue rounded">
-                                ADD PHOTO
-                            </button>
-                        </div>
-                        <div class=" col-12 pt-4">
-                            <div class="w-100 d-flex justify-content-between mr-1">
-                                <div class="col-6 d-flex pl-0 ml-0">
-                                    Start Date
-                                </div>
-                                <div class="col-6 d-flex pl-0 ml-3">
-                                    End Date
-                                </div>
-                            </div>
-                            <div class="w-100 d-flex justify-content-between">
-                                <div class="col-6 d-flex mx-0 px-0">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                May
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                2012
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 d-flex mx-0 px-0 ml-2 pl-1" style="margin-left: 0.8rem;">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                June
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                2015
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex align-items-center">
-                            <input type="checkbox" class="mr-2 theme-blue">
-                            <div>I currently study here</div>
-                        </div>
-                        <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
-                            <button class="p-1 px-3 f14 bg-theme-blue" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Edit Education -->
-    <!-- Edit Home -->
-    <div class="modal" id="editHome">
-        <div class="modal-dialog modal-dialog-centered bg-white" style="">
-            <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-4" style="z-index: 1;">
-                <button type="button" class="close" data-dismiss="modal">
-                    <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                </button>
-            </div>
-            <div class="modal-content border-0 row pt-3 pb-3 m-2 mx-4 px-3 ">
-                <div class="modal-header border-0 pt-3">
-                    <h4 class="modal-title f20 font-weight-bold ">Edit home</h4>
-                </div>
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-3">
-                        <div class="col-12">
-                            Country <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="USA" required />
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            State <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Florida" required />
-                        </div>
-                        <div class="col-12 pt-3 ">
-                            City <br />
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="Miami" required />
-                        </div>
-                        <div class="col-12 pt-4 rounded">
-                            <button class="px-4 custom-grey font-weight-bold py-1 bg-blue rounded">
-                                ADD PHOTO
-                            </button>
-                        </div>
-                        <div class=" col-12 pt-4">
-                            <div class="w-100 d-flex justify-content-between mr-1">
-                                <div class="col-6 d-flex pl-0 ml-0">
-                                    Start Date
-                                </div>
-                                <div class="col-6 d-flex pl-0 ml-3">
-                                    End Date
-                                </div>
-                            </div>
-                            <div class="w-100 d-flex justify-content-between">
-                                <div class="col-6 d-flex mx-0 px-0">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                January
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                2020
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 d-flex mx-0 px-0 ml-2 pl-1" style="margin-left: 0.8rem;">
-                                    <div class="dropdown col-6 px-0">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-3 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                Month
-                                                <span class="fa fa-angle-down ml-1 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                January
-                                            </div>
-                                            <div class="dropdown-item">
-                                                February
-                                            </div>
-                                            <div class="dropdown-item">
-                                                March
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown col-5 px-0 ml-1">
-                                        <div class="dropdown-toggle rounded" data-toggle="dropdown" style="border: 1px solid #6b6e77">
-                                            <div class="p-1 pl-2 f13 my-1" style="background-color: #fff; border-radius: 5px">
-                                                Year
-                                                <span class="fa fa-angle-down ml-2 font-weight-bold"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-menu ">
-                                            <div class="dropdown-item">
-                                                2020
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2019
-                                            </div>
-                                            <div class="dropdown-item">
-                                                2018
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex align-items-center">
-                            <input type="checkbox" class="mr-2 theme-blue">
-                            <div>I currently live here</div>
-                        </div>
-                        <div class=" pb-4 col-12 pt-3 mx-1 custom-light-grey font-weight-light d-flex justify-content-end">
-                            <button class="p-1 px-3 f14 bg-theme-blue" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Edit Home -->
     <!-- send connection -->
     <div class="modal" id="sendCon">
         <div class="modal-dialog modal-dialog-centered">
@@ -2076,13 +798,13 @@
                 <div class="col-12">
                     <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
                         <button type="button" class="close" data-dismiss="modal">
-                            <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                            <img src="./assets/images/popupclose.svg" height="24px" class="">
                         </button>
                     </div>
                     <div class="row align-items-center justify-content-start mt-3 pl-5">
 
                         <div class="rounded-circle overflow-hidden mr-3">
-                            <img src="./assets/images/mike.png" height="100px" />
+                            <img src="./assets/images/mike.png" height="100px">
                         </div>
                         <div>
                             <div class="f20 font-weight-bold mb-1">
@@ -2098,8 +820,8 @@
                         <form class="w-100">
                             <div class="row my-4 text-left">
                                 <div class="col-12">
-                                    What is your relationship to Mike? <br />
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required>
+                                    What is your relationship to Mike? <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required="">
                                         <option>Immediate family</option>
                                         <option>Immediate family</option>
                                         <option>Immediate family</option>
@@ -2108,8 +830,8 @@
                             </div>
                             <div class="row my-4 text-left">
                                 <div class="col-12">
-                                    Immediate Family Type <br />
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required>
+                                    Immediate Family Type <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required="">
                                         <option>Parent</option>
                                         <option>Immediate family</option>
                                         <option>Immediate family</option>
@@ -2118,8 +840,8 @@
                             </div>
                             <div class="row text-left">
                                 <div class="col-12">
-                                    Parent Type <br />
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required>
+                                    Parent Type <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required="">
                                         <option>Father</option>
                                         <option>Immediate family</option>
                                         <option>Immediate family</option>
@@ -2139,6 +861,129 @@
         </div>
     </div>
     <!-- send connection -->
+
+    <!-- --------------------------------- -->
+
+    <!-- invite user -->
+    <div class="modal" id="inviteUser">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 row p-4 m-0">
+                <div class="col-12">
+                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <img src="./assets/images/popupclose.svg" height="24px" class="">
+                        </button>
+                    </div>
+                    <div class="row align-items-center justify-content-start mt-3">
+
+                        <div class="pl-5">
+                            <div style="font-size: 24px">
+                                Who would you like to invite?
+                            </div>
+                            <div class="custom-light-grey">
+                                We will send them a link to join you in Kinnect
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+                        <form>
+                            <div class="row my-4 f14 text-left">
+                                <div class="col-6">
+                                    First Name <br>
+                                    <input class="mt-1 p-1 w-100 popupInput" required="">
+                                </div>
+                                <div class="col-6">
+                                    Last Name <br>
+                                    <input class="mt-1 p-1 w-100 popupInput" required="">
+                                </div>
+                            </div>
+                            <div class="row text-left f14">
+                                <div class="col-12">
+                                    Email <br>
+                                    <input type="email" class="mt-1 p-1 px-3 w-100 popupInput" placeholder="example@email.com" required="">
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
+                        <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser2">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- invite user -->
+    <!-- invite user-2 -->
+    <div class="modal" id="inviteUser2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 row p-4 m-0">
+                <div class="col-12">
+                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <img src="./assets/images/popupclose.svg" height="24px" class="">
+                        </button>
+                    </div>
+                    <div class="row align-items-center justify-content-start mt-3">
+
+                        <div class="pl-5">
+                            <div style="font-size: 24px">
+                                Invite Marsh Kane
+                            </div>
+                            <div class="custom-light-grey">
+                                marshkane20@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+                        <form class="w-100">
+                            <div class="row my-4 text-left">
+                                <div class="col-12">
+                                    What is your relationship to Marsh Kane? <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required="">
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row my-4 text-left">
+                                <div class="col-12">
+                                    Immediate Family Type <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required="">
+                                        <option>Sibling</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row text-left">
+                                <div class="col-12">
+                                    Sibling Type <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required="">
+                                        <option>Brother</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row align-items-center justify-content-between mt-4 mb-3 pl-5 pr-3 position-relative w-100">
+                        <button type="button" class="btn btn-light bg-blue p-2 mr-2 mr-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser">
+                            Back
+                        </button>
+                        <button type="button" class="btn btn-primary bg-theme-blue border-0 ml-2 ml-md-4" data-dismiss="modal">
+                            Invite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- invite user-2 -->
 
     <!------------------------------------------------------------HELP CENTER----------------------------------------->
     <!-- main menu -->
@@ -3270,16 +2115,20 @@
     </div>    
     <!-- FAQ -->
     <!------------------------------------------------------------HELP CENTER----------------------------------------->
-    <!-- Modal -->
-    <!--OPEN TABS jS FUNCTION-->
+    <!-- Modals -->
+            
+        
+    </div>
+
+	<!--OPEN TABS jS FUNCTION-->
+
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
     <script type="text/javascript" src="./assets/js/popper.min.js"></script>
     <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./assets/js/wow.js"></script>
-    <script type="text/javascript" src="./assets/js/jPages.js"></script>
-    <script type="text/javascript" src="./assets/js/jPages.min.js"></script>    
-    <script type="text/javascript" src="./assets/js/script.js"></script>
+    <script type="text/javascript" src="./assets/js/jPages.js"></script>		
+
+	<script type="text/javascript" src="./assets/js/script.js"></script>
 
 </body>
-
 </html>
