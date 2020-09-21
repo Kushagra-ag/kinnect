@@ -1970,6 +1970,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media only screen and (max-width: 1007px){
+   .last-row-faq>div {
+    font-size: 13px;
+ }
+}
+
+
+@media only screen and (max-width: 1007px){
   .contact-us-tab-heading {
     display: none;
  }
