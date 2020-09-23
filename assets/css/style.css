@@ -2266,7 +2266,7 @@ textarea::placeholder{
 
 /***********************************************************************/
 
-.custom-select-1 {
+.custom-select {
   width: 45%;
   position: relative;
   border: 1px solid #6b6e77;
@@ -2300,6 +2300,87 @@ textarea::placeholder{
 
 }
 
+/*****************************************************************************************/
+  .report-issues {
+   width: 45%;
+  position: relative;
+  border-radius: 5px;
+}
+
+select::-ms-expand {
+     display: none;
+}
+  
+  .report-issues select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+
+    background-color: transparent;
+  padding: 0px;
+  font-size: 13px;
+  }
+
+  .report-issues:after{
+    position: absolute;
+  font-family: FontAwesome;
+  content: "\f107";
+  top:0.55rem;
+    right: 10px;
+   display: inline-block;
+   padding-right: 4px;
+   padding-left: 4px;
+   vertical-align: middle;
+   font-weight: 900; 
+   color: white;
+   border-radius: 5px;
+   background-color: #ccc;
+  }
+/*****************************************************************************************/
+/*****************************************************************************************/
+  .date-select {
+   width: 100%;
+  position: relative;
+  border-radius: 5px;
+}
+
+select::-ms-expand {
+     display: none;
+}
+  
+  .date-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  width: 100%;
+    background-color: transparent;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  font-size: 13px;
+  color: #6b6e77;
+  font-weight: bold;
+  border-radius: 5px;
+  }
+
+  .date-select >.form-control{
+    height: calc(1.5em + .75rem + 6px);
+  }
+
+  .date-select:after{
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f0d7";
+  
+    top:0.6rem;
+    right: 10px;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900; 
+  }
+/*****************************************************************************************/
 /* Point the arrow upwards when the select box is open (active): */
 
 /* style the items (options), including the selected item: */
@@ -2317,7 +2398,9 @@ textarea::placeholder{
   padding-bottom: 0.5rem;
   cursor: pointer;
   padding-left: 1rem;
-  
+
+
+
 }
 
 /* Style items (options): */
@@ -2333,7 +2416,6 @@ textarea::placeholder{
     font-size: 13px;
     box-shadow: 0 3px 6px #00000033;
     border: 1px solid #000;
-    border-bottom: 1px solid #fff;
 }
 
 /* Hide the items when the select box is closed: */
@@ -2348,8 +2430,10 @@ textarea::placeholder{
 
 /***************************************************************/
 .notification-dropdown{
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
   padding-bottom: 0px;
-box-shadow: 0px 0.1px 6px -1px #00000059;
+border: 0px solid #fff;
 }
 
 .notifications{
@@ -2376,8 +2460,25 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
 .notifications-setting-symbol img{
 
   position: absolute;
-  height: 15px;
-  width: 15px;
+  height: 16px;
+  width: 16px;
+
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid white;
+
+  margin-left: -0.88rem;
+  margin-top: 0.25rem;
+
+  padding-bottom: 0.02rem;
+
+}
+
+.notifications-setting-symbol svg{
+
+  position: absolute;
+  height: 16px;
+  width: 16px;
 
   border-radius: 50%;
   background-color: white;
@@ -2391,9 +2492,10 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
 }
 
 .notification-text{
-  color: #6B6E77;
   font-size: 12px;
   padding-left: 2rem;
+  color: #6B6E77;
+  
 }
 
 .notify-item{
@@ -2401,6 +2503,7 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
   align-items: center;
   justify-content: space-between;
 
+  color: #6B6E77;
   padding: 0px;
   width: 100%;
   padding-top: 0.25rem;
@@ -2412,6 +2515,7 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
   align-items: center;
   justify-content: space-between;
 
+  color: #6B6E77;
   background-color: #f2f2f2;
   padding: 0px;
   width: 100%;
@@ -2441,6 +2545,7 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
   font-size: 13px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+ 
 
   padding-left: 1.5rem;
   border-top: 2px solid #ccc;
@@ -2465,6 +2570,11 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
   padding-top: 0.03rem;
   padding-left: 0.03rem;
   padding-bottom: 0.01rem;
+}
+
+.request-received-notifications-page{
+  height: 20px;
+  width: 20px;
 }
 
 .overlay-notif-img img{
@@ -2531,6 +2641,12 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
   border-radius: 5px;
 }
 
+.custom-select-1:focus{
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
 .custom-select-1 select {
   display: none; /*hide original SELECT element: */
 }
@@ -2587,7 +2703,6 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
     font-size: 13px;
     box-shadow: 0 3px 6px #00000033;
     border: 1px solid #000;
-    border-bottom: 1px solid #fff;
 }
 
 /* Hide the items when the select box is closed: */
@@ -2601,3 +2716,79 @@ box-shadow: 0px 0.1px 6px -1px #00000059;
 }
 
 /***************************************************************/
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #4867ae;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+    border:  1px solid #4867ae;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/***************************************************************/
+.view-all-setting-user-pic img{
+  height:50px;
+  width: 50px;
+
+  border-radius: 50%;
+  background-color: #6B6E77;
+
+  padding-top: 0.03rem;
+  padding-left: 0.03rem;
+  padding-bottom: 0.01rem;
+}

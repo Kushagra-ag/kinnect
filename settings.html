@@ -14,7 +14,7 @@
 </head>
 </head>
 <body>
-	<h3 id="backdrop" class="bl" style="display: none;" onclick="change_BL_2(); change_pos_icon_back();">
+	<h3 id="backdrop" class="bl" style="display: none" onclick="change_BL_2(); change_pos_icon_back();">
 	</h3>
 	<!-- Navigation -->
     <nav class="navbar navbar-expand-md bg-white navbar-light" >
@@ -71,7 +71,7 @@
                                                     </button>
                                                 </span>
                                                 <span class="px-1 py-2 my-1 align-self-center h-100" style="width:100%;">
-                                                    <input id="global-search-input" type="text" class=" border-0 bg-transparent search-ctm search-bar-1 search-bar-1-focus" placeholder="Search">
+                                                    <input id="global-search-input" type="text" class=" border-0 bg-transparent search-ctm search-bar-1" placeholder="Search">
                                                 </span>
                                                 <span class="align-self-center ">
                                                     <button type="submit" id="my-search-icon-2" class="rounded mr-1 bg-white theme-blue" style="display: none; padding: 0.625rem"> <!--4867ae f4f6fa  6b6e77padding:0.8rem-->
@@ -86,7 +86,7 @@
 
                             <!--search bar ends here-->
                             <!--search menu starts-->
-                            <div class="search-menu dropdown-menu  dropdown-menu-pseudo f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
+                            <div class="search-menu dropdown-menu dropdown-menu-pseudo f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
                                 <!--Start-->
                                 <div class="addHover dropdown-item search-item mt-2" onmouseenter="change_BL();">
                                     <a href="profile-connected-1.html" style="text-decoration:none;">
@@ -318,10 +318,136 @@
                         </a>
                     </li>
                     <li class="nav-item mx-1">
-                        <a class="nav-link theme-blue" href="#">
-                            <span class="feather f16 icon-bell align-middle"></span>
-                            <span class="d-md-none ml-2"> Notifications </span>
-                        </a>
+                        <div class="dropdown">
+                            <div class="nav-link theme-blue dropdown-toggle" data-toggle="dropdown"  onclick="change_BL();">
+                                <span class="feather f16 icon-bell align-middle"></span>
+                                <span class="d-md-none ml-2"> Notifications </span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-right notification-dropdown dropdown-menu-pseudo" onmouseenter="change_BL();" onclick="change_BL();">
+                                
+                                <div class="notifications">
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item" onmouseenter="change_BL();">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-picture container">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="notifications-setting-symbol">
+                                                    <img src="./assets/images/nora.png" class="">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex notification-text">
+                                                <div class="">
+                                                    <strong class="theme-blue">Mike Kirby</strong> has sent you a connection request
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center test-plus">
+                                            <button class="bg-transparent p-0  ">
+                                                <img class="request-received-notif border-0" style="height: 20px; width: 20px;" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notif border-0 m-0" style="height: 20px; width: 20px;" src="./assets/images/reject.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item" onmouseenter="change_BL();">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-picture">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                            </div>
+                                            <div class="d-flex notification-text">
+                                                <div class="">
+                                                    Update you phone number in your profile section
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vertical-icon-notify-item test-plus ">
+                                            <button>
+                                                <img src="./assets/images/more-vertical.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item-old" onmouseenter="change_BL();">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-picture container">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="notifications-setting-symbol">
+                                                    <img src="./assets/images/nora.png" class="">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex notification-text">
+                                                <div class="theme-blue font-weight-bold">
+                                                    <strong class="theme-blue">Mike Kirby</strong> has sent you a connection request
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center test-plus">
+                                            <button class="bg-transparent p-0  ">
+                                                <img class="request-received-notif border-0" style="height: 20px; width: 20px;" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notif border-0 m-0" style="height: 20px; width: 20px;" src="./assets/images/reject.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item-old" onmouseenter="change_BL();">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-picture">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                            </div>
+                                            <div class="d-flex notification-text">
+                                                <div class="">
+                                                    Update you phone number in your profile section
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vertical-icon-notify-item test-plus ">
+                                            <button>
+                                                <img src="./assets/images/more-vertical.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item-old" onmouseenter="change_BL();">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-picture container">
+                                                <img src="./assets/images/user-pic.jpg" class="">
+                                                <div class="notifications-setting-symbol">
+                                                    <img src="./assets/images/nora.png" class="">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex notification-text">
+                                                <div class="">
+                                                    Mike Kirby has accepted your connection request
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center test-plus">
+                                            <button class="bg-transparent p-0  ">
+                                                <img class="request-received-notif border-0" style="height: 20px; width: 20px;" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notif border-0 m-0" style="height: 20px; width: 20px;" src="./assets/images/reject.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                </div>
+                                <div  class="notifications-view-all">
+                                    
+                                    <a href="notifications.html" class="addHover dropdown-item notify-item rounded-bottom" onmouseenter="change_BL();">
+                                            <strong> View all</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <div class="d-md-none">
                         <div class="dropdown-divider"></div>
@@ -356,7 +482,7 @@
 	<!-- nav  -->
 	
     <!-- profile_detail -->
-    <div class="profile_detail" id="Profile_page">
+    <div class="profile_detail suggestion_detail" id="Suggetion_page">
         <div class="container-fluid">
             <div class="row">
             	<!--profile sidebar--->
@@ -509,345 +635,436 @@
                 </div>
                 <!--profile sidebar end-->
                 <!-- main section -->
-				<div class="col-lg-9 col-md-8 col-sm-7 ">
+                <div class="col-lg-9 col-md-8 col-sm-7 ">
                     <!-- placeholder row -->
 						<div class="row ml-md-1" style="z-index: 10;margin-top: -55px;margin-bottom: 25px">
-							<div class="placeholder col-12 border-0">
+							<div class="placeholder col-12 border-0" >
 							</div>
 						</div>
 						<!-- placeholder -->
 						
-						<!-- your search results -->
-						<div class="row bg-white px-md-4 pb-4 px-2 ml-1 rounded" style="margin-bottom: 32px">
-							<div class="col-12 container my-2 px-0">
-								<div class="mx-2 row f14 my-3">
-									<span class="d-flex align-items-center">
-										<h3 class="my-1"><strong>Search results</strong></h3>
-									</span>	
-									<span class="d-flex align-items-left custom-grey bg-blue  mx-3 pr-1">
-										<h3 class="px-2 m-0 pt-2"><strong>Showing</strong></h3>
-										
-										<div>
-											<!--</button>-->
-											<div class="dropdown d-flex align-items-center bg-blue" style="cursor:pointer;">
-												<div class="dropdown-toggle my-1" data-toggle="dropdown" aria-expanded="true">
-													<div class="p-1" style="background-color: #fff; color: black; border-radius: 5px;">
-														All users on Kinnect
-														<span class="fa fa-angle-down ml-2"></span>
-													</div>
-												</div>
-												<div class="dropdown-menu dropdown-menu-pseudo dropdown-menu-right f12 dropdown-ctm custom-grey " data-style="checkbox" x-placement="bottom-end" style="position: absolute; transform: translate3d(-80px, 26px, 0px); top: 0px; left: 0px; will-change: transform;">
-													<div class="dropdown-item">
-														<div class="form-check d-flex align-items-center">
-															<input type="checkbox" class="form-check-input mt-0" id="allCon" name="option1" value="something" checked="">All users on Kinnect
-														</div>
-													</div>
-													<div class="dropdown-item">
-														<div class="form-check d-flex align-items-center">
-															<input type="checkbox" class="form-check-input mt-0" id="existingCon" name="option2" value="something">Users with Mutual Connections
-														</div>
-													</div>
-												</div>
-											</div>										
-										</div>
-									</span>
-								</div>
-								<!-- -------------------- -->
-								<!--no results found -->
-								<div class="row col-12 container mx-0 bg-white py-4 justify-content-center my-3">
-									<img class="" src="./assets/images/No_results.svg" style="width:auto;">
-									<div class="col-sm text-muted position-absolute " style="z-index: 50; top: 76%;">
-										 <div class="f20 " style="font-family: 'PublicSans-Medium';text-align: center; ">	
-										 	No results found
-										 </div>
-										 <div class=" col-sm font-weight-light py-2" style="text-align: center; ">
-											 Looks like your search for 'Jane Doe' didn't return anything
-										 </div> 
-									</div>									
-								</div>																
-								<!--end of no results found-->
-								<!------------buttons-------------->
-								<div class="row  f14">
-									<div class=" py-2 col-6 ">
-    
-									 <button class="bg-theme-blue px-3 mr-5 py-2 float-right" data-toggle="modal" data-target="#inviteUser" style="color: white;">
-											Invite
-									</button>           
-									</div>
-
-									<div class="py-2 col-6">
-									<button class="bg-blue  px-3 py-2 custom-grey" onclick="topFunction(); change_BL(); getFocus();">
-										Back to Search
-									</button>    
-									</div>									
-								</div>
-								<!---------end of buttons---------->
-							</div>
-						</div>
-						<!--your search results-->
-						
 						<!-- SUGGESTIONS -->
-						<div class="row bg-white your-network pl-md-4 pb-4 ml-md-1">
-					
-							<div class="col-12">
-								<div>
-									<div class="col-12 d-flex my-4 px-0">
-										<div class="row col-10">
-											<h3 class="font-weight-bold" style="color:black">
-												Suggestions for you
-											</h3>
-											<div class="custom-grey ml-3 f14">
-												You may know these people. Connect with them to start sharing.
-	 										</div>	
-										</div>
-										<div class="col-2 mx-0 px-0" style="text-align:right;">
-											<a href="Suggestions.html" class="view-all theme-blue f13" >
-												<strong>
-													<u>
-														View All
-													</u>
-												</strong>
-											</a>
-										</div>
+						<div class="row bg-white px-md-4 pb-4 ml-md-1 rounded" style="margin-bottom: 32px">
+
+							<div class="col-12 my-1">
+								<div class="mt-4 mb-3">
+                                    <div class="d-flex justify-content-between" style="color:black">
+                                        <div>
+                                            <h3>
+                                                Settings
+                                            </h3>
+                                        </div>
+                                        <div>
+                                            <img src="./assets/images/help-icon2.svg">
+                                        </div>
+
+                                    </div>
+                                    <div class="custom-grey mt-3 ">
+                                        <h3 class="font-weight-normal">
+                                            General Settings
+                                        </h3>
+                                    </div>  
+                                </div>
+								<!-- -------------------- -->
+								<div class=" mt-2">
+									<!--normal profile tabs-->
+									<div class="col-12 notifications-page-view-all addHover ">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-setting-user-pic">
+                                                <img src="./assets/images/settings.svg">
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="">
+                                                    <div class=" " style="color: black;">
+                                                        <h3>Reset password</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            Change your existing password
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class="theme-blue font-weight-light">
+                                                Change
+                                            </h3>
+                                        </div>
 									</div>
+                                    <div class="col-12 notifications-page-view-all addHover ">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-setting-user-pic">
+                                                <img src="./assets/images/settings.svg">
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="">
+                                                    <div class=" " style="color: black;">
+                                                        <h3>Update email address</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            Update your existing email address
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class="theme-blue font-weight-light">
+                                                Change
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 notifications-page-view-all addHover ">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-setting-user-pic">
+                                                <img src="./assets/images/settings.svg">
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="">
+                                                    <div class=" " style="color: black;">
+                                                        <h3>Add backup email</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            In case you get locked out
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class="theme-blue font-weight-light">
+                                                Add
+                                            </h3>
+                                        </div>
+                                    </div>
+									<!--normal profile tabs-->
 								</div>
-								<div class="clearfix"></div>
-								<!--starting the tab container-->
-								<div class="reqContainer1 row m-2" id="my-page-1">
-										<!--normal profile tabs with mutual friends not zero-->										
-										<div class="col-12">
-											<div class="row justify-content-center">
-												<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
-													<div class="row align-items-center bg-blue profile">
-														<div class="col-3 p-0" style="overflow: hidden;">
-															<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-														</div>
-														<div class="col-9 row align-self-start justify-content-between p-3">
-															<div class="pl-3 d-flex flex-column">
-																<div class="f15 font-weight-bold text-truncate">
-																	Jacob Logan
-																</div>
-																
-																<div class="custom-light-grey text-truncate">
-																	<div>
-																		Jacksonville
-																	</div>
-																	<div>
-																		Mutual Connections: 28
-																	</div>
-																</div>													
-															</div>
-															<div class="test-plus pt-3">
-																<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="addHover1 col-lg-5 mb-2">
-													<div class="row align-items-center bg-blue profile">
-														<div class="col-3 p-0" style="overflow: hidden;">
-															<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-														</div>
-														<div class="col-9 row align-self-start justify-content-between p-3">
-															<div class="pl-3 d-flex flex-column">
-																<div class="f15 font-weight-bold text-truncate">
-																	Jacob Logan
-																</div>
-																
-																<div class="custom-light-grey text-truncate">
-																	<div>
-																		Jacksonville
-																	</div>
-																	<div>
-																		Mutual Connections: 24
-																	</div>
-																</div>													
-															</div>
-															<div class="test-plus pt-3">
-																<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="row justify-content-center">
-												<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
-													<div class="row align-items-center bg-blue profile">
-														<div class="col-3 p-0" style="overflow: hidden;">
-															<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-														</div>
-														<div class="col-9 row align-self-start justify-content-between p-3">
-															<div class="pl-3 d-flex flex-column">
-																<div class="f15 font-weight-bold text-truncate">
-																	Jacob Logan
-																</div>
-																
-																<div class="custom-light-grey text-truncate">
-																	<div>
-																		Jacksonville
-																	</div>
-																	<div>
-																		Mutual Connections: 22
-																	</div>
-																</div>													
-															</div>
-															<div class="test-plus pt-3">
-																<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="addHover1 col-lg-5 mb-2">
-													<div class="row align-items-center bg-blue profile">
-														<div class="col-3 p-0" style="overflow: hidden;">
-															<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-														</div>
-														<div class="col-9 row align-self-start justify-content-between p-3">
-															<div class="pl-3 d-flex flex-column">
-																<div class="f15 font-weight-bold text-truncate">
-																	Jacob Logan
-																</div>
-																
-																<div class="custom-light-grey text-truncate">
-																	<div>
-																		Jacksonville
-																	</div>
-																	<div>
-																		Mutual Connections: 15
-																	</div>
-																</div>													
-															</div>
-															<div class="test-plus pt-3">
-																<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="row justify-content-center">
-												<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
-													<div class="row align-items-center bg-blue profile">
-														<div class="col-3 p-0" style="overflow: hidden;">
-															<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-														</div>
-														<div class="col-9 row align-self-start justify-content-between p-3">
-															<div class="pl-3 d-flex flex-column">
-																<div class="f15 font-weight-bold text-truncate">
-																	Jacob Logan
-																</div>
-																
-																<div class="custom-light-grey text-truncate">
-																	<div>
-																		Jacksonville
-																	</div>
-																	<div>
-																		Mutual Connections: 22
-																	</div>
-																</div>													
-															</div>
-															<div class="test-plus pt-3">
-																<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="addHover1 col-lg-5 mb-2">
-													<div class="row align-items-center bg-blue profile">
-														<div class="col-3 p-0" style="overflow: hidden;">
-															<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-														</div>
-														<div class="col-9 row align-self-start justify-content-between p-3">
-															<div class="pl-3 d-flex flex-column">
-																<div class="f15 font-weight-bold text-truncate">
-																	Jacob Logan
-																</div>
-																
-																<div class="custom-light-grey text-truncate">
-																	<div>
-																		Jacksonville
-																	</div>
-																	<div>
-																		Mutual Connections: 15
-																	</div>
-																</div>													
-															</div>
-															<div class="test-plus pt-3">
-																<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="row justify-content-center">
-												<div class="addHover1 col-lg-5 mr-lg-5 mb-2">
-													<div class="row align-items-center bg-blue profile">
-														<div class="col-3 p-0" style="overflow: hidden;">
-															<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-														</div>
-														<div class="col-9 row align-self-start justify-content-between p-3">
-															<div class="pl-3 d-flex flex-column">
-																<div class="f15 font-weight-bold text-truncate">
-																	Jacob Logan
-																</div>
-																
-																<div class="custom-light-grey text-truncate">
-																	<div>
-																		Jacksonville
-																	</div>
-																	<div>
-																		Mutual Connections: 22
-																	</div>
-																</div>													
-															</div>
-															<div class="test-plus pt-3">
-																<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="addHover1 col-lg-5 mb-2">
-													<div class="row align-items-center bg-blue profile">
-														<div class="col-3 p-0" style="overflow: hidden;">
-															<img src="./assets/images/jacob.png" class="m-1" style="max-height: 75px;min-height: 75px;">
-														</div>
-														<div class="col-9 row align-self-start justify-content-between p-3">
-															<div class="pl-3 d-flex flex-column">
-																<div class="f15 font-weight-bold text-truncate">
-																	Jacob Logan
-																</div>
-																
-																<div class="custom-light-grey text-truncate">
-																	<div>
-																		Jacksonville
-																	</div>
-																	<div>
-																		Mutual Connections: 15
-																	</div>
-																</div>													
-															</div>
-															<div class="test-plus pt-3">
-																<button><img src="./assets/images/reject.svg" style="transform: rotate(45deg);align-self: center"></button>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											
-										<!--normal profile tabs-->
-										</div>
-								</div>
-															
-							</div><!--tab container-->
+								<!----------------------- -->
+                                <div class="mt-3 mb-3">
+                                    <div class="custom-grey mt-3 ">
+                                        <h3 class="font-weight-normal">
+                                            Security Settings
+                                        </h3>
+                                    </div>  
+                                </div>
+                                <!-- -------------------- -->
+                                <div class=" mt-2">
+                                    <!--normal profile tabs-->
+                                    <div class="col-12 notifications-page-view-all addHover ">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-setting-user-pic">
+                                                <img src="./assets/images/settings.svg">
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="">
+                                                    <div class=" " style="color: black;">
+                                                        <h3>Set up 2 factor authentication</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            Increase the security of your Kinnect account
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <label class="switch">
+                                              <input type="checkbox">
+                                              <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 notifications-page-view-all addHover ">
+                                        <div class="d-flex align-items-center">
+                                            <div class="view-all-setting-user-pic">
+                                                <img src="./assets/images/settings.svg">
+                                            </div>
+                                            <div class="view-all-notif-text">
+                                                <div class="">
+                                                    <div class=" " style="color: black;">
+                                                        <h3>Verify account</h3>
+                                                    </div>
+                                                    <div >
+                                                        <h3 class="font-weight-light">
+                                                            Verify your account
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mr-2 align-items-center">
+                                            <h3 class="theme-blue font-weight-light">
+                                                Change
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!--normal profile tabs-->
+                                </div>
+                                <!----------------------- -->
+                                <!----------------------- -->
+                                <div class="mt-3 mb-3">
+                                    <div class="custom-grey mt-3 ">
+                                        <h3 class="font-weight-normal">
+                                            Notification Settings
+                                        </h3>
+                                    </div>  
+                                </div>
+                                <!-- -------------------- -->
+                                <div class=" mt-2 mb-4 pb-2" style="border-bottom: 1.5px solid rgb(204, 204, 204);">
+                                    <!--normal profile tabs-->
+                                    
+                                    <div class="col-12 addHover ">
+                                        <div class="col-12 d-flex align-items-center">
+                                            <h3>
+                                                Send me email notifcations for
+                                            </h3>
+                                        </div>
+                                        
+                                        <div class="col-12 container  pt-2  custom-grey  f13" style="">
+                                        
+                                            <label class="insurance-checkboxes">
+                                                <div>
+                                                    <input type="checkbox" value="" checked="">
+                                                </div>
+                                                <div class="pl-2 mb-1 ">
+                                                    Account update/activity(included reminders for expiration of Insurance,credit cards, etc.)
+                                                </div>
+                                            </label>
+                                        
+                                            <label class="insurance-checkboxes">
+                                                <div>
+                                                    <input type="checkbox" value="" checked="">
+                                                </div>
+                                                <div class="pl-2 mb-1 ">
+                                                    Guides and Resources
+                                                </div>
+                                            </label>
+
+                                            <label class="insurance-checkboxes">
+                                                <div>
+                                                    <input type="checkbox" value="" checked="">
+                                                </div>
+                                                <div class="pl-2 mb-1 ">
+                                                    Kinnect Updates
+                                                </div>
+                                            </label>
+    
+                                        </div>
+                                        
+                                    </div>
+                                    <!--normal profile tabs-->
+                                </div>
+                                <!----------------------- -->
+
+							</div>
 						</div>
 						<!-- SUGGESTIONS -->
 				</div>
-				<!--end of main section-->
 			</div>
 		</div>
                 <!-- permissions -->
 	</div>			
-                
+
     <!-- Modals -->
+
+    <!-- send connection -->
+    <div class="modal" id="sendCon">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 row p-4 m-0">
+                <div class="col-12">
+                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <img src="./assets/images/popupclose.svg" height="24px" class="">
+                        </button>
+                    </div>
+                    <div class="row align-items-center justify-content-start mt-3 pl-5">
+
+                        <div class="rounded-circle overflow-hidden mr-3">
+                            <img src="./assets/images/mike.png" height="100px">
+                        </div>
+                        <div>
+                            <div class="f20 font-weight-bold mb-1">
+                                Mike Kirby
+                                <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                            </div>
+                            <div class="custom-light-grey f16">
+                                Location: Orlando, FL
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-start px-5 mt-4 mb-3 custom-light-grey text-center">
+                        <form class="w-100">
+                            <div class="row my-4 text-left">
+                                <div class="col-12">
+                                    What is your relationship to Mike? <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required="">
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row my-4 text-left">
+                                <div class="col-12">
+                                    Immediate Family Type <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required="">
+                                        <option>Parent</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row text-left">
+                                <div class="col-12">
+                                    Parent Type <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required="">
+                                        <option>Father</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
+                        <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
+                            Connect
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- send connection -->
+
+    <!-- --------------------------------- -->
+
+    <!-- invite user -->
+    <div class="modal" id="inviteUser">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 row p-4 m-0">
+                <div class="col-12">
+                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <img src="./assets/images/popupclose.svg" height="24px" class="">
+                        </button>
+                    </div>
+                    <div class="row align-items-center justify-content-start mt-3">
+
+                        <div class="pl-5">
+                            <div style="font-size: 24px">
+                                Who would you like to invite?
+                            </div>
+                            <div class="custom-light-grey">
+                                We will send them a link to join you in Kinnect
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+                        <form>
+                            <div class="row my-4 f14 text-left">
+                                <div class="col-6">
+                                    First Name <br>
+                                    <input class="mt-1 p-1 w-100 popupInput" required="">
+                                </div>
+                                <div class="col-6">
+                                    Last Name <br>
+                                    <input class="mt-1 p-1 w-100 popupInput" required="">
+                                </div>
+                            </div>
+                            <div class="row text-left f14">
+                                <div class="col-12">
+                                    Email <br>
+                                    <input type="email" class="mt-1 p-1 px-3 w-100 popupInput" placeholder="example@email.com" required="">
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
+                        <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser2">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- invite user -->
+    <!-- invite user-2 -->
+    <div class="modal" id="inviteUser2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 row p-4 m-0">
+                <div class="col-12">
+                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <img src="./assets/images/popupclose.svg" height="24px" class="">
+                        </button>
+                    </div>
+                    <div class="row align-items-center justify-content-start mt-3">
+
+                        <div class="pl-5">
+                            <div style="font-size: 24px">
+                                Invite Marsh Kane
+                            </div>
+                            <div class="custom-light-grey">
+                                marshkane20@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+                        <form class="w-100">
+                            <div class="row my-4 text-left">
+                                <div class="col-12">
+                                    What is your relationship to Marsh Kane? <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required="">
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row my-4 text-left">
+                                <div class="col-12">
+                                    Immediate Family Type <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required="">
+                                        <option>Sibling</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row text-left">
+                                <div class="col-12">
+                                    Sibling Type <br>
+                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required="">
+                                        <option>Brother</option>
+                                        <option>Immediate family</option>
+                                        <option>Immediate family</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row align-items-center justify-content-between mt-4 mb-3 pl-5 pr-3 position-relative w-100">
+                        <button type="button" class="btn btn-light bg-blue p-2 mr-2 mr-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser">
+                            Back
+                        </button>
+                        <button type="button" class="btn btn-primary bg-theme-blue border-0 ml-2 ml-md-4" data-dismiss="modal">
+                            Invite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- invite user-2 -->
 
     <!------------------------------------------------------------HELP CENTER----------------------------------------->
     <!-- main menu -->
@@ -1984,214 +2201,20 @@
     </div>    
     <!-- FAQ -->
     <!------------------------------------------------------------HELP CENTER----------------------------------------->
-
-    <!-- send connection -->
-    <div class="modal" id="sendCon">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 row p-4 m-0">
-                <div class="col-12">
-                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <img src="./assets/images/popupclose.svg" height="24px" class="">
-                        </button>
-                    </div>
-                    <div class="row align-items-center justify-content-start mt-3 pl-5">
-
-                        <div class="rounded-circle overflow-hidden mr-3">
-                            <img src="./assets/images/mike.png" height="100px">
-                        </div>
-                        <div>
-                            <div class="f20 font-weight-bold mb-1">
-                                Mike Kirby
-                                <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
-                            </div>
-                            <div class="custom-light-grey f16">
-                                Location: Orlando, FL
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-start px-5 mt-4 mb-3 custom-light-grey text-center">
-                        <form class="w-100">
-                            <div class="row my-4 text-left">
-                                <div class="col-12">
-                                    What is your relationship to Mike? <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required="">
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row my-4 text-left">
-                                <div class="col-12">
-                                    Immediate Family Type <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required="">
-                                        <option>Parent</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row text-left">
-                                <div class="col-12">
-                                    Parent Type <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required="">
-                                        <option>Father</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
-
-                            </div>
-                        </form>
-                    </div>
-                    <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
-                        <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
-                            Connect
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- send connection -->
-
-    <!-- --------------------------------- -->
-
-    <!-- invite user -->
-    <div class="modal" id="inviteUser">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 row p-4 m-0">
-                <div class="col-12">
-                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <img src="./assets/images/popupclose.svg" height="24px" class="">
-                        </button>
-                    </div>
-                    <div class="row align-items-center justify-content-start mt-3">
-
-                        <div class="pl-5">
-                            <div style="font-size: 24px">
-                                Who would you like to invite?
-                            </div>
-                            <div class="custom-light-grey">
-                                We will send them a link to join you in Kinnect
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
-                        <form>
-                            <div class="row my-4 f14 text-left">
-                                <div class="col-6">
-                                    First Name <br>
-                                    <input class="mt-1 p-1 w-100 popupInput" required="">
-                                </div>
-                                <div class="col-6">
-                                    Last Name <br>
-                                    <input class="mt-1 p-1 w-100 popupInput" required="">
-                                </div>
-                            </div>
-                            <div class="row text-left f14">
-                                <div class="col-12">
-                                    Email <br>
-                                    <input type="email" class="mt-1 p-1 px-3 w-100 popupInput" placeholder="example@email.com" required="">
-                                </div>
-
-                            </div>
-                        </form>
-                    </div>
-                    <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
-                        <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser2">
-                            Next
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- invite user -->
-    <!-- invite user-2 -->
-    <div class="modal" id="inviteUser2">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 row p-4 m-0">
-                <div class="col-12">
-                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <img src="./assets/images/popupclose.svg" height="24px" class="">
-                        </button>
-                    </div>
-                    <div class="row align-items-center justify-content-start mt-3">
-
-                        <div class="pl-5">
-                            <div style="font-size: 24px">
-                                Invite Marsh Kane
-                            </div>
-                            <div class="custom-light-grey">
-                                marshkane20@gmail.com
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
-                        <form class="w-100">
-                            <div class="row my-4 text-left">
-                                <div class="col-12">
-                                    What is your relationship to Marsh Kane? <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required="">
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row my-4 text-left">
-                                <div class="col-12">
-                                    Immediate Family Type <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required="">
-                                        <option>Sibling</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row text-left">
-                                <div class="col-12">
-                                    Sibling Type <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required="">
-                                        <option>Brother</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="row align-items-center justify-content-between mt-4 mb-3 pl-5 pr-3 position-relative w-100">
-                        <button type="button" class="btn btn-light bg-blue p-2 mr-2 mr-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser">
-                            Back
-                        </button>
-                        <button type="button" class="btn btn-primary bg-theme-blue border-0 ml-2 ml-md-4" data-dismiss="modal">
-                            Invite
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- invite user-2 -->
-
-                <!-- Modals -->
+    <!-- Modals -->
             
-        </div>
+        
     </div>
 
 	<!--OPEN TABS jS FUNCTION-->
-	<script type="text/javascript" src="./assets/js/jquery.js"></script>
-	<script type="text/javascript" src="./assets/js/popper.min.js"></script>
-	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./assets/js/wow.js"></script>
-	<script type="text/javascript" src="./assets/js/jPages.js"></script>
-	<script type="text/javascript" src="./assets/js/jPages.min.js"></script>
+
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/wow.js"></script>
+    <script type="text/javascript" src="./assets/js/jPages.js"></script>		
 
 	<script type="text/javascript" src="./assets/js/script.js"></script>
+
 </body>
 </html>
