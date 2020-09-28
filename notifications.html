@@ -323,7 +323,7 @@
                                 <span class="feather f16 icon-bell align-middle"></span>
                                 <span class="d-md-none ml-2"> Notifications </span>
                             </div>
-                            <div class="dropdown-menu dropdown-menu-right notification-dropdown dropdown-menu-pseudo" onmouseenter="change_BL();" onclick="change_BL();">
+                            <div class="dropdown-menu dropdown-menu-right notification-dropdown" onmouseenter="change_BL();" onclick="change_BL();">
                                 
                                 <div class="notifications">
                                     <!--Start-->
@@ -338,7 +338,31 @@
                                             <div class="d-flex  align-items-center">
                                                 <div class="notification-text d-flex align-items-center" >
                                                     <div class="" style="white-space: normal; ">
-                                                        <strong class="theme-blue">Mike Kirby</strong> has sent you a connection request
+                                                        <strong class="theme-blue">Mike Kirby</strong> has joined Kinnect on your invitation.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center ml-5 mr-3">
+                                            <button data-toggle="modal" data-target="#sendCon" class="p-1 px-2 bg-theme-blue f12" style="color: white;">
+                                            Connect
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover col-12 dropdown-item notify-item" onmouseenter="change_BL();">
+                                        <div class="d-flex">
+                                            <div class=" d-flex align-items-center "  >
+                                                <div class="user-picture container">
+                                                    <img src="./assets/images/user-pic.jpg" class="">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  align-items-center">
+                                                <div class="notification-text d-flex align-items-center" >
+                                                    <div class="" style="white-space: normal; ">
+                                                        <strong class="theme-blue">Mike Kirby</strong> has joined Kinnect on your invitation.
                                                     </div>
                                                 </div>
                                             </div>
@@ -354,28 +378,6 @@
                                     </div>
                                     <!--End-->
                                     <!--Start-->
-                                    <div class="addHover col-12 dropdown-item notify-item " onmouseenter="change_BL();">
-                                            <div class="d-flex ">
-                                            <div class="d-flex align-items-center">
-                                                <div class="user-picture">
-                                                    <img src="./assets/images/settings.svg" class="">
-                                                </div>
-                                            </div>
-                                            <div class="d-flex notification-text align-items-center" style="white-space: normal;">
-                                                    This is reminder to update you phone number in your profile section 
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center ml-4" style="visibility: hidden;">
-                                            <button class="bg-transparent p-0 mr-2 ml-2 ">
-                                                <img class="request-received-notifications-page border-0" style="" src="./assets/images/accept.svg">
-                                            </button>
-                                            <button class="bg-transparent p-0 mr-3">
-                                                <img class="request-received-notifications-page border-0 m-0" style="" src="./assets/images/reject.svg">
-                                            </button>
-                                        </div>                                        
-                                    </div>
-                                    <!--End-->
-                                    <!--Start-->
                                     <div class="addHover addHover1 dropdown-item notify-item-old" onmouseenter="change_BL();">
                                         <div class="d-flex ">
                                             <div class="d-flex align-items-center">
@@ -386,11 +388,11 @@
                                             </div>
                                             <div class="d-flex notification-text align-items-center" style="">
                                                 <div class="" style="white-space: normal;">
-                                                    <strong class="theme-blue">Mike Kirby</strong> has sent you a connection request
+                                                    Mike Kirby has sent you a connection request
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="d-flex align-items-center ml-5">
+                                        <div class="d-flex align-items-center ml-5" style="visibility: hidden;">
                                             <button class="bg-transparent p-0 mr-2 ml-2 ">
                                                 <img class="request-received-notifications-page border-0" style="" src="./assets/images/accept.svg">
                                             </button>
@@ -401,24 +403,21 @@
                                     </div> 
                                     <!--End-->
                                     <!--Start-->
-                                    <div class="addHover col-12 dropdown-item notify-item-old " onmouseenter="change_BL();">
+                                    <div class="addHover dropdown-item justify-content-start notify-item-old" onmouseenter="change_BL();">
                                         <div class="d-flex">
                                             <div class="d-flex align-items-center">
-                                                <div class="user-picture">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-                                                      <g id="settings" transform="translate(-0.014)">
-                                                        <circle id="Ellipse_56" data-name="Ellipse 56" cx="20" cy="20" r="20" transform="translate(0.014)" fill="#6b6e77"/>
-                                                        <path id="Icon_awesome-user-cog" data-name="Icon awesome-user-cog" d="M23.722,14.505a4.558,4.558,0,0,0,0-1.655l1-.579a.281.281,0,0,0,.128-.33,5.831,5.831,0,0,0-1.29-2.23.283.283,0,0,0-.35-.054l-1,.579a4.562,4.562,0,0,0-1.434-.828V8.249a.283.283,0,0,0-.221-.276,5.863,5.863,0,0,0-2.572,0,.283.283,0,0,0-.221.276V9.407a4.562,4.562,0,0,0-1.434.828l-1-.579a.284.284,0,0,0-.35.054,5.831,5.831,0,0,0-1.29,2.23.286.286,0,0,0,.128.33l1,.579a4.558,4.558,0,0,0,0,1.655l-1,.579a.281.281,0,0,0-.128.33,5.86,5.86,0,0,0,1.29,2.23.283.283,0,0,0,.35.054l1-.579a4.562,4.562,0,0,0,1.434.828v1.158a.283.283,0,0,0,.221.276,5.863,5.863,0,0,0,2.572,0,.283.283,0,0,0,.221-.276V17.948a4.562,4.562,0,0,0,1.434-.828l1,.579a.284.284,0,0,0,.35-.054,5.831,5.831,0,0,0,1.29-2.23.286.286,0,0,0-.128-.33l-1-.579Zm-4.449,1.057a1.885,1.885,0,1,1,1.885-1.885A1.886,1.886,0,0,1,19.273,15.562ZM8.7,9.947A4.974,4.974,0,1,0,3.73,4.974,4.973,4.973,0,0,0,8.7,9.947Zm7.818,8.8c-.089-.047-.179-.1-.264-.152l-.307.179a1.524,1.524,0,0,1-1.885-.284,7.085,7.085,0,0,1-1.562-2.7,1.52,1.52,0,0,1,.7-1.776l.307-.179q-.006-.152,0-.3l-.307-.179a1.518,1.518,0,0,1-.7-1.776c.035-.113.085-.225.124-.338-.148-.012-.291-.047-.443-.047h-.649a6.764,6.764,0,0,1-5.665,0H5.222A5.224,5.224,0,0,0,0,16.413v1.616a1.866,1.866,0,0,0,1.865,1.865H15.543a1.863,1.863,0,0,0,1.057-.33,1.513,1.513,0,0,1-.078-.459Z" transform="translate(9.627 9.412)" fill="#fff"/>
-                                                      </g>
-                                                    </svg>
-
+                                                <div class="user-picture container">
+                                                    <img src="./assets/images/user-pic.jpg" class="">
+                                                    
                                                 </div>
                                             </div>
                                             <div class="d-flex notification-text align-items-center">
-                                                    Update your phone number in your profile section 
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center" style="visibility: hidden;">
+                                                <div class="" style="white-space: normal;">
+                                                    Mike Kirby has accepted your connection request
+                                                </div>
+                                            </div>        
+                                        </div>                                    
+                                        <div class="d-flex align-items-center ml-5" style="visibility: hidden;">
                                             <button class="bg-transparent p-0 mr-2 ml-2 ">
                                                 <img class="request-received-notifications-page border-0" style="" src="./assets/images/accept.svg">
                                             </button>
@@ -660,23 +659,23 @@
 						<!-- SUGGESTIONS -->
 						<div class="row bg-white px-md-4 pb-4 ml-md-1 rounded" style="margin-bottom: 32px">
 
-							<div class="col-12 my-1">
-								<div class="mt-4 mb-3">
+                            <div class="col-12 my-1">
+                                <div class="mt-4 mb-3">
                                     <div class="" style="color:black">
                                         <h3>
                                             Notifications
                                         </h3>
                                     </div>
-									<div class="custom-grey mt-3 ">
+                                    <div class="custom-grey mt-3 ">
                                         <h3 class="font-weight-normal">
                                             Recent
                                         </h3>
-                                    </div>	
-								</div>
-								<!-- -------------------- -->
-								<div class=" mt-2">
-									<!--normal profile tabs-->
-									<div class="col-12 notifications-page-view-all addHover">
+                                    </div>  
+                                </div>
+                                <!-- -------------------- -->
+                                <div class=" mt-2">
+                                    <!--normal profile tabs-->
+                                    <div class="col-12 notifications-page-view-all addHover">
                                         <div class="d-flex align-items-center">
                                             <div class="view-all-notif-user-pic">
                                                 <img src="./assets/images/user-pic.jpg" class="">
@@ -687,7 +686,7 @@
                                                     <div class="theme-blue ">
                                                         <h3>Mike Kirby</h3>
                                                     </div>
-                                                    <div >
+                                                    <div>
                                                         <h3 class="font-weight-light">
                                                             &nbsp;has sent you a connection request
                                                         </h3>
@@ -708,7 +707,7 @@
                                                 4h
                                             </h3>
                                         </div>
-									</div>
+                                    </div>
                                     <div class="col-12 notifications-page-view-all-visited addHover ">
                                         <div class="d-flex align-items-center">
                                             <div class="view-all-notif-user-pic">
@@ -740,7 +739,7 @@
                                                     <div class="theme-blue ">
                                                         <h3>Mike Kirby</h3>
                                                     </div>
-                                                    <div >
+                                                    <div>
                                                         <h3 class="font-weight-light">
                                                             &nbsp;has sent you a connection request
                                                         </h3>
@@ -773,7 +772,7 @@
                                                     <div class="theme-blue ">
                                                         <h3>Mike Kirby</h3>
                                                     </div>
-                                                    <div >
+                                                    <div>
                                                         <h3 class="font-weight-light">
                                                             &nbsp;has sent you a connection request
                                                         </h3>
@@ -806,7 +805,7 @@
                                                     <div class="theme-blue ">
                                                         <h3>Mike Kirby</h3>
                                                     </div>
-                                                    <div >
+                                                    <div>
                                                         <h3 class="font-weight-light">
                                                             &nbsp;has sent you a connection request
                                                         </h3>
@@ -829,9 +828,9 @@
                                         </div>
                                     </div>
 
-									<!--normal profile tabs-->
-								</div>
-								<!----------------------- -->
+                                    <!--normal profile tabs-->
+                                </div>
+                                <!----------------------- -->
                                 <div class="mt-3 mb-3">
                                     <div class="custom-grey mt-3 ">
                                         <h3 class="font-weight-normal">
@@ -853,7 +852,7 @@
                                                     <div class="theme-blue ">
                                                         <h3>Mike Kirby</h3>
                                                     </div>
-                                                    <div >
+                                                    <div>
                                                         <h3 class="font-weight-light">
                                                             &nbsp;has sent you a connection request
                                                         </h3>
@@ -887,7 +886,7 @@
                                                     <div class="theme-blue ">
                                                         <h3>Mike Kirby</h3>
                                                     </div>
-                                                    <div >
+                                                    <div>
                                                         <h3 class="font-weight-light">
                                                             &nbsp;has sent you a connection request
                                                         </h3>
@@ -920,7 +919,7 @@
                                                     <div class="theme-blue ">
                                                         <h3>Mike Kirby</h3>
                                                     </div>
-                                                    <div >
+                                                    <div>
                                                         <h3 class="font-weight-light">
                                                             &nbsp;has sent you a connection request
                                                         </h3>
@@ -946,8 +945,8 @@
                                 </div>
                                 <!----------------------- -->
 
-							</div>
-						</div>
+                            </div>
+                        </div>
 						<!-- SUGGESTIONS -->
 				</div>
 			</div>
@@ -2286,6 +2285,7 @@
     </div>    
     <!-- FAQ -->
     <!------------------------------------------------------------HELP CENTER----------------------------------------->
+
     <!-- Modals -->
             
         
