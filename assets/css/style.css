@@ -2440,6 +2440,20 @@ border: 0px solid #fff;
   width:28rem;
 }
 
+.notification-count{
+  background-color: red;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  font-size: 8px;
+  color: white;
+  right:0.25rem;
+  top:0.25rem;
+  text-align: center;
+  position: absolute;
+  
+}
+
 .user-picture{
  padding-left: 1.5rem!important;
  padding-right: 0px!important;
@@ -2557,26 +2571,22 @@ border: 0px solid #fff;
 
 }
 
+.nav-bar-notif-text{
+    white-space: normal;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
 
 /****************************************************************/
-.view-all-notif-user-pic img{
-  height:50px;
-  width: 50px;
-
-  border-radius: 50%;
-  background-color: #6B6E77;
-  border: 1.5px solid #6B6E77;
-
-  padding-top: 0.03rem;
-  padding-left: 0.03rem;
-  padding-bottom: 0.01rem;
-}
-
 .request-received-notifications-page{
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
 }
 
+/*
 .overlay-notif-img img{
   position: absolute;
   height: 22px;
@@ -2593,43 +2603,87 @@ border: 0px solid #fff;
   padding-right: 0.02rem; 
   padding-bottom: 0.02rem;
 }
+*/
 
-.view-all-notif-user-pic {
-    padding-left: 0.5rem;
-}
 
-.view-all-notif-text {
+.notifications-page-view-all-edit {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  
+    padding-right: 2rem;
     padding-left: 2rem;
-    padding-top: 0.25rem;
+
+    display: flex;
+    align-items: center;
+    border-radius: 0px;
+    border-bottom: 1.5px solid rgb(204, 204, 204);
+}
+
+.bg-visited{
+  background-color: #f2f2f2;
+}
+
+.notifications-page-view-all-visited-edit {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    display: flex;
+    align-items: center;
+    background-color:#f2f2f2;
+    border-radius: 0px;
+    border-bottom: 1.5px solid rgb(204, 204, 204);
+}
+
+
+.view-all-notif-user-pic-edit {
+  padding: 0px;
+}
+
+.notification-part-2{
+  width: 100%-50px;
+}
+
+.view-all-notif-user-pic-edit img{
+  
+  height: 50px;
+  width: 50px;
+
+  border-radius: 50%;
+  background-color: #6B6E77;
+  border: 1.5px solid #6B6E77;
+
+  padding-top: 0.03rem;
+  padding-left: 0.03rem;
+  padding-bottom: 0.01rem;
+}
+
+.view-all-notif-text-edit {
     font-size: 15px;
+    font-weight: lighter;
     color: rgb(107, 110, 119);
-}
-
-.notifications-page-view-all-visited {
-    padding-top: 0.88rem;
-    padding-bottom: 0.88rem;
-    justify-content: space-between;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: rgb(244, 246, 250);
-    border-radius: 0px;
-    border-bottom: 1.5px solid rgb(204, 204, 204);
-}
-
-.notifications-page-view-all {
-    padding-top: 0.88rem;
-    padding-bottom: 0.88rem;
-    justify-content: space-between;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 0px;
-    border-bottom: 1.5px solid rgb(204, 204, 204);
+    padding: 0px;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
 }
 
 
+.notif-item-content{
+  padding: 0px;
+  padding-left: 1.5rem; 
+}
+
+
+@media only screen and (max-width: 1000px){
+.notif-action-buttons{
+  display: none;
+}
+}
 /************************************************************/
 
 /***********************************************************************/

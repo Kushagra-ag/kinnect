@@ -317,11 +317,151 @@
                             <span class="d-md-none ml-2"> Settings </span>
                         </a>
                     </li>
-                    <li class="nav-item mx-1">
-                        <a class="nav-link theme-blue" href="#">
-                            <span class="feather f16 icon-bell align-middle"></span>
-                            <span class="d-md-none ml-2"> Notifications </span>
-                        </a>
+                                        <li class="nav-item mx-1">
+                        <div class="dropdown">
+                            <div class="nav-link theme-blue dropdown-toggle" data-toggle="dropdown"  onclick="change_BL();">
+                                <span class="feather f16 icon-bell align-middle"></span>
+                                <span class="notification-count">5</span>
+                                <span class="d-md-none ml-2"> Notifications </span>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-right notification-dropdown" onmouseenter="change_BL();" onclick="change_BL();">
+                                
+                                <div class="notifications">
+                                    <!--Start-->
+                                    <div class="addHover col-12 dropdown-item notify-item" onmouseenter="change_BL();">
+                                        <div class="d-flex col-9 p-0 m-0">
+                                            <div class=" d-flex align-items-center "  >
+                                                <div class="user-picture container">
+                                                    <img src="./assets/images/user-pic.jpg" class="">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  align-items-center">
+                                                <div class="notification-text d-flex align-items-center" >
+                                                    <div class="" style="white-space: normal; ">
+                                                        <span class="theme-blue font-weight-bold">Mike Kirby</span> <span>has joined Kinnect on your invitation</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-3 align-items-center ml-2 ">
+                                            <button data-toggle="modal" data-target="#sendCon" class="p-1 px-2 bg-theme-blue f12" style="color: white;">
+                                            Connect
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover col-12 dropdown-item notify-item" onmouseenter="change_BL();">
+                                        <div class="d-flex col-9 p-0 m-0">
+                                            <div class=" d-flex align-items-center "  >
+                                                <div class="user-picture container">
+                                                    <img src="./assets/images/user-pic.jpg" class="">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  align-items-center">
+                                                <div class="notification-text d-flex align-items-center" >
+                                                    <div class="nav-bar-notif-text" style="">
+                                                        <strong class="theme-blue">Mike Kirby</strong> has sent you a connection request
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex col-3 align-items-center ml-2">
+                                            <button class="bg-transparent p-0 mr-2 ml-2 ">
+                                                <img class="request-received-notifications-page border-0" style="" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notifications-page border-0 m-0" style="" src="./assets/images/reject.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item-old" onmouseenter="change_BL();">
+                                        <div class="d-flex  col-9 m-0 p-0 ">
+                                            <div class="d-flexalign-items-center">
+                                                <div class="user-picture container">
+                                                    <img src="./assets/images/user-pic.jpg" class="">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="d-flex notification-text align-items-center" style="">
+                                                <div class="nav-bar-notif-text" style="">
+                                                    <strong class="theme-blue">Mike Kirby</strong> has accepted your connection request
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center col-3 ml-2" style="visibility: hidden;">
+                                            <button class="bg-transparent p-0 mr-2 ml-2 ">
+                                                <img class="request-received-notifications-page border-0" style="" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notifications-page border-0 m-0" style="" src="./assets/images/reject.svg">
+                                            </button>
+                                        </div>
+                                    </div> 
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item-old" onmouseenter="change_BL();">
+                                        <div class="d-flex  col-9 m-0 p-0 ">
+                                            <div class="d-flexalign-items-center">
+                                                <div class="user-picture container">
+                                                    <img src="./assets/images/user-pic.jpg" class="">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="d-flex notification-text align-items-center" style="">
+                                                <div class="nav-bar-notif-text" style="">
+                                                    <strong class="theme-blue">Mike Kirby</strong> has requested to be an admin for medical, financial, legal, personal and other sections of your vault
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center col-3 ml-2" style="visibility: hidden;">
+                                            <button class="bg-transparent p-0 mr-2 ml-2 ">
+                                                <img class="request-received-notifications-page border-0" style="" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notifications-page border-0 m-0" style="" src="./assets/images/reject.svg">
+                                            </button>
+                                        </div>
+                                    </div> 
+                                    <!--End-->
+                                    <!--Start-->
+                                    <div class="addHover addHover1 dropdown-item notify-item-old" onmouseenter="change_BL();">
+                                        <div class="d-flex  col-9 m-0 p-0 ">
+                                            <div class="d-flexalign-items-center">
+                                                <div class="user-picture container">
+                                                    <img src="./assets/images/user-pic.jpg" class="">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="d-flex notification-text align-items-center" style="">
+                                                <div class="nav-bar-notif-text" style="">
+                                                    <strong class="theme-blue">Mike Kirby</strong> has accepted your request to be an admin for medical and financial sections of their vault
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center col-3 ml-2" style="visibility: hidden;">
+                                            <button class="bg-transparent p-0 mr-2 ml-2 ">
+                                                <img class="request-received-notifications-page border-0" style="" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notifications-page border-0 m-0" style="" src="./assets/images/reject.svg">
+                                            </button>
+                                        </div>
+                                    </div> 
+                                    <!--End-->
+                                </div>
+                                <div  class="notifications-view-all">
+                                    
+                                    <a href="notifications.html" class="addHover dropdown-item notify-item rounded-bottom" onmouseenter="change_BL();">
+                                            <strong> View all</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <div class="d-md-none">
                         <div class="dropdown-divider"></div>
