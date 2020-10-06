@@ -20,11 +20,11 @@
     <nav class="navbar navbar-expand-md bg-white navbar-light" >
 
         <div class="container-fluid px-0">
-            <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="LOGO" id="navbar-logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="./assets/images/logo.svg" alt="LOGO" id="navbar-logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse w-100 justify-content-between mr-n2" id="collapsibleNavbar">
+            <div class="collapse navbar-collapse w-100 justify-content-between mr-n2" id="collapsibleNavbar" onclick="">
                 <ul class="navbar-nav justify-content-end d-md-none mt-3">
                     <li class="nav-item">
                         <div class="d-flex justify-content-between align-items-center bg-blue px-2 py-1">
@@ -60,7 +60,7 @@
 
                         <div class="dropdown search-dropdown align-items-center justify-content-between bg-blue " onfocusin="change_BL();" >
                             <!--search toggle  bar starts here-->
-                            <div class="dropdown-toggle search-toggle" onclick="change_BL(); change_pos_icon();" data-toggle="dropdown" aria-expanded="false">
+                            <div class="dropdown-toggle search-toggle" onclick="change_pos_icon(); change_BL();" data-toggle="dropdown" aria-expanded="false">
                                 <div class="input-group w-100">
                                     <!--search bar 1-->
                                     <div class="col-12 p-0">
@@ -88,7 +88,7 @@
                             <!--search menu starts-->
                             <div class="search-menu dropdown-menu-pseudo dropdown-menu f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
                                 <!--Start-->
-                                <div class="addHover dropdown-item search-item mt-2" onmouseenter="change_BL();">
+                                <div class="addHover dropdown-item search-item mt-2" onmouseenter="change_BL();" >
                                     <a href="profile-connected-1.html" style="text-decoration:none;">
                                         <div class="row align-items-center custom-grey  justify-content-between">                   
                                             <div>   
@@ -690,23 +690,25 @@
     									<!--normal profile tabs-->
     									<div class="col-12 settings-page-view-all ">
                                             <div class="d-flex align-items-center col-10">
-                                                <div class="view-all-setting-user-pic">
-                                                    <img src="./assets/images/lock.svg">
-                                                </div>
-                                                <div class="settings-text-1">
-                                                    <div>
-                                                        <div class=" " style="color: black;">
-                                                            <h3>Password</h3>
-                                                        </div>
-                                                        <div  class="pt-1">
-                                                            <div class="font-weight-light settings-section-1-sub-head">
-                                                                Reset your password
+                                                <div class="d-flex align-items-center p-0 col-md-8">
+                                                    <div class="view-all-setting-user-pic">
+                                                        <img src="./assets/images/lock.svg">
+                                                    </div>
+                                                    <div class="settings-text-1">
+                                                        <div>
+                                                            <div class=" " style="color: black;">
+                                                                <h3>Password</h3>
+                                                            </div>
+                                                            <div  class="pt-1">
+                                                                <div class="font-weight-light settings-sub-head">
+                                                                    Reset your password
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-2 settings-action">
+                                            <div class="settings-action">
                                                 <a href="#">
                                                     <h3 class="theme-blue font-weight-light">
                                                         <u>Reset</u>
@@ -716,7 +718,7 @@
     									</div>
                                         <div class="col-12 settings-page-view-all ">
                                             <div class="d-flex col-10 justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center p-0 col-8">
+                                                <div class="d-flex align-items-center p-0 col-md-8">
                                                     <div class="view-all-setting-user-pic">
                                                         <img src="./assets/images/email.svg">
                                                     </div>
@@ -725,7 +727,7 @@
                                                             <div class=" " style="color: black;">
                                                                 <h3>Primary email</h3>
                                                             </div>
-                                                            <div  class="pt-1 settings-section-1-sub-head">
+                                                            <div  class="pt-1 settings-sub-head">
                                                                 <div class="font-weight-light">
                                                                     Update your primary email address
                                                                 </div>
@@ -733,11 +735,11 @@
                                                         </div>                                          
                                                     </div>
                                                 </div>
-                                                <div class="settings-text-2 col-4 p-0">
+                                                <div class="settings-text-2 col-md-4 col-sm-12 d-md-block d-sm-none p-0">
                                                     kylekirby@kinnectus.com
                                                 </div>
                                             </div>
-                                            <div class="col-2 settings-action">
+                                            <div class=" settings-action">
                                                 <a href="#">
                                                     <h3 class="theme-blue font-weight-light">
                                                         <u>Change</u>
@@ -747,7 +749,7 @@
                                         </div>
                                         <div class="col-12 settings-page-view-all ">
                                             <div class="d-flex col-10 justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center col-8 p-0">
+                                                <div class="d-flex align-items-center col-md-8 p-0">
                                                     <div class="view-all-setting-user-pic">
                                                         <img src="./assets/images/email-add.svg">
                                                     </div>
@@ -757,18 +759,18 @@
                                                                 <h3>Backup email</h3>
                                                             </div>
                                                             <div  class="pt-1">
-                                                                <div class="font-weight-light settings-section-1-sub-head">
+                                                                <div class="font-weight-light settings-sub-head">
                                                                     In case you get locked out
                                                                 </div>
                                                             </div> 
                                                         </div>                                          
                                                     </div>
                                                 </div>
-                                                <div class="settings-text-2 col-4 p-0">
+                                                <div class="settings-text-2 col-md-4 col-sm-12 d-md-block d-sm-none p-0">
                                                     kylekirby22@kinnectus.com
                                                 </div>
                                             </div>
-                                            <div class="  col-2  settings-action">
+                                            <div class="    settings-action">
                                                 <a href="#">
                                                     <h3 class="theme-blue font-weight-light">
                                                         <u>Update</u>
@@ -801,7 +803,7 @@
                                                                 <h3>Two Factor Authentication</h3>
                                                             </div>
                                                             <div  class="pt-1">
-                                                                <div class="font-weight-light">
+                                                                <div class="font-weight-light settings-sub-head">
                                                                     Add an extra layer of security to your Vault
                                                                 </div>
                                                             </div> 
@@ -809,7 +811,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class=" col-2  settings-action">
+                                            <div class="settings-action">
                                                 <label class="switch">
                                                   <input type="checkbox">
                                                   <span class="slider round"></span>
@@ -829,7 +831,7 @@
                                                                 <h3>Verify account</h3>
                                                             </div>
                                                             <div  class="pt-1">
-                                                                <div class="font-weight-light">
+                                                                <div class="font-weight-light settings-sub-head">
                                                                     Get a green tick on your prfoile and let the world know it's really you
                                                                 </div>
                                                             </div> 
@@ -837,7 +839,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-2 settings-action">
+                                            <div class=" settings-action">
                                                 <h3 class="theme-blue font-weight-light m-0">
                                                     <i>Verified</i>
                                                 </h3>
@@ -871,7 +873,7 @@
                                                                     <h3>Account update/activity</h3>
                                                                 </div>
                                                                 <div  class="pt-1">
-                                                                    <div class="font-weight-light">
+                                                                    <div class="font-weight-light settings-sub-head">
                                                                         Includes reminders for expiration of Insurance, credit cards, etc.
                                                                     </div>
                                                                 </div> 
@@ -895,7 +897,7 @@
                                                                     <h3>Guides and Resources</h3>
                                                                 </div>
                                                                 <div  class="pt-1">
-                                                                    <div class="font-weight-light">
+                                                                    <div class="font-weight-light settings-sub-head">
                                                                         Includes guidance by experts to help you always be prepared
                                                                     </div>
                                                                 </div> 
@@ -919,7 +921,7 @@
                                                                     <h3>Kinnect Updates</h3>
                                                                 </div>
                                                                 <div  class="pt-1">
-                                                                    <div class="font-weight-light">
+                                                                    <div class="font-weight-light settings-sub-head">
                                                                         Includes new features and updates by Kinnect
                                                                     </div>
                                                                 </div> 
