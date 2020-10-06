@@ -17,11 +17,11 @@
     <nav class="navbar navbar-expand-md bg-white navbar-light" >
 
         <div class="container-fluid px-0">
-            <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="LOGO" id="navbar-logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="./assets/images/logo.svg" alt="LOGO" id="navbar-logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse w-100 justify-content-between mr-n2" id="collapsibleNavbar">
+            <div class="collapse navbar-collapse w-100 justify-content-between mr-n2" id="collapsibleNavbar" onclick="">
                 <ul class="navbar-nav justify-content-end d-md-none mt-3">
                     <li class="nav-item">
                         <div class="d-flex justify-content-between align-items-center bg-blue px-2 py-1">
@@ -57,7 +57,7 @@
 
                         <div class="dropdown search-dropdown align-items-center justify-content-between bg-blue " onfocusin="change_BL();" >
                             <!--search toggle  bar starts here-->
-                            <div class="dropdown-toggle search-toggle" onclick="change_BL(); change_pos_icon();" data-toggle="dropdown" aria-expanded="false">
+                            <div class="dropdown-toggle search-toggle" onclick="change_pos_icon(); change_BL();" data-toggle="dropdown" aria-expanded="false">
                                 <div class="input-group w-100">
                                     <!--search bar 1-->
                                     <div class="col-12 p-0">
@@ -83,9 +83,9 @@
 
                             <!--search bar ends here-->
                             <!--search menu starts-->
-                            <div class="search-menu dropdown-menu dropdown-menu-pseudo f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
+                            <div class="search-menu dropdown-menu-pseudo dropdown-menu f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
                                 <!--Start-->
-                                <div class="addHover dropdown-item search-item mt-2" onmouseenter="change_BL();">
+                                <div class="addHover dropdown-item search-item mt-2" onmouseenter="change_BL();" >
                                     <a href="profile-connected-1.html" style="text-decoration:none;">
                                         <div class="row align-items-center custom-grey  justify-content-between">                   
                                             <div>   
@@ -309,19 +309,19 @@
                         </a>
                     </li>
                     <li class="nav-item mx-1">
-                        <a class="nav-link theme-blue" href="#">
+                        <a class="nav-link theme-blue" href="settings.html">
                             <span class="feather icon-settings f16 align-middle"></span>
                             <span class="d-md-none ml-2"> Settings </span>
                         </a>
                     </li>
                                         <li class="nav-item mx-1">
                         <div class="dropdown">
-                            <div class="nav-link theme-blue dropdown-toggle" data-toggle="dropdown"  onclick="change_BL();">
+                            <div class="nav-link theme-blue dropdown-toggle" data-toggle="dropdown"  onclick="change_BL_1();" >
                                 <span class="feather f16 icon-bell align-middle"></span>
                                 <span class="notification-count">5</span>
                                 <span class="d-md-none ml-2"> Notifications </span>
                             </div>
-                            <div class="dropdown-menu dropdown-menu-right notification-dropdown" onmouseenter="change_BL();" onclick="change_BL();">
+                            <div class="dropdown-menu dropdown-menu-right notification-dropdown" onmouseenter="change_BL();" onclick="change_BL_2();" >
                                 
                                 <div class="notifications">
                                     <!--Start-->
