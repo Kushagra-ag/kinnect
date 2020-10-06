@@ -201,9 +201,25 @@
         document.getElementById("backdrop").style.display = "block";
     }
 
+    function change_BL_1() {
+        var x=document.getElementById("backdrop");
+        if(window.getComputedStyle(x).display === "block")
+        {
+          document.getElementById("backdrop").style.display="none";
+        }
+        else
+        {
+          document.getElementById("backdrop").style.display="block";
+        }
+    }
+
     function change_BL_2() {
         document.getElementById("backdrop").style.display = "none";
     }
+
+
+
+
 
  /**********************************CUSTOM SELECT (HELP CENTER)***********************************/     
 
