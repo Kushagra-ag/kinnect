@@ -2909,7 +2909,7 @@
                                            <textarea class="rounded w-100 pl-2" rows="5"  placeholder="Please describe the issue here..."></textarea>
                                         </div>
                                         <div class="pt-3 pb-1 "  style=" text-align: right">
-                                            <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff">
+                                            <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff" data-toggle="modal" data-target="#bug-report-ack" data-dismiss="modal">
                                                 Report
                                             </button>
                                         </div>
@@ -3007,7 +3007,7 @@
                                            <textarea class="rounded w-100  pl-2" rows="5"  placeholder="Please describe the issue here..."></textarea>
                                         </div>
                                         <div class="pt-3 pb-1 "  style=" text-align: right">
-                                            <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff">
+                                            <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff" data-toggle="modal" data-target="#feedback-ack" data-dismiss="modal">
                                                 Submit
                                             </button>
                                         </div>
@@ -3042,7 +3042,7 @@
                                                </div>
                                             </div>
                                             <div class=" pb-1 d-flex justify-content-end" style="padding-top: 1.2rem;">
-                                                <button class="f14 bg-theme-blue p-1 px-3" style="color: #fff">
+                                                <button class="f14 bg-theme-blue p-1 px-3" style="color: #fff" data-toggle="modal" data-target="#message-ack" data-dismiss="modal">
                                                     Send
                                                 </button>
                                             </div>
@@ -3922,6 +3922,92 @@
         </div>
     </div>    
     <!-- FAQ -->
+    <!--- Feedback Acknowledgement Window-->
+    <div class="modal " id="feedback-ack">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5">
+                    <div class="" style="font-size: 22px;">
+                        Feedback received
+                    </div>
+                    <div class="custom-grey f18 pt-3">
+                        Thank you for taking out the time to give us your feedback. We will use this as a guide to serve you better.
+                    </div>
+                    <div class="col-12 text-right pt-3 ml-n2">
+                        <button class="bg-blue custom-grey f14 p-1 px-3 rounded  font-weight-bold" data-toggle="modal" data-target="#helpmain" data-dismiss="modal">
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!--- Feedback Acknowledgement Window-->
+
+    <!--- Msg Acknowledgement Window-->
+    <div class="modal " id="message-ack">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5">
+                    <div class="" style="font-size: 22px;">
+                        Message received
+                    </div>
+                    <div class="custom-grey f18 pt-3">
+                        Thank you for taking out the time to reach out to us. We will get back to you soon.
+                    </div>
+                    <div class="col-12 text-right pt-3 ml-n2">
+                        <button class="bg-blue custom-grey f14 p-1 px-3 rounded  font-weight-bold" data-toggle="modal" data-target="#helpmain" data-dismiss="modal">
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!--- Msg Acknowledgement Window-->
+
+    <!--- Report Acknowledgement Window-->
+    <div class="modal " id="bug-report-ack">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5">
+                    <div class="" style="font-size: 22px;">
+                        Problem reported
+                    </div>
+                    <div class="custom-grey f18 pt-3">
+                        Thank you for taking out the time to report this issue. We will start working on this right away and fix this as soon as we can.
+                    </div>
+                    <div class="col-12 text-right pt-3 ml-n2">
+                        <button class="bg-blue custom-grey f14 p-1 px-3 rounded  font-weight-bold" data-toggle="modal" data-target="#helpmain" data-dismiss="modal">
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!---  Acknowledgement Window-->    
     <!------------------------------------------------------------HELP CENTER----------------------------------------->
 
 	<!-- Modals -->

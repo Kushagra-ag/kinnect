@@ -2939,3 +2939,13 @@ input:checked + .slider:before {
 .section-3-settings{
 }          
 /************************Checkbox*********************************/
+
+.parentDisable{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.8;
+    z-index: -100;
+    height: 100%;
+    width: 100%;}

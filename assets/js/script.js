@@ -217,7 +217,13 @@
         document.getElementById("backdrop").style.display = "none";
     }
 
+    document.getElementById("myBtn").addEventListener("click", myFunction);
 
+function myFunction() {
+  alert ("Hello World!");
+}
+
+    document.getElementById(id2).setAttribute('aria-expanded', 'false');
 
 
 
