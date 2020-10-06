@@ -2908,9 +2908,11 @@ input:checked + .slider:before {
   padding-right: 1.5rem;
 }
 
-.settings-action>a>h3{
+
+.settings-action h3{
   margin-bottom: 0px;
 }
+
 
 .notif-setting-checkbox-label{
   margin: 0px;
