@@ -20,11 +20,11 @@
     <nav class="navbar navbar-expand-md bg-white navbar-light" >
 
         <div class="container-fluid px-0">
-            <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="LOGO" id="navbar-logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="./assets/images/logo.svg" alt="LOGO" id="navbar-logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse w-100 justify-content-between mr-n2" id="collapsibleNavbar">
+            <div class="collapse navbar-collapse w-100 justify-content-between mr-n2" id="collapsibleNavbar" onclick="">
                 <ul class="navbar-nav justify-content-end d-md-none mt-3">
                     <li class="nav-item">
                         <div class="d-flex justify-content-between align-items-center bg-blue px-2 py-1">
@@ -60,7 +60,7 @@
 
                         <div class="dropdown search-dropdown align-items-center justify-content-between bg-blue " onfocusin="change_BL();" >
                             <!--search toggle  bar starts here-->
-                            <div class="dropdown-toggle search-toggle" onclick="change_BL(); change_pos_icon();" data-toggle="dropdown" aria-expanded="false">
+                            <div class="dropdown-toggle search-toggle" onclick="change_pos_icon(); change_BL();" data-toggle="dropdown" aria-expanded="false">
                                 <div class="input-group w-100">
                                     <!--search bar 1-->
                                     <div class="col-12 p-0">
@@ -71,7 +71,7 @@
                                                     </button>
                                                 </span>
                                                 <span class="px-1 py-2 my-1 align-self-center h-100" style="width:100%;">
-                                                    <input id="global-search-input" type="text" class=" border-0 bg-transparent search-ctm search-bar-1" placeholder="Search">
+                                                    <input id="global-search-input" type="text" class=" border-0 bg-transparent search-ctm search-bar-1" placeholder="Search" onblur="change_BL_2();">
                                                 </span>
                                                 <span class="align-self-center ">
                                                     <button type="submit" id="my-search-icon-2" class="rounded mr-1 bg-white theme-blue" style="display: none; padding: 0.625rem"> <!--4867ae f4f6fa  6b6e77padding:0.8rem-->
@@ -86,9 +86,9 @@
 
                             <!--search bar ends here-->
                             <!--search menu starts-->
-                            <div class="search-menu dropdown-menu dropdown-menu-pseudo f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
+                            <div class="search-menu dropdown-menu-pseudo dropdown-menu f12 bg-white border-0 mb-2 py-0" onmouseenter="change_BL();" onclick="change_BL();" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
                                 <!--Start-->
-                                <div class="addHover dropdown-item search-item mt-2" onmouseenter="change_BL();">
+                                <div class="addHover dropdown-item search-item mt-2" onmouseenter="change_BL();" >
                                     <a href="profile-connected-1.html" style="text-decoration:none;">
                                         <div class="row align-items-center custom-grey  justify-content-between">                   
                                             <div>   
@@ -312,18 +312,19 @@
                         </a>
                     </li>
                     <li class="nav-item mx-1">
-                        <a class="nav-link theme-blue" href="#">
+                        <a class="nav-link theme-blue" href="settings.html">
                             <span class="feather icon-settings f16 align-middle"></span>
                             <span class="d-md-none ml-2"> Settings </span>
                         </a>
                     </li>
-                    <li class="nav-item mx-1">
+                                        <li class="nav-item mx-1">
                         <div class="dropdown">
-                            <div class="nav-link theme-blue dropdown-toggle" data-toggle="dropdown"  onclick="change_BL();">
+                            <div class="nav-link theme-blue dropdown-toggle" data-toggle="dropdown"  onclick="change_BL_1();" >
                                 <span class="feather f16 icon-bell align-middle"></span>
+                                <span class="notification-count">5</span>
                                 <span class="d-md-none ml-2"> Notifications </span>
                             </div>
-                            <div class="dropdown-menu dropdown-menu-right notification-dropdown" onmouseenter="change_BL();" onclick="change_BL();">
+                            <div class="dropdown-menu dropdown-menu-right notification-dropdown" onmouseenter="change_BL();" onclick="change_BL_2();" >
                                 
                                 <div class="notifications">
                                     <!--Start-->
@@ -361,7 +362,7 @@
                                             </div>
                                             <div class="d-flex  align-items-center">
                                                 <div class="notification-text d-flex align-items-center" >
-                                                    <div class="" style="white-space: normal; ">
+                                                    <div class="nav-bar-notif-text" style="">
                                                         <strong class="theme-blue">Mike Kirby</strong> has sent you a connection request
                                                     </div>
                                                 </div>
@@ -387,15 +388,18 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex notification-text align-items-center" style="">
-                                                <div class="" style="white-space: normal;">
+                                                <div class="nav-bar-notif-text" style="">
                                                     <strong class="theme-blue">Mike Kirby</strong> has accepted your connection request
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="d-flex align-items-center col-3 " >
-                                            <a class="theme-blue f13">
-                                               <u>View profile</u>
-                                            </a>
+                                        <div class="d-flex align-items-center col-3 ml-2" style="visibility: hidden;">
+                                            <button class="bg-transparent p-0 mr-2 ml-2 ">
+                                                <img class="request-received-notifications-page border-0" style="" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notifications-page border-0 m-0" style="" src="./assets/images/reject.svg">
+                                            </button>
                                         </div>
                                     </div> 
                                     <!--End-->
@@ -409,15 +413,18 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex notification-text align-items-center" style="">
-                                                <div class="" style="white-space: normal;">
-                                                    <strong class="theme-blue">Mike Kirby</strong> has requested to be an admin for 4 sections of your vault
+                                                <div class="nav-bar-notif-text" style="">
+                                                    <strong class="theme-blue">Mike Kirby</strong> has requested to be an admin for medical, financial, legal, personal and other sections of your vault
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="d-flex align-items-center col-3">
-                                            <a class="theme-blue f13">
-                                               <u>Admin Vault</u>
-                                            </a>
+                                        <div class="d-flex align-items-center col-3 ml-2" style="visibility: hidden;">
+                                            <button class="bg-transparent p-0 mr-2 ml-2 ">
+                                                <img class="request-received-notifications-page border-0" style="" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notifications-page border-0 m-0" style="" src="./assets/images/reject.svg">
+                                            </button>
                                         </div>
                                     </div> 
                                     <!--End-->
@@ -431,15 +438,18 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex notification-text align-items-center" style="">
-                                                <div class="" style="white-space: normal;">
-                                                    <strong class="theme-blue">Mike Kirby</strong> has accepted your request to be an admin for 2 sections of their vault
+                                                <div class="nav-bar-notif-text" style="">
+                                                    <strong class="theme-blue">Mike Kirby</strong> has accepted your request to be an admin for medical and financial sections of their vault
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="d-flex align-items-center col-3">
-                                            <a class="theme-blue f13">
-                                               <u>Admin Vault</u>
-                                            </a>
+                                        <div class="d-flex align-items-center col-3 ml-2" style="visibility: hidden;">
+                                            <button class="bg-transparent p-0 mr-2 ml-2 ">
+                                                <img class="request-received-notifications-page border-0" style="" src="./assets/images/accept.svg">
+                                            </button>
+                                            <button class="bg-transparent p-0 mr-3">
+                                                <img class="request-received-notifications-page border-0 m-0" style="" src="./assets/images/reject.svg">
+                                            </button>
                                         </div>
                                     </div> 
                                     <!--End-->
