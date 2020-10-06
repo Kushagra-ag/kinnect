@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="lock" transform="translate(-35 -14)">
+    <g id="Group_412" data-name="Group 412" transform="translate(34.511 13.525)">
+      <circle id="Ellipse_56" data-name="Ellipse 56" cx="28" cy="28" r="28" transform="translate(0.489 0.475)" fill="#4867ae"/>
+    </g>
+    <path id="Icon_material-lock" data-name="Icon material-lock" d="M23.225,10.113h-1.23V7.652a6.152,6.152,0,1,0-12.3,0v2.461H8.461A2.468,2.468,0,0,0,6,12.573v12.3a2.468,2.468,0,0,0,2.461,2.461H23.225a2.468,2.468,0,0,0,2.461-2.461v-12.3A2.468,2.468,0,0,0,23.225,10.113ZM15.843,21.186A2.461,2.461,0,1,1,18.3,18.725,2.468,2.468,0,0,1,15.843,21.186Zm3.814-11.073H12.029V7.652a3.814,3.814,0,1,1,7.628,0Z" transform="translate(47.157 27.581)" fill="#fff"/>
+  </g>
+</svg>

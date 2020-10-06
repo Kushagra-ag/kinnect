@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="email" transform="translate(-0.489 -0.475)">
+    <circle id="Ellipse_56" data-name="Ellipse 56" cx="28" cy="28" r="28" transform="translate(0.489 0.475)" fill="#4867ae"/>
+    <g id="email-2" data-name="email" transform="translate(15.863 20.064)">
+      <path id="Path_144" data-name="Path 144" d="M25.977,13.181V2.952A2.952,2.952,0,0,0,23.025,0H2.952A2.952,2.952,0,0,0,0,2.952V13.579a2.952,2.952,0,0,0,2.952,2.952H22.608A3.123,3.123,0,0,0,25.977,13.181ZM12.363,9.541l-10-4.664V2.917L12.989,7.876,23.615,2.917v1.96l-10,4.664a1.453,1.453,0,0,1-1.252,0Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

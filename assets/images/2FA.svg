@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="_2FA" data-name="2FA" transform="translate(-0.489 -0.475)">
+    <circle id="Ellipse_56" data-name="Ellipse 56" cx="28" cy="28" r="28" transform="translate(0.489 0.475)" fill="#4867ae"/>
+    <path id="Icon_awesome-shield-alt" data-name="Icon awesome-shield-alt" d="M27.521,4.9,16.271.217a2.821,2.821,0,0,0-2.162,0L2.859,4.9A2.809,2.809,0,0,0,1.125,7.5c0,11.631,6.709,19.67,12.978,22.283a2.821,2.821,0,0,0,2.162,0C21.287,27.692,29.25,20.467,29.25,7.5A2.813,2.813,0,0,0,27.521,4.9ZM15.193,26.151,15.187,3.826,25.494,8.121c-.193,8.871-4.811,15.3-10.3,18.029Z" transform="translate(13.651 13.475)" fill="#fff"/>
+  </g>
+</svg>
