@@ -1553,7 +1553,9 @@ button, button:active:not(.invite), button:focus:not(.invite) {
 
 .search-ctm
 {
-  width: calc(100%);  
+  width: calc(100%);
+  padding: 0.6rem 0.25rem;
+  margin: 0.25rem 0;  
 }
 .search-ctm-1
 {
