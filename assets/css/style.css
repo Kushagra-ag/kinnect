@@ -2873,11 +2873,12 @@ input:checked + .slider:before {
     font-weight: lighter;
     color: rgb(107, 110, 119);
     padding: 0px;
-   padding-left:1.5rem;   
+   padding-left:1.5rem;
 }
 
 .settings-text-1 h3{
   margin-bottom: 0px;
+
 }
 
 .settings-text-2 h3{
@@ -2890,6 +2891,13 @@ input:checked + .slider:before {
     opacity: 0.8;
     padding: 0px;
 }
+
+@media only screen and (max-width: 576px){
+  .settings-text-2{
+    display: none;
+  }
+}
+
 
 .settings-action{
   display: flex;
