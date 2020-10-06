@@ -217,7 +217,40 @@
         document.getElementById("backdrop").style.display = "none";
     }
 
-    document.getElementById("myBtn").addEventListener("click", myFunction);
+/*
+var interval = 400;
+var timer = window.setInterval(function(){
+    // your code goes here ...
+  var class_list= $("#BL-testing").attr("class");
+
+  console.log(typeof 'class_list');
+      if(class_list==="show") {
+        console.log("SHOW IS HERE");
+      }
+  
+    if (yourCodeHasBeenExecuted === true) {
+       window.clearInterval(timer);
+    }
+}, interval);
+
+/*
+$("notifications").on({    
+    "change": function() {
+            $(this).blur();
+
+        },
+
+        'focus': function() {
+            console.log("displayed");
+        },
+
+        "blur": function() {
+            console.log("not displayed");
+        },
+
+    });
+
+/*    document.getElementById("myBtn").addEventListener("click", myFunction);
 
 function myFunction() {
   alert ("Hello World!");
@@ -225,7 +258,7 @@ function myFunction() {
 
     document.getElementById(id2).setAttribute('aria-expanded', 'false');
 
-
+*/
 
  /**********************************CUSTOM SELECT (HELP CENTER)***********************************/     
 
