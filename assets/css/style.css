@@ -2818,6 +2818,8 @@ border: 0px solid #fff;
 input:checked + .slider {
   background-color: white;
   color: #4867ae;
+  border:1px solid #4867ae;
+
 }
 
 
