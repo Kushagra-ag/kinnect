@@ -709,7 +709,7 @@
                                                 </div>
                                             </div>
                                             <div class="settings-action">
-                                                <a href="#">
+                                                <a href="#" data-toggle="modal" data-target="#Reset-password">
                                                     <h3 class="theme-blue font-weight-light">
                                                         <u>Reset</u>
                                                     </h3>
@@ -740,7 +740,7 @@
                                                 </div>
                                             </div>
                                             <div class=" settings-action">
-                                                <a href="#">
+                                                <a href="#" data-toggle="modal" data-target="#Update-primary">
                                                     <h3 class="theme-blue font-weight-light">
                                                         <u>Change</u>
                                                     </h3>
@@ -771,7 +771,7 @@
                                                 </div>
                                             </div>
                                             <div class="    settings-action">
-                                                <a href="#">
+                                                <a href="#" data-toggle="modal" data-target="#Update-backup-1">
                                                     <h3 class="theme-blue font-weight-light">
                                                         <u>Update</u>
                                                     </h3>
@@ -812,10 +812,11 @@
                                                 </div>
                                             </div>
                                             <div class="settings-action">
-                                                <label class="switch">
-                                                  <input type="checkbox">
-                                                  <span class="slider round"></span>
-                                                </label>
+                                                    <label class="switch">
+                                                      <input id="slider-twofa" type="checkbox" class="switch">
+                                                      <span class="slider round" data-toggle="modal" data-target="#twofa"></span>
+                                                    </label>
+                                                
                                             </div>
                                         </div>
 
@@ -2285,6 +2286,515 @@
     </div>    
     <!-- FAQ -->
     <!------------------------------------------------------------HELP CENTER----------------------------------------->
+    <!-- Update-primary---->
+    <div class="modal" id="Update-primary" >
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
+                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                    </button>                    
+                </div>
+
+                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
+                    Update primary email
+                </div>
+                <div class="col-12 custom-grey f11">
+                    Update the primary email linked to your kinnect account
+                </div>
+
+                <div class="col-12">
+                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
+                        <div class="col-12">
+                            New email address <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class="col-12 pt-4 ">
+                            Confirm new email address <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class="col-12 pt-4 ">
+                            Enter password (For security) <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class=" col-12 theme-blue font-weight-light d-flex align-items-center justify-content-end">
+                            <div>Forgot password?</div>
+                        </div>
+                        <div class="col-12 pt-3  custom-light-grey font-weight-light d-flex justify-content-end" style="padding-bottom: 2.5rem;">
+                            <button class="p-1 px-3 f14 bg-theme-blue"  data-toggle="modal" data-target="#Update-primary-ack" data-dismiss="modal" style="color: white;">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Update Primary-->
+    <!--- Update-primary Acknowledgement Window-->
+    <div class="modal " id="Update-primary-ack">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5 mt-n3">
+                    <div class="" style="font-size: 22px;">
+                        Verify email
+                    </div>
+                    <div class="custom-grey f16 pt-3">
+                        We have sent you a verification link to <strong>kylekirby@kinnectus.com.</strong> Please click on the link to verify and add this email.
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!--- Update-primary Acknowledgement Window-->
+
+    <!-- Update-backup---->
+    <div class="modal" id="Update-backup-1" >
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
+                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                    </button>                    
+                </div>
+
+                <div class="modal-title col-12 d-flex align-items-center  " style="font-size: 22px; padding-top: 1.5rem;">
+                    Backup email
+                </div>
+
+                <div class="col-12  mt-2 mb-1 custom-light-grey f19 ">
+                    kylekirbybackup@kinnectus.com
+                </div>
+                <div class="col-12 d-flex align-items-center justify-content-between mb-4 position-relative" style="margin-top: 2rem">
+                    <button type="button" class="btn btn-light bg-blue p-2 px-3  custom-grey font-weight-bold" data-dismiss="modal" data-toggle="modal" data-target="#Delete-backup">
+                        Delete
+                    </button>
+                    <button type="button" class="btn bg-theme-blue " data-dismiss="modal" data-toggle="modal" data-target="#Update-backup" style="color: white;">
+                        Update 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Update backup-->
+    <!-- Update-backup---->
+    <div class="modal" id="Update-backup" >
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
+                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                    </button>                    
+                </div>
+
+                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
+                    Update backup email
+                </div>
+                <div class="col-12 custom-grey f11">
+                    Update the backup email linked to your kinnect account
+                </div>
+
+                <div class="col-12">
+                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
+                        <div class="col-12">
+                            New email address <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class="col-12 pt-4 ">
+                            Confirm new email address <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class="col-12 pt-4 ">
+                            Enter password (For security) <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class=" col-12 theme-blue font-weight-light d-flex align-items-center justify-content-end">
+                            <a href="#" data-toggle="modal" data-target="#Forgot-password" data-dismiss="modal" class="theme-blue"><div>Forgot password?</div></a>
+                        </div>
+                        <div class="col-12 pt-3  custom-light-grey font-weight-light d-flex justify-content-end" style="padding-bottom: 2.5rem;">
+                            <button class="p-1 px-3 f14 bg-theme-blue"  data-toggle="modal" data-target="#Update-backup-ack" data-dismiss="modal" style="color: white;">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Update backup-->
+
+    <!-- Delete-backup---->
+    <div class="modal " id="Delete-backup" >
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 1.5rem;">
+                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                    </button>                    
+                </div>
+
+                <div class="modal-title row align-items-center justify-content-center " style="font-size: 22px; padding-top: 1.5rem;">
+                    Delete backup email
+                </div>
+
+                <div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+                    Are you sure you want to remove kylekirbybackup@kinnectus.com as the backup email for your account?
+                </div>
+                <div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+                    <button type="button" class="btn btn-light bg-blue p-2 px-3 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+                        Back
+                    </button>
+                    <button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal" data-toggle="modal" data-target="#delete-backup-ack">
+                        Delete 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Delete backup-->
+    <!--- Update-backup Acknowledgement Window-->
+    <div class="modal " id="Update-backup-ack">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5 mt-n3">
+                    <div class="" style="font-size: 22px;">
+                        Verify email
+                    </div>
+                    <div class="custom-grey f16 pt-3">
+                        We have sent you a verification link to <strong>kylekirbybackup@kinnectus.com.</strong> Please click on the link to verify and add this email.
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!--- Update-backup Acknowledgement Window-->
+
+    <!-- Add-backup---->
+    <div class="modal" id="Add-backup" >
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
+                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                    </button>                    
+                </div>
+
+                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
+                    Add backup email
+                </div>
+                <div class="col-12 custom-grey f11">
+                    Add a backup email to your kinnect account in case you can't access your primary email.
+                </div>
+
+                <div class="col-12">
+                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
+                        <div class="col-12">
+                            New email address <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class="col-12 pt-4 ">
+                            Confirm new email address <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class="col-12 pt-4 ">
+                            Enter password (For security) <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class=" col-12 theme-blue font-weight-light d-flex align-items-center justify-content-end">
+                            <div>Forgot password?</div>
+                        </div>
+                        <div class="col-12 pt-3  custom-light-grey font-weight-light d-flex justify-content-end" style="padding-bottom: 2.5rem;">
+                            <button class="p-1 px-3 f14 bg-theme-blue"  data-toggle="modal" data-target="#Add-backup-ack" data-dismiss="modal" style="color: white;">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add backup-->
+    <!--- Add-backup Acknowledgement Window-->
+    <div class="modal " id="Add-backup-ack">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5 mt-n3">
+                    <div class="" style="font-size: 22px;">
+                        Verify email
+                    </div>
+                    <div class="custom-grey f16 pt-3">
+                        We have sent you a verification link to <strong>kylekirbybackup@kinnectus.com.</strong> Please click on the link to verify and add this email.
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!--- Add-backup Acknowledgement Window-->
+
+    <!-- Reset-password ---->
+    <div class="modal" id="Reset-password" >
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
+                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                    </button>                    
+                </div>
+
+                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
+                    Reset password
+                </div>
+                <div class="col-12 custom-grey f11">
+                    Update your current password
+                </div>
+
+                <div class="col-12">
+                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
+                        <div class="col-12">
+                            Current password <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class=" col-12 theme-blue font-weight-light d-flex align-items-center justify-content-end">
+                            <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#Forgot-password" class="theme-blue">Forgot password?</a>
+                        </div>
+                        <div class="col-12 pt-4 ">
+                            Enter new password <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class="col-12 pt-4 ">
+                            Confirm new password <br>
+                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
+                        </div>
+                        <div class="col-12 pt-3  custom-light-grey font-weight-light d-flex justify-content-end" style="padding-bottom: 2.5rem;">
+                            <button class="p-1 px-3 f14 bg-theme-blue"  data-toggle="modal" data-target="#Reset-password-ack" data-dismiss="modal" style="color: white;">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reset-password-->
+    <!--- Reset-password Acknowledgement Window-->
+    <div class="modal " id="Reset-password-ack">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5 mt-n3">
+                    <div class="" style="font-size: 22px;">
+                        Password Updated
+                    </div>
+                    <div class="custom-grey f16 pt-3">
+                        Your password has been reset succesfully
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!--- Reset-password Acknowledgement Window-->
+    <!--- Forgot-password Window-->
+    <div class="modal " id="Forgot-password">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5 mt-n3">
+                    <div class="" style="font-size: 22px;">
+                        Reset link sent
+                    </div>
+                    <div class="custom-grey f16 pt-3">
+                        A password reset link has been sent to <strong>kylekirby@kinnectus.com</strong>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!--- Forgot-password Window-->
+    <!--- 2FA Acknowledgement Window-->
+    <div class="modal " id="twofa-ack">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5 mt-n3">
+                    <div class="" style="font-size: 22px;">
+                        Enabled
+                    </div>
+                    <div class="custom-grey f16 pt-3">
+                        Two Factor Authentication has been enabled for your vault
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!--- 2FA Acknowledgement Window-->
+    <!-- 2FA-disable---->
+    <div class="modal " id="twofa-disable" >
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 1.5rem;">
+                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                    </button>                    
+                </div>
+
+                <div class="modal-title row align-items-center justify-content-center " style="font-size: 22px; padding-top: 1.5rem;">
+                    Two Factor Authentication
+                </div>
+
+                <div class="row align-items-center justify-content-center px-5 my-4 custom-light-grey f16 text-center">
+                    Are you sure you want to disable Two Factor Authentication for your account?
+                </div>
+                <div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+                    <button type="button" class="btn btn-light bg-blue p-2 px-3 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal" >
+                        Disable 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2FA-disable-->
+
+    <!-- 2FA---->
+    <div class="modal " id="twofa" >
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
+                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                    </button>                    
+                </div>
+
+                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
+                    Two Factor Authentication
+                </div>
+                <div class="col-12 custom-grey f11">
+                    Add an extra layer of security to your vault by linking your phone.
+                </div>
+
+                <div class="col-12">
+                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
+                        <div class="col-12">
+                            Mobile number <br>
+                            <div class="d-flex">
+                                <div class="date-select col-2 mt-1  p-0  mr-2">
+                                     <select name="year" id="addWork-start-year" class="form-control popupInput p-2">
+                                        <option value="" class="" disabled="" selected="" hidden="">
+                                            +1
+                                        </option>
+                                        <option value="0">+91</option>
+                                        <option value="1">+92</option>
+                                        <option value="2">+93</option>
+                                    </select>
+                                </div>
+                                <input type="text" class="mt-1 p-2 px-3 col-10 popupInput1" placeholder="" required="">
+                            </div>
+                        </div>
+                        <div class="col-12 pt-3  custom-light-grey font-weight-light d-flex justify-content-end" style="padding-bottom: 2.5rem;">
+                            <button class="p-1 px-3 f14 bg-theme-blue"  data-toggle="modal" data-target="#twofa-1" data-dismiss="modal" style="color: white;">Send verifcation code</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2FA-->
+    <!-- 2FA-1---->
+    <div class="modal " id="twofa-1" >
+        <div class="modal-dialog modal-dialog-centered" style="">
+            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
+                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="">
+                    </button>                    
+                </div>
+
+                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
+                    Two Factor Authentication
+                </div>
+                <div class="col-12 custom-grey f11">
+                    Enter the verification code sent to your phone
+                </div>
+
+                <div class="col-12">
+                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
+                        <div class="col-12">
+                            Mobile number <br>
+                            <div class="d-flex">
+                                <div class="date-select w-25 mt-1  p-0  mr-2">
+                                     <select name="year" id="addWork-start-year" class="form-control popupInput p-2">
+                                        <option value="" class="" disabled="" selected="" hidden="">
+                                            +1 
+                                        </option>
+                                        <option value="0">+91</option>
+                                        <option value="1">+92</option>
+                                        <option value="2">+93</option>
+                                    </select>
+                                </div>
+                                <input type="text" class="mt-1 p-2 px-3 w-75 popupInput1 " placeholder="1234567890" required="" style="color: #81848e!important;">
+                            </div>
+                        </div>
+                        <div class="col-12 pt-4 ">
+                            Enter verification code <br>
+                            <input type="password" class=" mt-1 w-100 popupInput1" placeholder="" required="" style="
+                                color: #81848e;
+                                height: 40px;
+                                font-size: 25px;
+                                padding: 0.5rem 1rem!important;
+                            ">
+                        </div>
+
+                        <div class=" col-12 custom-grey font-weight-light d-flex align-items-center justify-content-end" style="">
+                            Didn't get the code? &nbsp;
+                            <u><a href="#" data-toggle="modal" data-dismiss="modal" data-target="#Forgot-password" class="theme-blue pb-1">Resend?</a></u>
+                        </div>
+                        <div class="col-12 pt-4 d-flex align-items-center justify-content-between  position-relative" style=" padding-bottom: 2.5rem;">
+                            <button type="button" class="btn btn-light bg-blue p-1 px-3  custom-grey font-weight-bold" data-dismiss="modal" data-toggle="modal" data-target="#Delete-backup">
+                                Back
+                            </button>
+                            <button type="button" class="btn bg-theme-blue p-1 px-3" data-dismiss="modal" data-toggle="modal" data-target="#twofa-ack" style="color: white;">
+                                Verify 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2FA-1-->
     <!-- Modals -->
             
         
