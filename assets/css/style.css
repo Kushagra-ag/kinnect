@@ -2954,3 +2954,39 @@ input:checked + .slider:before {
     height: 100%;
     width: 100%;}
 
+
+.custom-switch .custom-control-label::after{
+  background-color: #81848e;
+  top:  calc(0.4rem + 2px);
+  left: calc(-2rem + 2px);
+
+
+   height: calc(1.25rem - 4px);
+  width: calc(1.25rem - 4px);
+
+}
+
+.custom-switch .custom-control-label::before{
+  border: 1px solid #81848e;
+  width: 2.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  left: -2.1rem;
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after{
+  background-color: #4867ae;
+  transform: translateX(1rem);
+}
+
+.custom-control-input:checked~.custom-control-label::before{
+  background-color: #fff;
+  border: 1px solid #4867ae;
+}
+
+
+.custom-switch{
+  padding: 0px;
+}
+
+

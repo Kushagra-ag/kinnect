@@ -428,10 +428,14 @@ function myFunction() {
         then close all select boxes: */
         document.addEventListener("click", closeAllSelect);
 
-$(document).ready(function () {
-    $("#slider-twofa").bootstrapSwitch();
 
-    $('#slider-twofa').on('switchChange.bootstrapSwitch', function (e, data) {
-        $('#twofa').modal('show');
-    });
+
+$('#customSwitches').on("change", function(e) {
+    var isClicked = $('#customSwitches').is(':checked');
+    if(isClicked == true){
+         $('#twofa').modal();
+    }
+    else{
+          $('#twofa-disable').modal();
+    }
 });
