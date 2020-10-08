@@ -2957,7 +2957,7 @@ input:checked + .slider:before {
 
 .custom-switch .custom-control-label::after{
   background-color: #81848e;
-  top:  calc(0.4rem + 2px);
+  top:  calc(0.36rem + 2.5px);
   left: calc(-2rem + 2px);
 
 
