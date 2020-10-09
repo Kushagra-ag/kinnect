@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kinnect</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/jPages.css" />
-
-</head>
+	<title>Kinnect</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css" />
 </head>
 <body>
-	<h3 id="backdrop" class="bl" style="display: none" onclick="change_BL_2(); change_pos_icon_back();">
+	<h3 id="backdrop" class="bl" style="display: none;" onclick="change_BL_2(); change_pos_icon_back();">
 	</h3>
-	<!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-md bg-white navbar-light" >
 
         <div class="container-fluid px-0">
@@ -42,7 +39,7 @@
                 <!-- -------------------------- -->
                 <ul class="navbar-nav f14" >
                     <li class="nav-item mr-2 ml-md-5">
-                        <a class="nav-link theme-blue nw position-relative" href="#">
+                        <a class="nav-link theme-blue nw position-relative" href="network.html">
                             <span class="feather icon-share-2 mr-2"></span> Network
                         </a>
                     </li>
@@ -70,11 +67,11 @@
                                                             <img src="./assets/images/search-blue.svg" height="18px">
                                                     </button>
                                                 </span>
-                                                <span class=" align-self-center h-100" style="width:100%;">
+                                                <span class="align-self-center h-100" style="width:100%;">
                                                     <input id="global-search-input" type="text" class=" border-0 bg-transparent search-ctm search-bar-1" placeholder="Search" onblur="change_BL_2(); change_pos_icon_back();">
                                                 </span>
                                                 <span class="align-self-center ">
-                                                    <button type="submit" id="my-search-icon-2" class="rounded mr-1 bg-white theme-blue" style="display: none; padding: 0.625rem"> <!--4867ae f4f6fa  6b6e77padding:0.8rem-->
+                                                    <button type="submit" id="my-search-icon-2" class="rounded mr-1 bg-white theme-blue" style="display: none; padding: 0.625rem" onclick=""> <!--4867ae f4f6fa  6b6e77padding:0.8rem-->
                                                             <img src="./assets/images/search-blue.svg" height="18px" >  
                                                     </button>
                                                 </span>
@@ -324,7 +321,7 @@
                                 <span class="notification-count">5</span>
                                 <span class="d-md-none ml-2"> Notifications </span>
                             </div>
-                            <div class="dropdown-menu dropdown-menu-right notification-dropdown" onmouseenter="change_BL();" onclick="change_BL_2();" >
+                            <div id="BL-testing" class="dropdown-menu dropdown-menu-right notification-dropdown" onmouseenter="change_BL();" onclick="change_BL_2();" >
                                 
                                 <div class="notifications">
                                     <!--Start-->
@@ -493,18 +490,17 @@
             </div>
         </div>
     </nav>
+    <!-- nav  -->
 
-	<!-- nav  -->
-	
-    <!-- profile_detail -->
-    <div class="profile_detail suggestion_detail" id="Suggetion_page">
-        <div class="container-fluid">
-            <div class="row">
+	<!-- profile_detail -->
+	<div class="profile_detail">
+		<div class="container-fluid">
+			<div class="row">
             	<!--profile sidebar--->
-                <div class="col-lg-3 col-md-4 col-sm-5 mb-2">
+                <div class="col-lg-3 col-md-4 col-sm-5 mb-2" style="padding-right: 30px;">
                     <div class="sidebar pt-0 mx-md-1">
                         <div class="text-center mb-3">
-                            <div style="width: min-content" class="d-inline-block">
+                            <div id="profile-sidebar"  class="d-inline-block">
                                 <div class="rounded-circle bg-blue p-2 sidebar_user">
                                     <img src="./assets/images/kyle.png" alt="">
                                 </div>
@@ -649,507 +645,1403 @@
                     <!-- sidebar -->
                 </div>
                 <!--profile sidebar end-->
-                <!-- main section -->
-                <div class="col-lg-9 col-md-8 col-sm-7 ">
-                    <!-- placeholder row -->
-						<div class="row ml-md-1" style="z-index: 10;margin-top: -55px;margin-bottom: 25px">
-							<div class="placeholder col-12 border-0" >
-							</div>
-						</div>
-						<!-- placeholder -->
-						
-						<!-- SUGGESTIONS -->
-						<div class="row bg-white px-md-4  ml-md-1 rounded" >
-
-							<div class="col-12 my-1">
-								<div class="mt-4 ">
-                                    <div class="d-flex justify-content-between" style="color:black">
-                                        <div>
-                                            <h3>
-                                                Settings
-                                            </h3>
-                                        </div>
-                                        <div>
-                                            <img src="./assets/images/help-icon2.svg">
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="mx-2">
-    								<!-- -------------------- -->
-                                    <div class="mt-4 ">
-                                        <div class="custom-grey ">
-                                            <h3 class="font-weight-normal" style="">
-                                                General Settings
-                                            </h3>
-                                        </div>  
-                                    </div>
-                                    <!-------------------------->
-    								<div class=" mt-3">
-    									<!--normal profile tabs-->
-    									<div class="col-12 settings-page-view-all addHover">
-                                            <div class="d-flex align-items-center col-10">
-                                                <div class="d-flex align-items-center p-0 col-md-8">
-                                                    <div class="view-all-setting-user-pic">
-                                                        <img src="./assets/images/lock.svg">
-                                                    </div>
-                                                    <div class="settings-text-1">
-                                                        <div>
-                                                            <div class=" " style="color: black;">
-                                                                <h3>Password</h3>
-                                                            </div>
-                                                            <div  class="pt-1">
-                                                                <div class="font-weight-light settings-sub-head">
-                                                                    Reset your password
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="settings-action">
-                                                <a href="#" data-toggle="modal" data-target="#Reset-password">
-                                                    <h3 class="theme-blue font-weight-light">
-                                                        <u>Reset</u>
-                                                    </h3>
-                                                </a>
-                                            </div>
-    									</div>
-                                        <div class="col-12 settings-page-view-all addHover">
-                                            <div class="d-flex col-10 justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center p-0 col-md-8">
-                                                    <div class="view-all-setting-user-pic">
-                                                        <img src="./assets/images/email.svg">
-                                                    </div>
-                                                    <div class="settings-text-1 ">
-                                                        <div>
-                                                            <div class=" " style="color: black;">
-                                                                <h3>Primary email</h3>
-                                                            </div>
-                                                            <div  class="pt-1 settings-sub-head">
-                                                                <div class="font-weight-light">
-                                                                    Update your primary email address
-                                                                </div>
-                                                            </div> 
-                                                        </div>                                          
-                                                    </div>
-                                                </div>
-                                                <div class="settings-text-2 col-md-4 col-sm-12 d-md-block d-sm-none p-0">
-                                                    kylekirby@kinnectus.com
-                                                </div>
-                                            </div>
-                                            <div class=" settings-action">
-                                                <a href="#" data-toggle="modal" data-target="#Update-primary">
-                                                    <h3 class="theme-blue font-weight-light">
-                                                        <u>Change</u>
-                                                    </h3>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 settings-page-view-all addHover">
-                                            <div class="d-flex col-10 justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center col-md-8 p-0">
-                                                    <div class="view-all-setting-user-pic">
-                                                        <img src="./assets/images/email-add.svg">
-                                                    </div>
-                                                    <div class="settings-text-1">
-                                                        <div>
-                                                            <div class=" " style="color: black;">
-                                                                <h3>Backup email</h3>
-                                                            </div>
-                                                            <div  class="pt-1">
-                                                                <div class="font-weight-light settings-sub-head">
-                                                                    In case you get locked out
-                                                                </div>
-                                                            </div> 
-                                                        </div>                                          
-                                                    </div>
-                                                </div>
-                                                <div class="settings-text-2 col-md-4 col-sm-12 d-md-block d-sm-none p-0">
-                                                    kylekirby22@kinnectus.com
-                                                </div>
-                                            </div>
-                                            <div class="    settings-action">
-                                                <a href="#" data-toggle="modal" data-target="#Update-backup-1">
-                                                    <h3 class="theme-blue font-weight-light">
-                                                        <u>Update</u>
-                                                    </h3>
-                                                </a>
-                                            </div>
-                                        </div>
-    									<!--normal profile tabs-->
-    								</div>
-    								<!----------------------- -->
-                                    <div class=" mt-4 pt-2">
-                                        <div class="custom-grey ">
-                                            <h3 class="font-weight-normal m-0">
-                                                Security Settings
-                                            </h3>
-                                        </div>  
-                                    </div>
-                                    <!-- -------------------- -->
-                                    <div class=" mt-3">
-                                        <!--normal profile tabs-->
-                                        <div class="col-12 settings-page-view-all addHover">
-                                            <div class="d-flex col-10 justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center ">
-                                                    <div class="view-all-setting-user-pic">
-                                                        <img src="./assets/images/2FA.svg">
-                                                    </div>
-                                                    <div class="settings-text-1">
-                                                        <div>
-                                                            <div class=" " style="color: black;">
-                                                                <h3>Two Factor Authentication</h3>
-                                                            </div>
-                                                            <div  class="pt-1">
-                                                                <div class="font-weight-light settings-sub-head">
-                                                                    Add an extra layer of security to your Vault
-                                                                </div>
-                                                            </div> 
-                                                        </div>                                          
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="settings-action">
-                                                   <div class="custom-control custom-switch">
-                                                      <input type="checkbox" class="custom-control-input" id="customSwitches" data-toggle="toggle">
-                                                      <label class="custom-control-label" id="modal_2fa" for="customSwitches"></label>
-                                                    </div>
-                                                
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 settings-page-view-all addHover">
-                                            <div class="d-flex col-10 justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center ">
-                                                    <div class="view-all-setting-user-pic">
-                                                        <img src="./assets/images/verify.svg">
-                                                    </div>
-                                                    <div class="settings-text-1">
-                                                        <div>
-                                                            <div class=" " style="color: black;">
-                                                                <h3>Verify account</h3>
-                                                            </div>
-                                                            <div  class="pt-1">
-                                                                <div class="font-weight-light settings-sub-head">
-                                                                    Get a green tick on your prfoile and let the world know it's really you
-                                                                </div>
-                                                            </div> 
-                                                        </div>                                          
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class=" settings-action">
-                                                <h3 class="theme-blue font-weight-light m-0">
-                                                    <i>Verified</i>
-                                                </h3>
-                                            </div>
-                                        </div>
-
-                                       <!--normal profile tabs-->
-                                    </div>
-                                    <!----------------------- -->
-                                    <div class=" mt-4 pt-2">
-                                        <div class="custom-grey">
-                                            <h3 class="font-weight-normal m-0">
-                                                Notification Settings
-                                            </h3>
-                                        </div>  
-                                    </div>
-                                    <!-- -------------------- -->
-                                    <div class=" mt-3 mb-4 " >
-                                        <!--normal profile tabs-->
-                                        
-                                        <div class="col-12 p-0">
-                                            
-                                            <div class="col-12 settings-page-view-all section-3-settings addHover">
-                                                <div class="d-flex col-10 justify-content-between align-items-center">
-                                                    <label class="d-flex align-items-center notif-setting-checkbox-label">
-                                                        
-                                                        <input type="checkbox" value="" checked="" class="">
-                                                        <span class="settings-text-1 notif-setting-checkbox-span">
-                                                            <div>
-                                                                <div class=" " style="color: black;">
-                                                                    <h3>Account update/activity</h3>
-                                                                </div>
-                                                                <div  class="pt-1">
-                                                                    <div class="font-weight-light settings-sub-head">
-                                                                        Includes reminders for expiration of Insurance, credit cards, etc.
-                                                                    </div>
-                                                                </div> 
-                                                            </div>                                          
-                                                        </span>
-
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex mr-2 justify-content-end  p-0  col-2 align-items-center">
-                                                </div>
-                                            </div>                                        
-
-                                            <div class="col-12 settings-page-view-all section-3-settings addHover">
-                                                <div class="d-flex col-10 justify-content-between align-items-center">
-                                                    <label class="d-flex align-items-center notif-setting-checkbox-label">
-                                                        
-                                                        <input type="checkbox" value="" checked="">
-                                                        <span class="settings-text-1  notif-setting-checkbox-span">
-                                                            <div>
-                                                                <div class=" " style="color: black;">
-                                                                    <h3>Guides and Resources</h3>
-                                                                </div>
-                                                                <div  class="pt-1">
-                                                                    <div class="font-weight-light settings-sub-head">
-                                                                        Includes guidance by experts to help you always be prepared
-                                                                    </div>
-                                                                </div> 
-                                                            </div>                                          
-                                                        </span>
-
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex mr-2 justify-content-end  p-0  col-2 align-items-center">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-12 settings-page-view-all section-3-settings addHover">
-                                                <div class="d-flex col-10 justify-content-between align-items-center">
-                                                    <label class="d-flex align-items-center notif-setting-checkbox-label">
-                                                        
-                                                        <input type="checkbox" value="" checked="">
-                                                        <span class="settings-text-1  notif-setting-checkbox-span">
-                                                            <div>
-                                                                <div class=" " style="color: black;">
-                                                                    <h3>Kinnect Updates</h3>
-                                                                </div>
-                                                                <div  class="pt-1">
-                                                                    <div class="font-weight-light settings-sub-head">
-                                                                        Includes new features and updates by Kinnect
-                                                                    </div>
-                                                                </div> 
-                                                            </div>                                          
-                                                        </span>
-
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex mr-2 justify-content-end  p-0  col-2 align-items-center">
-                                                </div>
-                                            </div>
-
-                                            <div class="pt-3 mt-3 d-flex justify-content-end">
-                                                <button class="p-1 px-4 f14 bg-theme-blue" style="color: white;">
-                                                    Save
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <!--normal profile tabs-->
-                                    </div>
-                                    <!----------------------- -->
-                                </div>
-
-							</div>
-						</div>
-						<!-- SUGGESTIONS -->
+				<!-- main section -->
+				<div class="col-lg-6 col-md-8  col-sm-7 bg-white rounded" style="">
+					<!-- placeholder row -->
+					
+					<!-- placeholder -->
 				</div>
-			</div>
-		</div>
-                <!-- permissions -->
-	</div>			
-
-    <!-- Modals -->
-
-    <!-- send connection -->
-    <div class="modal" id="sendCon">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 row p-4 m-0">
-                <div class="col-12">
-                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <img src="./assets/images/popupclose.svg" height="24px" class="">
-                        </button>
-                    </div>
-                    <div class="row align-items-center justify-content-start mt-3 pl-5">
-
-                        <div class="rounded-circle overflow-hidden mr-3">
-                            <img src="./assets/images/mike.png" height="100px">
-                        </div>
-                        <div>
-                            <div class="f20 font-weight-bold mb-1">
-                                Mike Kirby
-                                <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
-                            </div>
-                            <div class="custom-light-grey f16">
-                                Location: Orlando, FL
+				<!--main section-->
+                <!--sidebar 2-->
+                <div class="col-lg-3 col-md-4 col-sm-5 mb-2  " style="padding-left: 30px; padding-right: 0px;">
+                    <div class="sidebar pt-0 ml-md-1" style="">
+                        <div class="text-center mb-3">
+                            <div id="profile-sidebar"  class="d-inline-block">
+                                <div class="rounded-circle bg-blue p-2 sidebar_user">
+                                    <img src="./assets/images/kyle.png" alt="">
+                                </div>
                             </div>
                         </div>
+                        <h3 class="text-center mb-3 pb-3 border-bottom user-title">Kyle Kirby <span class="fa fa-check-circle"></span>
+                        </h3>
+                        <p class="text-blue text-center mb-4 f14"><span class="feather icon-user"></span> Self </p>
+                        <h3>NETWORK</h3>
+                        <table class="table mb-4">
+                            <tbody><tr>
+                                <td>Network Connections</td>
+                                <td class="align-bottom">32</td>
+                            </tr>
+                            <tr>
+                                <td>Requests</td>
+                                <td class="align-bottom">3</td>
+                            </tr>
+                            <tr>
+                                <td>Suggestions</td>
+                                <td class="align-bottom">9</td>
+                            </tr>
+                        </tbody></table>
+                        <!-- table -->
+                        <center>
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5; right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden text-left">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/mike.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Mike Kirby"><b>Mike Kirby</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey f11" title="Mutual connections: 5">Mutual connections: 5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- --------------- -->
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden text-left">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/mike.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Bill Kirby"><b>Bill Kirby</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey f11" title="Mutual connections: 5">Mutual connections: 5 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="invite my-3 py-1 mb-4 mt-3 w-100 d-flex justify-content-center align-items-center btn btnpost btnStyle suggestions" data-toggle="modal" data-target="#inviteUser">
+                                <span class="feather icon-user-plus mr-2 py-2"></span>
+                                <span> Invite User </span>
+                            </button>
+                        </center>
+                        <hr class="mb-4 mx-n4 bg-blue border-0" style="height: 2px">
+                        <h3>VAULT</h3>
+                        <table class="table mb-4">
+                            <tbody><tr>
+                                <td>My Documents</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Requests</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Recommendations</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody></table>
+                        <!-- table -->
+                        <center>
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/health.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Update Info"><b>Update Info</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey" title="Health">Health</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user_box -->
+                            <div class="row border align-items-center justify-content-start p-1 suggestions mb-2 w-100 position-relative">
+                                <div class="position-absolute col-4 d-flex justify-content-end h-100" style="z-index: 5;right: -4px">
+                                    <button class="p-0 bg-white" data-toggle="modal" data-target="#sendCon">
+                                        <img src="./assets/images/reject.svg" class="mr-2" height="20px" style="transform: rotate(45deg);align-self: center">
+                                    </button>
+                                    <img src="./assets/images/close.svg" class="mt-2 mr-n1" style="align-self: start">
+                                </div>
+                                <div class="col-2 p-0 overflow-hidden">
+                                    <a href="#">
+                                        <img class="" src="./assets/images/insurance.png" alt="" style="max-height: 40px;min-height: 40px;">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row align-items-center">
+                                        <div class="col-11 text-left">
+                                            <div class="" title="Update Info"><b>Update Info</b>
+                                            </div>
+                                            <div class="text-truncate custom-light-grey" title="Insurance company">Insurance company</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user_box -->
+                        </center>
                     </div>
-                    <div class="row align-items-center justify-content-start px-5 mt-4 mb-3 custom-light-grey text-center">
-                        <form class="w-100">
-                            <div class="row my-4 text-left">
-                                <div class="col-12">
-                                    What is your relationship to Mike? <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required="">
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row my-4 text-left">
-                                <div class="col-12">
-                                    Immediate Family Type <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required="">
-                                        <option>Parent</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row text-left">
-                                <div class="col-12">
-                                    Parent Type <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required="">
-                                        <option>Father</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
+                    <!-- sidebar -->
+                </div>
+                <!--sidebar 2-->
+				<!-- Modals -->
+				<!-- Reject request -->
+				<div class="modal" id="rejectReq">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-center mt-3">
+									<div class="rounded-circle overflow-hidden mr-3">
+										<img src="./assets/images/mike.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Mike Kirby
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey f16">
+											Father
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+									Do you want to Decline Mike Kirby’s Connection Request?
+								</div>
+								<div class="row align-items-center justify-content-center my-4 position-relative">
+									<button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+										Cancel
+									</button>
+									<button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal">
+										Decline Connection
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Reject request -->
+				
+				<!-- edit relationship -->
+				<div class="modal" id="editRel">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-start mt-3 pl-5">
 
+									<div class="rounded-circle overflow-hidden mr-3">
+										<img src="./assets/images/emma.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Emma Amelia
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey f16">
+											Sister
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-start px-5 mt-4 mb-3 custom-light-grey text-center">
+									<form class="w-100">
+										<div class="row my-4 text-left">
+											<div class="col-12">
+												What is your relationship to Emma Amelia? <br />
+												<select class="mt-1 p-1 w-100 popupInput form-control" name="family" required>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+												</select>
+											</div>
+										</div>
+										<div class="row my-4 text-left">
+											<div class="col-12">
+												Immediate Family Type <br />
+												<select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required>
+													<option>Sibling</option>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+												</select>
+											</div>
+										</div>
+										<div class="row text-left">
+											<div class="col-12">
+												Sibling Type <br />
+												<select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required>
+													<option>Sister</option>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+												</select>
+											</div>
+
+										</div>
+									</form>
+								</div>
+								<div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
+									<button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
+										Save
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- edit relationship -->
+				<!-- delete request -->
+				<div class="modal" id="deleteReq">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-center mt-3">
+									<div class="rounded-circle overflow-hidden mr-3">
+										<img src="./assets/images/bill.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Bill Kirby
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey f16">
+											Grandfather
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+									Are you sure you don't want to add Bill Kirby as your grandfather?
+								</div>
+								<div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+									<button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+										Cancel
+									</button>
+									<button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal">
+										Cancel Connection
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- delete request -->
+				<!-- edit connection -->
+				<div class="modal" id="editCon">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-center mt-3">
+									<div class="rounded-circle overflow-hidden mr-3">
+										<img src="./assets/images/emma.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Emma Amelia
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey f16">
+											Sister
+										</div>
+									</div>
+								</div>
+
+								<div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+									<button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#removeCon">
+										Remove Connection
+									</button>
+									<button type="button" class="btn btn-primary border-0 bg-theme-blue mx-2 mx-md-4" data-dismiss="modal" data-toggle="modal" data-target="#editRel">
+										Edit Relationship
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- edit connection -->
+				<!-- remove connection -->
+				<div class="modal" id="removeCon">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-center mt-3">
+									<div class="rounded-circle overflow-hidden mr-3">
+										<img src="./assets/images/emma.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Emma Amelia
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey f16">
+											Sister
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+									Are you sure you want to remove Emma Amelia as your sister?
+								</div>
+								<div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+									<button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+										Cancel
+									</button>
+									<button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal">
+										Remove Connection
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- remove connection -->
+				<!-- edit permission -->
+				<div class="modal" id="editPerm">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-center mt-3">
+									<div class="rounded-circle overflow-hidden mr-3">
+										<img src="./assets/images/nora.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Nora Aubrey
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey f16">
+											<div class="mt-1 nowrap">
+                                                <img src="./assets/images/personal.svg" height="16px" class="mr-1" title="Personal">
+                                                <img src="./assets/images/legal.svg" height="16px" class="mr-1" title="Legal">
+                                            </div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+									<button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#removeAdmin">
+										Remove Admin
+									</button>
+									<button type="button" class="btn btn-primary border-0 bg-theme-blue mx-2 mx-md-4" data-dismiss="modal" data-toggle="modal" data-target="#editAccess">
+										Edit Access
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- edit permission -->
+				<!-- remove admin -->
+				<div class="modal" id="removeAdmin">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-center mt-3">
+									<div class="rounded-circle overflow-hidden mr-3">
+										<img src="./assets/images/nora.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Nora Aubrey
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey f16">
+											<div class="mt-1 nowrap">
+                                                <img src="./assets/images/personal.svg" height="16px" class="mr-1" title="Personal">
+                                                <img src="./assets/images/legal.svg" height="16px" class="mr-1" title="Legal">
+                                            </div>
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+									Are you sure you want to remove Nora Aubrey as an Admin?
+								</div>
+								<div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+									<button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+										Cancel
+									</button>
+									<button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal">
+										Remove Admin
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- remove admin -->
+				<!-- edit access -->
+				<div class="modal" id="editAccess">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-start justify-content-start mt-3 pl-5" style="flex-wrap:nowrap;">
+
+									<div class="rounded-circle overflow-hidden mr-3" style="flex-shrink: 0">
+										<img src="./assets/images/nora.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Nora Aubrey
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey w-75">
+											Nora can add and share files from the sections of your vault that you select
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+									<form class="w-75 f16">
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/insurance.svg" height="16px" class="ml-2" title="Insurance">
+													<span class="pl-1">Insurance</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
+                                                    <img src="./assets/images/legal.svg" height="16px" class="ml-2" title="Legal">
+													<span class="pl-1"> Legal</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
+                                                    <img src="./assets/images/personal.svg" height="16px" class="ml-2" title="Personal">
+													<span class="pl-1">Personal</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/medical.svg" height="16px" class="ml-2" title="Medical">
+													<span class="pl-1">Medical</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/other.svg" height="16px" class="ml-2" title="Other">
+													<span class="pl-1">Other</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+									</form>
+								</div>
+								<div class="row align-items-center justify-content-end position-relative mt-3 mb-3">
+									<button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
+										Save
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- edit access -->
+				<!-- add permission -->
+				<div class="modal" id="addPerm">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-center mt-3">
+
+									<div>
+										<div style="font-size: 24px">
+											Select Admin
+										</div>
+										<div class="custom-light-grey">
+											Choose an existing connection or invite an admin to Kinnect 
+										</div>
+										<div class="input-group mt-4 border py-1" style="border-radius: 5px">
+                                            <span class="input-group-prepend">
+                                                <div class="input-group-text bg-transparent border-0">
+                                                    <img src="./assets/images/search.svg" class="custom-light-grey" height="14px">
+                                                </div>
+                                            </span>
+                                            <span class="" style="width: 88%;">
+                                               <input class="pt-1 border-0 bg-transparent w-100" type="search" placeholder="Search connections" id="network-search-input">
+                                           </span>
+                                        </div>
+									</div>
+								</div>
+
+								<div class="row align-items-center justify-content-start px-5 mt-4 mb-3 text-center">
+									<div class="reqContainer" style="width: 90%">
+										<div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#addPerm2">
+											<div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+												<div class="row align-items-center justify-content-start mt-3">
+
+													<div class="rounded-circle overflow-hidden mr-3">
+														<img src="./assets/images/emma.png" height="40px" />
+													</div>
+													<div class="text-left">
+														<div class="f14 font-weight-bold">
+															Emma Amelia
+														</div>
+														<div class="custom-light-grey">
+															Sister
+														</div>
+													</div>
+												</div>
+											</div>
+											<hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#addPerm2">
+											<div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+												<div class="row align-items-center justify-content-start mt-3">
+
+													<div class="rounded-circle overflow-hidden mr-3">
+														<img src="./assets/images/jacob.png" height="40px" />
+													</div>
+													<div class="text-left">
+														<div class="f14 font-weight-bold">
+															Jacob Logan
+														</div>
+														<div class="custom-light-grey">
+															Brother
+														</div>
+													</div>
+												</div>
+											</div>
+											<hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#addPerm2">
+											<div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+												<div class="row align-items-center justify-content-start mt-3">
+
+													<div class="rounded-circle overflow-hidden mr-3">
+														<img src="./assets/images/nora.png" height="40px" />
+													</div>
+													<div class="text-left">
+														<div class="f14 font-weight-bold">
+															Nora Aubrey
+														</div>
+														<div class="custom-light-grey">
+															Cousin
+														</div>
+													</div>
+												</div>
+											</div>
+											<hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#addPerm2">
+											<div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+												<div class="row align-items-center justify-content-start mt-3">
+
+													<div class="rounded-circle overflow-hidden mr-3">
+														<img src="./assets/images/williams.png" height="40px" />
+													</div>
+													<div class="text-left">
+														<div class="f14 font-weight-bold">
+															Williams
+														</div>
+														<div class="custom-light-grey">
+															Brother
+														</div>
+													</div>
+												</div>
+											</div>
+											<hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#addPerm2">
+											<div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+												<div class="row align-items-center justify-content-start mt-3">
+
+													<div class="rounded-circle overflow-hidden mr-3">
+														<img src="./assets/images/emma.png" height="40px" />
+													</div>
+													<div class="text-left">
+														<div class="f14 font-weight-bold">
+															Emma
+														</div>
+														<div class="custom-light-grey">
+															Sister
+														</div>
+													</div>
+												</div>
+											</div>
+											<hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-end position-relative mt-4 mb-3 pr-5">
+									<button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser">
+										Invite
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- add permission -->
+				<!-- add permission - 2 -->
+				<div class="modal " id="addPerm2">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-start justify-content-start mt-3 pl-5" style="flex-wrap:nowrap;">
+
+									<div class="rounded-circle overflow-hidden mr-3" style="flex-shrink: 0">
+										<img src="./assets/images/jacob.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Jacob
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey w-75">
+											Jacob can add and share files from the sections of your vault that you select
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+									<form class="w-75 f16">
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/insurance.svg" height="16px" class="ml-2" title="Insurance">
+													<span class="pl-1">Insurance</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/legal.svg" height="16px" class="ml-2" title="Legal">
+													<span class="pl-1"> Legal</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/personal.svg" height="16px" class="ml-2" title="Personal">
+													<span class="pl-1">Personal</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/medical.svg" height="16px" class="ml-2" title="Medical">
+													<span class="pl-1">Medical</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/other.svg" height="16px" class="ml-2" title="Other">
+													<span class="pl-1">Other</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+									</form>
+								</div>
+								<div class="row align-items-center justify-content-between mt-4 mb-3 pl-5 pr-3 position-relative w-100">
+									<button type="button" class="btn btn-light bg-blue p-2 mr-2 mx-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#addPerm">
+										Back
+									</button>
+									<button type="button" class="btn btn-primary bg-theme-blue border-0 ml-2 mx-md-4" data-dismiss="modal">
+										Add
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- add permission - 2 -->
+				<!-- send connection -->
+				<div class="modal" id="sendCon">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-start mt-3 pl-5">
+
+									<div class="rounded-circle overflow-hidden mr-3">
+										<img src="./assets/images/mike.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Mike Kirby
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey f16">
+											Location: Orlando, FL
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-start px-5 mt-4 mb-3 custom-light-grey text-center">
+									<form class="w-100">
+										<div class="row my-4 text-left">
+											<div class="col-12">
+												What is your relationship to Mike? <br />
+												<select class="mt-1 p-1 w-100 popupInput form-control" name="family" required>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+												</select>
+											</div>
+										</div>
+										<div class="row my-4 text-left">
+											<div class="col-12">
+												Immediate Family Type <br />
+												<select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required>
+													<option>Parent</option>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+												</select>
+											</div>
+										</div>
+										<div class="row text-left">
+											<div class="col-12">
+												Parent Type <br />
+												<select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required>
+													<option>Father</option>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+												</select>
+											</div>
+
+										</div>
+									</form>
+								</div>
+								<div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
+									<button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
+										Connect
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- send connection -->
+
+				<!-- --------------------------------- -->
+
+				<!-- invite user -->
+				<div class="modal" id="inviteUser">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-start mt-3">
+
+									<div class="pl-5">
+										<div style="font-size: 24px">
+											Who would you like to invite?
+										</div>
+										<div class="custom-light-grey">
+											We will send them a link to join you in Kinnect
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+									<form>
+										<div class="row my-4 f14 text-left">
+											<div class="col-6">
+												First Name <br />
+												<input class="mt-1 p-1 w-100 popupInput" required />
+											</div>
+											<div class="col-6">
+												Last Name <br />
+												<input class="mt-1 p-1 w-100 popupInput" required />
+											</div>
+										</div>
+										<div class="row text-left f14">
+											<div class="col-12">
+												Email <br />
+												<input type="email" class="mt-1 p-1 px-3 w-100 popupInput" placeholder="example@email.com" required />
+											</div>
+
+										</div>
+									</form>
+								</div>
+								<div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
+									<button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser2">
+										Next
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- invite user -->
+				<!-- invite user-2 -->
+				<div class="modal" id="inviteUser2">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-start mt-3">
+
+									<div class="pl-5">
+										<div style="font-size: 24px">
+											Invite Marsh Kane
+										</div>
+										<div class="custom-light-grey">
+											marshkane20@gmail.com
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+									<form class="w-100">
+										<div class="row my-4 text-left">
+											<div class="col-12">
+												What is your relationship to Marsh Kane? <br />
+												<select class="mt-1 p-1 w-100 popupInput form-control" name="family" required>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+												</select>
+											</div>
+										</div>
+										<div class="row my-4 text-left">
+											<div class="col-12">
+												Immediate Family Type <br />
+												<select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required>
+													<option>Sibling</option>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+												</select>
+											</div>
+										</div>
+										<div class="row text-left">
+											<div class="col-12">
+												Sibling Type <br />
+												<select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required>
+													<option>Brother</option>
+													<option>Immediate family</option>
+													<option>Immediate family</option>
+												</select>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="row align-items-center justify-content-between mt-4 mb-3 pl-5 pr-3 position-relative w-100">
+									<button type="button" class="btn btn-light bg-blue p-2 mr-2 mr-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser">
+										Back
+									</button>
+									<button type="button" class="btn btn-primary bg-theme-blue border-0 ml-2 ml-md-4" data-dismiss="modal">
+										Invite
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- invite user-2 -->
+				<!-- confirm permission -->
+				<div class="modal" id="confirmPerm">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-start justify-content-start mt-3 pl-5" style="flex-wrap:nowrap;">
+
+									<div class="rounded-circle overflow-hidden mr-3" style="flex-shrink: 0">
+										<img src="./assets/images/williams.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Williams
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey w-75">
+											Williams can add and share files from the sections of your vault that you select
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+									<form class="w-75 f16">
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
+                                                    <img src="./assets/images/insurance.svg" height="16px" class="ml-2" title="Insurance">
+													<span class="pl-1">Insurance</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
+                                                    <img src="./assets/images/legal.svg" height="16px" class="ml-2" title="Legal">
+													<span class="pl-1"> Legal</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
+                                                    <img src="./assets/images/personal.svg" height="16px" class="ml-2" title="Personal">
+													<span class="pl-1">Personal</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
+                                                    <img src="./assets/images/medical.svg" height="16px" class="ml-2" title="Medical">
+													<span class="pl-1">Medical</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row my-3">
+											<div class="col-12 mb-1">
+												<div class="form-check d-flex align-items-center mb-2">
+													<input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something" checked>
+                                                    <img src="./assets/images/other.svg" height="16px" class="ml-2" title="Other">
+													<span class="pl-1">Other</span>
+												</div>
+											</div>
+											<hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+									</form>
+								</div>
+								<div class="row align-items-center justify-content-end position-relative mt-3 mb-3">
+									<button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
+										Accept
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- confirm permission -->
+				<!-- request permission -->
+				<div class="modal" id="requestPerm">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-center mt-3">
+
+									<div class="w-75 pl-2">
+										<div style="font-size: 24px">
+											Request from
+										</div>
+										<div class="custom-light-grey">
+											Ask permission from an existing connection or invite someone on Kinnect to be their Admin
+										</div>
+										<div class="input-group mt-4 border py-1" style="border-radius: 5px">
+                                            <span class="input-group-prepend">
+                                                <div class="input-group-text bg-transparent border-0">
+                                                    <img src="./assets/images/search.svg" class="custom-light-grey" height="14px">
+                                                </div>
+                                            </span>
+                                            <span class="" style="width: 88%;">
+                                               <input class="pt-1 border-0 bg-transparent w-100" type="search" placeholder="Search connections" id="network-search-input">
+                                           </span>
+                                        </div>
+									</div>
+								</div>
+
+								<div class="row align-items-center justify-content-start px-5 mt-4 mb-3 text-center">
+									<div class="reqContainer" style="width: 90%">
+										<div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
+											<div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+												<div class="row align-items-center justify-content-start mt-3">
+
+													<div class="rounded-circle overflow-hidden mr-3">
+														<img src="./assets/images/emma.png" height="40px" />
+													</div>
+													<div class="text-left">
+														<div class="f14 font-weight-bold">
+															Emma Amelia
+														</div>
+														<div class="custom-light-grey">
+															Sister
+														</div>
+													</div>
+												</div>
+											</div>
+											<hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
+											<div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+												<div class="row align-items-center justify-content-start mt-3">
+
+													<div class="rounded-circle overflow-hidden mr-3">
+														<img src="./assets/images/jacob.png" height="40px" />
+													</div>
+													<div class="text-left">
+														<div class="f14 font-weight-bold">
+															Jacob Logan
+														</div>
+														<div class="custom-light-grey">
+															Brother
+														</div>
+													</div>
+												</div>
+											</div>
+											<hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
+											<div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+												<div class="row align-items-center justify-content-start mt-3">
+
+													<div class="rounded-circle overflow-hidden mr-3">
+														<img src="./assets/images/nora.png" height="40px" />
+													</div>
+													<div class="text-left">
+														<div class="f14 font-weight-bold">
+															Nora Aubrey
+														</div>
+														<div class="custom-light-grey">
+															Cousin
+														</div>
+													</div>
+												</div>
+											</div>
+											<hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
+											<div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+												<div class="row align-items-center justify-content-start mt-3">
+
+													<div class="rounded-circle overflow-hidden mr-3">
+														<img src="./assets/images/williams.png" height="40px" />
+													</div>
+													<div class="text-left">
+														<div class="f14 font-weight-bold">
+															Williams
+														</div>
+														<div class="custom-light-grey">
+															Brother
+														</div>
+													</div>
+												</div>
+											</div>
+											<hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+										<div class="row m-0 addHover" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm2">
+											<div class="col-12 mb-2 pl-5 d-flex justify-content-start">
+												<div class="row align-items-center justify-content-start mt-3">
+
+													<div class="rounded-circle overflow-hidden mr-3">
+														<img src="./assets/images/emma.png" height="40px" />
+													</div>
+													<div class="text-left">
+														<div class="f14 font-weight-bold">
+															Emma
+														</div>
+														<div class="custom-light-grey">
+															Sister
+														</div>
+													</div>
+												</div>
+											</div>
+											<hr class="w-75 mt-2 mb-0 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-end position-relative mt-4 mb-2 pr-5">
+									<button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser">
+										Invite
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- request permission -->
+
+                <!---request permission 2-->
+                <div class="modal" id="requestPerm2">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                                    </button>
+                                </div>
+                                <div class="row align-items-start justify-content-start mt-3 pl-5" style="flex-wrap:nowrap;">
+
+                                    <div class="rounded-circle overflow-hidden mr-3" style="flex-shrink: 0">
+                                        <img src="./assets/images/jacob.png" height="100px" />
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Jacob Logan
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey w-75">
+                                            You are requesting Jacob permission to add and share files from the below sections of their Vault
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
+                                    <form class="w-75 f16">
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/insurance.svg" height="16px" class="ml-2" title="Insurance">
+                                                    <span class="pl-1">Insurance</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/legal.svg" height="16px" class="ml-2" title="Legal">
+                                                    <span class="pl-1"> Legal</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/personal.svg" height="16px" class="ml-2" title="Personal">
+                                                    <span class="pl-1">Personal</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/medical.svg" height="16px" class="ml-2" title="Medical">
+                                                    <span class="pl-1">Medical</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-12 mb-1">
+                                                <div class="form-check d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="form-check-input mt-0" id="check1" name="option1" value="something">
+                                                    <img src="./assets/images/other.svg" height="16px" class="ml-2" title="Other">
+                                                    <span class="pl-1">Other</span>
+                                                </div>
+                                            </div>
+                                            <hr class="w-100 ml-2 my-1 bg-custom-light-grey border-0" style="height: 1px;opacity: .5" />
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row align-items-center justify-content-between mb-3 px-5 mx-1 position-relative" style="margin-top: 2rem">
+                                    <button type="button" class="btn btn-light bg-blue p-2 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#requestPerm">
+                                        Back
+                                    </button>
+                                    <button type="button" class="btn btn-primary border-0 bg-theme-blue" data-dismiss="modal">
+                                        Request
+                                    </button>
+                                </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
-                        <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal">
-                            Connect
-                        </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- send connection -->
-
-    <!-- --------------------------------- -->
-
-    <!-- invite user -->
-    <div class="modal" id="inviteUser">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 row p-4 m-0">
-                <div class="col-12">
-                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <img src="./assets/images/popupclose.svg" height="24px" class="">
-                        </button>
-                    </div>
-                    <div class="row align-items-center justify-content-start mt-3">
-
-                        <div class="pl-5">
-                            <div style="font-size: 24px">
-                                Who would you like to invite?
-                            </div>
-                            <div class="custom-light-grey">
-                                We will send them a link to join you in Kinnect
+                <!---request permission 2-->
+				<!-- Reject permission -->
+				<div class="modal" id="rejectPerm">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content border-0 row p-4 m-0">
+							<div class="col-12">
+								<div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+									<button type="button" class="close" data-dismiss="modal">
+										<img src="./assets/images/popupclose.svg" height="24px" class="" />
+									</button>
+								</div>
+								<div class="row align-items-center justify-content-center mt-3">
+									<div class="rounded-circle overflow-hidden mr-3">
+										<img src="./assets/images/williams.png" height="100px" />
+									</div>
+									<div>
+										<div class="f20 font-weight-bold mb-1">
+											Williams
+											<span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+										</div>
+										<div class="custom-light-grey f16">
+											<div class="mt-1 nowrap">
+                                                <img src="./assets/images/insurance.svg" height="16px" class="mr-1" title="Insurance">
+                                                <img src="./assets/images/medical.svg" height="16px" class="mr-1" title="Medical">
+                                                <img src="./assets/images/personal.svg" height="16px" class="mr-1" title="Personal">
+                                                <img src="./assets/images/legal.svg" height="16px" class="mr-1" title="Legal">
+                                                <img src="./assets/images/other.svg" height="16px" class="mr-1" title="Other">
+                                            </div>
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+									Are you sure you don't want to add Williams as an admin?
+								</div>
+								<div class="row align-items-center justify-content-center my-4 position-relative">
+									<button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+										Cancel
+									</button>
+									<button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal">
+										Decline Permission
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Reject permission -->
+                <!-- delete permission request -->
+                <div class="modal" id="deletePermReq">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 row p-4 m-0">
+                            <div class="col-12">
+                                <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                                    </button>
+                                </div>
+                                <div class="row align-items-center justify-content-center mt-3">
+                                    <div class="rounded-circle overflow-hidden mr-3">
+                                        <img src="./assets/images/jacob.png" height="100px" />
+                                    </div>
+                                    <div>
+                                        <div class="f20 font-weight-bold mb-1">
+                                            Jacob Logan
+                                            <span class="fa fa-check-circle ml-1" style="color: #52DC90"></span>
+                                        </div>
+                                        <div class="custom-light-grey f16">
+                                            <div class="mt-1 nowrap">
+                                                <img src="./assets/images/personal.svg" height="16px" class="mr-1" title="Personal">
+                                                <img src="./assets/images/legal.svg" height="16px" class="mr-1" title="Legal">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center">
+                                    Are you sure you don't want to be an admin for Jacob Logan?
+                                </div>
+                                <div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
+                                    <button type="button" class="btn btn-light bg-blue p-2 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal">
+                                        Delete Request
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
-                        <form>
-                            <div class="row my-4 f14 text-left">
-                                <div class="col-6">
-                                    First Name <br>
-                                    <input class="mt-1 p-1 w-100 popupInput" required="">
-                                </div>
-                                <div class="col-6">
-                                    Last Name <br>
-                                    <input class="mt-1 p-1 w-100 popupInput" required="">
-                                </div>
-                            </div>
-                            <div class="row text-left f14">
-                                <div class="col-12">
-                                    Email <br>
-                                    <input type="email" class="mt-1 p-1 px-3 w-100 popupInput" placeholder="example@email.com" required="">
-                                </div>
-
-                            </div>
-                        </form>
-                    </div>
-                    <div class="row align-items-center justify-content-end position-relative mt-5 mb-3">
-                        <button type="button" class="btn btn-primary bg-theme-blue border-0 mr-5" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser2">
-                            Next
-                        </button>
-                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- invite user -->
-    <!-- invite user-2 -->
-    <div class="modal" id="inviteUser2">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 row p-4 m-0">
-                <div class="col-12">
-                    <div class="row align-items-start justify-content-end position-absolute h-100 w-100 mt-n2">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <img src="./assets/images/popupclose.svg" height="24px" class="">
-                        </button>
-                    </div>
-                    <div class="row align-items-center justify-content-start mt-3">
-
-                        <div class="pl-5">
-                            <div style="font-size: 24px">
-                                Invite Marsh Kane
-                            </div>
-                            <div class="custom-light-grey">
-                                marshkane20@gmail.com
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-center px-5 mt-4 mb-3 custom-light-grey text-center">
-                        <form class="w-100">
-                            <div class="row my-4 text-left">
-                                <div class="col-12">
-                                    What is your relationship to Marsh Kane? <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="family" required="">
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row my-4 text-left">
-                                <div class="col-12">
-                                    Immediate Family Type <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="familyType" required="">
-                                        <option>Sibling</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row text-left">
-                                <div class="col-12">
-                                    Sibling Type <br>
-                                    <select class="mt-1 p-1 w-100 popupInput form-control" name="subFamilyType" required="">
-                                        <option>Brother</option>
-                                        <option>Immediate family</option>
-                                        <option>Immediate family</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="row align-items-center justify-content-between mt-4 mb-3 pl-5 pr-3 position-relative w-100">
-                        <button type="button" class="btn btn-light bg-blue p-2 mr-2 mr-md-4 custom-grey" data-dismiss="modal" data-toggle="modal" data-target="#inviteUser">
-                            Back
-                        </button>
-                        <button type="button" class="btn btn-primary bg-theme-blue border-0 ml-2 ml-md-4" data-dismiss="modal">
-                            Invite
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- invite user-2 -->
+                <!-- delete permission request -->
 
     <!------------------------------------------------------------HELP CENTER----------------------------------------->
     <!-- main menu -->
@@ -1161,7 +2053,7 @@
                         Help Center
                     </div>
                     <div class="row2 px-2 m-4 d-flex justify-content-between">
-                        <button class="col-4 help-main-menu-items" data-toggle="modal" data-target="#helpcontactus" data-dismiss="modal">
+                        <button class="col-4 help-main-menu-items" data-toggle="modal" data-target="" data-dismiss="modal">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="54.328" height="54.328" viewBox="0 0 44.612 44.614">
                                   <path id="Icon_awesome-tools" data-name="Icon awesome-tools" d="M43.661,34.476l-10.2-10.2a6.469,6.469,0,0,0-7.441-1.211l-9.288-9.288V8.364L5.577,0,0,5.576,8.365,16.729h5.411l9.288,9.288a6.483,6.483,0,0,0,1.211,7.441l10.2,10.2a3.239,3.239,0,0,0,4.592,0l4.592-4.592a3.255,3.255,0,0,0,0-4.592ZM28.9,19.6a9.167,9.167,0,0,1,6.526,2.7L37.117,24a12.333,12.333,0,0,0,3.816-2.57,12.53,12.53,0,0,0,3.3-11.91,1.043,1.043,0,0,0-1.751-.479L36,15.517l-5.916-.985L29.1,8.617l6.482-6.482a1.052,1.052,0,0,0-.5-1.76,12.551,12.551,0,0,0-11.9,3.3A12.347,12.347,0,0,0,19.6,12.7l7.153,7.153A9.492,9.492,0,0,1,28.9,19.6Zm-9.053,7.144-4.94-4.94L1.63,35.1A5.576,5.576,0,0,0,9.515,42.98L20.284,32.211a9.356,9.356,0,0,1-.436-5.463ZM5.577,41.124a2.091,2.091,0,1,1,2.091-2.091A2.1,2.1,0,0,1,5.577,41.124Z" transform="translate(0.004)"></path>
@@ -1184,8 +2076,11 @@
                         </button>
                         <button class="col-4 help-main-menu-items" data-toggle="modal" data-target="#helpcontactus" data-dismiss="modal">
                             <div class="icon ">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="54.621" height="54.726" viewBox="0 0 54.621 54.726">
-                                  <path id="Icon_feather-phone-call" data-name="Icon feather-phone-call" d="M54.785,42.818V50.6A5.191,5.191,0,0,1,49.127,55.8a51.363,51.363,0,0,1-22.4-7.968A50.61,50.61,0,0,1,11.157,32.255a51.363,51.363,0,0,1-7.968-22.5A5.191,5.191,0,0,1,8.354,4.1H16.14a5.191,5.191,0,0,1,5.191,4.464,33.325,33.325,0,0,0,1.817,7.293,5.191,5.191,0,0,1-1.168,5.476l-3.3,3.3A41.526,41.526,0,0,0,34.256,40.2l3.3-3.3a5.191,5.191,0,0,1,5.476-1.168,33.324,33.324,0,0,0,7.293,1.817A5.191,5.191,0,0,1,54.785,42.818Z" transform="translate(-1.666 -2.595)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="58.41" height="40.437" viewBox="0 0 58.41 40.437">
+                                  <g id="Icon_ionic-ios-mail" data-name="Icon ionic-ios-mail" transform="translate(-3.375 -7.875)">
+                                    <path id="Path_158" data-name="Path 158" d="M61.307,10.4,46.2,25.789a.271.271,0,0,0,0,.393L56.772,37.443a1.822,1.822,0,0,1,0,2.584,1.83,1.83,0,0,1-2.584,0L43.658,28.808a.288.288,0,0,0-.407,0l-2.569,2.612a11.3,11.3,0,0,1-8.059,3.4,11.532,11.532,0,0,1-8.228-3.5l-2.471-2.513a.288.288,0,0,0-.407,0L10.985,40.026a1.83,1.83,0,0,1-2.584,0,1.822,1.822,0,0,1,0-2.584L18.974,26.182a.3.3,0,0,0,0-.393L3.852,10.4a.277.277,0,0,0-.477.2V41.388a4.506,4.506,0,0,0,4.493,4.493H57.292a4.506,4.506,0,0,0,4.493-4.493V10.6A.281.281,0,0,0,61.307,10.4Z" transform="translate(0 2.431)" />
+                                    <path id="Path_159" data-name="Path 159" d="M31.732,33.584a7.633,7.633,0,0,0,5.49-2.3L59.252,8.858a4.413,4.413,0,0,0-2.78-.983H7.006a4.384,4.384,0,0,0-2.78.983l22.03,22.423A7.634,7.634,0,0,0,31.732,33.584Z" transform="translate(0.848 0)" />
+                                  </g>
                                 </svg>
                             </div>  
                             <div class="text">
@@ -1272,7 +2167,7 @@
                                            <textarea class="rounded w-100 pl-2" rows="5"  placeholder="Please describe the issue here..."></textarea>
                                         </div>
                                         <div class="pt-3 pb-1 "  style=" text-align: right">
-                                            <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff">
+                                            <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff" data-toggle="modal" data-target="#bug-report-ack" data-dismiss="modal">
                                                 Report
                                             </button>
                                         </div>
@@ -1280,7 +2175,7 @@
                                 </div>
                             </div>
 
-                            <div id="Feedbacktab" class="tab-pane fade contact-us-tabs">
+                            <div id="Feedbacktab" class="tab-pane fade contact-us-tabs ">
                                 <div class="col-12 f20 font-weight-bold contact-us-tab-heading">
                                     Tell us how we're doing
                                 </div>
@@ -1362,15 +2257,15 @@
                                     <!------------------------10-------------------------->
                                 </div>
                                 <div class="f18 custom-grey contact-us-tab-heading" style="padding-top: 1.2rem;">
-                                    Explain your feelings in words
+                                    Let us know what you think
                                 </div>
-                                <div class="pt-2"  style="text-align: -webkit-center; ">
+                                <div class="pt-2" style="text-align: -webkit-center; ">
                                     <div class="" style="width: 80%">
                                         <div class="" style="">
-                                           <textarea class="rounded w-100  pl-2" rows="5"  placeholder="Please describe the issue here..."></textarea>
+                                           <textarea class="rounded w-100  pl-2" rows="5" placeholder=""></textarea>
                                         </div>
-                                        <div class="pt-3 pb-1 "  style=" text-align: right">
-                                            <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff">
+                                        <div class="pt-3 pb-1 " style=" text-align: right">
+                                            <button class="f14 bg-theme-blue p-1 px-2" style="color: #fff" data-toggle="modal" data-target="#feedback-ack" data-dismiss="modal">
                                                 Submit
                                             </button>
                                         </div>
@@ -1405,7 +2300,7 @@
                                                </div>
                                             </div>
                                             <div class=" pb-1 d-flex justify-content-end" style="padding-top: 1.2rem;">
-                                                <button class="f14 bg-theme-blue p-1 px-3" style="color: #fff">
+                                                <button class="f14 bg-theme-blue p-1 px-3" style="color: #fff" data-toggle="modal" data-target="#message-ack" data-dismiss="modal">
                                                     Send
                                                 </button>
                                             </div>
@@ -2285,589 +3180,105 @@
         </div>
     </div>    
     <!-- FAQ -->
+    <!--- Feedback Acknowledgement Window-->
+    <div class="modal " id="feedback-ack">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5 mt-n3">
+                    <div class="" style="font-size: 22px;">
+                        Feedback received
+                    </div>
+                    <div class="custom-grey f18 pt-3">
+                        Thank you for taking out the time to give us your feedback. We will use this as a guide to serve you better.
+                    </div>
+                    <div class="col-12 text-right pt-3 ml-n2">
+                        <button class="bg-blue custom-grey f14 p-1 px-3 rounded  font-weight-bold" data-toggle="modal" data-target="#helpmain" data-dismiss="modal">
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!--- Feedback Acknowledgement Window-->
+    <!--- Msg Acknowledgement Window-->
+    <div class="modal " id="message-ack">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5 mt-n3">
+                    <div class="" style="font-size: 22px;">
+                        Message received
+                    </div>
+                    <div class="custom-grey f18 pt-3">
+                        Thank you for taking out the time to reach out to us. We will get back to you soon.
+                    </div>
+                    <div class="col-12 text-right pt-3 ml-n2">
+                        <button class="bg-blue custom-grey f14 p-1 px-3 rounded  font-weight-bold" data-toggle="modal" data-target="#helpmain" data-dismiss="modal">
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!--- Msg Acknowledgement Window-->
+
+    <!--- Report Acknowledgement Window-->
+    <div class="modal " id="bug-report-ack">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content border-0">
+                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
+                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
+                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
+                    </button>
+                </div>
+
+                <div class="mx-5 mb-5 mt-n3">
+                    <div class="" style="font-size: 22px;">
+                        Problem reported
+                    </div>
+                    <div class="custom-grey f18 pt-3">
+                        Thank you for taking out the time to report this issue. We will start working on this right away and fix this as soon as we can.
+                    </div>
+                    <div class="col-12 text-right pt-3 ml-n2">
+                        <button class="bg-blue custom-grey f14 p-1 px-3 rounded  font-weight-bold" data-toggle="modal" data-target="#helpmain" data-dismiss="modal">
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!---  Acknowledgement Window-->    
     <!------------------------------------------------------------HELP CENTER----------------------------------------->
-    <!-- Update-primary---->
-    <div class="modal" id="Update-primary" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
 
-                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
-                    Update primary email
-                </div>
-                <div class="col-12 custom-grey f11">
-                    Update the primary email linked to your kinnect account
-                </div>
-
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
-                        <div class="col-12">
-                            New email address <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="col-12 pt-4 ">
-                            Confirm new email address <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="col-12 pt-4 ">
-                            Enter password (For security) <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class=" col-12 pt-1 f11 d-flex align-items-center justify-content-end" >
-                            <a href="#" class="theme-blue font-weight-light" data-toggle="modal" data-target="#Forgot-password" data-dismiss="modal"><div>Forgot password?</div></a>
-                        </div>
-                        <div class="col-12 pt-3  custom-light-grey font-weight-light d-flex justify-content-end" style="padding-bottom: 2.5rem;">
-                            <button class="p-1 px-3 f14 bg-theme-blue"  data-toggle="modal" data-target="#Update-primary-ack" data-dismiss="modal" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Update Primary-->
-    <!--- Update-primary Acknowledgement Window-->
-    <div class="modal " id="Update-primary-ack">
-        <div class="modal-dialog modal-dialog-centered">
-
-            <div class="modal-content border-0">
-                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
-                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                    </button>
-                </div>
-
-                <div class="mx-5 mb-5 mt-n3">
-                    <div class="" style="font-size: 22px;">
-                        Verify email
-                    </div>
-                    <div class="custom-grey f16 pt-3">
-                        We have sent you a verification link to <strong>kylekirby@kinnectus.com.</strong> Please click on the link to verify and add this email.
-                    </div>
-                </div>
-            </div>
-        </div>       
-    </div>
-    <!--- Update-primary Acknowledgement Window-->
-
-    <!-- Update-backup---->
-    <div class="modal" id="Update-backup-1" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
-
-                <div class="modal-title col-12 d-flex align-items-center  " style="font-size: 22px; padding-top: 1.5rem;">
-                    Backup email
-                </div>
-
-                <div class="col-12  mt-2 mb-1 custom-light-grey f19 ">
-                    kylekirbybackup@kinnectus.com
-                </div>
-                <div class="col-12 d-flex align-items-center justify-content-between mb-4 position-relative" style="margin-top: 2rem">
-                    <button type="button" class="btn btn-light bg-blue p-2 px-3  custom-grey font-weight-bold" data-dismiss="modal" data-toggle="modal" data-target="#Delete-backup">
-                        Delete
-                    </button>
-                    <button type="button" class="btn bg-theme-blue " data-dismiss="modal" data-toggle="modal" data-target="#Update-backup" style="color: white;">
-                        Update 
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Update backup-->
-    <!-- Update-backup---->
-    <div class="modal" id="Update-backup" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
-
-                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
-                    Update backup email
-                </div>
-                <div class="col-12 custom-grey f11">
-                    Update the backup email linked to your kinnect account
-                </div>
-
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
-                        <div class="col-12">
-                            New email address <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="col-12 pt-4 ">
-                            Confirm new email address <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="col-12 pt-4 ">
-                            Enter password (For security) <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class=" col-12 f11 pt-1 theme-blue font-weight-light d-flex align-items-center justify-content-end">
-                            <a href="#" data-toggle="modal" data-target="#Forgot-password" data-dismiss="modal" class="theme-blue"><div>Forgot password?</div></a>
-                        </div>
-                        <div class="col-12 pt-3  custom-light-grey font-weight-light d-flex justify-content-end" style="padding-bottom: 2.5rem;">
-                            <button class="p-1 px-3 f14 bg-theme-blue"  data-toggle="modal" data-target="#Update-backup-ack" data-dismiss="modal" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Update backup-->
-
-    <!-- Delete-backup---->
-    <div class="modal " id="Delete-backup" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 1.5rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
-
-                <div class="modal-title row align-items-center justify-content-center " style="font-size: 22px; padding-top: 1.5rem;">
-                    Delete backup email
-                </div>
-
-                <div class="row align-items-center justify-content-center px-5 mt-4 mb-1 custom-light-grey f16 text-center d-inline">
-                    Are you sure you want to remove <strong>kylekirbybackup@kinnectus.com </strong> as the backup email for your account?
-                </div>
-                <div class="row align-items-center justify-content-center mb-4 position-relative" style="margin-top: 2rem">
-                    <button type="button" class="btn btn-light bg-blue p-2 px-3 mx-2 mx-md-4 custom-grey" data-dismiss="modal">
-                        Back
-                    </button>
-                    <button type="button" class="btn btn-danger mx-2 mx-md-4" data-dismiss="modal" data-toggle="modal" data-target="#delete-backup-ack">
-                        Delete 
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Delete backup-->
-    <!--- Update-backup Acknowledgement Window-->
-    <div class="modal " id="Update-backup-ack">
-        <div class="modal-dialog modal-dialog-centered">
-
-            <div class="modal-content border-0">
-                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
-                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                    </button>
-                </div>
-
-                <div class="mx-5 mb-5 mt-n3">
-                    <div class="" style="font-size: 22px;">
-                        Verify email
-                    </div>
-                    <div class="custom-grey f16 pt-3">
-                        We have sent you a verification link to <strong>kylekirbybackup@kinnectus.com.</strong> Please click on the link to verify and add this email.
-                    </div>
-                </div>
-            </div>
-        </div>       
-    </div>
-    <!--- Update-backup Acknowledgement Window-->
-
-    <!-- Add-backup---->
-    <div class="modal" id="Add-backup" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
-
-                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
-                    Add backup email
-                </div>
-                <div class="col-12 custom-grey f11">
-                    Add a backup email to your kinnect account in case you can't access your primary email.
-                </div>
-
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
-                        <div class="col-12">
-                            New email address <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="col-12 pt-4 ">
-                            Confirm new email address <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="col-12 pt-4 ">
-                            Enter password (For security) <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class=" col-12 theme-blue font-weight-light d-flex align-items-center justify-content-end">
-                            <div>Forgot password?</div>
-                        </div>
-                        <div class="col-12 pt-3  custom-light-grey font-weight-light d-flex justify-content-end" style="padding-bottom: 2.5rem;">
-                            <button class="p-1 px-3 f14 bg-theme-blue"  data-toggle="modal" data-target="#Add-backup-ack" data-dismiss="modal" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Add backup-->
-    <!--- Add-backup Acknowledgement Window-->
-    <div class="modal " id="Add-backup-ack">
-        <div class="modal-dialog modal-dialog-centered">
-
-            <div class="modal-content border-0">
-                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
-                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                    </button>
-                </div>
-
-                <div class="mx-5 mb-5 mt-n3">
-                    <div class="" style="font-size: 22px;">
-                        Verify email
-                    </div>
-                    <div class="custom-grey f16 pt-3">
-                        We have sent you a verification link to <strong>kylekirbybackup@kinnectus.com.</strong> Please click on the link to verify and add this email.
-                    </div>
-                </div>
-            </div>
-        </div>       
-    </div>
-    <!--- Add-backup Acknowledgement Window-->
-
-    <!-- Reset-password ---->
-    <div class="modal" id="Reset-password" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
-
-                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
-                    Reset password
-                </div>
-                <div class="col-12 custom-grey f11">
-                    Update your current password
-                </div>
-
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
-                        <div class="col-12">
-                            Current password <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="pt-1 f11 col-12 theme-blue font-weight-light d-flex align-items-center justify-content-end">
-                            <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#Forgot-password" class="theme-blue">Forgot password?</a>
-                        </div>
-                        <div class="col-12 pt-4 ">
-                            Enter new password <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="col-12 pt-4 ">
-                            Confirm new password <br>
-                            <input type="text" class="mt-1 p-2 px-3 w-100 popupInput1" placeholder="" required="">
-                        </div>
-                        <div class="col-12 pt-3  custom-light-grey font-weight-light d-flex justify-content-end" style="padding-bottom: 2.5rem;">
-                            <button class="p-1 px-3 f14 bg-theme-blue"  data-toggle="modal" data-target="#Reset-password-ack" data-dismiss="modal" style="color: white;">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Reset-password-->
-    <!--- Reset-password Acknowledgement Window-->
-    <div class="modal " id="Reset-password-ack">
-        <div class="modal-dialog modal-dialog-centered">
-
-            <div class="modal-content border-0">
-                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
-                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                    </button>
-                </div>
-
-                <div class="mx-5 mb-5 mt-n3">
-                    <div class="" style="font-size: 22px;">
-                        Password Updated
-                    </div>
-                    <div class="custom-grey f16 pt-3">
-                        Your password has been reset succesfully
-                    </div>
-                </div>
-            </div>
-        </div>       
-    </div>
-    <!--- Reset-password Acknowledgement Window-->
-    <!--- Forgot-password Window-->
-    <div class="modal " id="Forgot-password">
-        <div class="modal-dialog modal-dialog-centered">
-
-            <div class="modal-content border-0">
-                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
-                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                    </button>
-                </div>
-
-                <div class="mx-5 mb-5 mt-n3">
-                    <div class="" style="font-size: 22px;">
-                        Reset link sent
-                    </div>
-                    <div class="custom-grey f16 pt-3">
-                        A password reset link has been sent to <strong>kylekirby@kinnectus.com</strong>
-                    </div>
-                </div>
-            </div>
-        </div>       
-    </div>
-    <!--- Forgot-password Window-->
-    <!--- 2FA Acknowledgement Window-->
-    <div class="modal " id="twofa-ack">
-        <div class="modal-dialog modal-dialog-centered">
-
-            <div class="modal-content border-0">
-                <div class="col-12 text-right  d-flex align-items-center justify-content-end p-0" style="" >
-                    <button type="button" class="close m-2 p-2" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="" />
-                    </button>
-                </div>
-
-                <div class="mx-5 mb-5 mt-n3"  style=" padding-left: 2rem; padding-right: 2rem;">
-                    <div class="" style="font-size: 22px;">
-                        Enabled
-                    </div>
-                    <div class="custom-grey f16 pt-3">
-                        Two Factor Authentication has been enabled for your vault
-                    </div>
-                </div>
-            </div>
-        </div>       
-    </div>
-    <!--- 2FA Acknowledgement Window-->
-    <!-- 2FA-disable---->
-    <div class="modal" id="twofa-disable" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 1.5rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
-
-                <div class="modal-title row align-items-center justify-content-center " style="font-size: 22px; padding-top: 1.4rem;">
-                    Two Factor Authentication
-                </div>
-
-                <div class="row align-items-center justify-content-center px-5 my-4 custom-light-grey f16 text-center">
-                    Are you sure you want to disable Two Factor Authentication for your account?
-                </div>
-                <div class="row align-items-center justify-content-between px-5 pb-4 position-relative" style="margin-top: 1rem">
-                    <button type="button" class="btn btn-light bg-blue p-1 f14 px-3 font-weight-bold  ml-5 custom-grey" data-dismiss="modal">
-                        Cancel
-                    </button>
-                    <button type="button" class="btn btn-danger p-1 px-3 f14  mr-5" data-dismiss="modal" >
-                        Disable 
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 2FA-disable-->
-
-    <!-- 2FA---->
-    <div class="modal " id="twofa" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
-
-                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
-                    Two Factor Authentication
-                </div>
-                <div class="col-12 custom-grey f11">
-                    Add an extra layer of security to your vault by linking your phone.
-                </div>
-
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
-                        <div class="col-12">
-                            Mobile number <br>
-                            <div class="d-flex">
-                                <div class="date-select mt-1  p-0  mr-2" style="width: 20%;">
-                                     <select name="year" id="addWork-start-year" class="form-control popupInput p-2">
-                                        <option value="" class="" disabled="" selected="" hidden="">
-                                            +1
-                                        </option>
-                                        <option value="0">+91</option>
-                                        <option value="1">+92</option>
-                                        <option value="2">+93</option>
-                                    </select>
-                                </div>
-                                <input type="text" class="mt-1 p-2 px-3 popupInput1" placeholder="" required="" style="width: 80%;">
-                            </div>
-                        </div>
-                        <div class="col-12 pt-3  custom-light-grey font-weight-light d-flex justify-content-end" style="padding-bottom: 2.5rem;">
-                            <button class="p-1 px-3 f14 bg-theme-blue"  data-toggle="modal" data-target="#twofa-1" data-dismiss="modal" style="color: white;">Send verifcation code</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 2FA-->
-    <!-- 2FA-1---->
-    <div class="modal " id="twofa-1" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
-
-                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
-                    Two Factor Authentication
-                </div>
-                <div class="col-12 custom-grey f11">
-                    Enter the verification code sent to your phone
-                </div>
-
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
-                        <div class="col-12">
-                            Mobile number <br>
-                            <div class="d-flex">
-                                <div class="date-select w-25 mt-1  p-0  mr-2">
-                                     <select name="year" id="addWork-start-year" class="form-control popupInput p-2">
-                                        <option value="" class="" disabled="" selected="" hidden="">
-                                            +1 
-                                        </option>
-                                        <option value="0">+91</option>
-                                        <option value="1">+92</option>
-                                        <option value="2">+93</option>
-                                    </select>
-                                </div>
-                                <input type="text" class="mt-1 p-2 px-3 w-75 popupInput1 " placeholder="1234567890" required="" style="color: #81848e!important;">
-                            </div>
-                        </div>
-                        <div class="col-12 pt-4 ">
-                            Enter verification code <br>
-                            <input type="password" class=" mt-1 w-100 popupInput1" placeholder="" maxlength="6" required="" style="
-                                color: #81848e;
-                                height: 40px;
-                                font-size: 25px;
-                                padding: 0.5rem 1rem!important;
-                            ">
-                        </div>
-
-                        <div class=" col-12 f11 pt-1 custom-grey font-weight-light d-flex align-items-center justify-content-end" style="">
-                            Didn't get the code? &nbsp;
-                            <u><a href="#" data-toggle="modal" data-dismiss="modal" data-target="#twofa-resend" class="theme-blue pb-1">Resend?</a></u>
-                        </div>
-                        <div class="col-12 pt-5 d-flex align-items-center justify-content-between  position-relative" style=" padding-bottom: 2.5rem;">
-                            <button type="button" class="btn btn-light bg-blue p-1 px-3  custom-grey font-weight-bold" data-dismiss="modal" data-toggle="modal" data-target="#Delete-backup">
-                                Back
-                            </button>
-                            <button type="button" class="btn bg-theme-blue p-1 px-3" data-dismiss="modal" data-toggle="modal" data-target="#twofa-ack" style="color: white;">
-                                Verify 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 2FA-1-->
-    <!-- 2FA-1---->
-    <div class="modal " id="twofa-resend" >
-        <div class="modal-dialog modal-dialog-centered" style="">
-            <div class="modal-content border-0 row mx-4" style=" padding: 1.5rem 4.5rem;">
-                <div class="position-absolute d-flex" style="right: 1rem; top: 0.9rem;">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <img src="./assets/images/popupclose.svg" height="24px" class="">
-                    </button>                    
-                </div>
-
-                <div class="modal-title col-12 " style="font-size: 22px; padding-top: 2rem;">
-                    Two Factor Authentication
-                </div>
-                <div class="col-12 custom-grey f11">
-                    Enter the verification code sent to your phone
-                </div>
-
-                <div class="col-12">
-                    <div class="row text-left custom-grey font-weight-bold f13 pt-4">
-                        <div class="col-12">
-                            Mobile number <br>
-                            <div class="d-flex">
-                                <div class="date-select w-25 mt-1  p-0  mr-2">
-                                     <select name="year" id="addWork-start-year" class="form-control popupInput p-2">
-                                        <option value="" class="" disabled="" selected="" hidden="">
-                                            +1 
-                                        </option>
-                                        <option value="0">+91</option>
-                                        <option value="1">+92</option>
-                                        <option value="2">+93</option>
-                                    </select>
-                                </div>
-                                <input type="text" class="mt-1 p-2 px-3 w-75 popupInput1 " placeholder="1234567890" required="" style="color: #81848e!important;">
-                            </div>
-                        </div>
-                        <div class="col-12 pt-4 ">
-                            Enter verification code <br>
-                            <input type="password" class=" mt-1 w-100 popupInput1" placeholder="" maxlength="6" required="" style="
-                                color: #81848e;
-                                height: 40px;
-                                font-size: 25px;
-                                padding: 0.5rem 1rem!important;
-                            ">
-                        </div>
-
-                        <div class=" col-12 pt-1 custom-grey f11 font-weight-light col-12 align-items-center" style="">
-                            The verification code has been sent to your mobile<br>
-                            <u><a href="#" data-toggle="modal" data-dismiss="modal" data-target="#twofa-resend" class="theme-blue pb-1">Resend code</a></u>
-                        </div>
-                        <div class="col-12 pt-5 d-flex align-items-center justify-content-end  position-relative" style=" padding-bottom: 2.5rem;">
-                            
-                            <button type="button" class="btn bg-theme-blue p-1 px-3" data-dismiss="modal" data-toggle="modal" data-target="#twofa-ack" style="color: white;">
-                                Verify 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 2FA-1-->
-    <!-- Modals -->
-            
-        
-    </div>
+	<!-- Modals -->
+			
+		</div>
+	</div>
 
 	<!--OPEN TABS jS FUNCTION-->
-
-    <script type="text/javascript" src="./assets/js/jquery.js"></script>
-    <script type="text/javascript" src="./assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./assets/js/wow.js"></script>
-    <script type="text/javascript" src="./assets/js/jPages.js"></script>		
+	<script type="text/javascript" src="./assets/js/jquery.js"></script>
+	<script type="text/javascript" src="./assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./assets/js/wow.js"></script>
+	<script type="text/javascript" src="./assets/js/jPages.js"></script>
+	<script type="text/javascript" src="./assets/js/jPages.min.js"></script>
 
 	<script type="text/javascript" src="./assets/js/script.js"></script>
 
